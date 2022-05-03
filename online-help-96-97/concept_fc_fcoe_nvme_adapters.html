@@ -1,0 +1,5361 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>使用System Manager（系統管理程式ONTAP ）來管理FC/FCoE和NVMe介面卡-更新版本</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="使用System Manager（系統管理程式ONTAP ）來管理FC/FCoE和NVMe介面卡-更新版本" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html" />
+	<meta property="og:description" content="您可以使用System Manager來管理FC/FCoE和NVMe介面卡。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/ontap-sm-classic/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="您可以使用System Manager來管理FC/FCoE和NVMe介面卡。">
+  <meta name="keywords" content=" system, manager, manage, fc, fcoe, nvme, adapter, online, help, edit, adapter, speed, settings"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/ontap-sm-classic/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-sm-classic/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-tw/ontap-sm-classic/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-sm-classic/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-sm-classic/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-sm-classic/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-tw/ontap-sm-classic/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-tw/ontap-sm-classic/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-tw/ontap-sm-classic/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-tw/ontap-sm-classic/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-tw/ontap-sm-classic/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-sm-classic/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-sm-classic/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-sm-classic/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-tw/ontap-sm-classic/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/ontap-sm-classic/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-tw/ontap-sm-classic/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/ontap-sm-classic/js/na-search.js'></script><script src='/zh-tw/ontap-sm-classic/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-tw/ontap-sm-classic/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-sm-classic/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-tw/ontap-sm-classic/js/na-utility.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/clouddocs.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-tw/ontap-sm-classic/js/toc.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-tw/ontap-sm-classic/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/jszip.min.js'></script>
+  <script src='/zh-tw/ontap-sm-classic/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-sm-classic/issues/new?body=Page%3A%20[使用System Manager（系統管理程式ONTAP ）來管理FC/FCoE和NVMe介面卡-更新版本](https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-sm-classic/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-sm-classic/blob/main/online-help-96-97/concept_fc_fcoe_nvme_adapters.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-sm-classic/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-sm-classic/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此頁面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">產品與解決方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支援與訓練</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社群</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">部落格</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客戶成功案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-tw/ontap-sm-classic/search.html"
+          data-type="widget" 
+          data-placeholder="搜尋文件" 
+          data-no-results-found="找不到符合 {query} 的相關結果。" 
+          data-did-you-mean="搜尋 {suggestion}。" 
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
+          data-results-found="找到 {hitCount} 筆結果"  
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">繁體中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-tw/ontap-sm-classic/pdfs/fullsite-sidebar/_系統管理程式經典_文件ONTAP.pdf" >
+          <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/配置NAS儲存設備.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            配置NAS儲存設備
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/NFS組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            NFS組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/NFS組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            NFS組態工作流程
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/建立新的NFS型SVM.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            建立新的NFS型SVM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定NFS對現有SVM的存取.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定NFS對現有SVM的存取
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/將NFS磁碟區新增至啟用NFS的SVM.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            將NFS磁碟區新增至啟用NFS的SVM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用VSC的ESXi_NFS組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用VSC的ESXi NFS組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/適用於ESXi工作流程的NFS用戶端組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            適用於ESXi工作流程的NFS用戶端組態
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定ESXi主機.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定ESXi主機
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/SMB_CIFS與NFS多重傳輸協定組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            SMB/CIFS與NFS多重傳輸協定組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/多重傳輸協定組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            多重傳輸協定組態工作流程
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定新磁碟區的資源配置位置.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定新磁碟區的資源配置位置
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/SMB_CIFS組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            SMB/CIFS組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/SMB_CIFS組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            SMB/CIFS組態工作流程
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/建立新的CIFS型SVM.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            建立新的CIFS型SVM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定對現有SVM的SMB_CIFS存取.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定對現有SVM的SMB/CIFS存取
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/將CIFS磁碟區與啟用CIFS的SVM進行廣告.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            將CIFS磁碟區與啟用CIFS的SVM進行廣告
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/配置SAN儲存設備.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            配置SAN儲存設備
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用VSC的ESXi_FC組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用VSC的ESXi FC組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/FC組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            FC組態工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定要將磁碟區資源配置到何處.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定要將磁碟區資源配置到何處
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Red_Hat_Enterprise_Linux的FC組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Red Hat Enterprise Linux的FC組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/FC組態與資源配置工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            FC組態與資源配置工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定要將磁碟區資源配置到何處.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定要將磁碟區資源配置到何處
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Windows的FC組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Windows的FC組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/FC組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            FC組態工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定要將磁碟區資源配置到何處.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定要將磁碟區資源配置到何處
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用VSC的ESXi_iSCSI組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用VSC的ESXi iSCSI組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/iSCSI組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            iSCSI組態工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定要將磁碟區資源配置到何處.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定要將磁碟區資源配置到何處
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/適用於Red_Hat_Enterprise_Linux的iSCSI組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            適用於Red Hat Enterprise Linux的iSCSI組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/iSCSI組態與資源配置工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            iSCSI組態與資源配置工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定要將磁碟區資源配置到何處.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定要將磁碟區資源配置到何處
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/適用於Windows的iSCSI組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            適用於Windows的iSCSI組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/iSCSI組態與資源配置工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            iSCSI組態與資源配置工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/決定要將磁碟區資源配置到何處.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            決定要將磁碟區資源配置到何處
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/資料保護與災難恢復.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            資料保護與災難恢復
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/叢集與SVM對等組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            叢集與SVM對等組態
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/叢集與SVM對等工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            叢集與SVM對等工作流程
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定對等關係_從ONTAP_功能9_3開始_.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定對等關係（從ONTAP 功能9.3開始）
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定對等關係ONTAP__不含版本號的版本_.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定對等關係ONTAP （不含版本號的版本）
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume災難恢復.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume災難恢復
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume災難恢復工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume災難恢復工作流程
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/啟動目的地Volume.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            啟動目的地Volume
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/重新啟動來源Volume.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            重新啟動來源Volume
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume災難恢復準備.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume災難恢復準備
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume災難恢復準備工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume災難恢復準備工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用SnapVault_功能進行Volume備份.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用SnapVault 功能進行Volume備份
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/支援備份組態工作流程SnapVault.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            支援備份組態工作流程SnapVault
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume還原管理功能SnapVault.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume還原管理功能SnapVault
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume還原工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume還原工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/叢集管理.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            叢集管理
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/叢集管理.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            叢集管理
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/叢集擴充管理.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            叢集擴充管理
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/叢集擴充工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            叢集擴充工作流程
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/確認叢集已準備好進行擴充.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            確認叢集已準備好進行擴充
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/準備叢集以進行擴充.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            準備叢集以進行擴充
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/安裝新節點.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            安裝新節點
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/完成擴充.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            完成擴充
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume_Move管理.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume Move管理
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Volume_Move工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Volume Move工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/SNMP組態.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            SNMP組態
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/SNMP組態工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            SNMP組態工作流程
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用System_Manager_9_6和9_7進行叢集管理.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用System Manager 9.6和9.7進行叢集管理
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用System_Manager_9_6和9_7進行叢集管理.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用System Manager 9.6和9.7進行叢集管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用ONTAP_NetApp_System_Manager設定叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用ONTAP NetApp System Manager設定叢集
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/手動設定叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            手動設定叢集
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定網路.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定網路
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定叢集
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定實體儲存設備.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定實體儲存設備
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/建立SVM.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            建立SVM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/管理叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            管理叢集
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/還原切換與切換MetroCluster.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            還原切換與切換MetroCluster
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/準備切換和切換作業.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            準備切換和切換作業
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/應用程式.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            應用程式
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/更新叢集.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            更新叢集
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/使用者.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            使用者
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/管理網路.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            管理網路
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-tw/ontap-sm-classic/pdfs/pages/online-help-96-97/concept_fc_fcoe_nvme_adapters.pdf" >
+    <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/儲存層.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            儲存層
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/將磁碟重新指派給節點.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            將磁碟重新指派給節點
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/SVM儀表板視窗.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            SVM儀表板視窗
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/編輯Volume內容.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            編輯Volume內容
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/在FlexVol_Aggregate或節點之間搬移功能區.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            在FlexVol Aggregate或節點之間搬移功能區
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/LUN.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            LUN
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/CIFS傳輸協定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            CIFS傳輸協定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/設定NVMe.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            設定NVMe
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/建立QoS原則群組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            建立QoS原則群組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/Windows.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            Windows
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/管理資料保護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            管理資料保護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/鏡射關係.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            鏡射關係
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/保存關係.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            保存關係
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-sm-classic/pdfs/sidebar/鏡射及保存關係.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-sm-classic/images/pdf.png" width="16" height="16"/>
+            鏡射及保存關係
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-tw/ontap-sm-classic/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
+        System Manager經典文件
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 配置NAS儲存設備</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> NFS組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nfs-config/concept_cifs_nfs_configuration_workflow.html">
+        <div class="na-navbar-padding"> NFS組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_deciding_where_to_provision_new_volume.html">
+        決定新磁碟區的資源配置位置
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nfs-config/task_creating_protocol_enabled_svm.html">
+        <div class="na-navbar-padding"> 建立新的NFS型SVM</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_creating_new_svm.html">
+        使用NFS磁碟區建立新的SVM並匯出
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_opening_export_policy_svm_root_volume.html">
+        開啟SVM根磁碟區的匯出原則（建立新的NFS型SVM）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_configuring_ldap_new_svm.html">
+        設定LDAP（建立新的NFS型SVM）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html">
+        從UNIX管理主機驗證NFS存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_configuring_verifying_client_access_new_svm.html">
+        設定及驗證NFS用戶端存取（建立新的NFS型SVM）
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nfs-config/task_configuring_access_to_existing_svm.html">
+        <div class="na-navbar-padding"> 設定NFS對現有SVM的存取</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/concept_adding_nas_access_to_existing_svm.html">
+        新增NFS存取至現有SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_opening_export_policy_svm_root_volume_existing_svm.html">
+        開啟SVM根磁碟區的匯出原則（設定現有SVM的NFS存取）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_configuring_ldap_existing_svm.html">
+        設定LDAP（設定現有SVM的NFS存取）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html">
+        從UNIX管理主機驗證NFS存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_configuring_verifying_client_access_add_nfs_existing_svm.html">
+        設定及驗證NFS用戶端存取（設定現有SVM的NFS存取）
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nfs-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html">
+        <div class="na-navbar-padding"> 將NFS磁碟區新增至啟用NFS的SVM</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_creating_configuring_volume.html">
+        建立及設定磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_creating_export_policy_for_volume.html">
+        為磁碟區建立匯出原則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html">
+        從UNIX管理主機驗證NFS存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config/task_configuring_verifying_client_access_add_vol_existing_nfs_svm.html">
+        設定及驗證NFS用戶端存取（將NFS磁碟區新增至啟用NFS的SVM）
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用VSC的ESXi NFS組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_nfs_client_configuration_for_esxi_workflow.html">
+        <div class="na-navbar-padding"> 適用於ESXi工作流程的NFS用戶端組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_verifying_configuration_is_supported.html">
+        驗證是否支援該組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/reference_completing_nfs_configuration_worksheet.html">
+        完成NFS用戶端組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html">
+        安裝
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_adding_storage_cluster_to_virtual_storage_cluster.html">
+        將儲存叢集新增至VSC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_configuring_your_network_for_best_performance.html">
+        設定您的網路以獲得最佳效能
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_configuring_esxi_host.html">
+        <div class="na-navbar-padding"> 設定ESXi主機</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_configuring_host_iscsi_ports_vswitches.html">
+        設定主機連接埠和VSwitches
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_configuring_esxi_host_best_practice_settings.html">
+        設定ESXi主機最佳實務做法設定
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_deciding_where_to_provision_new_volume.html">
+        決定新磁碟區的資源配置位置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_creating_new_nfs_enabled_svm.html">
+        建立新的NFS功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/concept_adding_nfs_access_to_existing_svm.html">
+        新增NFS存取至現有的
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_verifying_that_nfs_is_enabled_on_existing_svm.html">
+        確認已在現有的上啟用NFS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html">
+        配置資料存放區並建立內含Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_verifying_nfs_access_from_esxi_host.html">
+        驗證ESXi主機的NFS存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_deploying_netapp_nfs_plugin_for_vmware_vaai.html">
+        部署適用於VMware VAAI的NFS外掛程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/task_mounting_datastores_on_hosts.html">
+        在主機上掛載資料存放區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nfs-config-esxi/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SMB/CIFS與NFS多重傳輸協定組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/concept_cifs_nfs_configuration_workflow.html">
+        <div class="na-navbar-padding"> 多重傳輸協定組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_deciding_where_to_provision_new_volume.html">
+        <div class="na-navbar-padding"> 決定新磁碟區的資源配置位置</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_new_svm.html">
+        建立基本SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/concept_adding_nas_access_to_existing_svm.html">
+        新增CIFS與NFS存取至現有的SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_opening_export_policy_svm_root_volume.html">
+        開啟SVM根磁碟區的匯出原則（建立新的NFS型SVM）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_mapping_smb_server_dns_server.html">
+        對應DNS伺服器上的SMB伺服器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_configuring_ldap_new_svm.html">
+        設定LDAP（建立新的NFS型SVM）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_mapping_unix_windows_user_names.html">
+        對應UNIX和Windows使用者名稱
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_configuring_volume.html">
+        建立及設定磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_share_setting_its_permissions.html">
+        建立共用區並設定其權限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_export_policy_for_volume.html">
+        為磁碟區建立匯出原則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_verifying_smb_client_access.html">
+        驗證SMB用戶端存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_verifying_nfs_access_from_unix_administration_host.html">
+        從UNIX管理主機驗證NFS存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_configuring_verifying_client_access_new_svm.html">
+        設定及驗證CIFS與NFS用戶端存取
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/nas-multiprotocol-config/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SMB/CIFS組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/smb-config/concept_cifs_nfs_configuration_workflow.html">
+        <div class="na-navbar-padding"> SMB/CIFS組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_deciding_where_to_provision_new_volume.html">
+        決定新磁碟區的資源配置位置
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/smb-config/task_creating_protocol_enabled_svm.html">
+        <div class="na-navbar-padding"> 建立新的CIFS型SVM</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_creating_new_svm.html">
+        使用CIFS磁碟區和共用區建立新的SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_mapping_smb_server_dns_server.html">
+        對應DNS伺服器上的SMB伺服器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_verifying_smb_client_access.html">
+        驗證SMB用戶端存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_configuring_verifying_client_access.html">
+        設定及驗證CIFS用戶端存取
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/smb-config/task_configuring_access_to_existing_svm.html">
+        <div class="na-navbar-padding"> 設定對現有SVM的SMB/CIFS存取</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/concept_adding_nas_access_to_existing_svm.html">
+        新增CIFS存取至現有SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_mapping_smb_server_dns_server.html">
+        對應DNS伺服器上的SMB伺服器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_verifying_smb_client_access.html">
+        驗證SMB用戶端存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_configuring_verifying_client_access.html">
+        設定及驗證CIFS用戶端存取
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/smb-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html">
+        <div class="na-navbar-padding"> 將CIFS磁碟區與啟用CIFS的SVM進行廣告</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_creating_configuring_volume.html">
+        建立及設定磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_creating_share_setting_its_permissions.html">
+        建立共用區並設定其權限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_verifying_smb_client_access.html">
+        驗證SMB用戶端存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/smb-config/task_configuring_verifying_client_access.html">
+        設定及驗證CIFS用戶端存取
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 配置SAN儲存設備</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用VSC的ESXi FC組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/fc-config-esxi/concept_fc_configuration_workflow.html">
+        <div class="na-navbar-padding"> FC組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_verifying_that_iscsi_fc_configuration_is_supported.html">
+        驗證是否支援FC組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/reference_completing_iscsi_configuration_worksheet.html">
+        完成FC組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html">
+        安裝虛擬儲存主控台
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_adding_storage_cluster_to_virtual_storage_cluster.html">
+        將儲存叢集或SVM新增至適用於VMware vSphere的VSC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_updating_hba_firmware.html">
+        更新HBA驅動程式、韌體和BIOS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_configuring_esxi_host_best_practice_settings.html">
+        設定ESXi主機最佳實務做法設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_deciding_where_to_provision_volume.html">
+        <div class="na-navbar-padding"> 決定要將磁碟區資源配置到何處</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_verifying_that_fc_service_is_running_on_existing_svm.html">
+        確認FC服務正在現有的SVM上執行
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html">
+        在現有SVM上設定FC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_creating_svm.html">
+        建立新的SVM
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_zoning_fc_switches_by_host_lif_wwpns.html">
+        由主機和LIF WWPN對FC交換器進行分區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html">
+        配置資料存放區並建立內含LUN和Volume的資料存放區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/task_verifying_host_can_write_to_read_from_lun.html">
+        驗證主機是否可以寫入及讀取LUN
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-esxi/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Red Hat Enterprise Linux的FC組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/fc-config-rhel/concept_fc_configuration_workflow.html">
+        <div class="na-navbar-padding"> FC組態與資源配置工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html">
+        驗證是否支援FC組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/reference_completing_iscsi_configuration_worksheet.html">
+        完成FC組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_installing_hba_utility_from_hba_vendor.html">
+        從HBA廠商安裝HBA公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_updating_hba_driver_firmware_bios.html">
+        更新HBA驅動程式、韌體和BIOS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html">
+        安裝Linux Unified Host Utilities並最佳化I/O效能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_record_wwpn_for_each_host_fc_port.html">
+        記錄每個主機FC連接埠的WWPN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_dm_multipath.html">
+        設定DM-Multipath
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_deciding_where_to_provision_volume.html">
+        <div class="na-navbar-padding"> 決定要將磁碟區資源配置到何處</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_fc_service_is_running_on_existing_svm.html">
+        確認FC服務正在現有的SVM上執行
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_lun_its_containing_volume.html">
+        建立LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html">
+        在現有SVM上設定FC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_svm.html">
+        建立新的SVM
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_zoning_fc_switches_by_host_lif_wwpns.html">
+        由主機和LIF WWPN對FC交換器進行分區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html">
+        探索新的SCSI裝置（LUN）和多重路徑裝置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html">
+        在多重路徑裝置上設定邏輯磁碟區、然後建立檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html">
+        確認主機可以寫入多重路徑裝置、也可以從多重路徑裝置讀取
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Windows的FC組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/fc-config-windows/concept_fc_configuration_workflow.html">
+        <div class="na-navbar-padding"> FC組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_verifying_that_iscsi_fc_configuration_is_supported.html">
+        驗證是否支援FC組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/reference_completing_iscsi_configuration_worksheet.html">
+        完成FC組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_installing_hba_utility_from_hba_vendor.html">
+        從HBA廠商安裝HBA公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_updating_hba_driver_firmware_bios.html">
+        更新HBA驅動程式、韌體和BIOS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_record_wwpn_for_each_host_fc_port.html">
+        記錄每個主機FC連接埠的WWPN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_installing_windows_unified_host_utilities.html">
+        安裝Windows Unified Host Utilities
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/fc-config-windows/task_deciding_where_to_provision_volume.html">
+        <div class="na-navbar-padding"> 決定要將磁碟區資源配置到何處</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_verifying_that_fc_service_is_running_on_existing_svm.html">
+        確認FC服務正在現有的SVM上執行
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_creating_lun_its_containing_volume.html">
+        建立LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html">
+        在現有SVM上設定FC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_creating_svm.html">
+        建立新的SVM
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_zoning_fc_switches_by_host_lif_wwpns.html">
+        由主機和LIF WWPN對FC交換器進行分區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_discovering_new_disks.html">
+        探索新磁碟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_initializing_formatting_lun.html">
+        初始化及格式化LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/fc-config-windows/task_verifying_that_host_can_write_to_read_from_lun.html">
+        驗證主機是否可以寫入及讀取LUN
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用VSC的ESXi iSCSI組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/concept_iscsi_configuration_provisioning_workflow.html">
+        <div class="na-navbar-padding"> iSCSI組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_that_iscsi_fc_configuration_is_supported.html">
+        驗證是否支援iSCSI組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/reference_completing_iscsi_configuration_worksheet.html">
+        完成iSCSI組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html">
+        安裝虛擬儲存主控台
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_adding_storage_cluster_to_virtual_storage_cluster.html">
+        將儲存叢集或SVM新增至適用於VMware vSphere的VSC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_configuring_your_network_for_best_performance.html">
+        設定您的網路以獲得最佳效能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_configuring_host_iscsi_ports_vswitches.html">
+        設定主機iSCSI連接埠和VSwitches
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_enabling_iscsi_software_adapter.html">
+        啟用iSCSI軟體介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_binding_iscsi_ports_to_iscsi_software_adapter.html">
+        將iSCSI連接埠連結至iSCSI軟體介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_configuring_esxi_host_best_practice_settings.html">
+        設定ESXi主機最佳實務做法設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_deciding_where_to_provision_volume.html">
+        <div class="na-navbar-padding"> 決定要將磁碟區資源配置到何處</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_iscsi_is_running_on_existing_vserver.html">
+        確認iSCSI服務正在現有的SVM上執行
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html">
+        在現有SVM上設定iSCSI
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_creating_svm.html">
+        建立新的SVM
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_testing_iscsi_paths.html">
+        測試從主機到儲存叢集的iSCSI路徑
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html">
+        配置資料存放區並建立內含LUN和Volume的資料存放區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_host_can_write_to_read_from_lun.html">
+        驗證主機是否可以寫入及讀取LUN
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 適用於Red Hat Enterprise Linux的iSCSI組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/concept_iscsi_configuration_provisioning_workflow.html">
+        <div class="na-navbar-padding"> iSCSI組態與資源配置工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html">
+        驗證是否支援iSCSI組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_completing_iscsi_configuration_worksheet.html">
+        完成iSCSI組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html">
+        安裝Linux Unified Host Utilities並最佳化I/O效能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_recording_iscsi_node_name.html">
+        記錄iSCSI節點名稱
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_setting_iscsi_replacement_timeout_value.html">
+        設定iSCSI置換逾時值
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_starting_iscsi_service.html">
+        啟動iSCSI服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html">
+        設定DM-Multipath
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_deciding_where_to_provision_volume.html">
+        <div class="na-navbar-padding"> 決定要將磁碟區資源配置到何處</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_verifying_iscsi_is_running_on_existing_vserver.html">
+        確認iSCSI服務正在現有的SVM上執行
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_lun_its_containing_volume.html">
+        建立LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html">
+        在現有SVM上設定iSCSI
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_svm.html">
+        建立新的SVM
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_starting_iscsi_sessions_with_target.html">
+        以目標啟動iSCSI工作階段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html">
+        探索新的SCSI裝置（LUN）和多重路徑裝置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html">
+        在多重路徑裝置上設定邏輯磁碟區並建立檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html">
+        確認主機可以寫入多重路徑裝置、也可以從多重路徑裝置讀取
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 適用於Windows的iSCSI組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/iscsi-config-windows/concept_iscsi_configuration_workflow.html">
+        <div class="na-navbar-padding"> iSCSI組態與資源配置工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_that_iscsi_fc_configuration_is_supported.html">
+        驗證是否支援iSCSI組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_completing_iscsi_configuration_worksheet.html">
+        完成iSCSI組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_recording_iscsi_node_name.html">
+        記錄iSCSI啟動器節點名稱
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_installing_windows_unified_host_utilities.html">
+        安裝Windows Unified Host Utilities
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_aggregate.html">
+        建立Aggregate
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_deciding_where_to_provision_volume.html">
+        <div class="na-navbar-padding"> 決定要將磁碟區資源配置到何處</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_iscsi_is_running_on_existing_vserver.html">
+        確認iSCSI服務正在現有的SVM上執行
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_lun_its_containing_volume.html">
+        建立LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html">
+        在現有SVM上設定iSCSI
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_svm.html">
+        建立新的SVM
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_starting_iscsi_sessions_with_target.html">
+        使用目標啟動iSCSI工作階段
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_discovering_new_disks.html">
+        探索新磁碟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_initializing_formatting_lun.html">
+        初始化及格式化LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_that_host_can_write_to_read_from_lun.html">
+        驗證主機是否可以寫入及讀取LUN
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 資料保護與災難恢復</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 叢集與SVM對等組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html">
+        叢集對等關係的先決條件
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/peering/concept_cluster_peering_workflow.html">
+        <div class="na-navbar-padding"> 叢集與SVM對等工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/task_preparing_for_cluster_peering.html">
+        準備叢集對等
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/peering/concept_creating_peer_relationships_93_later.html">
+        <div class="na-navbar-padding"> 設定對等關係（從ONTAP 功能9.3開始）</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/task_creating_intercluster_lifs.html">
+        建立叢集間的生命體（從ONTAP S19.3開始）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/task_creating_cluster_peer_relationship_starting_with_ontap_9_3.html">
+        建立叢集對等關係（從ONTAP 功能9.3開始）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/task_creating_svm_peers.html">
+        建立SVM對等關係
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/peering/concept_creating_peer_relationship_between_clusters_92_earlier.html">
+        <div class="na-navbar-padding"> 設定對等關係ONTAP （不含版本號的版本）</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/task_creating_intercluster_interfaces_on_all_nodes.html">
+        在所有節點上建立叢集間介面ONTAP （例如、0、2或更早版本）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/peering/task_creating_cluster_peer_relationships_92_earlier.html">
+        建立叢集對等關係ONTAP （不含版本號的9.2）
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Volume災難恢復</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/concept_volume_disaster_recovery_workflow.html">
+        <div class="na-navbar-padding"> Volume災難恢復工作流程</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_activating_destination_volume.html">
+        <div class="na-navbar-padding"> 啟動目的地Volume</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_verifying_source_volume_status.html">
+        驗證來源Volume的狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_breaking_snapmirror_relationship.html">
+        打破SnapMirror關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_verifying_destination_volume_status.html">
+        驗證目的地Volume狀態
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_configuring_destination_volume_for_data_access.html">
+        設定目的地Volume以進行資料存取
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_reactivating_source_volume.html">
+        <div class="na-navbar-padding"> 重新啟動來源Volume</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_resynchronizing_source_volume.html">
+        重新同步來源Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_updating_source_volume.html">
+        更新來源Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_returning_recovered_volume_to_source_role.html">
+        重新啟動來源Volume
+      </a></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-recovery/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Volume災難恢復準備</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-disaster-prep/concept_snapmirror_intercluster_configuration_workflow.html">
+        <div class="na-navbar-padding"> Volume災難恢復準備工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/task_verifying_cluster_peer_relationship.html">
+        驗證叢集對等關係和SVM對等關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/task_creating_snapmirror_relationships_93_later.html">
+        建立SnapMirror關係（從ONTAP 功能9.3開始）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/task_creating_snapmirror_relationships_92_earlier.html">
+        建立SnapMirror關係ONTAP （不含版本號的9.2）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/task_setting_up_destination_svm_for_data_access.html">
+        設定目的地SVM以進行資料存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/task_monitoring_status_snapmirror_data_transfers.html">
+        監控SnapMirror資料傳輸的狀態
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用SnapVault 功能進行Volume備份</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/concept_snapvault_configuration_workflow.html">
+        <div class="na-navbar-padding"> 支援備份組態工作流程SnapVault</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/task_verify_cluster_peer_relationship.html">
+        驗證叢集對等關係和SVM對等關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/task_creating_snapvault_relationship_93_later.html">
+        建立SnapVault 不合作關係（從ONTAP 功能9.3開始）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/task_creating_snapvault_relationship_92_earlier.html">
+        建立SnapVault 不二關係ONTAP （例如、0、9.2或更早版本）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/task_monitoring_snapvault_relationship.html">
+        監控SnapVault 彼此之間的關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Volume還原管理功能SnapVault</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-restore-snapvault/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-restore-snapvault/concept_volume_restore_workflow.html">
+        <div class="na-navbar-padding"> Volume還原工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-restore-snapvault/task_identifying_snapvault_backup_destination_volume.html">
+        識別SnapVault 不支援的目的地Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-restore-snapvault/task_restoring_data_from_snapvault_backup.html">
+        從SnapVault 無法還原的備份還原資料
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-restore-snapvault/task_verifying_restore_operation.html">
+        驗證還原作業
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-restore-snapvault/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 叢集管理</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 叢集管理</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 叢集擴充管理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/expansion/concept_cluster_expansion_workflow.html">
+        <div class="na-navbar-padding"> 叢集擴充工作流程</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/expansion/task_verifying_cluster_is_ready_for_expansion.html">
+        <div class="na-navbar-padding"> 確認叢集已準備好進行擴充</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_verifying_planned_configuration.html">
+        驗證規劃的組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_gathering_required_information.html">
+        收集所需的網路資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_adding_or_replacing_switches.html">
+        新增或更換交換器
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/expansion/task_preparing_cluster_for_expansion.html">
+        <div class="na-navbar-padding"> 準備叢集以進行擴充</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_adding_node_locked_licenses.html">
+        新增節點鎖定的授權
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_verifying_health_system.html">
+        驗證系統的健全狀況
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_backing_up_cluster_configuration.html">
+        備份叢集組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_generating_autosupport_message_about_starting_expansion.html">
+        產生AutoSupport 關於開始擴充的資訊
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/expansion/task_installing_new_nodes.html">
+        <div class="na-navbar-padding"> 安裝新節點</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_installing_controllers.html">
+        安裝控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/concept_configuring_node_management_lifs.html">
+        設定節點管理lifs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_upgrading_or_downgrading_nodes.html">
+        升級或降級節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_ensuring_hardware_level_ha_is_enabled.html">
+        確認硬體層級HA已啟用
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_adding_nodes_to_cluster_using_system_manager.html">
+        使用System Manager將節點新增至叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/concept_joining_nodes_to_cluster_using_cli.html">
+        使用CLI將節點加入叢集
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/expansion/task_completing_expansion.html">
+        <div class="na-navbar-padding"> 完成擴充</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_configuring_node_details_system_manager.html">
+        在System Manager中設定節點詳細資料
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_configuring_autosupport_on_new_nodes_using_cli.html">
+        在AutoSupport 新節點上設定功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_configuring_service_processor_network_cli.html">
+        設定服務處理器網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_validating_configuration_expanded_cluster.html">
+        驗證擴充叢集的組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_generating_autosupport_message_about_completing_expansion.html">
+        產生AutoSupport 關於完成擴充的資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/task_updating_lun_paths_for_new_nodes.html">
+        更新新節點的LUN路徑
+      </a></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/expansion/reference_where_to_find_additional_information.html">
+        何處可找到其他資訊
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Volume Move管理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-move/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/volume-move/concept_volume_move_workflow.html">
+        <div class="na-navbar-padding"> Volume Move工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-move/task_planning_method_timing_volume_move.html">
+        規劃Volume移動的方法和時間
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-move/task_moving_volume_using_system_manager.html">
+        使用System Manager移動磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-move/task_verifying_lun_reporting_nodes_after_moving_volume.html">
+        移動磁碟區後、請驗證LUN報告節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-move/task_updating_lun_reporting_nodes_after_moving_volume.html">
+        移動磁碟區後、請更新LUN報告節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/volume-move/task_updating_ndmp_backup_after_moving_volume.html">
+        移動磁碟區後、請更新NDMP備份
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SNMP組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/snmp-config/concept_snmp_configuration_workflow.html">
+        <div class="na-navbar-padding"> SNMP組態工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/task_verifying_snmp_is_enabled.html">
+        驗證是否已啟用SNMP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/task_adding_snmp_community.html">
+        新增SNMP社群
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/task_adding_snmpv3_security_user.html">
+        新增v3安全性使用者
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/task_adding_snmp_traphost.html">
+        新增SNMP traphost
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/task_testing_snmp_traps.html">
+        測試SNMP設陷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/snmp-config/task_testing_snmp_polling.html">
+        測試SNMP輪詢
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用System Manager 9.6和9.7進行叢集管理</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用System Manager 9.6和9.7進行叢集管理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/index.html">
+        瞭解System Manager
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_icons_used_application_interface.html">
+        應用程式介面中使用的圖示
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_windows_layout.html">
+        System Manager視窗配置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_window_layout_customization.html">
+        自訂視窗配置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_system_manager_enhancements.html">
+        系統管理程式增強功能ONTAP
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用ONTAP NetApp System Manager設定叢集</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_cluster_using_template_file.html">
+        使用範本檔案設定叢集
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_setting_up_cluster_manually.html">
+        <div class="na-navbar-padding"> 手動設定叢集</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_cluster.html">
+        建立叢集
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_network.html">
+        <div class="na-navbar-padding"> 設定網路</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_network_when_ip_address_range_is_enabled.html">
+        啟用IP位址範圍時、請設定網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_network_when_ip_address_range_is_disabled.html">
+        在停用IP位址範圍時設定網路
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_support_page.html">
+        設定支援頁面
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_reviewing_storage_recommendations.html">
+        檢閱儲存建議
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svm.html">
+        建立SVM
+      </a></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_accessing_cluster_using_system_manager.html">
+        使用ONTAP 以瀏覽器為基礎的圖形介面存取叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_system_manager_options.html">
+        設定System Manager選項
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_system_manager_log_files.html">
+        檢視ONTAP 《系統管理程式》記錄檔
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設定叢集</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_updating_cluster_name.html">
+        設定叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_licenses.html">
+        新增授權
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_time_zone_for_cluster.html">
+        設定叢集的時區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_monitoring_ha_pairs.html">
+        監控HA配對
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_setting_up_network.html">
+        設定網路
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 設定實體儲存設備</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_assigning_disks_to_nodes.html">
+        將磁碟指派給節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_zeroing_disks.html">
+        將備用磁碟歸零
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html">
+        透過Aggregate配置儲存設備
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svms.html">
+        <div class="na-navbar-padding"> 建立SVM</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_cifs_nfs_protocols_on_svms.html">
+        在SVM上設定CIFS與NFS傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_iscsi_protocol_on_svms.html">
+        在SVM上設定iSCSI傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_fc_fcoe_protocol_on_svms.html">
+        在SVM上設定FC傳輸協定和FCoE傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_nvme_protocol_on_svms.html">
+        在SVM上設定NVMe傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_delegating_administration_to_svm_administrators.html">
+        將管理委派給SVM系統管理員
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexvol_volumes.html">
+        建立FlexVol 功能區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_snaplock_volumes.html">
+        建立SnapLock 功能區
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_saml_authentication.html">
+        設定SAML驗證
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_peering.html">
+        設定對等關係
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理叢集</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_dashboard_window.html">
+        儀表板視窗
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 還原切換與切換MetroCluster</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_metrocluster_switchover_switchback_workflow.html">
+        還原切換和切換工作流程MetroCluster
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_preparing_for_switchover_switchback_operations.html">
+        <div class="na-navbar-padding"> 準備切換和切換作業</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_renaming_metrocluster_local_site_a.html">
+        重新命名MetroCluster 本機站台（站台A）
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_performing_negotiated_planned_switchover.html">
+        執行協商切換
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_performing_unplanned_switchover.html">
+        執行非計畫性切換
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_performing_switchback.html">
+        執行切換
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_metrocluster_switchover_switchback_window.html">
+        「切換與切換作業」MetroCluster 視窗
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_applications.html">
+        <div class="na-navbar-padding"> 應用程式</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_basic_template.html">
+        配置基本範本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_storage_service_definitions.html">
+        儲存服務定義
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_microsoft_sql_server_over_san_to_system_manager.html">
+        將Microsoft SQL Server over SAN新增至System Manager
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_application_provisioning_settings.html">
+        應用程式資源配置設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_application.html">
+        編輯應用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_application.html">
+        刪除應用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_applications_window.html">
+        應用程式視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_configuration_update.html">
+        組態更新
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_service_processors.html">
+        服務處理器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_cluster_peers.html">
+        叢集對等端點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_high_availability.html">
+        高可用度
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_licenses.html">
+        授權
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_cluster_expansion.html">
+        叢集擴充
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_updating_clusters.html">
+        <div class="na-navbar-padding"> 更新叢集</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_updating_clusters_non_metrocluster_configuration.html">
+        以非MetroCluster 更新組態更新叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_updating_clusters_metrocluster_configuration.html">
+        更新MetroCluster 以功能為依據的叢集組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_obtaining_ontap_software_images.html">
+        取得ONTAP 軟體映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_updating_single_node_clusters.html">
+        更新單節點叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_updating_cluster_nondisruptively.html">
+        在不中斷營運的情況下更新叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_you_update_cluster_nondisruptively.html">
+        在不中斷營運的情況下更新叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_cluster_update_window.html">
+        叢集更新視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_date_time.html">
+        叢集的日期與時間設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_snmp.html">
+        SNMP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_ldap.html">
+        LDAP
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_cluster_user_accounts.html">
+        <div class="na-navbar-padding"> 使用者</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_roles_conceptual.html">
+        角色
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_roles.html">
+        角色
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_managing_network.html">
+        <div class="na-navbar-padding"> 管理網路</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_network_window.html">
+        網路視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_ipspaces.html">
+        IPspaces
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_broadcast_domains.html">
+        廣播網域
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_subnets.html">
+        子網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_network_interfaces.html">
+        網路介面
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_ethernet_ports.html">
+        乙太網路連接埠
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_nvme_adapters.html">
+        FC/FCoE和NVMe介面卡
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 儲存層</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_aggregates.html">
+        編輯Aggregate
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_aggregates.html">
+        刪除Aggregate
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_raid_configuration_when_creating_aggregate.html">
+        在建立Aggregate時變更RAID組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_cache_by_adding_disks.html">
+        新增SSD來配置快取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_capacity_disks.html">
+        新增容量磁碟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_raid_group_when_adding_capacity_disks.html">
+        新增容量磁碟時、請變更RAID群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_moving_flexvol_volumes.html">
+        搬移FlexVol 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_mirroring_aggregates.html">
+        鏡射Aggregate
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_aggregate_information.html">
+        檢視Aggregate資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_installing_ca_certificate_if_you_use_storagegrid_webscale.html">
+        如果您使用StorageGRID 的是功能區、請安裝CA憑證
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_moving_volume_works.html">
+        如何移動FlexVol 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_effective_data_ontap_disk_types.html">
+        如何使用有效ONTAP 的等磁碟類型來混合HDD
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_what_compatible_spare_disks_are.html">
+        哪些是相容的備用磁碟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_system_manager_calculates_hot_spares.html">
+        System Manager如何使用熱備援磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_rules_for_mixing_disk_types_disk_rpms.html">
+        顯示磁碟類型和磁碟RPM的規則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_mirrored_aggregates_work.html">
+        鏡射Aggregate的運作方式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_what_fabricpool_is.html">
+        什麼是呢FabricPool
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_storage_recommendations_for_creating_aggregates.html">
+        建立集合體的儲存建議
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_storage_tiers_window.html">
+        儲存層視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_managing_cloud_tiers.html">
+        設定及管理雲端層
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_aggregates.html">
+        集合體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_storage_pools.html">
+        儲存資源池
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_reassigning_disks_to_nodes.html">
+        <div class="na-navbar-padding"> 將磁碟重新指派給節點</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_disk_information.html">
+        檢視磁碟資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_ontap_reports_drive_types.html">
+        如何報告磁碟類型ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_minimum_number_hot_spares_you_should_have.html">
+        磁碟所需的最小熱備援磁碟數
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_spare_requirements_for_multi_disk_carrier_disk_shelves.html">
+        多磁碟載體磁碟的備用需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_shelf_configuration_requirements_for_multi_disk_carrier_disk_shelves.html">
+        多磁碟載體儲存櫃的機櫃組態需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_to_determine_when_safe_to_remove_multi_disk_carrier.html">
+        判斷何時可以安全移除多磁碟機載體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_considerations_for_sizing_raid_groups.html">
+        調整RAID群組規模的考量
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_disks_window.html">
+        磁碟視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_array_luns.html">
+        陣列LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_nodes.html">
+        節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_hardware_cache.html">
+        硬體快取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_events.html">
+        活動
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_system_alerts.html">
+        系統警示
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_autosupport.html">
+        資訊通知AutoSupport
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_jobs.html">
+        工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_flash_pool_statistics.html">
+        Flash Pool統計資料
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_managing_logical_storage.html">
+        管理邏輯儲存設備
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_svm_dashboard_window.html">
+        <div class="na-navbar-padding"> SVM儀表板視窗</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_monitoring_svm_using_dashboard.html">
+        監控SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_svm_settings.html">
+        編輯SVM設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_svms.html">
+        刪除SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_starting_svms.html">
+        啟動SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_stopping_svms.html">
+        停止SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_managing_svms.html">
+        管理SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_tracing_file_access_to_diagnose_access_errors_on_svms.html">
+        追蹤檔案存取、以診斷SVM上的存取錯誤
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_types_svms.html">
+        SVM類型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_why_you_use_svms.html">
+        為何要使用SVM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_data_ontap_name_service_switch_configuration_works.html">
+        如何使用名稱服務交換器組態ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_svm_window.html">
+        儲存虛擬機器視窗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_trace_file_access_window.html">
+        追蹤檔案存取視窗
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_volume_properties.html">
+        <div class="na-navbar-padding"> 編輯Volume內容</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_data_protection_volumes.html">
+        編輯資料保護磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_volumes.html">
+        刪除Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexclone_volumes.html">
+        建立FlexClone Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexclone_files.html">
+        建立FlexClone檔案
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_splitting_flexclone_volume_from_its_parent_volume.html">
+        將FlexClone磁碟區從其父磁碟區分割
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_flexclone_volumes_hierarchy.html">
+        檢視FlexClone Volume階層架構
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_status_volume.html">
+        變更Volume的狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_list_saved_snapshot_copies.html">
+        檢視已儲存的Snapshot複本清單
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_snapshot_copies_outside_defined_schedule.html">
+        在定義的排程之外建立Snapshot複本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_snapshot_copy_reserve.html">
+        設定Snapshot複本保留
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_hiding_snapshot_copy_directory.html">
+        隱藏Snapshot複本目錄
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_scheduling_automatic_creation_snapshot_copies.html">
+        排程自動建立Snapshot複本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_from_snapshot_copy.html">
+        從Snapshot複本還原磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_extending_expiry_date_snapshot_copies.html">
+        延長Snapshot複本的到期日
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_renaming_snapshot_copies.html">
+        重新命名Snapshot複本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_snapshot_copies.html">
+        刪除Snapshot複本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resizing_volumes.html">
+        調整磁碟區大小
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_enabling_storage_efficiency_on_volume.html">
+        在磁碟區上實現儲存效率
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_deduplication_schedule.html">
+        變更重複資料刪除排程
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_running_deduplication_operations.html">
+        執行重複資料刪除作業
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_moving_flexvol_volumes_between_aggregates_or_nodes.html">
+        <div class="na-navbar-padding"> 在FlexVol Aggregate或節點之間搬移功能區</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_manually_triggering_cutover_phase.html">
+        手動觸發切換以進行Volume移動
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_assigning_volumes_to_storage_qos.html">
+        將磁碟區指派給儲存QoS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_mirror_relationship_from_source_volume.html">
+        從來源SVM建立鏡射關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_vault_relationship_from_source_svm.html">
+        從來源SVM建立資料保存關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_mirror_vault_relationship_from_source_svm.html">
+        從來源SVM建立鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_nfs_datastore_for_vmware.html">
+        為VMware建立NFS資料存放區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_tiering_policy_volume_destination_topic_delete.html">
+        變更磁碟區的分層原則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexgroup_volumes.html">
+        建立FlexGroup 功能區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_flexgroup_volume_information.html">
+        檢視FlexGroup 功能區資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html">
+        編輯FlexGroup 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_specifying_advanced_options_for_flexgroup_volume.html">
+        指定FlexGroup 適用於某個聲音區的進階選項
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resizing_flexgroup_volumes.html">
+        重新調整FlexGroup 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_status_flexgroup_volume.html">
+        變更FlexGroup 一個聲音區的狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_flexgroup_volumes.html">
+        刪除FlexGroup 功能區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexcache_volumes.html">
+        建立FlexCache 功能區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_flexcache_volume_information.html">
+        檢視FlexCache 功能區資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_flexcache_volumes.html">
+        編輯FlexCache 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_specifying_advanced_options_for_flexcache_volume.html">
+        指定FlexCache 適用於某個聲音區的進階選項
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resizing_flexcache_volumes.html">
+        重新調整FlexCache 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_status_flexcache_volume.html">
+        變更FlexCache 一個聲音區的狀態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_flexcache_volumes.html">
+        刪除FlexCache 功能區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_what_netapp_volume_encryption_is.html">
+        什麼是NetApp Volume Encryption
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_snapshot_configuration.html">
+        Snapshot組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_volume_guarantees_work_for_flexvol_volumes.html">
+        Volume如何保證FlexVol 功能適用於不穩定的Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_flexclone_volumes_space_guarantees.html">
+        FlexClone Volume與空間保證
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_thin_provisioning_for_greater_efficiencies_using_flexvol_volumes.html">
+        使用FlexVol 現象資源隨需配置、以提高效率
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_using_space_reservation_with_flexvol_volumes.html">
+        利用FlexVol 空間保留功能搭配使用
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_benefits_storage_efficiency.html">
+        儲存效率的優點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_data_compression_deduplication.html">
+        資料壓縮與重複資料刪除技術
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_guidelines_for_using_deduplication.html">
+        使用重複資料刪除的準則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_options_for_resizing_volumes.html">
+        調整磁碟區大小的選項
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_considerations_when_moving_volumes.html">
+        移動磁碟區時的考量
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_volumes_window.html">
+        Volume視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_namespace.html">
+        交會路徑
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_shares.html">
+        共享區
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_luns.html">
+        <div class="na-navbar-padding"> LUN</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_fc_san_optimized_luns.html">
+        建立FC SAN最佳化LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_application_specific_lun_settings.html">
+        應用程式專屬的LUN設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_luns.html">
+        建立LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_luns.html">
+        刪除LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_initiator_groups.html">
+        建立啟動器群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_initiator_groups.html">
+        刪除啟動器群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_initiators.html">
+        新增啟動器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_initiators_from_initiator_group.html">
+        從啟動器群組刪除啟動器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_portsets.html">
+        建立連接埠集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_portsets.html">
+        刪除連接埠集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_cloning_luns.html">
+        複製LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_luns.html">
+        編輯LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_bringing_luns_online.html">
+        使LUN上線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_taking_luns_offline.html">
+        使LUN離線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_moving_luns.html">
+        移動LUN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_assigning_luns_to_storage_qos.html">
+        將LUN指派給儲存QoS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_initiator_groups.html">
+        編輯啟動器群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_initiators.html">
+        編輯啟動器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_port_sets.html">
+        編輯連接埠集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_lun_information.html">
+        檢視LUN資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_initiator_groups.html">
+        檢視啟動器群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_guidelines_working_with_volumes_that_contain_luns.html">
+        使用FlexVol 包含LUN的各種資料區的準則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_using_space_reservation_for_luns.html">
+        瞭解LUN的空間保留
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_lun_multiprotocol_type_guidelines.html">
+        使用LUN多重傳輸協定類型的準則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_understanding_lun_clones.html">
+        瞭解LUN複製
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_initiator_hosts.html">
+        啟動器主機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_igroup_name.html">
+        igroup名稱
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_igroup_type.html">
+        igroup類型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_igroup_ostype.html">
+        igroup ostyp
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_luns_window.html">
+        LUN視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_qtrees.html">
+        qtree
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_quotas.html">
+        配額
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_cifs_protocol.html">
+        <div class="na-navbar-padding"> CIFS傳輸協定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_home_directory_paths.html">
+        新增主目錄路徑
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resetting_cifs_domain_controllers.html">
+        重設CIFS網域控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_updating_cifs_group_policy_configuration.html">
+        更新CIFS群組原則組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_branchcache.html">
+        設定BranchCache
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_preferred_domain_controllers.html">
+        新增慣用的網域控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_cifs_domain_information.html">
+        檢視CIFS網域資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_cifs_window.html">
+        CIFS視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_nfs_protocol.html">
+        NFS傳輸協定
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_setting_up_nvme.html">
+        <div class="na-navbar-padding"> 設定NVMe</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_nvme_namespace.html">
+        建立NVMe命名空間
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_nvme_namespace.html">
+        編輯NVMe命名空間
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_cloning_nvme_namespace.html">
+        複製NVMe命名空間
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_starting_or_stopping_nvme_service.html">
+        啟動和停止NVMe服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_what_nvme_is.html">
+        什麼是NVMe
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_what_nvme_subsystem_is.html">
+        什麼是NVMe子系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_nvme_namespaces.html">
+        NVMe命名空間
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_nvme_namespaces_window.html">
+        NVMe命名空間視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_iscsi_protocol.html">
+        iSCSI傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_fc_fcoe_protocol.html">
+        FC/FCoE傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_export_policies.html">
+        匯出原則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_efficiency_policies.html">
+        效率原則
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_qos_policy_groups.html">
+        <div class="na-navbar-padding"> 建立QoS原則群組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_qos_policy_groups.html">
+        刪除QoS原則群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_qos_policy_groups.html">
+        編輯QoS原則群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_managing_workload_performance_by_using_storage_qos.html">
+        使用Storage QoS來管理工作負載效能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_storage_qos_works.html">
+        儲存QoS的運作方式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_maximum_throughput_limit_works.html">
+        處理量上限的運作方式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_rules_for_assigning_storage_objects_to_policy_groups.html">
+        指派儲存物件給原則群組的規則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_qos_policy_groups_window.html">
+        QoS原則群組視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_nis_services.html">
+        NIS服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_ldap_client_services.html">
+        LDAP用戶端服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_ldap_configuration_services.html">
+        LDAP組態服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html">
+        Kerberos領域服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_dns_ddns_services.html">
+        DNS/DDNS服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_svm_user_accounts.html">
+        使用者
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_roles_delete.html">
+        角色
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_unix.html">
+        UNIX
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Windows</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_local_user_group.html">
+        建立本機Windows群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_local_windows_group_properties.html">
+        編輯本機Windows群組內容
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_user_accounts_to_windows_local_group.html">
+        新增使用者帳戶至Windows本機群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_renaming_local_windows_group.html">
+        重新命名本機Windows群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_local_windows_group.html">
+        刪除本機Windows群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_local_windows_user_accounts.html">
+        建立本機Windows使用者帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_local_windows_user_properties.html">
+        編輯本機Windows使用者內容
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_assigning_group_memberships_to_user_account.html">
+        指派群組成員資格給使用者帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_renaming_local_windows_user.html">
+        重新命名本機Windows使用者
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_changing_password_for_windows_local_users.html">
+        重設Windows本機使用者的密碼
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_local_windows_user_account.html">
+        刪除本機Windows使用者帳戶
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_windows_window.html">
+        Windows視窗
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_name_mapping.html">
+        名稱對應
+      </a></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_managing_data_protection.html">
+        <div class="na-navbar-padding"> 管理資料保護</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_mirror_relationships.html">
+        <div class="na-navbar-padding"> 鏡射關係</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_mirror_relationship_from_destination_svm.html">
+        從目的地SVM建立鏡射關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_mirror_relationships.html">
+        刪除鏡射關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_mirror_relationships.html">
+        管理鏡射關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_breaking_snapmirror_relationships.html">
+        打破SnapMirror關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resynchronizing_mirror_relationships.html">
+        重新同步鏡射關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html">
+        反轉重新同步鏡射關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_aborting_mirror_relationships.html">
+        中止鏡射傳輸
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_mirror_relationship.html">
+        還原鏡射關係中的磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_how_snapmirror_relationships_work.html">
+        SnapMirror關係的運作方式
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_vault_relationships.html">
+        <div class="na-navbar-padding"> 保存關係</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_vault_relationship_from_destination_svm.html">
+        從目的地SVM建立資料保存關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_vault_relationships.html">
+        刪除資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_vault_relationships.html">
+        編輯資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_initializing_vault_relationships.html">
+        初始化資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_updating_vault_relationships.html">
+        更新資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_quiescing_vault_relationships.html">
+        靜止保存庫關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resuming_vault_relationships.html">
+        恢復保存關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_aborting_vault_relationships.html">
+        中止Snapshot複本傳輸
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_vault_relationship.html">
+        還原資料保險箱關係中的磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_what_snapvault_backup_is.html">
+        什麼是不支援備份SnapVault
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_mirror_vault_relationships.html">
+        <div class="na-navbar-padding"> 鏡射及保存關係</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_mirror_vault_relationship_from_destination_svm.html">
+        從目的地SVM建立鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_mirror_vault_relationships.html">
+        刪除鏡射及資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_mirror_vault_relationships.html">
+        編輯鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_initializing_mirror_vault_relationships.html">
+        初始化鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_updating_mirror_vault_relationships.html">
+        更新鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_quiescing_mirror_vault_relationships.html">
+        靜止鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resuming_mirror_vault_relationships.html">
+        恢復鏡射及資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_breaking_mirror_vault_relationships.html">
+        中斷鏡射與資料保險箱的關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_resynchronizing_mirror_vault_relationships.html">
+        重新同步鏡射與資料庫關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_mirror_vault_relationships.html">
+        反轉重新同步鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_aborting_mirror_vault_relationships.html">
+        中止鏡射與資料保險箱關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_mirror_vault_relationship.html">
+        還原鏡射與資料保險箱關係中的磁碟區
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_what_lag_time_is.html">
+        延遲時間是多少
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_types_data_protection_relationships.html">
+        資料保護關係類型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_understanding_workloads_supported_by_strictsync_sync_policies.html">
+        瞭解StrictSync和Sync原則所支援的工作負載
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_snapmirror_licensing.html">
+        SnapMirror授權
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/reference_protection_window.html">
+        保護所需時間
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html">
+        SVM關係
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_protection_policies.html">
+        保護原則
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_snapshot_policies.html">
+        Snapshot原則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/online-help-96-97/concept_schedules.html">
+        排程
+      </a></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/ontap/">
+        文件ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/reference_legal_notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-tw/ontap-sm-classic/">System&nbsp;Manager&nbsp;Classic</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">使用System Manager（系統管理程式ONTAP ）來管理FC/FCoE和NVMe介面卡-更新版本</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>您可以使用ONTAP 經典版的《經典版》（ONTAP 以《支援》9.7及更早版本提供）來管理FC/FCoE和NVMe介面卡。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="編輯fcfcoe和nvme介面卡速度設定">編輯FC/FCoE和NVMe介面卡速度設定</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以使用System Manager中的Edit FC/FCoE and NVMe Adapter Settings（編輯FC/FCoE和NVMe介面卡設定）對話方塊來修改FC/FCoE和NVMe介面卡速度設定。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>按一下「<strong>網路</strong>&gt;* FC/FCoE與NVMe介面卡*」。</p>
+</li>
+<li>
+<p>選取您要編輯的介面卡、然後按一下*編輯*。</p>
+</li>
+<li>
+<p>在「<strong>編輯FC/FCoE和NVMe介面卡設定</strong>」對話方塊中、將介面卡速度設定為*手動*或*自動*、然後按一下*儲存*。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>相關資訊</strong></p>
+</div>
+<div class="paragraph">
+<p><a href="reference_network_window.html">網路視窗</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/networking/index.html">"網路管理"</a></p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">cookie-settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
+              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/ontap-sm-classic/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/ontap-sm-classic/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/ontap-sm-classic/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+  </body></html>
