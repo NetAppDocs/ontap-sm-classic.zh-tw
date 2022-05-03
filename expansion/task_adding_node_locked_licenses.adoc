@@ -1,0 +1,39 @@
+---
+permalink: expansion/task_adding_node_locked_licenses.html 
+sidebar: sidebar 
+keywords: cluster, feature, node-locked, license, entitle, functionality, add, add node-locked licenses 
+summary: 如果叢集具有使用節點鎖定授權的功能、您必須確保新節點已安裝節點鎖定授權。 
+---
+= 新增節點鎖定的授權
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果叢集具備使用節點鎖定授權的功能（僅授權特定節點使用授權功能）、您必須確保新節點已安裝節點鎖定授權。您應該先新增授權、再將節點加入叢集。
+
+.步驟
+. 使用「系統授權新增」命令新增每個授權金鑰。
++
+[listing]
+----
+cluster1::> system license add -license-code AAAAAAAAAAAAAA
+----
+. 使用「系統授權show」命令檢視現有授權。
++
+[listing]
+----
+cluster1::> system license show
+
+Serial Number: 9-99-999999
+Owner: cluster1
+Package           Type    Description           Expiration
+----------------- ------- --------------------- --------------------
+Base              site    Cluster Base License  -
+NFS               license NFS License           -
+CIFS              license CIFS License          -
+...
+----
+. 檢閱輸出以確保顯示所有序號的節點鎖定授權、包括現有和新節點的序號。
+

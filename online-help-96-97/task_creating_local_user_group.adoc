@@ -1,0 +1,78 @@
+---
+permalink: online-help-96-97/task_creating_local_user_group.html 
+sidebar: sidebar 
+keywords: create, local, window, group, online, help, system, manager 
+summary: 您可以使用System Manager建立本機Windows群組、以便透過SMB連線來授權存取儲存虛擬機器（SVM）中所含的資料。您也可以指派權限、以定義群組成員在執行管理活動時擁有的使用者權限或功能。 
+---
+= 建立本機Windows群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用System Manager建立本機Windows群組、以便透過SMB連線來授權存取儲存虛擬機器（SVM）中所含的資料。您也可以指派權限、以定義群組成員在執行管理活動時擁有的使用者權限或功能。
+
+必須為SVM設定CIFS伺服器。
+
+.關於這項工作
+* 您可以使用或不使用本機網域名稱來指定群組名稱。
++
+本機網域是SVM的CIFS伺服器名稱。例如、如果SVM的CIFS伺服器名稱為「CIFS伺服器」、而您想要建立「工程設計」群組、您可以指定「工程設計」或「CIFS伺服器/工程」作為群組名稱。
+
++
+當使用本機網域做為群組名稱的一部分時、適用下列規則：
+
++
+** 您只能為套用群組的SVM指定本機網域名稱。
++
+例如、如果本機CIFS伺服器名稱為「CIFS伺服器」、則無法將「corp_server\group1'」指定為群組名稱。
+
+** 您無法在群組名稱中使用「'BUILTIN'」做為本機網域。
++
+例如、您無法建立名稱為「'BUILTIN\Group1'」的群組。
+
+** 您無法在群組名稱中使用Active Directory網域做為本機網域。
++
+例如、您無法建立名為「'AD_DOM_Group1'」的群組、其中「'AD_DOMA'」是Active Directory網域的名稱。
+
+
+
+* 您無法使用已存在的群組名稱。
+* 您指定的群組名稱必須符合下列需求：
++
+** 不得超過256個字元
+** 不得在一段期間內結束
+** 不得包含逗號
+** 不得包含下列任何可列印字元：「/\[]：|<>+=；？*@
+** 不得包含非可列印的字元、範圍1到31
+
+
+
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在* Groups *（組*）選項卡中，單擊* Create*（創建*）。
+. 在「*建立群組*」對話方塊中、指定群組的名稱和說明、以協助您識別新群組。
+. 指派一組權限給群組。
++
+您可以從預先定義的一組支援權限中選取權限。
+
+. 按一下「*新增*」將使用者新增至群組。
+. 在「*新增成員至群組*」對話方塊中、執行下列其中一項動作：
++
+** 指定要新增至特定本機群組的Active Directory使用者或Active Directory群組。
+** 從SVM中可用的本機使用者清單中選取使用者。
+** 按一下「*確定*」。
+
+
+. 按一下「 * 建立 * 」。
+
+
+本機Windows群組隨即建立、並列在「群組」視窗中。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]

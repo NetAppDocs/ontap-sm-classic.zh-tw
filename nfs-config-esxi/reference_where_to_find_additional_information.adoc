@@ -1,0 +1,54 @@
+---
+permalink: nfs-config-esxi/reference_where_to_find_additional_information.html 
+sidebar: sidebar 
+keywords: successful, test, nfs, client, access, configuration, san, protocol, complete, protect, root, volume, comprehensive, technical, report, goal, where to find additional information 
+summary: 成功測試NFS用戶端存取之後、您可以執行其他NFS組態或新增SAN存取。當傳輸協定存取完成時、您應該保護的根磁碟區。我們提供全方位的內容與技術報告、協助您達成這些目標。 
+---
+= 何處可找到其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+成功測試NFS用戶端存取之後、您可以執行其他NFS組態或新增SAN存取。當傳輸協定存取完成時、您應該保護的根磁碟區。我們提供全方位的內容與技術報告、協助您達成這些目標。
+
+
+
+== NFS組態
+
+您可以使用下列內容和技術報告進一步設定NFS存取：
+
+* https://docs.netapp.com/us-en/ontap/nfs-config/index.html["NFS組態"^]
++
+說明如何使用CLI命令來設定進階NFS用戶端對新磁碟區或qtree中所含檔案的存取。
+
+* https://docs.netapp.com/us-en/ontap/nfs-admin/index.html["NFS管理"^]
++
+說明如何使用NFS傳輸協定來管理檔案存取、包括驗證、授權和安全性。
+
+* http://www.netapp.com/us/media/tr-4597.pdf["NetApp技術報告4597：VMware vSphere with ONTAP VMware"^]
++
+說明使用ONTAP VMware vSphere伺服器虛擬化環境時應遵循的最佳實務做法。
+
+* https://www.netapp.com/pdf.html?item=/media/16328-tr-4668pdf.pdf["NetApp技術報告4668：名稱服務最佳實務做法"^]
++
+提供完整的最佳實務做法、限制、建議及考量清單、以供設定LDAP、NIS、DNS及本機使用者與群組檔案進行驗證。
+
+* http://www.netapp.com/us/media/tr-4067.pdf["NetApp技術報告4067：NFS最佳實務與實作"^]
++
+提供ONTAP 關於功能的概述、重點放在NFSv4上。
+
+
+
+
+
+== 根Volume保護
+
+在SVM上設定傳輸協定之後、您應確保其根Volume受到保護：
+
+* https://docs.netapp.com/us-en/ontap/data-protection/index.html["資料保護"^]
++
+說明如何建立負載共用鏡像來保護根磁碟區、這是NetApp啟用NAS的SVM的最佳實務做法。同時也說明如何從負載共用鏡像中提升SVM根磁碟區、以快速從磁碟區故障或損失中恢復。
+
+

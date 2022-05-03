@@ -1,0 +1,46 @@
+---
+permalink: iscsi-config-windows/reference_where_to_find_additional_information.html 
+sidebar: sidebar 
+keywords: document, iscsi, configuration, where to find additional information 
+summary: 還有其他文件可協助您深入瞭解iSCSI組態。 
+---
+= 何處可找到其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+還有其他文件可協助您深入瞭解iSCSI組態。
+
+您可以取得下列所有文件：
+
+* https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN組態"^]
++
+說明支援的FC、iSCSI和FCoE拓撲、可將主機電腦連接至叢集中的儲存控制器。
+
+* https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]
++
+說明如何針對叢集式SAN環境設定及管理iSCSI、FCoE及FC傳輸協定、包括LUN組態、igroup及目標。
+
+
+
+
+
+== Microsoft文件
+
+Microsoft可直接取得Microsoft iSCSI軟體啟動器的相關文件。
+
+* _Microsoft iSCSI軟體啟動器版本2.X使用者指南_
++
+說明適用於Windows Server 2008的Microsoft iSCSI軟體啟動器。iSCSI軟體啟動器下載檔案隨附此功能。
+
+* _Microsoft iSCSI啟動器總覽_
++
+Windows Server 2012 iSCSI啟動器的線上說明（可從啟動器取得）。說明軟體啟動器、並包含Microsoft網站的連結、以取得進一步資訊。
+
+
+
+*相關資訊*
+
+http://www.microsoft.com["Microsoft"^]

@@ -1,0 +1,16 @@
+---
+permalink: volume-backup-snapvault/concept_snapvault_configuration_workflow.html 
+sidebar: sidebar 
+keywords: configuring, configure, snapvault, backup, relationship, verify, cluster, peer, relationship, snapvault, source, destination, volume, monitor, snapvault backup configuration workflow 
+summary: 設定SnapVault 支援功能的關係包括驗證叢集對等關係、建立SnapVault 來源與目的地Volume之間的支援關係、以及監控SnapVault 彼此之間的支援關係。 
+---
+= 支援備份組態工作流程SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定SnapVault 支援功能的關係包括驗證叢集對等關係、建立SnapVault 來源與目的地Volume之間的支援關係、以及監控SnapVault 彼此之間的支援關係。
+
+image::../media/snapvault_workflow.gif[此圖為SnapVault 一份流程圖、說明各項功能的流程圖。工作流程中的步驟與主題相符。]

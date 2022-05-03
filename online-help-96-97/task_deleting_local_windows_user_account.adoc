@@ -1,0 +1,33 @@
+---
+permalink: online-help-96-97/task_deleting_local_windows_user_account.html 
+sidebar: sidebar 
+keywords: delte, local, windows, user, account, system, manager, online, help, cifs, svm 
+summary: 如果不再需要使用者帳戶來進行SVM CIFS伺服器的本機CIFS驗證、或是決定SVM所含資料的存取權限、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows使用者帳戶。 
+---
+= 使用System Manager刪除本機Windows使用者帳戶ONTAP -更新版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本） 從儲存虛擬機器（SVM）刪除本機Windows使用者帳戶（如果不再需要該使用者帳戶來進行SVM CIFS伺服器的本機CIFS驗證、或是決定SVM所含資料的存取權限）。
+
+.關於這項工作
+* 無法刪除標準使用者、例如Administrator。
+* 從本機群組資料庫、本機使用者成員資格和使用者權限資料庫中移除對已刪除本機使用者的參照。ONTAP
+
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在「*使用者*」索引標籤中、選取您要刪除的使用者帳戶、然後按一下「*刪除*」。
+. 按一下*刪除*。
+
+
+本機使用者帳戶與其群組成員資格項目一起刪除。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]

@@ -1,0 +1,44 @@
+---
+permalink: fc-config-esxi/reference_where_to_find_additional_information.html 
+sidebar: sidebar 
+keywords: document, fc, configuration, additional, information, vmware, documentation, where to find additional information 
+summary: 還有其他文件可協助您深入瞭解FC組態。 
+---
+= 何處可找到其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+還有其他文件可協助您深入瞭解FC組態。
+
+您可以取得下列所有文件：
+
+* https://docs.netapp.com/us-en/ontap/san-config/index.html["支援SAN組態ONTAP"]
++
+說明支援的FC、iSCSI和FCoE拓撲、可將主機電腦連接至叢集中的儲存控制器。
+
+* https://docs.netapp.com/us-en/ontap/san-admin/index.html["支援SAN管理ONTAP"]
++
+說明如何針對叢集式SAN環境設定及管理iSCSI、FCoE及FC傳輸協定、包括LUN組態、igroup及目標。
+
+
+
+
+
+== VMware文件
+
+有關ESXi伺服器iSCSI的文件可直接從VMware取得。
+
+http://www.vmware.com["VMware"]
+
+* _vSphere儲存設備_
++
+本VMware內容說明ESXi 5.x的FC和iSCSI組態
+
+* _使用連接埠繫結的軟體iSCSI多路徑組態_
++
+技術白皮書說明ESXi伺服器的MPIO設定。
+
+

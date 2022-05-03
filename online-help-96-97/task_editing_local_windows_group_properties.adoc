@@ -1,0 +1,46 @@
+---
+permalink: online-help-96-97/task_editing_local_windows_group_properties.html 
+sidebar: sidebar 
+keywords: online, help, edit, local, windows, group, properties, active, directory 
+summary: 您可以使用System Manager新增及移除本機使用者、Active Directory使用者或Active Directory群組、以管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。 
+---
+= 使用System Manager（ONTAP 系統管理程式）編輯本機Windows群組內容-更新版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用ONTAP 經典版的《更新系統管理程式》（ONTAP 適用於更新版本的更新版本）、新增及移除本機使用者、Active Directory使用者或Active Directory群組、藉此管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。
+
+在新增成員至本機Windows群組或從本機Windows群組移除成員時、請務必謹記下列事項：
+
+* 您無法將使用者新增至或移除特殊_Everyon__群組中的使用者。
+* 您無法將本機Windows群組新增至其他本機Windows群組。
+
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在*群組*索引標籤中、按一下*編輯*。
+. 指定群組的名稱和說明、以識別新群組。
+. 指派一組權限給群組。
++
+您可以從預先定義的一組支援權限中選取權限。
+
+. 按一下「*新增*」將使用者新增至群組。
+. 在* Add Memper*（添加成員*）窗口中，執行以下操作之一：
++
+** 指定要新增至特定本機群組的Active Directory使用者或Active Directory群組。
+** 從儲存虛擬機器（SVM）的可用本機使用者清單中選取使用者。
+
+
+. 按一下 * 編輯 * 。
+
+
+本機Windows群組設定會被修改、變更會顯示在*群組*索引標籤中。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]

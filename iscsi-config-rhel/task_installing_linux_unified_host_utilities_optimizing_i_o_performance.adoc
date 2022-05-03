@@ -1,0 +1,29 @@
+---
+permalink: iscsi-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html 
+sidebar: sidebar 
+keywords: linux, unified, host, utilities, sanlun, utility, netapp, lun, report, tool, display, information, storage, cluster, node, enable, netapp, install linux unified host utilities and optimizing i/o performance 
+summary: Linux Unified Host Utilities軟體包含sanlun公用程式、這是一種NetApp LUN報告工具、可用來顯示儲存叢集節點的相關資訊。 
+---
+= 安裝Linux Unified Host Utilities並最佳化I/O效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux Unified Host Utilities軟體包含「sanlun」公用程式、這是一種NetApp LUN報告工具、可用來顯示儲存叢集節點的相關資訊。您也必須在Linux主機上啟用正確的伺服器設定檔、以最佳化NetApp儲存效能。
+
+您必須使用互通性對照表來識別您組態所支援的Linux Unified Host Utilities版本。您也必須擁有「調校」套件、這是Linux作業系統發行版本的一部分、其中包含「調校過的-adm'命令、可用來在主機上設定伺服器設定檔。
+
+.步驟
+. 從NetApp支援網站下載支援的Linux Unified Host Utilities版本。
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp下載：軟體"]
+
+. 依照安裝文件中的指示安裝Linux Unified Host Utilities軟體。
+. 如果未安裝「t優 化」套件、請輸入下列命令：「yum install t未經 調整」
+. 對於實體主機、請確定您已設定「企業級儲存設備」設定檔：「調整過的-adm profile企業級儲存設備」
+. 對於虛擬主機、請確定您已設定「虛擬客體」設定檔：「協調的-adm設定檔虛擬客體」
+
+
+*相關資訊*https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html["安裝Linux Unified Host Utilities 7.1"]

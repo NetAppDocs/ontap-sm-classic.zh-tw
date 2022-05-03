@@ -1,0 +1,38 @@
+---
+permalink: online-help-96-97/index.html 
+sidebar: sidebar 
+keywords: system, manager, online, help, management, interface, understand, cluster 
+summary: System Manager是一種圖形化管理介面、可讓您管理儲存系統和儲存物件（例如磁碟、磁碟區和集合體）、並從網頁瀏覽器執行與儲存系統相關的一般管理工作。身為叢集管理員、您可以使用System Manager來管理整個叢集及其資源。 
+---
+= 使用OnCommand NetApp®System Manager進行叢集管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager是一種圖形化管理介面、可讓您管理儲存系統和儲存物件（例如磁碟、磁碟區和集合體）、並從網頁瀏覽器執行與儲存系統相關的一般管理工作。身為叢集管理員、您可以使用System Manager來管理整個叢集及其資源。
+
+[NOTE]
+====
+System Manager不再以可執行檔的形式提供、現在ONTAP 已隨附於以Web服務形式提供的功能、預設為啟用、並可透過瀏覽器存取。
+
+====
+[NOTE]
+====
+System Manager的名稱已與先前版本不同。9.5版及更早版本的名稱OnCommand 為「S25系統管理程式」。9.6版及更新版本現在稱為ONTAP 「系統管理程式」。
+
+====
+System Manager可讓您執行許多常見工作、例如：
+
+* 建立叢集、設定網路、以及設定叢集的支援詳細資料。
+* 設定及管理磁碟、集合體、磁碟區、qtree及配額等儲存物件。
+* 設定CIFS和NFS等傳輸協定、以及資源配置檔案共用。
+* 設定FC、FCoE、NVMe及iSCSI等傳輸協定以進行區塊存取。
+* 建立及設定網路元件、例如子網路、廣播網域、資料與管理介面、以及介面群組。
+* 設定及管理鏡射與保存關係。
+* 執行叢集管理、儲存節點管理及儲存虛擬機器（SVM）管理作業。
+* 建立及設定SVM、管理與SVM相關的儲存物件、以及管理SVM服務。
+* 監控及管理叢集中的HA組態。
+* 將服務處理器設定為遠端登入、管理、監控及管理節點、無論節點的狀態為何。
+

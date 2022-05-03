@@ -1,0 +1,49 @@
+---
+permalink: online-help-96-97/task_adding_user_accounts_to_windows_local_group.html 
+sidebar: sidebar 
+keywords: add, user, accounts, windows, local, group, active, directory, online, help 
+summary: 您可以使用System Manager將本機使用者、Active Directory使用者或Active Directory群組（如果您想要使用者擁有與該群組相關的權限）新增至Windows本機群組。 
+---
+= 使用System Manager ONTAP -更新版本、將使用者帳戶新增至Windows本機群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用ONTAP 經典版的《經典版（ONTAP 更新版本：2）系統管理程式》（更新版本：2）、將本機使用者、Active Directory使用者或Active Directory群組（如果您希望使用者擁有與該群組相關的權限）新增至Windows本機群組。
+
+.開始之前
+* 群組必須存在、才能將使用者新增至群組。
+* 使用者必須存在、才能將使用者新增至群組。
+
+
+將成員新增至本機Windows群組時、必須謹記下列事項：
+
+* 您無法將使用者新增至特殊的_Everyon__群組。
+* 您無法將本機Windows群組新增至其他本機Windows群組。
+* 您無法使用System Manager新增使用者帳戶、其中包含使用者名稱中的空間。
++
+您可以重新命名使用者帳戶、或使用命令列介面（CLI）新增使用者帳戶。
+
+
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在*群組*索引標籤中、選取您要新增使用者的群組、然後按一下*新增成員*。
+. 在* Add Memper*（添加成員*）窗口中，執行以下操作之一：
++
+** 指定要新增至特定本機群組的Active Directory使用者或Active Directory群組。
+** 從儲存虛擬機器（SVM）的可用本機使用者清單中選取使用者。
+
+
+. 按一下「*確定*」。
+
+
+您新增的使用者會列在*群組*索引標籤的使用者資料表中。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]

@@ -1,0 +1,14 @@
+---
+permalink: online-help-96-97/concept_setting_up_cluster.html 
+sidebar: sidebar 
+keywords: online, help, cluster, configuration, information, ha, pair, node, management, license, time 
+summary: 設定叢集包括收集組態資訊、建立叢集管理和節點管理介面、新增授權、設定叢集時間、以及監控HA配對。 
+---
+= 設定叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定叢集包括收集組態資訊、建立叢集管理和節點管理介面、新增授權、設定叢集時間、以及監控HA配對。

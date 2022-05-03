@@ -1,0 +1,60 @@
+---
+permalink: online-help-96-97/reference_icons_used_application_interface.html 
+sidebar: sidebar 
+keywords: icon, application, interface, dashboard, window, online, help, icon 
+summary: 您可以檢視介面中的圖示、以快速取得有關系統和作業的資訊。 
+---
+= 應用程式介面中使用的圖示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視介面中的圖示、以快速取得有關系統和作業的資訊。
+
+
+
+== 儀表板視窗圖示
+
+檢視儲存系統的儀表板時、可能會看到下列圖示：
+
+|===
+| 圖示 | 名稱 | 說明 
+
+
+ a| 
+image:../media/statuswarning.gif["System Manager儀表板中的警告影像"]
+ a| 
+警告
+ a| 
+雖然有一些小問題、但沒有任何問題需要立即注意。
+
+
+
+ a| 
+image:../media/statuserror.gif["System Manager儀表板中的錯誤影像"]
+ a| 
+錯誤
+ a| 
+最終可能導致停機、因此需要注意的問題。
+
+
+
+ a| 
+image:../media/statuscritical.gif["System Manager儀表板中的關鍵影像"]
+ a| 
+關鍵
+ a| 
+儲存系統無法提供資料、或無法聯絡。需要立即注意。
+
+
+
+ a| 
+image:../media/arrowright.gif["System Manager儀表板中的導覽影像"]
+ a| 
+連結箭頭
+ a| 
+如果儀表板窗格中的項目旁顯示此項目、按一下該項目即可連結至另一個頁面、您可以從中取得該項目的詳細資訊、或是變更該項目。
+
+|===

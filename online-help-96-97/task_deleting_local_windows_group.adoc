@@ -1,0 +1,38 @@
+---
+permalink: online-help-96-97/task_deleting_local_windows_group.html 
+sidebar: sidebar 
+keywords: delete, local, windows, group, systems, manager, online, help, svm, rights 
+summary: 如果不再需要群組來判斷SVM上所含資料的存取權限、或將SVM使用者權限（權限）指派給群組成員、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows群組。 
+---
+= 使用System Manager（ONTAP 系統管理程式）刪除本機Windows群組-示例9.7及更早版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本） 從儲存虛擬機器（SVM）刪除本機Windows群組（如果不再需要群組來判斷SVM上所含資料的存取權限、或將SVM使用者權限（權限）指派給群組成員）。
+
+.關於這項工作
+* 移除本機群組會移除群組的成員資格記錄。
+* 檔案系統不會變更。
++
+不會調整參照此群組之檔案和目錄上的Windows安全性描述元。
+
+* 無法刪除特殊的「所有人」群組。
+* 無法刪除內建群組、例如BUILTIN\Administrator和BUILTIN\Users。
+
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在*群組*索引標籤中、選取您要刪除的群組、然後按一下*刪除*。
+. 按一下*刪除*。
+
+
+本機群組會連同其成員資格記錄一起刪除。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]

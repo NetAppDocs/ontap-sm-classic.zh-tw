@@ -1,0 +1,78 @@
+---
+permalink: online-help-96-97/task_creating_mirror_relationship_from_destination_svm.html 
+sidebar: sidebar 
+keywords: create, mirror, relationship, destination, svm, online, help, system, manager 
+summary: 您可以使用ONTAP 物件系統管理程式、從目的地儲存虛擬機器（SVM）建立鏡射關係、並指派原則和排程給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。 
+---
+= 使用System Manager ONTAP - NetApp 9.7及更早版本、從目的地SVM建立鏡射關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於19、9.7及更早版本）、從目的地儲存虛擬機器（SVM）建立鏡射關係、並指派原則和排程給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。
+
+.開始之前
+* 來源叢集必須執行ONTAP 不含更新版本的版本。
+* SnapMirror授權必須在來源叢集和目的地叢集上啟用。
++
+[NOTE]
+====
+對於某些平台而言、如果目的地叢集已啟用SnapMirror授權和資料保護最佳化（DPO）授權、則來源叢集並不一定要啟用SnapMirror授權。
+
+====
+* 鏡射磁碟區時、如果您選擇SnapLock 以來源為來源的供應區、則必須SnapLock 在目的地叢集上安裝SnapMirror授權和支援。
+* 來源叢集和目的地叢集必須處於健全的對等關係中。
+* 目的地SVM必須有可用空間。
+* 必須存在讀寫（RW）類型的來源Volume。
+* 此功能必須在線上、FlexVol 而且必須是讀寫類型。
+* 此類資訊只能是同一類型的。SnapLock
+* 如果您要從執行ONTAP 不支援支援的9.2或更早版本的叢集連線到已啟用安全聲明標記語言（SAML）驗證的遠端叢集、則必須在遠端叢集上啟用密碼型驗證。
+
+
+.關於這項工作
+* System Manager不支援串聯關係。
++
+例如、關係中的目的地磁碟區不能是另一個關係中的來源磁碟區。
+
+* 您無法在同步來源SVM與同步目的地SVM之間建立鏡射關係MetroCluster 、但須採用非同步組態。
+* 您可以在MetroCluster 採用支援功能的組態中、在同步來源SVM之間建立鏡射關係。
+* 您可以從同步來源SVM上的磁碟區建立鏡射關係、並建立到資料服務SVM上的磁碟區。
+* 您可以從資料服務SVM上的磁碟區建立鏡射關係、並建立到同步來源SVM上的資料保護（DP）磁碟區。
+* 您只能在SnapLock 同一類型的Sfingvolume之間建立鏡射關係。
++
+例如、如果來源Volume是SnapLock 一個《不景的企業級」Volume、則目的地Volume也必須是SnapLock 《不景的企業級」Volume。您必須確保目的地SVM有相同SnapLock 類型的集合體可用。
+
+* 為鏡射關係所建立的目的地Volume並非資源隨需配置。
+* 一個選項最多可保護25個磁碟區。
+* 如果目的地叢集執行的版本比來源叢集執行的版本更新、則SnapLock 無法在各個版本之間建立鏡射關係ONTAP 。ONTAP
+
+
+.步驟
+. 按一下「*保護*>*磁碟區關係*」。
+. 在* Volume Relationationation*視窗中、按一下*「Creation*（建立*）」。
+. 在「*瀏覽SVM*」對話方塊中、選取目的地Volume的SVM。
+. 在「*建立保護關係*」對話方塊中、從「*關係類型*」下拉式清單中選取「*鏡射*」。
+. 指定叢集、SVM和來源Volume。
++
+如果指定的叢集執行ONTAP 的是版本早於ONTAP 版本的更新版本、則只會列出已執行的SVM。如果指定的叢集執行ONTAP 的是Sfe9.3或更新版本、則會列出已執行的SVM和允許的SVM。
+
+. 針對「流通量」、請指定一個磁碟區名稱字尾。FlexVol
++
+磁碟區名稱尾碼會附加至來源磁碟區名稱、以產生目的地磁碟區名稱。
+
+. 按一下*瀏覽*、然後變更鏡射原則。
+. 從現有排程清單中選取關係的排程。
+. 選擇*初始化關係*以初始化鏡射關係。
+. 啟用啟用FabricPool的Aggregate、然後選取適當的分層原則。
+. 按一下「 * 建立 * 」。
+
+
+如果您選擇建立目的地Volume、就會建立類型為_DP_的目的地Volume、並將語言屬性設為符合來源Volume的語言屬性。
+
+來源Volume與目的地Volume之間會建立鏡射關係。如果您選擇初始化關係、基礎Snapshot複本會傳輸到目的地Volume。
+
+*相關資訊*
+
+xref:reference_protection_window.adoc[保護所需時間]

@@ -1,0 +1,29 @@
+---
+permalink: online-help-96-97/task_editing_local_windows_user_properties.html 
+sidebar: sidebar 
+keywords: edit, local, window, user, properties, system, manager, online, help 
+summary: 如果您想變更現有使用者的完整名稱或說明、或是想要啟用或停用使用者帳戶、您可以使用系統管理員來修改本機Windows使用者帳戶。您也可以修改指派給使用者帳戶的群組成員資格。 
+---
+= 使用System Manager（ONTAP 系統管理程式）編輯本機Windows使用者內容-更新版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想要變更現有使用者的完整名稱或說明、或是想啟用或停用使用者帳戶、您可以使用ONTAP 經典版的功能（ONTAP 適用於支援地區9.7及更早版本）來修改本機Windows使用者帳戶。您也可以修改指派給使用者帳戶的群組成員資格。
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在*使用者*索引標籤中、按一下*編輯*。
+. 在*修改使用者*視窗中、進行必要的變更。
+. 按一下*修改*。
+
+
+本機Windows使用者帳戶的屬性會被修改、並顯示在「*使用者*」索引標籤中。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]

@@ -1,0 +1,16 @@
+---
+permalink: volume-restore-snapvault/concept_volume_restore_workflow.html 
+sidebar: sidebar 
+keywords: source, volume, data, corrupt, restore, snapvault, backup, destination, restoring, exist, operation, volume restore workflow 
+summary: 當來源Volume無法使用或資料毀損時、您可以從SnapVault 還原備份執行還原。從SnapVault 還原磁碟區的功能包括選擇SnapVault 還原目的地磁碟區、將磁碟區還原至新的磁碟區或現有的磁碟區、以及驗證還原作業。 
+---
+= Volume還原工作流程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當來源Volume無法使用或資料毀損時、您可以從SnapVault 還原備份執行還原。從SnapVault 還原磁碟區的功能包括選擇SnapVault 還原目的地磁碟區、將磁碟區還原至新的磁碟區或現有的磁碟區、以及驗證還原作業。
+
+image::../media/volume_restore_workflow.gif[此圖為SnapVault 一份流程圖、說明功能不全的流程圖。工作流程中的步驟與主題相符。">]

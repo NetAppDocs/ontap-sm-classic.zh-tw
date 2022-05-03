@@ -1,0 +1,78 @@
+---
+permalink: fc-config-rhel/task_configuring_dm_multipath.html 
+sidebar: sidebar 
+keywords: dm-multipath, manage, multiple, path, linux, host, storage, cluster, configuring, configure, lun, linux, scsi, device, access, cluster, path, component, fail, configure dm-multipath 
+summary: DM-Multipath可管理Linux主機與儲存叢集之間的多個路徑。在LUN上設定DM-Multikpath（在Linux主機上顯示為SCSI裝置）、可讓Linux主機在路徑或元件故障時、存取儲存叢集上的LUN。 
+---
+= 設定DM-Multipath
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DM-Multipath可管理Linux主機與儲存叢集之間的多個路徑。在LUN上設定DM-Multikpath（在Linux主機上顯示為SCSI裝置）、可讓Linux主機在路徑或元件故障時、存取儲存叢集上的LUN。
+
+您必須從互通性對照表工具中找出所需的DM-Multikpath版本。
+
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
+
+[NOTE]
+====
+建議的方法是在每個光纖或乙太網路中、為每個節點設定兩條路徑。如此一來、即使節點切換至其合作夥伴、路徑也會失敗。不建議在Windows作業系統中使用實體連接埠的連結集合（LAG）。
+
+====
+.步驟
+. 編輯「/etc/multipath.conf」檔案、如下所示：
++
+.. 確定是否有非NetApp SCSI設備要排除（黑名單）。
++
+這些設備在您輸入「左LUN show」命令時不會顯示。
+
++
+*** 如果要排除非NetApp SCSI裝置、請在「multiPath.conf」檔案的黑名單區段中輸入裝置的全球識別碼（WWID）。
+
+
++
+若要顯示非NetApp SCSI裝置的WWID、請在您要排除的裝置上輸入下列命令、其中「csi_device_name」是您指定的裝置：「/lib/udev/scsi_id -gud /dev/scsi_device_names」
+
++
+例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：「/lib/udev/scsi_id -gud dev/sda'
+
++
+這會顯示裝置的WWID、您可以在「多路徑.conf」檔案中複製及貼上該裝置。
+
++
+在顯示「multiPath.conf」檔案黑名單區段的下列範例中、不包括使用WWID「3600508e000000000753250f933cc4606」的非NetApp SCSI裝置：
+
++
+[listing]
+----
+blacklist {
+            **wwid       3600508e000000000753250f933cc4606**
+            devnode    "^(ram|raw|loop|fd|md|dm-|sr|scd|st)[0-9]*"
+            devnode    "^hd[a-z]"
+            devnode     "^cciss.*"
+}
+----
++
+*** 如果沒有要排除的裝置、請從「multiPath.conf」檔案中移除_WWID_行。
+
+
+.. 在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multippath設定：「rdaLoaddriver=SCSI_DH_alua」
+
+
+. 啟動DM-Multikpath精靈：`/etc/init.d/multipathd start'
+. 將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：「chkconfig multpathd on」
+. 重新啟動Linux主機。
+. 在運行"cat /proc/cmd line"時，請驗證輸出中是否顯示"rdaloaddriver"設置。
++
+將「rdaloaddrivone」設定顯示為傳遞給核心的數個開機選項之一：
+
++
+[listing]
+----
+# cat /proc/cmdline
+ro root=/dev/mapper/vg_ibmx3650210104-lv_root rd_NO_LUKS LANG=en_US.UTF-8 rd_NO_MD rd_LVM_LV=vg_ibmx3650210104/lv_root SYSFONT=latarcyrheb-sun16 rd_LVM_LV=vg_ibmx3650210104/lv_swap crashkernel=129M@0M  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet **rdloaddriver=scsi_dh_alua**
+----
+

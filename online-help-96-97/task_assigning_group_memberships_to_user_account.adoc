@@ -1,0 +1,36 @@
+---
+permalink: online-help-96-97/task_assigning_group_memberships_to_user_account.html 
+sidebar: sidebar 
+keywords: online, help, assign, group, membership, user, account, online, help, system, manager 
+summary: 如果您希望使用者擁有與特定群組相關的權限、可以使用系統管理員將群組成員資格指派給使用者帳戶。 
+---
+= 使用System Manager ONTAP -更新版本、將群組成員資格指派給使用者帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想讓使用者擁有與特定群組相關的權限、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）將群組成員資格指派給使用者帳戶。
+
+.開始之前
+* 群組必須存在、才能將使用者新增至群組。
+* 使用者必須存在、才能將使用者新增至群組。
+
+
+您無法將使用者新增至特殊的_Everyon__群組。
+
+.步驟
+. 按一下「*儲存設備*>* SVMS*」。
+. 選取SVM、然後按一下* SVM設定*。
+. 在*主機使用者與群組*窗格中、按一下* Windows *。
+. 在「*使用者*」索引標籤中、選取您要指派群組成員資格的使用者帳戶、然後按一下「*新增至群組*」。
+. 在* Add Groups（添加組）*窗口中，選擇要向其中添加用戶帳戶的組。
+. 按一下「*確定*」。
+
+
+使用者帳戶會指派成員資格給所有選取的群組、而且使用者具有與這些群組相關聯的權限。
+
+*相關資訊*
+
+xref:reference_windows_window.adoc[Windows視窗]
