@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: snapshot, manager, system, create, manage, policy, storage, online, help 
 summary: 您可以使用System Manager在儲存系統中建立及管理Snapshot原則。 
 ---
-= Snapshot原則
+= 使用System Manager管理Snapshot原則- ONTAP 不含更新版本的更新版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用System Manager在儲存系統中建立及管理Snapshot原則。
+您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存系統中的Snapshot原則。
 
 
 

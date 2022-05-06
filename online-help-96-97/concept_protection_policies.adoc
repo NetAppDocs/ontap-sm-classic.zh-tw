@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: online, help, protection, policy, system, manager, create, edit, delete 
 summary: 您可以使用System Manager來建立、編輯及刪除保護原則。 
 ---
-= 保護原則
+= 使用System Manager管理保護政策- ONTAP 更新版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用System Manager來建立、編輯及刪除保護原則。
+您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及刪除保護原則。
 
 
 

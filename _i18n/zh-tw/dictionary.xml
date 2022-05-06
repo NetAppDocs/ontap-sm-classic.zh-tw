@@ -9443,4 +9443,10 @@
   <block id="bc17baa824729465e76388d0891faa91" category="sidebar">瞭解StrictSync和Sync原則所支援的工作負載</block>
   <block id="8b8009cf30f8359309c965b346664a48" category="sidebar">SnapMirror授權</block>
   <block id="8e3c3ed2b2343d5ec6f650bb4929ecaa" category="sidebar">SVM關係</block>
+  <block id="b7ec724705dfb51c3e3d8c7338ee51cc" category="doc">使用System Manager管理保護政策- ONTAP 更新版本</block>
+  <block id="121e126ccb3ed9f1bd655bd54fdcda6f" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及刪除保護原則。</block>
+  <block id="811e46b365614dad2afccbb5744217f7" category="doc">使用System Manager管理Snapshot原則- ONTAP 不含更新版本的更新版本</block>
+  <block id="92526cba00250769d0d0d584b6d93ce4" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存系統中的Snapshot原則。</block>
+  <block id="f3400c7c7f134d2f8f2f30b279b5c285" category="doc">使用System Manager（ONTAP 更新版本）管理排程-更新版本</block>
+  <block id="c934845b8edbac9b1640d3a858f83f4a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存系統中的排程。</block>
 </blocks>
