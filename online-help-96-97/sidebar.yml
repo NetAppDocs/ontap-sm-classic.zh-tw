@@ -144,8 +144,6 @@ entries:
     url: "/online-help-96-97/task_updating_single_node_clusters.html"
   - title: 在不中斷營運的情況下更新叢集
     url: "/online-help-96-97/task_updating_cluster_nondisruptively.html"
-  - title: 在不中斷營運的情況下更新叢集
-    url: "/online-help-96-97/concept_how_you_update_cluster_nondisruptively.html"
   - title: 叢集更新視窗
     url: "/online-help-96-97/reference_cluster_update_window.html"
 - title: 叢集的日期與時間設定
@@ -200,8 +198,6 @@ entries:
     url: "/online-help-96-97/task_viewing_aggregate_information.html"
   - title: 如果您使用StorageGRID 的是功能區、請安裝CA憑證
     url: "/online-help-96-97/task_installing_ca_certificate_if_you_use_storagegrid_webscale.html"
-  - title: 如何移動FlexVol 功能
-    url: "/online-help-96-97/concept_how_moving_volume_works.html"
   - title: 如何使用有效ONTAP 的等磁碟類型來混合HDD
     url: "/online-help-96-97/reference_effective_data_ontap_disk_types.html"
   - title: 哪些是相容的備用磁碟
@@ -210,10 +206,6 @@ entries:
     url: "/online-help-96-97/concept_how_system_manager_calculates_hot_spares.html"
   - title: 顯示磁碟類型和磁碟RPM的規則
     url: "/online-help-96-97/concept_rules_for_mixing_disk_types_disk_rpms.html"
-  - title: 鏡射Aggregate的運作方式
-    url: "/online-help-96-97/concept_how_mirrored_aggregates_work.html"
-  - title: 什麼是呢FabricPool
-    url: "/online-help-96-97/concept_what_fabricpool_is.html"
   - title: 建立集合體的儲存建議
     url: "/online-help-96-97/concept_storage_recommendations_for_creating_aggregates.html"
   - title: 儲存層視窗
@@ -226,21 +218,14 @@ entries:
   url: "/online-help-96-97/concept_storage_pools.html"
 - title: 將磁碟重新指派給節點
   url: "/online-help-96-97/task_reassigning_disks_to_nodes.html"
+- title: 磁碟
   entries:
   - title: 檢視磁碟資訊
     url: "/online-help-96-97/task_viewing_disk_information.html"
   - title: 如何報告磁碟類型ONTAP
     url: "/online-help-96-97/concept_how_ontap_reports_drive_types.html"
-  - title: 磁碟所需的最小熱備援磁碟數
-    url: "/online-help-96-97/concept_minimum_number_hot_spares_you_should_have.html"
-  - title: 多磁碟載體磁碟的備用需求
-    url: "/online-help-96-97/concept_spare_requirements_for_multi_disk_carrier_disk_shelves.html"
-  - title: 多磁碟載體儲存櫃的機櫃組態需求
-    url: "/online-help-96-97/concept_shelf_configuration_requirements_for_multi_disk_carrier_disk_shelves.html"
   - title: 判斷何時可以安全移除多磁碟機載體
     url: "/online-help-96-97/concept_how_to_determine_when_safe_to_remove_multi_disk_carrier.html"
-  - title: 調整RAID群組規模的考量
-    url: "/online-help-96-97/concept_considerations_for_sizing_raid_groups.html"
   - title: 磁碟視窗
     url: "/online-help-96-97/reference_disks_window.html"
 - title: 陣列LUN
@@ -259,8 +244,6 @@ entries:
   url: "/online-help-96-97/concept_jobs.html"
 - title: Flash Pool統計資料
   url: "/online-help-96-97/concept_flash_pool_statistics.html"
-- title: 管理邏輯儲存設備
-  url: "/online-help-96-97/concept_managing_logical_storage.html"
 - title: SVM儀表板視窗
   url: "/online-help-96-97/reference_svm_dashboard_window.html"
   entries:
@@ -278,8 +261,6 @@ entries:
     url: "/online-help-96-97/reference_managing_svms.html"
   - title: 追蹤檔案存取、以診斷SVM上的存取錯誤
     url: "/online-help-96-97/task_tracing_file_access_to_diagnose_access_errors_on_svms.html"
-  - title: SVM類型
-    url: "/online-help-96-97/concept_types_svms.html"
   - title: 為何要使用SVM
     url: "/online-help-96-97/concept_why_you_use_svms.html"
   - title: 如何使用名稱服務交換器組態ONTAP
@@ -333,9 +314,6 @@ entries:
     url: "/online-help-96-97/task_running_deduplication_operations.html"
   - title: 在FlexVol Aggregate或節點之間搬移功能區
     url: "/online-help-96-97/task_moving_flexvol_volumes_between_aggregates_or_nodes.html"
-    entries:
-    - title: 手動觸發切換以進行Volume移動
-      url: "/online-help-96-97/task_manually_triggering_cutover_phase.html"
   - title: 將磁碟區指派給儲存QoS
     url: "/online-help-96-97/task_assigning_volumes_to_storage_qos.html"
   - title: 從來源SVM建立鏡射關係
@@ -376,28 +354,12 @@ entries:
     url: "/online-help-96-97/task_changing_status_flexcache_volume.html"
   - title: 刪除FlexCache 功能區
     url: "/online-help-96-97/task_deleting_flexcache_volumes.html"
-  - title: 什麼是NetApp Volume Encryption
-    url: "/online-help-96-97/concept_what_netapp_volume_encryption_is.html"
-  - title: Snapshot組態
-    url: "/online-help-96-97/concept_snapshot_configuration.html"
   - title: Volume如何保證FlexVol 功能適用於不穩定的Volume
     url: "/online-help-96-97/concept_how_volume_guarantees_work_for_flexvol_volumes.html"
-  - title: FlexClone Volume與空間保證
-    url: "/online-help-96-97/concept_flexclone_volumes_space_guarantees.html"
-  - title: 使用FlexVol 現象資源隨需配置、以提高效率
-    url: "/online-help-96-97/concept_thin_provisioning_for_greater_efficiencies_using_flexvol_volumes.html"
   - title: 利用FlexVol 空間保留功能搭配使用
     url: "/online-help-96-97/concept_using_space_reservation_with_flexvol_volumes.html"
-  - title: 儲存效率的優點
-    url: "/online-help-96-97/concept_benefits_storage_efficiency.html"
-  - title: 資料壓縮與重複資料刪除技術
-    url: "/online-help-96-97/concept_data_compression_deduplication.html"
-  - title: 使用重複資料刪除的準則
-    url: "/online-help-96-97/reference_guidelines_for_using_deduplication.html"
   - title: 調整磁碟區大小的選項
     url: "/online-help-96-97/concept_options_for_resizing_volumes.html"
-  - title: 移動磁碟區時的考量
-    url: "/online-help-96-97/concept_considerations_when_moving_volumes.html"
   - title: Volume視窗
     url: "/online-help-96-97/reference_volumes_window.html"
 - title: 交會路徑

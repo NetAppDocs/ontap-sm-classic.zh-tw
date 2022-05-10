@@ -15,6 +15,14 @@ summary: 您可以使用System Manager在儲存系統中建立及管理Snapshot�
 
 
 
+== 關於Snapshot原則
+
+將Snapshot原則套用至磁碟區時、會根據建立Snapshot複本的排程或排程、並指定每個排程可建立的Snapshot複本數量上限。Snapshot原則最多可包含五個排程。
+
+對於資料保險箱關係、SnapMirror Label屬性可用於選取來源磁碟區上的Snapshot複本。在備份資料保存庫作業中、只會複寫具有在資料保存原則規則中設定標籤的Snapshot複本。指派給來源Volume的Snapshot原則必須包含SnapMirror Label屬性。
+
+
+
 == 建立Snapshot原則
 
 您可以在System Manager中建立Snapshot原則、以指定可自動建立的Snapshot複本數量上限、以及建立這些複本的頻率。
@@ -53,14 +61,6 @@ summary: 您可以使用System Manager在儲存系統中建立及管理Snapshot�
 . 選取Snapshot原則、然後按一下*刪除*。
 . 選取確認核取方塊、然後按一下*刪除*。
 
-
-
-
-== 關於Snapshot原則
-
-將Snapshot原則套用至磁碟區時、會根據建立Snapshot複本的排程或排程、並指定每個排程可建立的Snapshot複本數量上限。Snapshot原則最多可包含五個排程。
-
-對於資料保險箱關係、SnapMirror Label屬性可用於選取來源磁碟區上的Snapshot複本。在備份資料保存庫作業中、只會複寫具有在資料保存原則規則中設定標籤的Snapshot複本。指派給來源Volume的Snapshot原則必須包含SnapMirror Label屬性。
 
 
 

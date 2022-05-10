@@ -5460,7 +5460,6 @@
   <block id="721787f310c745b8a2ac1dd6a7a54ea0" category="paragraph">指定要保留的Snapshot複本數目上限。</block>
   <block id="6b2addfb2e72791b9d972797ff66e1b9" category="list-text">* SnapMirror標籤*</block>
   <block id="afdb710a1aa489c617627a645757d7b7" category="paragraph">指定備份排程所產生之Snapshot複本的SnapMirror標籤屬性名稱。</block>
-  <block id="9d19621188a7ddeb48a045dd2d39bbdf" category="paragraph">Permalink：online－help-96-97/ task_creating_vault_relationship_from_destination_svm.html重新導向：ontap－sm經典/重新導向：ontap－sm經典/線上說明-96-97/ task_editing_vault_relationships.html</block>
   <block id="7956c2ceb5d5ba89f5f5d324abc80b90" category="summary">當您不再需要磁碟區所包含的資料、或是已將磁碟區所包含的資料複製到其他位置時、可以使用System Manager來刪除FlexVol 此等資料。刪除磁碟區時、磁碟區中的所有資料都會遭到銷毀、而且您無法恢復該資料。</block>
   <block id="9b858301380b70de8704b68de8476d9d" category="doc">使用System Manager刪除Volume - ONTAP 更新版本</block>
   <block id="d87145d51d1b2884ca6f3a0458a70b6d" category="paragraph">當您不再需要磁碟區所包含的資料、或是已將磁碟區所包含的資料複製到其他位置時、可以使用ONTAP 經典版的《經典版功能》（ONTAP 適用於更新版本的版本）來刪除FlexVol 此功能。刪除磁碟區時、磁碟區中的所有資料都會遭到銷毀、而且您無法恢復該資料。</block>
@@ -9264,22 +9263,15 @@
   <block id="6a31044e5c4900961ed521bb6256a164" category="sidebar">搬移FlexVol 功能</block>
   <block id="f8cfaddcdaba7e2debb0620510d0d566" category="sidebar">鏡射Aggregate</block>
   <block id="46a4ccdfa4dc52e941038d059ed57047" category="sidebar">檢視Aggregate資訊</block>
-  <block id="02bd9cbb73da8375b9894fd0a98de9cb" category="sidebar">如何移動FlexVol 功能</block>
   <block id="c18da52fcfd4120f502b7e503a44a12c" category="sidebar">如何使用有效ONTAP 的等磁碟類型來混合HDD</block>
   <block id="c823d5441fee59e3140dfb7b7eaf40d9" category="sidebar">System Manager如何使用熱備援磁碟機</block>
   <block id="156fbe21c8653712f692673deeb3158c" category="sidebar">顯示磁碟類型和磁碟RPM的規則</block>
-  <block id="4f0b7bb576d3c8fa91bf3496e68c038e" category="sidebar">鏡射Aggregate的運作方式</block>
-  <block id="0d89860300e279906201fcfb05d7edd6" category="sidebar">什麼是呢FabricPool</block>
   <block id="dd51f6c606abd85a2f96aa25e0283ef9" category="sidebar">設定及管理雲端層</block>
   <block id="d5350d8759b1ec84607e47908809058e" category="sidebar">集合體</block>
   <block id="59679f32f6c3a377022d42068a298e39" category="sidebar">將磁碟重新指派給節點</block>
   <block id="bf5e03a6502f63b62411b8a3bc4c3f67" category="sidebar">檢視磁碟資訊</block>
   <block id="2eb1b97703fa71645954dc4cd48db9d4" category="sidebar">如何報告磁碟類型ONTAP</block>
-  <block id="a19995cfebd696ce543310362d9dd40d" category="sidebar">磁碟所需的最小熱備援磁碟數</block>
-  <block id="4fa1e8b803051a6a4d8cedf447883623" category="sidebar">多磁碟載體磁碟的備用需求</block>
-  <block id="9d8ba5641aec18b49335b203bdd17a54" category="sidebar">多磁碟載體儲存櫃的機櫃組態需求</block>
   <block id="917c7fafd3ee833d19e06f503898f4a6" category="sidebar">判斷何時可以安全移除多磁碟機載體</block>
-  <block id="00f6ac827cdcb4be5c0756e897cdfe12" category="sidebar">調整RAID群組規模的考量</block>
   <block id="936263aa8a5425fe84a14888345f081f" category="sidebar">陣列LUN</block>
   <block id="187c6ad3a74cc93ac6c2229d398e383e" category="sidebar">節點</block>
   <block id="ca386ad0a31fa852921757e6e1543edb" category="sidebar">硬體快取</block>
@@ -9287,7 +9279,6 @@
   <block id="e512eef8aa4d4325f3679d5566fe776f" category="sidebar">系統警示</block>
   <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="sidebar">資訊通知AutoSupport</block>
   <block id="c934b3b6c5aae6691763ee7bf8337e83" category="sidebar">Flash Pool統計資料</block>
-  <block id="eabdd0376d975afa804b79ba2f04aead" category="sidebar">管理邏輯儲存設備</block>
   <block id="aa120bb48f9756b7b01f0b56017abaa0" category="sidebar">SVM儀表板視窗</block>
   <block id="d4910704fdefab082be5ace33f8749da" category="sidebar">監控SVM</block>
   <block id="d4cd4fa71f216e2fec991f332c27c26a" category="sidebar">編輯SVM設定</block>
@@ -9296,7 +9287,6 @@
   <block id="fd17be1bdd3d6324c28d5a7565839e03" category="sidebar">停止SVM</block>
   <block id="5181a7ce4f86c2abaef519343ad172ee" category="sidebar">管理SVM</block>
   <block id="31d6568812be270156162f88d707feb1" category="sidebar">追蹤檔案存取、以診斷SVM上的存取錯誤</block>
-  <block id="1a305bb61d773e7c7f5ad044dfc05c1d" category="sidebar">SVM類型</block>
   <block id="77e82b2e710b5cc9c6dfa16efeddeaea" category="sidebar">為何要使用SVM</block>
   <block id="109c671113a52598e8c66e417228196d" category="sidebar">儲存虛擬機器視窗</block>
   <block id="348e837675b9fabe5c1122cab57d8896" category="sidebar">追蹤檔案存取視窗</block>
@@ -9334,17 +9324,9 @@
   <block id="9cffcd856f8a5fed31caf7f13045be27" category="sidebar">重新調整FlexCache 功能</block>
   <block id="3bbd8695bf619ab1ae8df874c5695555" category="sidebar">變更FlexCache 一個聲音區的狀態</block>
   <block id="012481fcd2f09bcda1a602dcc57b88fc" category="sidebar">刪除FlexCache 功能區</block>
-  <block id="e3094dcca3c90e0404f8f6620d6d3e28" category="sidebar">什麼是NetApp Volume Encryption</block>
-  <block id="05bb17d18c0f9c3d367fd30e255813d5" category="sidebar">Snapshot組態</block>
   <block id="955fe453e5261738851ba4d70d70892c" category="sidebar">Volume如何保證FlexVol 功能適用於不穩定的Volume</block>
-  <block id="066487aa2823f7e91f863763f577c676" category="sidebar">FlexClone Volume與空間保證</block>
-  <block id="cff0da0bcc8cc16657e0dfad5d65178f" category="sidebar">使用FlexVol 現象資源隨需配置、以提高效率</block>
   <block id="ad827755bcf72a1a0c1d376a49bb50d4" category="sidebar">利用FlexVol 空間保留功能搭配使用</block>
-  <block id="3e15c136040409143690f7b064c235d0" category="sidebar">儲存效率的優點</block>
-  <block id="23d4778368a7df952a66613f9b640385" category="sidebar">資料壓縮與重複資料刪除技術</block>
-  <block id="7fb3ddff12cd6d01522fd9cea73a018c" category="sidebar">使用重複資料刪除的準則</block>
   <block id="8685922fb1799eb07ebe1b56b4e90b4d" category="sidebar">調整磁碟區大小的選項</block>
-  <block id="3edfa5472e64e42fdb7090974f60c8ae" category="sidebar">移動磁碟區時的考量</block>
   <block id="2b20636173a684fa0d66246f2351348f" category="sidebar">交會路徑</block>
   <block id="d272c069ec4cbb05fe03c3ff588a12e2" category="sidebar">共享區</block>
   <block id="7b3c6a2d089eb1b6f8959e7e61a50c07" category="sidebar">LUN</block>
@@ -9449,4 +9431,5 @@
   <block id="92526cba00250769d0d0d584b6d93ce4" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存系統中的Snapshot原則。</block>
   <block id="f3400c7c7f134d2f8f2f30b279b5c285" category="doc">使用System Manager（ONTAP 更新版本）管理排程-更新版本</block>
   <block id="c934845b8edbac9b1640d3a858f83f4a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存系統中的排程。</block>
+  <block id="2d4aef30a49a581a6ed89ce840054235" category="sidebar">磁碟</block>
 </blocks>
