@@ -2930,9 +2930,6 @@
   <block id="85d557ce915fb71bd6d1b876019b75bc" category="list-text">指定記錄層級。</block>
   <block id="e9325370b99e94c3694b9d70f1c16343" category="list-text">指定閒置逾時值（以分鐘為單位）。</block>
   <block id="6778129bfdc370315a53a29729233c17" category="paragraph">如果您已啟用安全性聲明標記語言（SAML）驗證、則無法使用此選項。</block>
-  <block id="136dd5d0414a62d4b3656dd07d0e3ed5" category="summary">如果您想變更現有使用者的完整名稱或說明、或是想要啟用或停用使用者帳戶、您可以使用系統管理員來修改本機Windows使用者帳戶。您也可以修改指派給使用者帳戶的群組成員資格。</block>
-  <block id="66a86df29a3df9220ad1f1c90164d7d6" category="doc">使用System Manager（ONTAP 系統管理程式）編輯本機Windows使用者內容-更新版本</block>
-  <block id="504f000909a925ba4f74f21133bc0319" category="paragraph">如果您想要變更現有使用者的完整名稱或說明、或是想啟用或停用使用者帳戶、您可以使用ONTAP 經典版的功能（ONTAP 適用於支援地區9.7及更早版本）來修改本機Windows使用者帳戶。您也可以修改指派給使用者帳戶的群組成員資格。</block>
   <block id="8132fd942e4c52f598d6a5f4308612ae" category="list-text">在*主機使用者與群組*窗格中、按一下* Windows *。</block>
   <block id="29085bd39c9a2ab55bafef6a551bde17" category="list-text">在*使用者*索引標籤中、按一下*編輯*。</block>
   <block id="a292e6b20e984807fe7fc7fbab57a006" category="list-text">在*修改使用者*視窗中、進行必要的變更。</block>
@@ -3167,7 +3164,6 @@
   <block id="85d7a739c6bad7aa6a52aeb9d15d8dc7" category="paragraph">詳細資料區域會顯示AutoSupport 各種設定資訊、例如節點名稱、AutoSupport 畫面狀態、使用的傳輸傳輸傳輸協定、以及Proxy伺服器的名稱。</block>
   <block id="85e4b8525f730ae9d7c8fb0dab43a143" category="summary">您可以使用System Manager建立高可用度（HA）配對、以提供不中斷營運和容錯所需的硬體備援。</block>
   <block id="19ba7845e5879e0c327b97f282a2ad67" category="doc">使用ONTAP System Manager建立高可用度配對-例如：NetApp®</block>
-  <block id="f153aa09dfee8a14f039fef3b377cbf3" category="paragraph">您可以使用ONTAP 經典版的經典版（9.7版及更早版本）建立高可用度（HA）配對、提供不中斷營運和容錯所需的硬體備援。</block>
   <block id="0e4c5e1c4d88f716e264cd819e7bddc1" category="section-title">高可用度時段</block>
   <block id="da3a91004faed5a37c3ecdd35c51da80" category="paragraph">「高可用度」視窗提供高可用度（HA）狀態、互連狀態、ONTAP 以及所有二合一HA配對的接管或恢復狀態的圖示。您也可以使用「高可用度」視窗、手動啟動接管作業或恢復作業。</block>
   <block id="4cbac5d238d489e8b410637182ff4f19" category="paragraph">您可以按一下HA配對映像來檢視詳細資料、例如接管或恢復狀態、以及互連狀態。</block>
@@ -3274,8 +3270,6 @@
   <block id="023ba4fbc51fd4cb79d02985ca6705de" category="paragraph"><block ref="023ba4fbc51fd4cb79d02985ca6705de" category="inline-xref-macro-rx"></block></block>
   <block id="d7c499e134245becf7ae6ef87a931b98" category="inline-xref-macro">正在重設CIFS網域控制器</block>
   <block id="dc558b1a1526987b25387079f05ab608" category="paragraph"><block ref="dc558b1a1526987b25387079f05ab608" category="inline-xref-macro-rx"></block></block>
-  <block id="cfb186e8e8f985739a805db1f3042725" category="summary">您可以使用System Manager來建立、編輯及刪除QoS原則群組。</block>
-  <block id="d652696dcf63b8343a323a9db5a7743c" category="doc">QoS原則群組</block>
   <block id="7d8436fecdd3d22f2e66b67674a4db3e" category="summary">您可以FlexGroup 使用System Manager調整現有資源大小或新增資源、來調整支援範本的大小。</block>
   <block id="bf9b16e0387db17699d2c4fc1baba097" category="doc">使用System Manager調整FlexGroup 物件區的大小- ONTAP 更新版本</block>
   <block id="d589fdcb9092becde1e801dfcd1b6604" category="paragraph">您可以使用ONTAP 經典版的經典版《支援功能》ONTAP （適用於支援功能更新版本的版本）來調整FlexGroup 現有資源的大小、或是新增資源來調整功能。</block>
@@ -3317,7 +3311,6 @@
   <block id="776949faacf45a2a05e4c1d49bddf235" category="inline-xref-macro">LUN視窗</block>
   <block id="d7549a1da79cdbdf943651ed7e6190aa" category="paragraph"><block ref="d7549a1da79cdbdf943651ed7e6190aa" category="inline-xref-macro-rx"></block></block>
   <block id="f7bcc518f4ec81859dbc238762046e1d" category="summary">您可以使用儲存虛擬機器（SVM）視窗來建立完整設定的SVM。在這些SVM上建立儲存物件之後、SVM會提供資料。</block>
-  <block id="44de48291f65b93f6b91ae71158fc5a0" category="doc">使用System Manager（ONTAP 系統管理程式）建立SVM：S9.7及更早版本</block>
   <block id="d8df04e394d1d658fc87637c0e78fe19" category="paragraph">在經典版的《經典版》（適用於VMware 9.7及更早版本）中、您可以使用儲存虛擬機器（SVM）視窗來建立完整組態的SVM。ONTAP ONTAP在這些SVM上建立儲存物件之後、SVM會提供資料。</block>
   <block id="491ece4f3bc00b47a558eee42e9451ed" category="list-text">您必須已建立Aggregate、而且Aggregate必須在線上。</block>
   <block id="9bb45c923fca02703a69069e6ebb8206" category="list-text">您必須確保集合體有足夠的空間來容納SVM根磁碟區。</block>
@@ -3427,7 +3420,6 @@
   <block id="aea360b94eba5ad45f55e615a1e58409" category="paragraph"><block ref="aea360b94eba5ad45f55e615a1e58409" category="inline-xref-macro-rx"></block></block>
   <block id="e074b06c6bcffc41130111700ce589f4" category="summary">您可以設定安全聲明標記語言（SAML）驗證、以便遠端使用者在登入System Manager之前、先透過安全的身分識別提供者（IDP）進行驗證。</block>
   <block id="a30fa0b5cb2afd6f435aa35fc7ca5745" category="doc">使用System Manager設定SAML驗證- ONTAP 支援更新版本</block>
-  <block id="d7099498f421b4701bba3cabee8125eb" category="paragraph">您可以使用ONTAP 經典版的《支援系統管理程式》（ONTAP 更新版本為英文版）、設定安全聲明標記語言（SAML）驗證。遠端使用者在登入System Manager之前、會先透過安全的身分識別供應商（IDP）進行驗證。</block>
   <block id="a1c17e9e89d922e43d5aa0884477d0b3" category="image-alt">MFA工作流程</block>
   <block id="bec16219366d2631eb9ed04aecabc005" category="section-title">啟用SAML驗證</block>
   <block id="a1e6388446604ac005b86b7f11abf1b0" category="paragraph">您可以使用System Manager來設定安全聲明標記語言（SAML）驗證、讓遠端使用者可以使用安全的身分識別供應商（IDP）登入。</block>
@@ -3481,8 +3473,6 @@
   <block id="6391080cb143492ec05c27ebc0d70663" category="list-text">選取您要還原的最新Snapshot複本或特定Snapshot複本。</block>
   <block id="de944ee0cc0b7be57674311ea9d2a44b" category="list-text">選取確認核取方塊、從Snapshot複本還原磁碟區。</block>
   <block id="8c474b5b48584b8a50a578e53997c1c1" category="summary">如果不再需要使用者帳戶來進行SVM CIFS伺服器的本機CIFS驗證、或是決定SVM所含資料的存取權限、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows使用者帳戶。</block>
-  <block id="244f91d9d12bd9740caec32708a6b318" category="doc">使用System Manager刪除本機Windows使用者帳戶ONTAP -更新版本</block>
-  <block id="ce5ff83bcd1ab1b41de67636913d780c" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本） 從儲存虛擬機器（SVM）刪除本機Windows使用者帳戶（如果不再需要該使用者帳戶來進行SVM CIFS伺服器的本機CIFS驗證、或是決定SVM所含資料的存取權限）。</block>
   <block id="2f2f8006cdba926f80eb01941d442518" category="list-text">無法刪除標準使用者、例如Administrator。</block>
   <block id="7e00b270660fa8d3306d85ac52e6afbe" category="list-text">從本機群組資料庫、本機使用者成員資格和使用者權限資料庫中移除對已刪除本機使用者的參照。ONTAP</block>
   <block id="4ee04baa35ee69f54cafefed4ab50f4d" category="list-text">在「*使用者*」索引標籤中、選取您要刪除的使用者帳戶、然後按一下「*刪除*」。</block>
@@ -3549,8 +3539,6 @@
   <block id="47eafbb6496a234231703bbcd453a81d" category="inline-xref-macro">編輯Aggregate</block>
   <block id="8000a5ae2437b32194ac69cacfc92be5" category="paragraph"><block ref="8000a5ae2437b32194ac69cacfc92be5" category="inline-xref-macro-rx"></block></block>
   <block id="7bd49e7c9145d45e01f059d1cdb082e6" category="summary">如果不再需要群組來判斷SVM上所含資料的存取權限、或將SVM使用者權限（權限）指派給群組成員、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows群組。</block>
-  <block id="f11fdf178e9f4a585ed4c804386ba193" category="doc">使用System Manager（ONTAP 系統管理程式）刪除本機Windows群組-示例9.7及更早版本</block>
-  <block id="f6b214ba0427d69a51c88da91749df47" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本） 從儲存虛擬機器（SVM）刪除本機Windows群組（如果不再需要群組來判斷SVM上所含資料的存取權限、或將SVM使用者權限（權限）指派給群組成員）。</block>
   <block id="1fd5520ffe7125a908bac57e7afb2eee" category="list-text">移除本機群組會移除群組的成員資格記錄。</block>
   <block id="120dc3e662c01773a504ebd37d9476cb" category="list-text">檔案系統不會變更。</block>
   <block id="a80fc19ec5c6a6bf268c9f7fcc351c58" category="paragraph">不會調整參照此群組之檔案和目錄上的Windows安全性描述元。</block>
@@ -3941,8 +3929,6 @@
   <block id="4c1648782afe59eb60ffb3c1367c7dee" category="list-text">從*更多動作*&gt;*變更狀態為*功能表、選取所需的Volume狀態。</block>
   <block id="de0a16cd5c098f4e0cfe40e55e964715" category="list-text">按一下確認對話方塊中的*確定*以變更Volume狀態。</block>
   <block id="e924ba263449a48f0a6cde9e521616a9" category="summary">您可以使用System Manager重新建立先前中斷的鏡射關係。在反向重新同步作業中、您可以反轉來源Volume和目的地Volume的功能。</block>
-  <block id="45a11fec0e7239fbcf37cef2902890d3" category="doc">使用System Manager反轉重新同步鏡射關係- ONTAP E於9.7及更早版本</block>
-  <block id="e04d733170c775fa5ecebcaa3ee8a458" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來重新建立先前中斷的鏡射關係。在反向重新同步作業中、您可以反轉來源Volume和目的地Volume的功能。</block>
   <block id="84f19e6b1607309f15aea7b984ce454e" category="list-text">您可以在修復或更換來源磁碟區、更新來源磁碟區、以及重新建立系統的原始組態時、使用目的地磁碟區來提供資料。</block>
   <block id="b9b9ec00517ba88a4be4df86159cb3f0" category="list-text">執行反向重新同步時、鏡射來源上的內容會被目的地Volume上的內容覆寫。</block>
   <block id="3276f0f477ca91453726cbdf0d7f00f6" category="list-text">對於符合零件法規的磁碟區、作用中檔案系統中參考通用Snapshot複本的所有資料變更、都會保留在鎖定的Snapshot複本中、直到目前磁碟區設定的到期時間為止。SnapLock</block>
@@ -4088,8 +4074,6 @@
   <block id="805abe7b6310bb9901eae5dbd8a55905" category="paragraph">由儲存陣列做為後盾並由ONTAP 支援的邏輯儲存設備、以供作磁碟使用。這些LUN稱為_Array LUN__、用以區分它們與ONTAP 供用戶端使用的LUN。</block>
   <block id="5c1d39f533d9cd9cd64f7a60584e7b48" category="inline-link">NetApp技術報告3437：儲存子系統恢復能力</block>
   <block id="f8aa6cb4050abf187f4813c711615b77" category="paragraph"><block ref="f8aa6cb4050abf187f4813c711615b77" category="inline-link-rx"></block></block>
-  <block id="167f6dae62c5e6a04290b4be80be116e" category="summary">您可以使用System Manager刪除不再需要的儲存品質服務（QoS）原則群組。</block>
-  <block id="46ca4b6cc5dac93b4008f7f8137a3f2f" category="doc">使用System Manager刪除QoS原則群組- ONTAP 不含更新版本的更新版本</block>
   <block id="89d43162b83abf7f18e1c6fe6e0118ff" category="paragraph">您可以使用ONTAP 經典版的《支援功能》（ONTAP 適用於支援功能更新版本的版本）來刪除不再需要的儲存品質服務（QoS）原則群組。</block>
   <block id="7d0973962863fbba831179ad8a119586" category="paragraph">您必須取消指派指派指派給原則群組的所有儲存物件。</block>
   <block id="cd8b8d46f76eda836496f2292b3eec3b" category="list-text">在「*原則*」窗格中、按一下「* QoS原則群組*」。</block>
@@ -4122,8 +4106,6 @@
   <block id="e236d336e04f19a5f31aaeba921e7a28" category="list-text">選取您要啟動的SVM、然後按一下* Start*。</block>
   <block id="c19970592d059062d7ce4832bb7a7720" category="paragraph">SVM開始為用戶端提供資料。</block>
   <block id="b2382f3b5e558de897e360ce648b9df6" category="summary">您可以使用System Manager重設Windows本機使用者的密碼。例如、如果目前的密碼遭入侵或使用者忘記密碼、您可能會想要重設密碼。</block>
-  <block id="85d0833b56faab64ea27240a6f082070" category="doc">使用System Manager ONTAP （系統管理程式）重設Windows本機使用者的密碼- EW9.7及更早版本</block>
-  <block id="55e67ad0368005cd9a055b4b179ef69e" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來重設Windows本機使用者的密碼。例如、如果目前的密碼遭入侵或使用者忘記密碼、您可能會想要重設密碼。</block>
   <block id="81f65fa9473e7e581b2eac1bb39da07f" category="paragraph">您設定的密碼必須符合下列條件：</block>
   <block id="1587fc2d730410811869284f09ac13eb" category="list-text">長度必須至少六個字元</block>
   <block id="af28516bc41fc95b2d0f3338b5ac754b" category="list-text">不得包含使用者帳戶名稱</block>
@@ -4137,7 +4119,6 @@
   <block id="ed7b6afac794324ba8c0ad78a5c918e9" category="list-text">確認新密碼、然後按一下*重設*。</block>
   <block id="dbe63deae24a1ac56f258042500b3305" category="summary">您可以在儲存虛擬機器（SVM）上設定iSCSI傳輸協定、以便使用System Manager提供區塊層級的資料存取。您可以建立iSCSI生命期和連接埠集、然後將生命期新增至連接埠集。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。</block>
   <block id="f5db4f9448aaa78931200f9e088d969e" category="doc">使用System Manager在SVM上設定iSCSI傳輸協定- ONTAP 支援更新版本的更新版本</block>
-  <block id="1adc906cf717845ffb29f00022c0366f" category="paragraph">您可以在儲存虛擬機器（SVM）上設定iSCSI傳輸協定、以便使用System Manager Classic（ONTAP 更新版本為版本9.7）來提供區塊層級的資料存取。您可以建立iSCSI生命期和連接埠集、然後將生命期新增至連接埠集。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。</block>
   <block id="d6c2a820e6d7f75d52b288e7f1ec5734" category="list-text">必須在叢集上啟用iSCSI授權。</block>
   <block id="37896c639f865da977570ea72f08b8ec" category="paragraph">如果SVM上未啟用iSCSI傳輸協定、您可以使用Edit Storage Virtual Machine（編輯儲存虛擬機器）視窗來啟用SVM的傳輸協定。</block>
   <block id="a3773366954a165774d35e6e6f54a0dc" category="list-text">每個節點必須至少有兩個資料連接埠、而且連接埠狀態必須為「up」。</block>
@@ -4609,7 +4590,6 @@
   <block id="a7a267cadbd2391fc7614984da6b9605" category="paragraph"><block ref="a7a267cadbd2391fc7614984da6b9605" category="inline-xref-macro-rx"></block></block>
   <block id="fc5c41a08a339689427e86a62085d18e" category="summary">在設定具有基本網路組態的功能性儲存虛擬機器（SVM）或SVM之後、您可以選擇性地將SVM的管理委派給SVM管理員。</block>
   <block id="981ccff974ccd38feb11b98749f62f33" category="doc">利用System Manager ONTAP -更新版本的版本、將管理委派給SVM系統管理員</block>
-  <block id="2916098ae0e238c3e38a1a47b1301eb5" category="paragraph">設定具備基本網路組態的功能性儲存虛擬機器（SVM）或SVM之後、您可以選擇使用System Manager Classic（ONTAP 適用於更新版本的更新版本）、將SVM的管理委派給SVM管理員。</block>
   <block id="c280d80d9720c9afcb7b055ba6f262fe" category="paragraph">SVM系統管理員無法使用System Manager來管理委派的SVM。系統管理員只能使用命令列介面（CLI）來管理。</block>
   <block id="f7a692d5ae0cf87de5b17419305d8065" category="list-text">在*管理員詳細資料*區段中、設定「vsadmin」使用者帳戶的密碼。</block>
   <block id="23e6156a22389460ad368f3540f0a287" category="list-text">如果您想要專屬的LIF用於SVM管理、請選取*「Create a LIF for SVM management *（為SVM管理*建立LIF）」、然後指定網路詳細資料。</block>
@@ -4905,7 +4885,6 @@
   <block id="9ae818907a26187392ed89f38a730d48" category="paragraph">加密重新金鑰</block>
   <block id="e0d54eff91f9650f0ed08198f2eb5229" category="paragraph">可讓您重設加密金鑰（僅當您已在包含FlexCache 此磁碟區的對等叢集上啟用加密時）</block>
   <block id="ca4e094016ba6eadf14e1722875c97b1" category="summary">您可以在System Manager中使用預先定義的應用程式範本、根據現有的應用程式範本建立新的組態。然後、您可以將應用程式的執行個體資源配置ONTAP 到整個過程中。</block>
-  <block id="c0bbe542e022a200771c2c752e0173f2" category="doc">使用ONTAP System Manager（系統管理程式）來設定應用程式-更新版本</block>
   <block id="a52ac8fd4d86144ca8599edcc24c0489" category="paragraph">您可以使用ONTAP 經典版的《經典版》中預先定義的應用程式範本ONTAP （可在更新版本的版本中使用）、根據現有的應用程式範本建立新的組態。然後、您可以將應用程式的執行個體資源配置ONTAP 到整個過程中。</block>
   <block id="4c12f3fbd9c64c79d68bcf283b0d74c5" category="paragraph">您可以按一下*應用程式&amp;Tiers*&gt;*應用程式*來設定應用程式。</block>
   <block id="bb2f2e41d59681fc312d083642c87305" category="paragraph">您可以在System Manager中設定下列應用程式：</block>
@@ -4919,8 +4898,6 @@
   <block id="b4bc45810798f445737934696c4b9b58" category="list-text">Microsoft SQL Server（透過SAN或SMB）</block>
   <block id="e302250f5955d17f1e9a488b5bc5b7b1" category="paragraph">*虛擬基礎架構*</block>
   <block id="3496cf6ca4dffdc0ba4e1a66a2b3ab56" category="list-text">虛擬伺服器（使用VMware、Hyper-V或Xen）</block>
-  <block id="3241edb94f07e6bbf7cba493631ff2c6" category="summary">您可以使用System Manager中的Edit Policy Group（編輯原則群組）對話方塊、修改現有儲存品質服務（QoS）原則群組的名稱和最大處理量。</block>
-  <block id="ef9299f4d9ab701bc7d83decc9611053" category="doc">使用System Manager（ONTAP 系統管理程式）編輯QoS原則群組-更新版本</block>
   <block id="980ea682ed148899940453682116cf28" category="paragraph">您可以使用ONTAP 經典版的「更新原則群組」對話方塊（ONTAP 可在更新版本的版本中使用）、修改現有儲存品質服務（QoS）原則群組的名稱和最大處理量。</block>
   <block id="20ce37acd2082db423c612d41df0cb50" category="list-text">選取您要編輯的QoS原則群組、然後按一下*編輯*。</block>
   <block id="673e9537e0f6270432536a3d148d4573" category="list-text">如果未指定最小處理量限制、您可以設定IOPS和B/s、kb/s、MB/s等的最大處理量限制。</block>
@@ -5032,7 +5009,6 @@
   <block id="33bfb222a6be6e2e74e3b69128bb6deb" category="list-text">使用叢集管理員認證登入ONTAP 《系統管理程式》。</block>
   <block id="184a3589cdb6dc3bf37a337276e986f1" category="summary">當某個磁碟區達到接近完整容量時、您可以增加磁碟區的大小、刪除部分Snapshot複本、或調整Snapshot保留。您可以使用System Manager中的Volume Resize精靈來提供更多可用空間。</block>
   <block id="abb7c046c422db37c0202c07166a8eab" category="doc">使用System Manager調整磁碟區大小- ONTAP 不含更新版本</block>
-  <block id="20169e117853b27b34193a931dadb8dc" category="paragraph">當某個Volume達到接近完整容量時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來增加磁碟區的大小、刪除一些Snapshot複本、或是調整Snapshot保留。您可以使用System Manager中的Volume Resize精靈來提供更多可用空間。</block>
   <block id="f08cd1f6b70e639971398975e77c9f1c" category="list-text">對於設定為自動擴充的磁碟區、您可以根據磁碟區大小的增加、修改該磁碟區可自動擴充的限制。</block>
   <block id="997c86c334821e8c70188bb4c6effcb4" category="list-text">如果資料保護磁碟區的鏡射關係中斷、或是磁碟區已執行反向重新同步作業、則無法調整其大小。</block>
   <block id="b336c62cbff0428922250c31a768c34f" category="paragraph">您必須改用命令列介面（CLI）。</block>
@@ -5041,7 +5017,6 @@
   <block id="baf8d3396b691e5b2244efc835a2c55b" category="list-text">在「* Volumes *」（*磁碟區*）視窗中、確認您對可用空間和磁碟區總空間所做的變更。</block>
   <block id="861cd877273f0187be8b4af2b9308d55" category="summary">您可以使用System Manager來建立及管理乙太網路連接埠。</block>
   <block id="9298dd1b53067fbddee607d176c77775" category="doc">使用System Manager（ONTAP 系統管理程式）管理乙太網路連接埠-更新版本</block>
-  <block id="2da457cc70f41e8d72a0321dda42ec28" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 可在更新版本的版本中使用）來建立及管理乙太網路連接埠。</block>
   <block id="9794b81508030d938e9637f4f6fae599" category="section-title">建立介面群組</block>
   <block id="9ac764418e4ea147c97f0cc85c784cdd" category="paragraph">您可以使用System Manager建立介面群組（單一模式、靜態多重模式或動態多重模式（LACP））、藉由結合彙總網路連接埠的功能、將單一介面呈現給用戶端。</block>
   <block id="c8741c9bf1d484e6c05d5c02148af0cd" category="paragraph">可用連接埠必須不屬於任何廣播網域或介面群組、或是裝載VLAN。</block>
@@ -5162,8 +5137,6 @@
   <block id="702b21fb9ef13531abd57d2d98d1f876" category="paragraph">Snapshot複本的預設名稱是由磁碟區名稱和時間戳記所組成。</block>
   <block id="c236eda245354c3bb29ae566f1fe4551" category="list-text">驗證您所建立的Snapshot複本是否包含在「* Snapshot Copies *（* Snapshot複本*）」標籤的Snapshot複本清單中。</block>
   <block id="0f449d0549237ea9e9d1f88b27934467" category="summary">如果您希望使用者擁有與特定群組相關的權限、可以使用系統管理員將群組成員資格指派給使用者帳戶。</block>
-  <block id="af744edfa9643645796a3d01c80db4bc" category="doc">使用System Manager ONTAP -更新版本、將群組成員資格指派給使用者帳戶</block>
-  <block id="dc70272f593f6af1c12f7efe72a0e330" category="paragraph">如果您想讓使用者擁有與特定群組相關的權限、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）將群組成員資格指派給使用者帳戶。</block>
   <block id="8de6ce1d147fcf43eaa9471632990795" category="list-text">群組必須存在、才能將使用者新增至群組。</block>
   <block id="aebd7c99d92cdaa04e7cf8e2704fe37b" category="list-text">使用者必須存在、才能將使用者新增至群組。</block>
   <block id="337e82e71d899a6aa1401bcd400ab970" category="paragraph">您無法將使用者新增至特殊的_Everyon__群組。</block>
@@ -5183,9 +5156,6 @@
   <block id="1d5915df2ee8553402badd4518af88b6" category="list-text">單擊*更多操作*&gt;*管理快照*&gt;*還原*。</block>
   <block id="8a4d878dedbea4986b92d115963ebbdd" category="list-text">選取適當的Snapshot複本、然後按一下*還原*。</block>
   <block id="dc260137b25f146a8f021bbd4857f348" category="list-text">選取確認核取方塊、然後按一下*還原*。</block>
-  <block id="8ce995370c9e714eb5c14a96b94ad814" category="summary">您可以使用System Manager將本機使用者、Active Directory使用者或Active Directory群組（如果您想要使用者擁有與該群組相關的權限）新增至Windows本機群組。</block>
-  <block id="78ea6627cbe9ebae6d874bc681df76f6" category="doc">使用System Manager ONTAP -更新版本、將使用者帳戶新增至Windows本機群組</block>
-  <block id="3a7f7d9913063f7ef0a2e90629eb8ad8" category="paragraph">您可以使用ONTAP 經典版的《經典版（ONTAP 更新版本：2）系統管理程式》（更新版本：2）、將本機使用者、Active Directory使用者或Active Directory群組（如果您希望使用者擁有與該群組相關的權限）新增至Windows本機群組。</block>
   <block id="c453c2ae57359c623decc0fd8b03ae1f" category="paragraph">將成員新增至本機Windows群組時、必須謹記下列事項：</block>
   <block id="92ad10331cf39490bae951d388432656" category="list-text">您無法將本機Windows群組新增至其他本機Windows群組。</block>
   <block id="37b8a61b5fe27d9d36d85bb4434aab1e" category="list-text">您無法使用System Manager新增使用者帳戶、其中包含使用者名稱中的空間。</block>
@@ -5960,7 +5930,6 @@
   <block id="9736165f32c4f0d63182c78dcacad63a" category="paragraph">顯示作用中LDAP用戶端的Active Directory網域。</block>
   <block id="3876a46c169c8493a6228075af152922" category="paragraph">顯示作用中LDAP用戶端的慣用Active Directory伺服器。</block>
   <block id="c6e3a81d68f0aea1203e63e66fd80e0c" category="summary">您可以使用System Manager建立儲存服務品質（QoS）原則群組、以限制工作負載的處理量、並監控工作負載效能。</block>
-  <block id="c6569c9c8109bf4cd2f35a096e9a806e" category="doc">使用System Manager建立QoS原則群組ONTAP -更新版本</block>
   <block id="6685e05ba41f861ad9bf8b5d50878022" category="paragraph">您可以使用ONTAP 經典版的支援功能（ONTAP 適用於支援支援支援的版本）來建立儲存服務品質（QoS）原則群組、以限制工作負載的處理量、並監控工作負載效能。</block>
   <block id="52456ccd5982a7269a8adef6eabfda68" category="list-text">在「* QoS原則群組*」視窗中、按一下「*建立*」。</block>
   <block id="4e09beb180bcb5976e54c80594cb259d" category="list-text">在「*建立原則群組*」對話方塊中、指定原則的群組名稱。</block>
@@ -6040,9 +6009,6 @@
   <block id="5cf55e723ab703a2ceb32aeb7a599b04" category="list-text">* Kdc IP位址*</block>
   <block id="44757bf9e7e2bc0ef19521fc0cadf20b" category="paragraph">指定組態所使用的Kdc IP位址。</block>
   <block id="acf958f02bf64f4297b3f503a16de35f" category="paragraph">詳細資料區域會顯示所選Kerberos領域組態的資訊、例如、kdc IP位址和連接埠號碼、kdc廠商、管理伺服器IP位址和連接埠號碼、Active Directory伺服器和伺服器IP位址。</block>
-  <block id="90918480fa4e99c8612248c6fc0bef9b" category="summary">您可以使用ONTAP 物件系統管理程式、從目的地儲存虛擬機器（SVM）建立鏡射關係、並指派原則和排程給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。</block>
-  <block id="d40cfc39f79f1537f0808a3b5576751a" category="doc">使用System Manager ONTAP - NetApp 9.7及更早版本、從目的地SVM建立鏡射關係</block>
-  <block id="b77843c3f8ae61a4d70a598fdb4c0c1e" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於19、9.7及更早版本）、從目的地儲存虛擬機器（SVM）建立鏡射關係、並指派原則和排程給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。</block>
   <block id="7f119aa2a22940092a81eb756ae85f20" category="list-text">鏡射磁碟區時、如果您選擇SnapLock 以來源為來源的供應區、則必須SnapLock 在目的地叢集上安裝SnapMirror授權和支援。</block>
   <block id="b174d43416ffa918ee34093f515f398a" category="list-text">此功能必須在線上、FlexVol 而且必須是讀寫類型。</block>
   <block id="438a96c00525fe9ccda0532d2610cb48" category="list-text">此類資訊只能是同一類型的。SnapLock</block>
@@ -6077,7 +6043,6 @@
   <block id="37a905546aa774183d23983630e67390" category="list-text">在「*建立FlexClone檔案*」對話方塊中、選取您要複製的檔案、然後指定FlexClone檔案的名稱。</block>
   <block id="fbca46e3691f970aaaa1557af66b3c03" category="paragraph">FlexClone檔案是在父檔案所在的同一個磁碟區中建立。</block>
   <block id="cdca416bdc3d69f2edc7f12283194616" category="summary">您可以使用System Manager新增及移除本機使用者、Active Directory使用者或Active Directory群組、以管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。</block>
-  <block id="d839a28bf3542d56602749c26fa7c3f0" category="doc">使用System Manager（ONTAP 系統管理程式）編輯本機Windows群組內容-更新版本</block>
   <block id="9f7846eb6b93be23ec56786e828ee53e" category="paragraph">您可以使用ONTAP 經典版的《更新系統管理程式》（ONTAP 適用於更新版本的更新版本）、新增及移除本機使用者、Active Directory使用者或Active Directory群組、藉此管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。</block>
   <block id="9f527bf76f30148a40343c0526b8e1e5" category="paragraph">在新增成員至本機Windows群組或從本機Windows群組移除成員時、請務必謹記下列事項：</block>
   <block id="b5c8d2634d49789495b71d677a5e7e2d" category="list-text">您無法將使用者新增至或移除特殊_Everyon__群組中的使用者。</block>
@@ -6218,8 +6183,6 @@
   <block id="1a169b0c93fde678e7545eea664d622c" category="paragraph">下圖顯示設定NVMe的工作流程：</block>
   <block id="f986c0d1608453a3100a148119f1f6d3" category="image-alt">NVMe設定工作流程</block>
   <block id="42689ee599bc64326991ed2e55c7ba76" category="summary">將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的/etc/nsswitch.conf檔案。ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。</block>
-  <block id="eb91db7a154c4738b91d02ca57922942" category="doc">如何在System Manager中使用名稱服務交換器組態-更新版本ONTAP ONTAP</block>
-  <block id="ba391662b97a68cd90e097636183ae6a" category="paragraph">將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的「/etc/nsswitch.conf」檔案。ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。</block>
   <block id="9f653e5e126214d4e873f166f86c7741" category="paragraph">這個名稱服務交換器表決定哪些名稱服務來源可以查詢、以便擷取特定類型名稱服務資訊的資訊。ONTAP ONTAP針對每個SVM維護個別的名稱服務交換器表。ONTAP</block>
   <block id="4b1baf48f4e54654bd11cef62acb5066" category="section-title">資料庫類型</block>
   <block id="9369fc76099afac2c2202ec93cdbf317" category="paragraph">此表格會針對下列每一種資料庫類型儲存個別的名稱服務清單：</block>
@@ -6854,8 +6817,6 @@
   <block id="e819901795bd0c4c747bc9c1807dde7b" category="paragraph">您可以展開「*元件*」和「*磁碟區*」窗格、以取得有關已用空間、IOPs和延遲的效能詳細資料。</block>
   <block id="e50315eccddf5f315e805e025d58f9d4" category="paragraph">「元件」窗格中顯示的「已用」大小與CLI中顯示的「已用」大小不同。</block>
   <block id="029db4832cf06824f208daa0c6190766" category="summary">您可以使用System Manager重新命名本機Windows使用者帳戶、以便更輕鬆地識別本機使用者。</block>
-  <block id="1721ba418668b0e222dfb8cb45448455" category="doc">使用System Manager重新命名本機Windows使用者- ONTAP 不含更新版本的更新版本</block>
-  <block id="d39d06fa99b2894ced6d109c0b410699" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來重新命名本機Windows使用者帳戶、以便更輕鬆地識別本機使用者。</block>
   <block id="1f2ae3cedc0d62e7a2379c348905ad1b" category="list-text">新的使用者名稱必須與先前的使用者名稱建立在相同的網域中。</block>
   <block id="9a8baedb4a4c7b5286f9ab91c85a4ce7" category="list-text">您指定的使用者名稱必須符合下列需求：</block>
   <block id="cc7118fc1436b28a030f8590643431c9" category="list-text">不得超過20個字元</block>
@@ -6978,8 +6939,6 @@
   <block id="ebb6e6a19f64f243f239c1bdaf692ad7" category="doc">在System Manager ONTAP - NetApp 9.7及更早版本中、使用瀏覽器型圖形介面存取叢集</block>
   <block id="2ba8881024494dad02ea0fcfabaf51a3" category="paragraph">如果您偏好使用圖形介面、而非命令列介面來存取及管理叢集、則可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）。根據預設、支援使用者可透過瀏覽器存取的功能、可在支援使用支援功能的情況下、使用支援功能的功能。ONTAP ONTAP</block>
   <block id="d9f59ce473e0bb4509bdbd265d6433bb" category="summary">您可以使用System Manager建立本機Windows使用者帳戶、以便透過SMB連線授權存取儲存虛擬機器（SVM）中所含的資料。您也可以在建立CIFS工作階段時、使用本機Windows使用者帳戶進行驗證。</block>
-  <block id="7fc9d2dac7a3691a556388235669f20b" category="doc">使用System Manager（ONTAP 系統管理程式）建立本機Windows使用者帳戶-更新版本</block>
-  <block id="9b2dd0ee538f3cddaa6439a695abe2c2" category="paragraph">您可以使用ONTAP 經典版的支援功能（ONTAP 適用於支援的版本為S9.7及更早版本）來建立本機Windows使用者帳戶、以便透過SMB連線授權存取儲存虛擬機器（SVM）中所含的資料。您也可以在建立CIFS工作階段時、使用本機Windows使用者帳戶進行驗證。</block>
   <block id="20dc6d4f1222a4105e6eccc08bea7f87" category="list-text">必須為SVM設定CIFS伺服器。</block>
   <block id="637cd4ab9983d4038956acd8993d2d79" category="paragraph">本機Windows使用者名稱必須符合下列需求：</block>
   <block id="df5f077da0c23be5ab884d3423077a81" category="paragraph">密碼必須符合下列條件：</block>
@@ -7033,8 +6992,6 @@
   <block id="2aad16f93c508a15ba29f66d9ae95b48" category="paragraph">效能最佳化的Flash - SSD（AFF VMware）</block>
   <block id="3be296afe53266a58c77a9369255f300" category="paragraph">極致、效能、價值</block>
   <block id="4b67916bca2b0da8b959b79534baa6e0" category="summary">您可以使用System Manager重新命名本機Windows群組、以便更輕鬆地識別群組。</block>
-  <block id="54c694780bc0d73c45bd41e05288e37b" category="doc">使用System Manager重新命名本機Windows群組ONTAP -不含更新版本的更新版本</block>
-  <block id="eb95faffa28da69a4bf5e7047d2c7f4c" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來重新命名本機Windows群組、以便更輕鬆地識別群組。</block>
   <block id="ce6677cd15b9999d57d524d7888eb255" category="list-text">必須在舊群組名稱所在的網域中建立新的群組名稱。</block>
   <block id="bf952808344b57c968de6d7ffd92985a" category="list-text">群組名稱必須符合下列需求：</block>
   <block id="0a9ae93e16216fe99ae8f4567db5aab9" category="list-text">不得超過256個字元</block>
@@ -7252,7 +7209,6 @@
   <block id="d7bd78485ffd94a32f7b750ad6f647e2" category="paragraph">根據預設FlexCache 、不針對支援重複資料刪除的功能。如果指定的磁碟區大小超過執行重複資料刪除所需的限制、System Manager會使用預設的重複資料刪除排程。</block>
   <block id="1332810edccc806d1caa79180be1bb03" category="summary">您可以使用System Manager來建立、編輯及管理匯出原則。</block>
   <block id="8d9f570ceab703410bf1da67b4eac8de" category="doc">使用System Manager管理匯出原則- ONTAP 更新版本</block>
-  <block id="f01f89371c1f36dc3a254c24e66496c7" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7版及更早版本）來建立、編輯及管理匯出原則。</block>
   <block id="bb53c6c29f127a298da7dd86bf00bb89" category="section-title">建立匯出原則</block>
   <block id="bfa8ae286e33a761fbcede113b9d5312" category="paragraph">您可以使用System Manager建立匯出原則、讓用戶端存取特定的磁碟區。</block>
   <block id="fda9ef72bfeadbc092879a31ed707b23" category="list-text">在「*建立匯出原則*」對話方塊中、指定匯出原則的名稱。</block>
@@ -7427,7 +7383,6 @@
   <block id="2122ba0e17e85a42c0a0a6dd8ce43186" category="paragraph">顯示所選磁碟區或qtree的一般資訊、例如名稱、儲存物件類型、掛載物件的交會路徑、以及匯出原則。如果選取的物件是qtree、則會顯示有關空間硬限制、空間軟限制和空間使用量的詳細資料。</block>
   <block id="9ea725e92b8859d97af5c8e771993c2d" category="summary">您可以使用System Manager來檢視、管理或刪除叢集或節點上安裝的任何軟體授權。</block>
   <block id="e9bdc57e2dd3879cf90ec006b52505f6" category="doc">使用System Manager管理授權- ONTAP 不含更新版本</block>
-  <block id="decbf892ef0f721afaa78af4ecf7f62a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7版及更早版本）來檢視、管理或刪除叢集或節點上安裝的任何軟體授權。</block>
   <block id="d43c29e6dfcd2f437e32106054d2ee67" category="section-title">刪除授權</block>
   <block id="07b42fec76bf9e146a394e8401635451" category="paragraph">您可以使用System Manager中的「授權」視窗、刪除叢集或節點上安裝的任何軟體授權。</block>
   <block id="72f1a222a353181e0ec560da944bcbcd" category="paragraph">您要刪除的軟體授權不得用於任何服務或功能。</block>
@@ -7708,7 +7663,6 @@
   <block id="58e12ddff1a5e5562a24f79cdb06e88f" category="list-text">按一下Aggregate名稱、即可檢視所選Aggregate的詳細資料。</block>
   <block id="570b085f449ca261c192fae9d06c2a89" category="summary">您可以使用System Manager編輯鏡射關係、方法是選取叢集中的現有原則或排程、或是建立原則或排程。</block>
   <block id="6101faf64442e938a7c3e24db1680122" category="doc">使用System Manager管理鏡射關係- ONTAP 不含更新版本的更新版本</block>
-  <block id="b6ca78baa0afadbb225947cd6831fefc" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於19、9.7及更早版本）來管理鏡射關係。除了恢復靜止的鏡射關係之外、您還可以更新、靜止、初始化、重新建立、刪除及編輯鏡射關係。</block>
   <block id="aa6105e2616d9aaebd65575bdf43d7d1" category="paragraph">您可以使用System Manager刪除鏡射關係、並永久結束來源與目的地磁碟區之間的鏡射關係。刪除鏡射關係時、會刪除來源磁碟區上的基礎Snapshot複本。</block>
   <block id="67d62bde8595af5bd8630f51cae01315" category="paragraph">刪除關係之前、最好先中斷鏡射關係。</block>
   <block id="e4f5108ad092cccf7d5779b2a480f241" category="list-text">選取您要刪除的鏡射關係、然後按一下*刪除*。</block>
@@ -7844,7 +7798,6 @@
   <block id="1290983ba5fc87ec0fc668a784e88af4" category="paragraph">服務處理器清單下方的區域會顯示服務處理器的詳細資訊、包括網路詳細資料、例如IP位址、網路遮罩（IPv4）或字首長度（IPv6）、閘道、IP來源、 和MAC位址、以及一般詳細資料、例如韌體版本、以及是否啟用自動更新韌體。</block>
   <block id="578fa96a8599853629631cae0cd6eafb" category="summary">您可以使用System Manager在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。</block>
   <block id="5fc170c97be608be88f22779966c7146" category="doc">使用System Manager在SVM上設定NVMe傳輸協定- ONTAP 支援更新版本的更新版本</block>
-  <block id="aa89074fcbd4c0c8d0bb294d295d2ebf" category="paragraph">您可以使用System Manager Classic（ONTAP 適用於更新版本的版本）、在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。</block>
   <block id="a03891c6a1952c2eb79c9242eb582182" category="paragraph">採用NVMe的SVM不應有任何其他傳輸協定。如果您選取NVMe、其餘的傳輸協定將會停用。您也可以在建立SVM時設定NVMe。</block>
   <block id="ec228f1b4f8ca2421468fc18dd95086a" category="list-text">如果您在建立SVM時未設定NVMe傳輸協定、請按一下* Storage *&gt;* SVMS*</block>
   <block id="bc0fece2879286d8ffabc79e60653ade" category="list-text">選取SVM、然後按一下* SVM設定*。</block>
@@ -7869,7 +7822,6 @@
   <block id="c4bf0854bfb87485ed8651fdde3f7803" category="list-text">確認Clone分割作業的FlexClone Volume詳細資料、然後按一下確認對話方塊中的* Start分割*。</block>
   <block id="404a7f318ee6e8e246f4c3071be4d886" category="summary">您可以使用System Manager將相容的節點新增至叢集、並設定節點網路詳細資料、藉此增加儲存設備的大小和功能。您也可以檢視節點摘要。</block>
   <block id="f99033f8018d74566de6d90275ee7175" category="doc">使用System Manager進行叢集擴充- ONTAP 不含更新版本</block>
-  <block id="ab015a1f9aac7b895e136cdfb521e9b8" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7版及更早版本）、將相容的節點新增至叢集、並設定節點網路詳細資料、以增加儲存設備的大小和功能。您也可以檢視節點摘要。</block>
   <block id="ec9f849d88e3343ec1fa01f24d0d7313" category="paragraph">登入System Manager時、System Manager會自動偵測已連接纜線但尚未新增至叢集的相容節點、並提示您新增節點。您可以在系統管理員偵測到節點時新增相容節點、也可以稍後手動新增節點。</block>
   <block id="c7b0a7e89e5a47f2ab1b0e6c7f75057b" category="section-title">新增節點至叢集</block>
   <block id="c5ba22c1a70ca0620a2cfffd56daee81" category="paragraph">您可以使用System Manager將節點新增至現有叢集、以增加儲存系統的大小和功能。</block>
@@ -7995,9 +7947,6 @@
   <block id="48d4f2eabf70fde158d275655b28ef3f" category="paragraph"><block ref="48d4f2eabf70fde158d275655b28ef3f" category="inline-xref-macro-rx"></block></block>
   <block id="7a5a6f53dcdfc76ae7c96d343e78aaf6" category="inline-xref-macro">還原資料保險箱關係中的磁碟區</block>
   <block id="6121a20dc7eb934ce44aed9290d905e6" category="paragraph"><block ref="6121a20dc7eb934ce44aed9290d905e6" category="inline-xref-macro-rx"></block></block>
-  <block id="180eabc93d08acecb1687f9851773dd4" category="summary">您可以使用Windows視窗來維護叢集上每個儲存虛擬機器（SVM）的本機Windows使用者和群組清單。您可以使用本機Windows使用者和群組進行驗證和名稱對應。</block>
-  <block id="4cfe8e7f20b3f6aa84c77b061d1df0fe" category="doc">系統管理程式的Windows視窗ONTAP -更新版本</block>
-  <block id="56384d0058f4049f1a25b56477095e11" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來使用Windows視窗。Windows視窗可協助您維護叢集上每個儲存虛擬機器（SVM）的本機Windows使用者和群組清單。您可以使用本機Windows使用者和群組進行驗證和名稱對應。</block>
   <block id="b2ad1c81340fc72b3ad3bc04fceb78b1" category="paragraph">您可以使用「使用者」索引標籤來檢視SVM本機的Windows使用者。</block>
   <block id="2db5951e43169dab6dd75c3c1d310025" category="paragraph">開啟「建立使用者」對話方塊、可讓您建立本機Windows使用者帳戶、以便透過SMB連線授權存取SVM中所含的資料。</block>
   <block id="9168b7e739d6d6df8a7000d0b73a2a29" category="paragraph">開啟「編輯使用者」對話方塊、可讓您編輯本機Windows使用者內容、例如群組成員資格和完整名稱。您也可以啟用或停用使用者帳戶。</block>
@@ -8030,28 +7979,6 @@
   <block id="a6f61712592d083a36b68c99a9b5c1be" category="paragraph">顯示與所選群組相關的權限清單。</block>
   <block id="1e80c1b5ea4b7ab424e23b0decfa2203" category="list-text">*使用者*</block>
   <block id="fc0de9f2009ac4ca0b6d02078444e884" category="paragraph">顯示與所選群組相關聯的本機使用者清單。</block>
-  <block id="353defc72b13f3a77c49cafd47a18f85" category="inline-xref-macro">建立本機Windows群組</block>
-  <block id="062a96abb34aeabcd661fe53ff6d0f67" category="paragraph"><block ref="062a96abb34aeabcd661fe53ff6d0f67" category="inline-xref-macro-rx"></block></block>
-  <block id="47bd057b7e78287419e44beb57703163" category="inline-xref-macro">編輯本機Windows群組內容</block>
-  <block id="b80648ef025c5ea02acc457020ec1e8d" category="paragraph"><block ref="b80648ef025c5ea02acc457020ec1e8d" category="inline-xref-macro-rx"></block></block>
-  <block id="d133389e50f76f674468f0d082cd1910" category="inline-xref-macro">新增使用者帳戶至Windows本機群組</block>
-  <block id="7ed88928e7016b091b8c4596b8e95add" category="paragraph"><block ref="7ed88928e7016b091b8c4596b8e95add" category="inline-xref-macro-rx"></block></block>
-  <block id="6d297e6ee8e712fad346d42edbf6cd0f" category="inline-xref-macro">重新命名本機Windows群組</block>
-  <block id="85ddf1407638d5a906efda51df5d189d" category="paragraph"><block ref="85ddf1407638d5a906efda51df5d189d" category="inline-xref-macro-rx"></block></block>
-  <block id="d3bd00e016659cf41f88b175f8e09b18" category="inline-xref-macro">刪除本機Windows群組</block>
-  <block id="3a20813ea7be9a13e5794ca34063eb09" category="paragraph"><block ref="3a20813ea7be9a13e5794ca34063eb09" category="inline-xref-macro-rx"></block></block>
-  <block id="56d1938baf1fa0304fdcd806bf92e633" category="inline-xref-macro">建立本機Windows使用者帳戶</block>
-  <block id="a2db5067f9a477847c309b62a8490902" category="paragraph"><block ref="a2db5067f9a477847c309b62a8490902" category="inline-xref-macro-rx"></block></block>
-  <block id="06016aaf0c61780292224353dfb4fd7d" category="inline-xref-macro">編輯本機Windows使用者內容</block>
-  <block id="eb32a7dd062223b1911ec0ef4fedbc08" category="paragraph"><block ref="eb32a7dd062223b1911ec0ef4fedbc08" category="inline-xref-macro-rx"></block></block>
-  <block id="b87dc40a9cd444db0c33c9cf74977997" category="inline-xref-macro">指派群組成員資格給使用者帳戶</block>
-  <block id="26e94c84696a247976f4b39fa3059512" category="paragraph"><block ref="26e94c84696a247976f4b39fa3059512" category="inline-xref-macro-rx"></block></block>
-  <block id="997dbd5307d22b7702dc5f4c707fdf7a" category="inline-xref-macro">重新命名本機Windows使用者</block>
-  <block id="61601b0988240bea36d346aacc5d63cf" category="paragraph"><block ref="61601b0988240bea36d346aacc5d63cf" category="inline-xref-macro-rx"></block></block>
-  <block id="8b917c2f83bfcaf6934f91be79327f41" category="inline-xref-macro">重設Windows本機使用者的密碼</block>
-  <block id="b90d7983b2f2b479f5b65acdf16870ba" category="paragraph"><block ref="b90d7983b2f2b479f5b65acdf16870ba" category="inline-xref-macro-rx"></block></block>
-  <block id="1a2cba277657c8539943792db01884d1" category="inline-xref-macro">刪除本機Windows使用者帳戶</block>
-  <block id="fdec4bbe4c2e43d23f5f3b23a89d4c24" category="paragraph"><block ref="fdec4bbe4c2e43d23f5f3b23a89d4c24" category="inline-xref-macro-rx"></block></block>
   <block id="36336ab4893fca29807b6c8d48e5d614" category="summary">您可以使用System Manager來指定名稱對應項目、以對應不同平台的使用者。</block>
   <block id="94b62c27be996324d0173ca83ba2629b" category="doc">使用System Manager進行名稱對應- ONTAP 不含更新版本</block>
   <block id="cee4c228dbc1bd4065b40bb31f18464c" category="paragraph">您可以使用ONTAP 經典版的支援功能（ONTAP 僅適用於支援支援支援的版本）來指定名稱對應項目、以對應不同平台的使用者。</block>
@@ -9284,7 +9211,6 @@
   <block id="fd17be1bdd3d6324c28d5a7565839e03" category="sidebar">停止SVM</block>
   <block id="5181a7ce4f86c2abaef519343ad172ee" category="sidebar">管理SVM</block>
   <block id="31d6568812be270156162f88d707feb1" category="sidebar">追蹤檔案存取、以診斷SVM上的存取錯誤</block>
-  <block id="77e82b2e710b5cc9c6dfa16efeddeaea" category="sidebar">為何要使用SVM</block>
   <block id="109c671113a52598e8c66e417228196d" category="sidebar">儲存虛擬機器視窗</block>
   <block id="348e837675b9fabe5c1122cab57d8896" category="sidebar">追蹤檔案存取視窗</block>
   <block id="e72f20507da5d6a27041de992b9ef103" category="sidebar">編輯Volume內容</block>
@@ -9344,7 +9270,6 @@
   <block id="48b9817af3fdae7035b6862c98196584" category="sidebar">qtree</block>
   <block id="fb0d8a1c841cd92afd4cb16ddedaeed5" category="sidebar">配額</block>
   <block id="4216ad1e709a7634134e14c2170d7512" category="sidebar">CIFS傳輸協定</block>
-  <block id="7e07ef4fefaf5e9f135056d576316043" category="sidebar">新增主目錄路徑</block>
   <block id="5e3493366d6bcfa8c375b20e784e7adb" category="sidebar">重設CIFS網域控制器</block>
   <block id="e0964d45f2fa8dc15fcc3ed6191cf5c4" category="sidebar">設定BranchCache</block>
   <block id="8c88e7e3c43d37761093ceabbdf7b11a" category="sidebar">檢視CIFS網域資訊</block>
@@ -9370,19 +9295,16 @@
   <block id="730ce1a760d9d8d3ab561b2e0382f3d1" category="sidebar">重新命名本機Windows群組</block>
   <block id="558aa2f18b78022662b4fc5b1372aaa2" category="sidebar">刪除本機Windows群組</block>
   <block id="4e1b381a3e051e915e7b003c4e8a1e7e" category="sidebar">建立本機Windows使用者帳戶</block>
-  <block id="a61ef4381ae27c3f4823d95f1b2c7c23" category="sidebar">編輯本機Windows使用者內容</block>
   <block id="db5cb060d3f1c56dc4a35fce5a867ee4" category="sidebar">重新命名本機Windows使用者</block>
   <block id="f8d149e2f560d043fee27559bcf3940e" category="sidebar">重設Windows本機使用者的密碼</block>
   <block id="747db15d84dfaabaf70d11952f46c2a0" category="sidebar">刪除本機Windows使用者帳戶</block>
   <block id="cdaed1daea52dbd381d70f70a6b16846" category="sidebar">名稱對應</block>
   <block id="9703064f9cac6be7028eadf010151aa7" category="sidebar">鏡射關係</block>
-  <block id="b172911abb23c845e5cc62ee1144120d" category="sidebar">從目的地SVM建立鏡射關係</block>
   <block id="5a1525d50d3d3d93a88bf7e478ee0f10" category="sidebar">管理鏡射關係</block>
   <block id="d060c996508910ed3ad69c79e87e23af" category="sidebar">打破SnapMirror關係</block>
   <block id="4bc208bafdebbad7e8d3a1fd96045f3e" category="sidebar">中止鏡射傳輸</block>
   <block id="d0bfe18666fab64eacdc44d2864d6412" category="sidebar">還原鏡射關係中的磁碟區</block>
   <block id="7a629c4cea107743a2f177619b7cf086" category="sidebar">保存關係</block>
-  <block id="abf829b25449f6273d3b487ca5bdc3b3" category="sidebar">從目的地SVM建立資料保存關係</block>
   <block id="2ac16ad7b9492e5af6e6d0fe8d7aadf1" category="sidebar">中止Snapshot複本傳輸</block>
   <block id="0b6959b088b18af039659613215849d3" category="sidebar">還原資料保險箱關係中的磁碟區</block>
   <block id="bcb6d96f8fcfb8d3c459ae21930e407b" category="sidebar">鏡射及保存關係</block>
@@ -9400,4 +9322,37 @@
   <block id="4eb9fc48340d0d596cecceb0f28dd73e" category="sidebar">SVM關係</block>
   <block id="a4730321aa25d81da462f897cef15c5a" category="sidebar">管理保護原則</block>
   <block id="58733b37e2507dd15a2f998c25576e58" category="sidebar">管理Snapshot原則</block>
+  <block id="076b3009a5eb0edfa535a82b14793721" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 以更新版本供應）功能來建立高可用度（HA）配對、提供不中斷營運和容錯所需的硬體備援功能。</block>
+  <block id="3e93649f77d7cfa982900e4f1b48d43c" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）、將相容的節點新增至叢集並設定節點網路詳細資料、藉此增加儲存設備的大小和功能。您也可以檢視節點摘要。</block>
+  <block id="2793842ff7183e071c1a8bb6d693ac96" category="doc">使用System Manager管理QoS原則群組- ONTAP 不含更新版本的更新版本</block>
+  <block id="3c53da1bd0376e2967661b018ac0b35f" category="doc">使用ONTAP System Manager進行應用程式設定-更新版本</block>
+  <block id="73c40768abe75066d59468c43d6697ac" category="paragraph">當某個Volume達到接近完整容量時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的《更新版本》）來增加磁碟區的大小、刪除部分Snapshot複本、或調整Snapshot保留。您可以使用System Manager中的Volume Resize精靈來提供更多可用空間。</block>
+  <block id="f689d15a9acb85ee5a20447fbdc07cf4" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及管理匯出原則。</block>
+  <block id="c61b8028f650abffd119f84f09d17f74" category="doc">使用System Manager建立SVM - ONTAP 不含更新版本的更新版本</block>
+  <block id="14d79d2eef1d80cd2470e785b15178f8" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來檢視、管理或刪除叢集或節點上安裝的任何軟體授權。</block>
+  <block id="071e9f0551cf1151fad07c37ea207e3b" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）、在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。</block>
+  <block id="74a9c6f7d15b41facbe48a228851099c" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）、在儲存虛擬機器（SVM）上設定iSCSI傳輸協定、以提供區塊層級的資料存取。您可以建立iSCSI生命期和連接埠集、然後將生命期新增至連接埠集。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。</block>
+  <block id="2b80954c6a85fe8e039a494c6c625853" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於19、9.7及更早版本）來管理鏡射關係。您可以更新、建立、靜止、初始化、重新建立、 除了恢復靜止的鏡射關係之外、也可刪除及編輯鏡射關係。</block>
+  <block id="f46cf6c1e84fb12f13b7c06207146a43" category="section-title">從目的地SVM建立鏡射關係</block>
+  <block id="42ba35aabcb38bd0b0a5d5bc89d84095" category="paragraph">您可以使用System Manager從目的地儲存虛擬機器（SVM）建立鏡射關係、並將原則和排程指派給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。</block>
+  <block id="25d48c749559d1d4de21242c0c742b97" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 可在更新版本的更新版本中使用）來建立及管理乙太網路連接埠。</block>
+  <block id="c0d6806b68a3d39f90734f6ab8a3f56a" category="paragraph">您可以使用ONTAP 經典版的支援功能（ONTAP 適用於支援支援支援支援的版本）來設定安全聲明標記語言（SAML）驗證。遠端使用者在登入System Manager之前、會先透過安全的身分識別供應商（IDP）進行驗證。</block>
+  <block id="f25e8077183eab2cecad23a8ec6c295a" category="paragraph">設定具備基本網路組態的功能性儲存虛擬機器（SVM）或SVM之後、您可以使用System Manager Classic（ONTAP 以版本9.7及更早版本提供）、選擇性地將SVM的管理委派給SVM系統管理員。</block>
+  <block id="e92b960df6e994d41ee05b6df147afe7" category="doc">關於ONTAP System Manager中的名稱服務交換器組態ONTAP -更新版本</block>
+  <block id="1d29c318268409714ed0dd949adf99ad" category="paragraph">經典版的《系統管理程式》（以更新版本提供）將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的「/etc/nsswitch.conf」檔案。ONTAP ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。</block>
+  <block id="ac92ac41cea62dfecd5b5dd772bfc78d" category="doc">使用System Manager（ONTAP 系統管理程式）管理本機Windows群組-不含更新版本</block>
+  <block id="117de31f8c0ba42bc57096e5ad9df35b" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來管理本機Windows群組。您可以修改群組內容、成員資格、帳戶、並將特定權限指派給群組。</block>
+  <block id="c26abfeeb59d33979108c70a5f4c57eb" category="paragraph">您可以使用System Manager將本機使用者、Active Directory使用者或Active Directory群組（如果您想要使用者擁有與該群組相關的權限）新增至Windows本機群組。</block>
+  <block id="208b83729d67a14e4d8cd56f6db1a70c" category="section-title">編輯本機Windows使用者內容</block>
+  <block id="868c5f63dfaa98d3d0269baf4d958a21" category="paragraph">如果您想要變更現有使用者的完整名稱或說明、或是想要啟用或停用使用者帳戶、您可以使用系統管理員來修改本機Windows使用者帳戶。您也可以修改指派給使用者帳戶的群組成員資格。</block>
+  <block id="8c848ffd60aae82bfdeaecc9cdc6e72c" category="section-title">將群組成員資格指派給使用者帳戶</block>
+  <block id="f53fc6841153532fcb131ddc59517703" category="section-title">Windows視窗</block>
+  <block id="52b7bdea477857b0549009ded6ed1610" category="paragraph">您可以使用System Manager來使用Windows視窗。Windows視窗可協助您維護叢集上每個儲存虛擬機器（SVM）的本機Windows使用者和群組清單。您可以使用本機Windows使用者和群組進行驗證和名稱對應。</block>
+  <block id="9b588f149e145ccee960f124c5e3d417" category="sidebar">關於SVM</block>
+  <block id="868555f74d53e8e661a5f31e4d7441e9" category="sidebar">關於ONTAP 名稱服務交換器組態</block>
+  <block id="30596850a631eadcd506fbd754bed204" category="sidebar">管理主目錄路徑</block>
+  <block id="03a7b9a6c19575b0318568c1fb99f27c" category="sidebar">管理CIFS群組原則組態</block>
+  <block id="d351bbac1b18d316821e865a50a75d18" category="sidebar">管理QoS原則群組</block>
+  <block id="2b61817f1a7e0ede39b016bc3fafe939" category="sidebar">本機Windows群組</block>
+  <block id="79fedbd71df5ba90cfd3c3a7103e7ebb" category="sidebar">管理保存關係</block>
 </blocks>

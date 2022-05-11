@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: ontap, name, service, switch, configuration, works, unix, system, online, help 
 summary: 將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的/etc/nsswitch.conf檔案。ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。 
 ---
-= 如何在System Manager中使用名稱服務交換器組態-更新版本ONTAP ONTAP
+= 關於ONTAP System Manager中的名稱服務交換器組態ONTAP -更新版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的「/etc/nsswitch.conf」檔案。ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。
+經典版的《系統管理程式》（以更新版本提供）將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的「/etc/nsswitch.conf」檔案。ONTAP ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。
 
 這個名稱服務交換器表決定哪些名稱服務來源可以查詢、以便擷取特定類型名稱服務資訊的資訊。ONTAP ONTAP針對每個SVM維護個別的名稱服務交換器表。ONTAP
 

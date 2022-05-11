@@ -1,64 +1,8 @@
 ---
 permalink: online-help-96-97/task_creating_local_windows_user_accounts.html 
-sidebar: sidebar 
-keywords: create, local, windows, user, account, online, help, system, manager, svm, cifs 
-summary: 您可以使用System Manager建立本機Windows使用者帳戶、以便透過SMB連線授權存取儲存虛擬機器（SVM）中所含的資料。您也可以在建立CIFS工作階段時、使用本機Windows使用者帳戶進行驗證。 
+redirect: ontap-sm-classic/online-help-96-97/task_editing_local_windows_group_properties.html 
 ---
-= 使用System Manager（ONTAP 系統管理程式）建立本機Windows使用者帳戶-更新版本
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
-您可以使用ONTAP 經典版的支援功能（ONTAP 適用於支援的版本為S9.7及更早版本）來建立本機Windows使用者帳戶、以便透過SMB連線授權存取儲存虛擬機器（SVM）中所含的資料。您也可以在建立CIFS工作階段時、使用本機Windows使用者帳戶進行驗證。
-
-.開始之前
-* 必須為SVM設定CIFS伺服器。
-
-
-本機Windows使用者名稱必須符合下列需求：
-
-* 不得超過20個字元
-* 不得在一段期間內結束
-* 不得包含逗號
-* 不得包含下列任何可列印字元：「/\[]：|<>+=；？*@
-* 不得包含非可列印的字元、範圍1到31
-
-
-密碼必須符合下列條件：
-
-* 長度必須至少六個字元
-* 不得包含使用者帳戶名稱
-* 必須包含下列四種類別中至少三種的字元：
-+
-** 英文大寫字元（A到Z）
-** 英文小寫字元（a到z）
-** 基礎10位數（0到9）
-** 特殊字元：~! @# 0 ^&*_-+='\|（）[]："<>、。？/
-
-
-
-
-.步驟
-. 按一下「*儲存設備*>* SVMS*」。
-. 選取SVM、然後按一下* SVM設定*。
-. 在*主機使用者與群組*窗格中、按一下* Windows *。
-. 在「*使用者*」索引標籤中、按一下「*建立*」。
-. 指定本機使用者的名稱。
-. 指定本機使用者的完整名稱及說明、以協助您識別此新使用者。
-. 輸入本機使用者的密碼、然後確認密碼。
-+
-密碼必須符合密碼要求。
-
-. 按一下「*新增*」、將群組成員資格指派給使用者。
-. 在* Add Groups（添加組）*窗口中，從SVM中可用組的列表中選擇組。
-. 選取*停用此帳戶*可在建立使用者之後停用此帳戶。
-. 按一下「 * 建立 * 」。
-
-
-本機Windows使用者帳戶隨即建立、並指派成員資格給所選群組。使用者帳戶會列在*使用者*索引標籤中。
-
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]

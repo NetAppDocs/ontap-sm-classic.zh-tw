@@ -154,16 +154,10 @@ entries:
   url: "/online-help-96-97/concept_ldap.html"
 - title: 使用者
   url: "/online-help-96-97/concept_cluster_user_accounts.html"
-  entries:
-  - title: 角色
-    url: "/online-help-96-97/concept_roles_conceptual.html"
 - title: 角色
   url: "/online-help-96-97/concept_roles.html"
 - title: 管理網路
   url: "/online-help-96-97/concept_managing_network.html"
-  entries:
-  - title: 網路視窗
-    url: "/online-help-96-97/reference_network_window.html"
 - title: IPspaces
   url: "/online-help-96-97/concept_ipspaces.html"
 - title: 廣播網域
@@ -261,9 +255,9 @@ entries:
     url: "/online-help-96-97/reference_managing_svms.html"
   - title: 追蹤檔案存取、以診斷SVM上的存取錯誤
     url: "/online-help-96-97/task_tracing_file_access_to_diagnose_access_errors_on_svms.html"
-  - title: 為何要使用SVM
+  - title: 關於SVM
     url: "/online-help-96-97/concept_why_you_use_svms.html"
-  - title: 如何使用名稱服務交換器組態ONTAP
+  - title: 關於ONTAP 名稱服務交換器組態
     url: "/online-help-96-97/concept_how_data_ontap_name_service_switch_configuration_works.html"
   - title: 儲存虛擬機器視窗
     url: "/online-help-96-97/reference_svm_window.html"
@@ -416,11 +410,11 @@ entries:
 - title: CIFS傳輸協定
   url: "/online-help-96-97/concept_cifs_protocol.html"
   entries:
-  - title: 新增主目錄路徑
+  - title: 管理主目錄路徑
     url: "/online-help-96-97/task_adding_home_directory_paths.html"
   - title: 重設CIFS網域控制器
     url: "/online-help-96-97/task_resetting_cifs_domain_controllers.html"
-  - title: 更新CIFS群組原則組態
+  - title: 管理CIFS群組原則組態
     url: "/online-help-96-97/task_updating_cifs_group_policy_configuration.html"
   - title: 設定BranchCache
     url: "/online-help-96-97/task_setting_up_branchcache.html"
@@ -453,13 +447,9 @@ entries:
   url: "/online-help-96-97/concept_export_policies.html"
 - title: 效率原則
   url: "/online-help-96-97/concept_efficiency_policies.html"
-- title: 建立QoS原則群組
+- title: 管理QoS原則群組
   url: "/online-help-96-97/task_creating_qos_policy_groups.html"
   entries:
-  - title: 刪除QoS原則群組
-    url: "/online-help-96-97/task_deleting_qos_policy_groups.html"
-  - title: 編輯QoS原則群組
-    url: "/online-help-96-97/task_editing_qos_policy_groups.html"
   - title: 指派儲存物件給原則群組的規則
     url: "/online-help-96-97/concept_rules_for_assigning_storage_objects_to_policy_groups.html"
 - title: NIS服務
@@ -478,38 +468,12 @@ entries:
   url: "/online-help-96-97/concept_roles_delete.html"
 - title: UNIX
   url: "/online-help-96-97/concept_unix.html"
-- title: Windows
-  entries:
-  - title: 建立本機Windows群組
-    url: "/online-help-96-97/task_creating_local_user_group.html"
-  - title: 編輯本機Windows群組內容
-    url: "/online-help-96-97/task_editing_local_windows_group_properties.html"
-  - title: 新增使用者帳戶至Windows本機群組
-    url: "/online-help-96-97/task_adding_user_accounts_to_windows_local_group.html"
-  - title: 重新命名本機Windows群組
-    url: "/online-help-96-97/task_renaming_local_windows_group.html"
-  - title: 刪除本機Windows群組
-    url: "/online-help-96-97/task_deleting_local_windows_group.html"
-  - title: 建立本機Windows使用者帳戶
-    url: "/online-help-96-97/task_creating_local_windows_user_accounts.html"
-  - title: 編輯本機Windows使用者內容
-    url: "/online-help-96-97/task_editing_local_windows_user_properties.html"
-  - title: 指派群組成員資格給使用者帳戶
-    url: "/online-help-96-97/task_assigning_group_memberships_to_user_account.html"
-  - title: 重新命名本機Windows使用者
-    url: "/online-help-96-97/task_renaming_local_windows_user.html"
-  - title: 重設Windows本機使用者的密碼
-    url: "/online-help-96-97/task_changing_password_for_windows_local_users.html"
-  - title: 刪除本機Windows使用者帳戶
-    url: "/online-help-96-97/task_deleting_local_windows_user_account.html"
-  - title: Windows視窗
-    url: "/online-help-96-97/reference_windows_window.html"
+- title: 本機Windows群組
+  url: "/online-help-96-97/task_editing_local_windows_group_properties.html"
 - title: 名稱對應
   url: "/online-help-96-97/concept_name_mapping.html"
 - title: 鏡射關係
   entries:
-  - title: 從目的地SVM建立鏡射關係
-    url: "/online-help-96-97/task_creating_mirror_relationship_from_destination_svm.html"
   - title: 管理鏡射關係
     url: "/online-help-96-97/task_editing_mirror_relationships.html"
   - title: 打破SnapMirror關係
@@ -522,16 +486,12 @@ entries:
     url: "/online-help-96-97/task_restoring_volume_mirror_relationship.html"
 - title: 保存關係
   entries:
-  - title: 從目的地SVM建立資料保存關係
-    url: "/online-help-96-97/task_creating_vault_relationship_from_destination_svm.html"
-  - title: 管理鏡射關係
+  - title: 管理保存關係
     url: "/online-help-96-97/task_editing_vault_relationships.html"
   - title: 中止Snapshot複本傳輸
     url: "/online-help-96-97/task_aborting_vault_relationships.html"
   - title: 還原資料保險箱關係中的磁碟區
     url: "/online-help-96-97/task_restoring_volume_vault_relationship.html"
-  - title: 什麼是不支援備份SnapVault
-    url: "/online-help-96-97/concept_what_snapvault_backup_is.html"
 - title: 鏡射及保存關係
   entries:
   - title: 管理鏡射與資料保險箱關係

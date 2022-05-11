@@ -1,42 +1,8 @@
 ---
 permalink: online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html 
-sidebar: sidebar 
-keywords: reverse, resync, mirror, relationship, system, manager, online, help 
-summary: 您可以使用System Manager重新建立先前中斷的鏡射關係。在反向重新同步作業中、您可以反轉來源Volume和目的地Volume的功能。 
+redirect: ontap-sm-classic/online-help-96-97/task_editing_mirror_relationships.html 
 ---
-= 使用System Manager反轉重新同步鏡射關係- ONTAP E於9.7及更早版本
+= 
 :allow-uri-read: 
 
 
-[role="lead"]
-您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來重新建立先前中斷的鏡射關係。在反向重新同步作業中、您可以反轉來源Volume和目的地Volume的功能。
-
-來源Volume必須在線上。
-
-.關於這項工作
-* 您可以在修復或更換來源磁碟區、更新來源磁碟區、以及重新建立系統的原始組態時、使用目的地磁碟區來提供資料。
-* 執行反向重新同步時、鏡射來源上的內容會被目的地Volume上的內容覆寫。
-+
-[NOTE]
-====
-** 對於符合零件法規的磁碟區、作用中檔案系統中參考通用Snapshot複本的所有資料變更、都會保留在鎖定的Snapshot複本中、直到目前磁碟區設定的到期時間為止。SnapLock
-+
-如果磁碟區過期時間過去或尚未設定、則Snapshot複本和通用Snapshot複本會鎖定30天。通用Snapshot複本與最新鎖定Snapshot複本之間的所有中繼Snapshot複本都會刪除。
-
-** 對於SnapLock 非符合不符合需求的所有Volume、重新同步作業可能會導致在建立基礎Snapshot複本之後、將新資料寫入來源Volume中的資料遺失。
-
-
-====
-* 當您執行反轉重新同步時、關係的鏡射原則會設定為DPDefault、且鏡射排程會設定為「無」。
-
-
-.步驟
-. 按一下「*保護*>*磁碟區關係*」。
-. 選取您要反轉的鏡射關聯。
-. 按一下*作業*>*反轉重新同步*。
-. 選取確認核取方塊、然後按一下*反轉重新同步*。
-
-
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]

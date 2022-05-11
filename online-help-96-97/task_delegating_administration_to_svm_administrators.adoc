@@ -11,7 +11,7 @@ summary: 在設定具有基本網路組態的功能性儲存虛擬機器（SVM�
 
 
 [role="lead"]
-設定具備基本網路組態的功能性儲存虛擬機器（SVM）或SVM之後、您可以選擇使用System Manager Classic（ONTAP 適用於更新版本的更新版本）、將SVM的管理委派給SVM管理員。
+設定具備基本網路組態的功能性儲存虛擬機器（SVM）或SVM之後、您可以使用System Manager Classic（ONTAP 以版本9.7及更早版本提供）、選擇性地將SVM的管理委派給SVM系統管理員。
 
 SVM系統管理員無法使用System Manager來管理委派的SVM。系統管理員只能使用命令列介面（CLI）來管理。
 

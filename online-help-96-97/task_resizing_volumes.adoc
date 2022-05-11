@@ -11,7 +11,7 @@ summary: 當某個磁碟區達到接近完整容量時、您可以增加磁碟�
 
 
 [role="lead"]
-當某個Volume達到接近完整容量時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來增加磁碟區的大小、刪除一些Snapshot複本、或是調整Snapshot保留。您可以使用System Manager中的Volume Resize精靈來提供更多可用空間。
+當某個Volume達到接近完整容量時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的《更新版本》）來增加磁碟區的大小、刪除部分Snapshot複本、或調整Snapshot保留。您可以使用System Manager中的Volume Resize精靈來提供更多可用空間。
 
 .關於這項工作
 * 對於設定為自動擴充的磁碟區、您可以根據磁碟區大小的增加、修改該磁碟區可自動擴充的限制。

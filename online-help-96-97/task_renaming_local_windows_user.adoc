@@ -1,42 +1,8 @@
 ---
 permalink: online-help-96-97/task_renaming_local_windows_user.html 
-sidebar: sidebar 
-keywords: rename, local, windows, user, system, manager, online, help 
-summary: 您可以使用System Manager重新命名本機Windows使用者帳戶、以便更輕鬆地識別本機使用者。 
+redirect: ontap-sm-classic/online-help-96-97/task_editing_local_windows_group_properties.html 
 ---
-= 使用System Manager重新命名本機Windows使用者- ONTAP 不含更新版本的更新版本
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
-您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來重新命名本機Windows使用者帳戶、以便更輕鬆地識別本機使用者。
-
-.關於這項工作
-* 新的使用者名稱必須與先前的使用者名稱建立在相同的網域中。
-* 您指定的使用者名稱必須符合下列需求：
-+
-** 不得超過20個字元
-** 不得在一段期間內結束
-** 不得包含逗號
-** 不得包含下列任何可列印字元：「/\[]：|<>+=；？*@
-** 不得包含非可列印的字元、範圍1到31
-
-
-
-
-.步驟
-. 按一下「*儲存設備*>* SVMS*」。
-. 選取SVM、然後按一下* SVM設定*。
-. 在*主機使用者與群組*窗格中、按一下* Windows *。
-. 在*使用者*索引標籤中、選取您要重新命名的使用者、然後按一下*重新命名*。
-. 在*重新命名使用者*視窗中、為使用者指定新名稱。
-. 確認新名稱、然後按一下*重新命名*。
-
-
-使用者名稱隨即變更、新名稱會列在「*使用者*」索引標籤中。
-
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]

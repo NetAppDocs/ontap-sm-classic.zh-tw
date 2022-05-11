@@ -1,14 +1,8 @@
 ---
 permalink: online-help-96-97/concept_qos_policies.html 
-sidebar: sidebar 
-keywords: qos, policy, group, system, manager, create, edit, delete, online, help 
-summary: 您可以使用System Manager來建立、編輯及刪除QoS原則群組。 
+redirect: ontap-sm-classic/online-help-96-97/task_creating_qos_policy_groups.html 
 ---
-= QoS原則群組
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
-您可以使用System Manager來建立、編輯及刪除QoS原則群組。

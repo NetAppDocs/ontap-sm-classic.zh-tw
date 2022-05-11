@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: svm, create, storage, virtual, machine, online, help 
 summary: 您可以使用儲存虛擬機器（SVM）視窗來建立完整設定的SVM。在這些SVM上建立儲存物件之後、SVM會提供資料。 
 ---
-= 使用System Manager（ONTAP 系統管理程式）建立SVM：S9.7及更早版本
+= 使用System Manager建立SVM - ONTAP 不含更新版本的更新版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
