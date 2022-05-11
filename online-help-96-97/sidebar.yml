@@ -377,18 +377,10 @@ entries:
     url: "/online-help-96-97/task_creating_luns.html"
   - title: 刪除LUN
     url: "/online-help-96-97/task_deleting_luns.html"
-  - title: 建立啟動器群組
+  - title: 管理啟動器群組
     url: "/online-help-96-97/task_creating_initiator_groups.html"
-  - title: 刪除啟動器群組
-    url: "/online-help-96-97/task_deleting_initiator_groups.html"
-  - title: 新增啟動器
-    url: "/online-help-96-97/task_adding_initiators.html"
-  - title: 從啟動器群組刪除啟動器
-    url: "/online-help-96-97/task_deleting_initiators_from_initiator_group.html"
   - title: 建立連接埠集
     url: "/online-help-96-97/task_creating_portsets.html"
-  - title: 刪除連接埠集
-    url: "/online-help-96-97/task_deleting_portsets.html"
   - title: 複製LUN
     url: "/online-help-96-97/task_cloning_luns.html"
   - title: 編輯LUN
@@ -405,8 +397,6 @@ entries:
     url: "/online-help-96-97/task_editing_initiator_groups.html"
   - title: 編輯啟動器
     url: "/online-help-96-97/task_editing_initiators.html"
-  - title: 編輯連接埠集
-    url: "/online-help-96-97/task_editing_port_sets.html"
   - title: 檢視LUN資訊
     url: "/online-help-96-97/task_viewing_lun_information.html"
   - title: 檢視啟動器群組
@@ -417,16 +407,6 @@ entries:
     url: "/online-help-96-97/concept_using_space_reservation_for_luns.html"
   - title: 使用LUN多重傳輸協定類型的準則
     url: "/online-help-96-97/concept_lun_multiprotocol_type_guidelines.html"
-  - title: 瞭解LUN複製
-    url: "/online-help-96-97/concept_understanding_lun_clones.html"
-  - title: 啟動器主機
-    url: "/online-help-96-97/concept_initiator_hosts.html"
-  - title: igroup名稱
-    url: "/online-help-96-97/concept_igroup_name.html"
-  - title: igroup類型
-    url: "/online-help-96-97/concept_igroup_type.html"
-  - title: igroup ostyp
-    url: "/online-help-96-97/concept_igroup_ostype.html"
   - title: LUN視窗
     url: "/online-help-96-97/reference_luns_window.html"
 - title: qtree
@@ -463,14 +443,8 @@ entries:
     url: "/online-help-96-97/task_cloning_nvme_namespace.html"
   - title: 啟動和停止NVMe服務
     url: "/online-help-96-97/task_starting_or_stopping_nvme_service.html"
-  - title: 什麼是NVMe
-    url: "/online-help-96-97/concept_what_nvme_is.html"
   - title: 什麼是NVMe子系統
     url: "/online-help-96-97/concept_what_nvme_subsystem_is.html"
-  - title: NVMe命名空間
-    url: "/online-help-96-97/concept_nvme_namespaces.html"
-  - title: NVMe命名空間視窗
-    url: "/online-help-96-97/reference_nvme_namespaces_window.html"
 - title: iSCSI傳輸協定
   url: "/online-help-96-97/concept_iscsi_protocol.html"
 - title: FC/FCoE傳輸協定
@@ -486,16 +460,8 @@ entries:
     url: "/online-help-96-97/task_deleting_qos_policy_groups.html"
   - title: 編輯QoS原則群組
     url: "/online-help-96-97/task_editing_qos_policy_groups.html"
-  - title: 使用Storage QoS來管理工作負載效能
-    url: "/online-help-96-97/concept_managing_workload_performance_by_using_storage_qos.html"
-  - title: 儲存QoS的運作方式
-    url: "/online-help-96-97/concept_how_storage_qos_works.html"
-  - title: 處理量上限的運作方式
-    url: "/online-help-96-97/concept_how_maximum_throughput_limit_works.html"
   - title: 指派儲存物件給原則群組的規則
     url: "/online-help-96-97/concept_rules_for_assigning_storage_objects_to_policy_groups.html"
-  - title: QoS原則群組視窗
-    url: "/online-help-96-97/reference_qos_policy_groups_window.html"
 - title: NIS服務
   url: "/online-help-96-97/concept_nis_services.html"
 - title: LDAP用戶端服務
@@ -540,95 +506,49 @@ entries:
     url: "/online-help-96-97/reference_windows_window.html"
 - title: 名稱對應
   url: "/online-help-96-97/concept_name_mapping.html"
-- title: 管理資料保護
-  url: "/online-help-96-97/concept_managing_data_protection.html"
+- title: 鏡射關係
   entries:
-  - title: 鏡射關係
-    url: "/online-help-96-97/concept_mirror_relationships.html"
-    entries:
-    - title: 從目的地SVM建立鏡射關係
-      url: "/online-help-96-97/task_creating_mirror_relationship_from_destination_svm.html"
-    - title: 刪除鏡射關係
-      url: "/online-help-96-97/task_deleting_mirror_relationships.html"
-    - title: 管理鏡射關係
-      url: "/online-help-96-97/task_editing_mirror_relationships.html"
-    - title: 打破SnapMirror關係
-      url: "/online-help-96-97/task_breaking_snapmirror_relationships.html"
-    - title: 重新同步鏡射關係
-      url: "/online-help-96-97/task_resynchronizing_mirror_relationships.html"
-    - title: 反轉重新同步鏡射關係
-      url: "/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html"
-    - title: 中止鏡射傳輸
-      url: "/online-help-96-97/task_aborting_mirror_relationships.html"
-    - title: 還原鏡射關係中的磁碟區
-      url: "/online-help-96-97/task_restoring_volume_mirror_relationship.html"
-    - title: SnapMirror關係的運作方式
-      url: "/online-help-96-97/concept_how_snapmirror_relationships_work.html"
-  - title: 保存關係
-    url: "/online-help-96-97/concept_vault_relationships.html"
-    entries:
-    - title: 從目的地SVM建立資料保存關係
-      url: "/online-help-96-97/task_creating_vault_relationship_from_destination_svm.html"
-    - title: 刪除資料保險箱關係
-      url: "/online-help-96-97/task_deleting_vault_relationships.html"
-    - title: 編輯資料保險箱關係
-      url: "/online-help-96-97/task_editing_vault_relationships.html"
-    - title: 初始化資料保險箱關係
-      url: "/online-help-96-97/task_initializing_vault_relationships.html"
-    - title: 更新資料保險箱關係
-      url: "/online-help-96-97/task_updating_vault_relationships.html"
-    - title: 靜止保存庫關係
-      url: "/online-help-96-97/task_quiescing_vault_relationships.html"
-    - title: 恢復保存關係
-      url: "/online-help-96-97/task_resuming_vault_relationships.html"
-    - title: 中止Snapshot複本傳輸
-      url: "/online-help-96-97/task_aborting_vault_relationships.html"
-    - title: 還原資料保險箱關係中的磁碟區
-      url: "/online-help-96-97/task_restoring_volume_vault_relationship.html"
-    - title: 什麼是不支援備份SnapVault
-      url: "/online-help-96-97/concept_what_snapvault_backup_is.html"
-  - title: 鏡射及保存關係
-    url: "/online-help-96-97/concept_mirror_vault_relationships.html"
-    entries:
-    - title: 從目的地SVM建立鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_creating_mirror_vault_relationship_from_destination_svm.html"
-    - title: 刪除鏡射及資料保險箱關係
-      url: "/online-help-96-97/task_deleting_mirror_vault_relationships.html"
-    - title: 編輯鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_editing_mirror_vault_relationships.html"
-    - title: 初始化鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_initializing_mirror_vault_relationships.html"
-    - title: 更新鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_updating_mirror_vault_relationships.html"
-    - title: 靜止鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_quiescing_mirror_vault_relationships.html"
-    - title: 恢復鏡射及資料保險箱關係
-      url: "/online-help-96-97/task_resuming_mirror_vault_relationships.html"
-    - title: 中斷鏡射與資料保險箱的關係
-      url: "/online-help-96-97/task_breaking_mirror_vault_relationships.html"
-    - title: 重新同步鏡射與資料庫關係
-      url: "/online-help-96-97/task_resynchronizing_mirror_vault_relationships.html"
-    - title: 反轉重新同步鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_reverse_resynchronizing_mirror_vault_relationships.html"
-    - title: 中止鏡射與資料保險箱關係
-      url: "/online-help-96-97/task_aborting_mirror_vault_relationships.html"
-    - title: 還原鏡射與資料保險箱關係中的磁碟區
-      url: "/online-help-96-97/task_restoring_volume_mirror_vault_relationship.html"
-  - title: 延遲時間是多少
-    url: "/online-help-96-97/reference_what_lag_time_is.html"
-  - title: 資料保護關係類型
-    url: "/online-help-96-97/concept_types_data_protection_relationships.html"
-  - title: 瞭解StrictSync和Sync原則所支援的工作負載
-    url: "/online-help-96-97/concept_understanding_workloads_supported_by_strictsync_sync_policies.html"
-  - title: SnapMirror授權
-    url: "/online-help-96-97/concept_snapmirror_licensing.html"
-  - title: 保護所需時間
-    url: "/online-help-96-97/reference_protection_window.html"
-  - title: SVM關係
-    url: "/online-help-96-97/concept_svm_relationships.html"
-  - title: 保護原則
-    url: "/online-help-96-97/concept_protection_policies.html"
-- title: Snapshot原則
+  - title: 從目的地SVM建立鏡射關係
+    url: "/online-help-96-97/task_creating_mirror_relationship_from_destination_svm.html"
+  - title: 管理鏡射關係
+    url: "/online-help-96-97/task_editing_mirror_relationships.html"
+  - title: 打破SnapMirror關係
+    url: "/online-help-96-97/task_breaking_snapmirror_relationships.html"
+  - title: 反轉重新同步鏡射關係
+    url: "/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html"
+  - title: 中止鏡射傳輸
+    url: "/online-help-96-97/task_aborting_mirror_relationships.html"
+  - title: 還原鏡射關係中的磁碟區
+    url: "/online-help-96-97/task_restoring_volume_mirror_relationship.html"
+- title: 保存關係
+  entries:
+  - title: 從目的地SVM建立資料保存關係
+    url: "/online-help-96-97/task_creating_vault_relationship_from_destination_svm.html"
+  - title: 管理鏡射關係
+    url: "/online-help-96-97/task_editing_vault_relationships.html"
+  - title: 中止Snapshot複本傳輸
+    url: "/online-help-96-97/task_aborting_vault_relationships.html"
+  - title: 還原資料保險箱關係中的磁碟區
+    url: "/online-help-96-97/task_restoring_volume_vault_relationship.html"
+  - title: 什麼是不支援備份SnapVault
+    url: "/online-help-96-97/concept_what_snapvault_backup_is.html"
+- title: 鏡射及保存關係
+  entries:
+  - title: 管理鏡射與資料保險箱關係
+    url: "/online-help-96-97/task_editing_mirror_vault_relationships.html"
+  - title: 中止鏡射與資料保險箱關係
+    url: "/online-help-96-97/task_aborting_mirror_vault_relationships.html"
+  - title: 還原鏡射與資料保險箱關係中的磁碟區
+    url: "/online-help-96-97/task_restoring_volume_mirror_vault_relationship.html"
+- title: 延遲時間是多少
+  url: "/online-help-96-97/reference_what_lag_time_is.html"
+- title: 保護所需時間
+  url: "/online-help-96-97/reference_protection_window.html"
+- title: SVM關係
+  url: "/online-help-96-97/concept_svm_relationships.html"
+- title: 管理保護原則
+  url: "/online-help-96-97/concept_protection_policies.html"
+- title: 管理Snapshot原則
   url: "/online-help-96-97/concept_snapshot_policies.html"
-- title: 排程
+- title: 管理排程
   url: "/online-help-96-97/concept_schedules.html"

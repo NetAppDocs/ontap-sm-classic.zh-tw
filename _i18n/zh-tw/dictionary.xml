@@ -4969,7 +4969,6 @@
   <block id="11633eb84d1995cfa5bc65cc29e7c23a" category="list-text">按一下*「Add Comments」（新增註解）*以新增原則的其他註解。</block>
   <block id="f51d83be71182a7a9735e02d70d57f6e" category="list-text">針對資料保險箱或鏡射資料保險箱類型的原則、請指定SnapMirror標籤和目的地保留計數。</block>
   <block id="6fdf6c4c8352f1673b38d5c329f94b7e" category="summary">您可以使用System Manager來建立、編輯及刪除保護原則。</block>
-  <block id="5d1184f76781faaf229c6b885314bcd3" category="doc">保護原則</block>
   <block id="153b7ef58bffb3f57cb45bd398893623" category="paragraph">您可以使用System Manager來建立叢集層級的非同步鏡射原則、保存原則、或鏡射和保存原則、並將這些原則套用至叢集層級的資料保護關係。</block>
   <block id="56198bf717c4be176ee8bd7b5129d1f8" category="list-text">按一下「*保護*」&gt;「*保護原則*」。</block>
   <block id="f0b63c1288694a792b1b3ef5d989d21a" category="list-text">在「*建立原則*」對話方塊中、選取您要建立的原則類型。</block>
@@ -5424,7 +5423,6 @@
   <block id="6aec72670686b53f83d0f3c8b7f8d5c1" category="paragraph">指定廣播網域。</block>
   <block id="3b6595fa8e8e168b082d834dfecd8253" category="paragraph">IPspaces清單下方的區域會顯示所選IPspace中的儲存虛擬機器（SVM）清單。</block>
   <block id="2c8dfcc823a858dcc0c124552a13f9fd" category="summary">您可以使用System Manager在儲存系統中建立及管理Snapshot原則。</block>
-  <block id="623fb58af5512173351f2a5e63dd6d85" category="doc">Snapshot原則</block>
   <block id="acd5c2f46ffddbcf409e30837e19fb90" category="section-title">建立Snapshot原則</block>
   <block id="11b8a61519275d4ff15440ceab57215d" category="paragraph">您可以在System Manager中建立Snapshot原則、以指定可自動建立的Snapshot複本數量上限、以及建立這些複本的頻率。</block>
   <block id="42bdca6b4a10db7af12ad82b1b95cdc5" category="list-text">按一下* Protection（保護）** Snapshot Policies（快照原則）*。</block>
@@ -6571,7 +6569,6 @@
   <block id="12688ceac2d6ed5814bead07f50679a5" category="inline-xref-macro">修改匯出原則規則</block>
   <block id="9404e751bd2d6510597aeeefd6ad40ae" category="paragraph"><block ref="9404e751bd2d6510597aeeefd6ad40ae" category="inline-xref-macro-rx"></block></block>
   <block id="30393aba4574165c7c0b8d55f25a058c" category="summary">您可以使用System Manager在儲存系統中建立及管理排程。</block>
-  <block id="ccdb7bf9d93e5652b57cabcc8c41e061" category="doc">排程</block>
   <block id="90dc8159eee1b02d3456931c68488227" category="section-title">建立排程</block>
   <block id="2ec3d8dce6e02ab4064dfad3b24d3e10" category="paragraph">您可以使用System Manager建立排程、以便在特定時間或定期執行工作。</block>
   <block id="b97b68e83d5417cc851ecce9212fb321" category="paragraph">當您在MetroCluster 一個完整組態中建立排程時、最佳做法是在存續站台的叢集上建立一個等效排程。</block>
@@ -9344,11 +9341,6 @@
   <block id="cd242385237807a42c01bc56e88dd621" category="sidebar">檢視啟動器群組</block>
   <block id="cfe333112b475a738cfeda61ee1f8d19" category="sidebar">使用FlexVol 包含LUN的各種資料區的準則</block>
   <block id="46474bb633a6e11a4c8db2e2fd2cb25d" category="sidebar">瞭解LUN的空間保留</block>
-  <block id="307993e58e8cb708767af2aac9604017" category="sidebar">瞭解LUN複製</block>
-  <block id="f4c0fc1a228f243144f99ec4c1441785" category="sidebar">啟動器主機</block>
-  <block id="88ea85c6f41faf7838eeb9229aafdd58" category="sidebar">igroup名稱</block>
-  <block id="ca301c828c76b7b6b1a9b621ba37f603" category="sidebar">igroup類型</block>
-  <block id="b42bc8b4d95db5c8d28cad47c91c38e8" category="sidebar">igroup ostyp</block>
   <block id="48b9817af3fdae7035b6862c98196584" category="sidebar">qtree</block>
   <block id="fb0d8a1c841cd92afd4cb16ddedaeed5" category="sidebar">配額</block>
   <block id="4216ad1e709a7634134e14c2170d7512" category="sidebar">CIFS傳輸協定</block>
@@ -9362,18 +9354,12 @@
   <block id="4387d28fdea2b365f3ec1112c3219bc5" category="sidebar">編輯NVMe命名空間</block>
   <block id="495c41b6b695a7c906002ddaefa0a993" category="sidebar">複製NVMe命名空間</block>
   <block id="afa386d246ed6b7e98c56c083f74279b" category="sidebar">啟動和停止NVMe服務</block>
-  <block id="fc0cf184ac9872d5db9ff77d32bb19ae" category="sidebar">什麼是NVMe</block>
   <block id="c3b9dfd292bc1b7a3ce9854f5e6cb29d" category="sidebar">什麼是NVMe子系統</block>
-  <block id="cdd4c15a922d3317c673af22b257983d" category="sidebar">NVMe命名空間</block>
   <block id="53ffcd1a5188e6ed629f81630f2b9d9d" category="sidebar">iSCSI傳輸協定</block>
   <block id="818f82c319832b9ad4d400ca21ad3456" category="sidebar">FC/FCoE傳輸協定</block>
   <block id="6ab0763e4acffbb7d3a33e52d57616bf" category="sidebar">建立QoS原則群組</block>
   <block id="e89898d375d94a34915c63abf5b83cbd" category="sidebar">刪除QoS原則群組</block>
   <block id="20c4625db1b141a11d4ed4f1addcefc3" category="sidebar">編輯QoS原則群組</block>
-  <block id="f104ae7705a6cd41d529246347e38804" category="sidebar">使用Storage QoS來管理工作負載效能</block>
-  <block id="6b90077bf0289755b1869a54e6dbe915" category="sidebar">儲存QoS的運作方式</block>
-  <block id="fac3a7ad23607350ca249ed40421f014" category="sidebar">處理量上限的運作方式</block>
-  <block id="243b719fa0f35fb6676b7d6052729373" category="sidebar">QoS原則群組視窗</block>
   <block id="f87f2ed6d4a98514022e8578636d6edb" category="sidebar">NIS服務</block>
   <block id="f6ea9f18f1983aa1704ecf4d6b338b19" category="sidebar">LDAP用戶端服務</block>
   <block id="691bc2eae268acd68c00554c99aa23d5" category="sidebar">LDAP組態服務</block>
@@ -9389,42 +9375,19 @@
   <block id="f8d149e2f560d043fee27559bcf3940e" category="sidebar">重設Windows本機使用者的密碼</block>
   <block id="747db15d84dfaabaf70d11952f46c2a0" category="sidebar">刪除本機Windows使用者帳戶</block>
   <block id="cdaed1daea52dbd381d70f70a6b16846" category="sidebar">名稱對應</block>
-  <block id="f14e71e7e0d11fd8ae3de32514c9cf0f" category="sidebar">管理資料保護</block>
   <block id="9703064f9cac6be7028eadf010151aa7" category="sidebar">鏡射關係</block>
   <block id="b172911abb23c845e5cc62ee1144120d" category="sidebar">從目的地SVM建立鏡射關係</block>
-  <block id="bda77c175f764372331084b2a8e075aa" category="sidebar">刪除鏡射關係</block>
   <block id="5a1525d50d3d3d93a88bf7e478ee0f10" category="sidebar">管理鏡射關係</block>
   <block id="d060c996508910ed3ad69c79e87e23af" category="sidebar">打破SnapMirror關係</block>
-  <block id="537ad555b4601753fd06527686eff90c" category="sidebar">重新同步鏡射關係</block>
   <block id="4bc208bafdebbad7e8d3a1fd96045f3e" category="sidebar">中止鏡射傳輸</block>
   <block id="d0bfe18666fab64eacdc44d2864d6412" category="sidebar">還原鏡射關係中的磁碟區</block>
-  <block id="939cfaf55fa855cb56b546b4a6faa5c2" category="sidebar">SnapMirror關係的運作方式</block>
   <block id="7a629c4cea107743a2f177619b7cf086" category="sidebar">保存關係</block>
   <block id="abf829b25449f6273d3b487ca5bdc3b3" category="sidebar">從目的地SVM建立資料保存關係</block>
-  <block id="4ab4a5d86aa17e491eee18620ed0bac3" category="sidebar">刪除資料保險箱關係</block>
-  <block id="227af0287a294f61f634774d34b24c0e" category="sidebar">編輯資料保險箱關係</block>
-  <block id="ae956403fbd181f5db66838103186bf8" category="sidebar">初始化資料保險箱關係</block>
-  <block id="fab1a40175465547f12d8bf6b4741703" category="sidebar">更新資料保險箱關係</block>
-  <block id="c229e268680305c05dc6f71d75f4c1b4" category="sidebar">恢復保存關係</block>
   <block id="2ac16ad7b9492e5af6e6d0fe8d7aadf1" category="sidebar">中止Snapshot複本傳輸</block>
   <block id="0b6959b088b18af039659613215849d3" category="sidebar">還原資料保險箱關係中的磁碟區</block>
   <block id="bcb6d96f8fcfb8d3c459ae21930e407b" category="sidebar">鏡射及保存關係</block>
-  <block id="201fdbf27b19fb3675c38d8c0d795990" category="sidebar">從目的地SVM建立鏡射與資料保險箱關係</block>
-  <block id="db82443e569f07635868fc5ff76f3d55" category="sidebar">刪除鏡射及資料保險箱關係</block>
-  <block id="b3f5a15cc10f040782c9c7b46e375d5f" category="sidebar">編輯鏡射與資料保險箱關係</block>
-  <block id="3a9162b4b931a2f97ab546e6e4a59364" category="sidebar">初始化鏡射與資料保險箱關係</block>
-  <block id="3e08a966469680aab6cbae8c48d31397" category="sidebar">更新鏡射與資料保險箱關係</block>
-  <block id="ce8e2d0c539d6e2f6dd1395f82472558" category="sidebar">靜止鏡射與資料保險箱關係</block>
-  <block id="6411ef7bf5686b381d2cd378f7478735" category="sidebar">恢復鏡射及資料保險箱關係</block>
-  <block id="1e3f45dd462bf83ee02932bdb0e40894" category="sidebar">中斷鏡射與資料保險箱的關係</block>
-  <block id="f292c64a23f8885e326eb631ed0d1f95" category="sidebar">重新同步鏡射與資料庫關係</block>
-  <block id="4ea52d7763a6ba3d988f1fb36ab1f9ab" category="sidebar">反轉重新同步鏡射與資料保險箱關係</block>
   <block id="5639586a8b149082c28f6f7cbd69376e" category="sidebar">中止鏡射與資料保險箱關係</block>
   <block id="930544b632b68242721aed3e36cb565b" category="sidebar">還原鏡射與資料保險箱關係中的磁碟區</block>
-  <block id="8941ac7594748e8ec13686f25ab283fd" category="sidebar">資料保護關係類型</block>
-  <block id="bc17baa824729465e76388d0891faa91" category="sidebar">瞭解StrictSync和Sync原則所支援的工作負載</block>
-  <block id="8b8009cf30f8359309c965b346664a48" category="sidebar">SnapMirror授權</block>
-  <block id="8e3c3ed2b2343d5ec6f650bb4929ecaa" category="sidebar">SVM關係</block>
   <block id="b7ec724705dfb51c3e3d8c7338ee51cc" category="doc">使用System Manager管理保護政策- ONTAP 更新版本</block>
   <block id="121e126ccb3ed9f1bd655bd54fdcda6f" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及刪除保護原則。</block>
   <block id="811e46b365614dad2afccbb5744217f7" category="doc">使用System Manager管理Snapshot原則- ONTAP 不含更新版本的更新版本</block>
@@ -9432,4 +9395,9 @@
   <block id="f3400c7c7f134d2f8f2f30b279b5c285" category="doc">使用System Manager（ONTAP 更新版本）管理排程-更新版本</block>
   <block id="c934845b8edbac9b1640d3a858f83f4a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存系統中的排程。</block>
   <block id="2d4aef30a49a581a6ed89ce840054235" category="sidebar">磁碟</block>
+  <block id="5893aac69b45363ec1744eacd931f906" category="sidebar">管理啟動器群組</block>
+  <block id="2136f0fa9d505507ee528b858ede9c00" category="sidebar">管理鏡射與資料保險箱關係</block>
+  <block id="4eb9fc48340d0d596cecceb0f28dd73e" category="sidebar">SVM關係</block>
+  <block id="a4730321aa25d81da462f897cef15c5a" category="sidebar">管理保護原則</block>
+  <block id="58733b37e2507dd15a2f998c25576e58" category="sidebar">管理Snapshot原則</block>
 </blocks>
