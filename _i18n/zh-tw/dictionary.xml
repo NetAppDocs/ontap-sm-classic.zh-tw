@@ -5117,7 +5117,6 @@
   <block id="415aa2b1fc11348719f267b093a8dd51" category="list-text">選取啟動器群組以檢視屬於該群組的啟動器、這些啟動器會列在下方窗格的*啟動器*索引標籤中。</block>
   <block id="e3d7ee69492f9895a48cb902eab75dcf" category="list-text">選取啟動器群組以檢視對應至該群組的LUN、這些LUN會列在下方窗格的*對應LUN*中。</block>
   <block id="225462897706db04ac0f2ef21f46db48" category="summary">您可以使用System Manager來建立、編輯及刪除磁碟區。</block>
-  <block id="b370847994c3d23b844ca1e55d46d7a0" category="doc">在System Manager中管理Volume - ONTAP 更新版本</block>
   <block id="a27a4fe05bc74404abef4983a840d677" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7版及更早版本）來建立、編輯及刪除Volume。</block>
   <block id="dd0d7fb0d943afdd167daa971c00ef96" category="paragraph">您可以使用Volumes（磁碟區）索引標籤來存取叢集中的所有磁碟區、也可以使用* SVMS*&gt;* Volumes（磁碟區）*來存取SVM專屬的磁碟區。</block>
   <block id="5283be92496e2188f016eeaf229d3adc" category="paragraph">「Volumes（磁碟區）」索引標籤只有在您已啟用CIFS和NFS授權時才會顯示。</block>
@@ -7007,7 +7006,6 @@
   <block id="5f950ca8f16177c291f7ea6b16c96936" category="paragraph">您一開始可以使用相同大小的磁碟建立集合體、之後再新增大小不同的磁碟。</block>
   <block id="159682f407b6abd0d503bf2939123be4" category="list-text">將磁碟與不同的Checksum類型結合在一起。</block>
   <block id="e1d796013d0985fb55f6817a9cb8e7f9" category="paragraph">您一開始可以使用單一Checksum類型建立Aggregate、之後再新增不同Checksum類型的儲存設備。</block>
-  <block id="75e42471a0f30f0b5291750d4a05d20a" category="section-title">利用System Manager ONTAP -更新版本的版本、根據儲存建議建立集合體</block>
   <block id="efbc0ad8b6d2eb58efb50697f164d765" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）、根據儲存建議建立集合體。System Manager會分析儲存系統的組態、並提供儲存建議、例如將要建立的集合體數量、可用節點和可用的備用磁碟。</block>
   <block id="f527ab93e764b9b968cad6273c5a0f1c" category="list-text">您無法根據Cloud Volumes ONTAP 在功能上的儲存建議建立集合體、包括在功能方面的資訊、ONTAP Select 包括：MetroCluster</block>
   <block id="3efcf0a9999f2a8e8d0650f90fe62f04" category="list-text">錯誤（如果有）會顯示在螢幕上。</block>
@@ -7017,7 +7015,6 @@
   <block id="a14680ce102320c6ed774bbf598c26c9" category="paragraph">「資訊」對話方塊會顯示集合體的狀態。</block>
   <block id="771d42e5d5ee333829ba61382865b06f" category="list-text">按一下*在背景執行*以瀏覽至*集合體*視窗。</block>
   <block id="ecc194573aa08e55553db888cead7d3b" category="list-text">按一下「*重新整理*」以檢視所建立的集合體。</block>
-  <block id="93b06c5d026d7f6a708ab6de3cfb5a15" category="section-title">使用System Manager手動建立Aggregate - ONTAP 更新版本</block>
   <block id="ccac8732ee856be09c1ef43f22599d7c" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於VMware 9.7及更早版本）、手動建立僅由HDD或僅由SSD組成的集合體。</block>
   <block id="97dba5acf15587b71ee98a554fe289f3" category="paragraph">所有磁碟的大小必須相同。</block>
   <block id="00a75fb35e6e77311b62e8e94339e5e0" category="list-text">如果您要在ONTAP Select 包含4個節點的叢集上建立Aggregate、則預設會選取「鏡射Aggregate」選項。</block>
@@ -7026,7 +7023,6 @@
   <block id="395c65aa29a4097f42d57038d3fc423a" category="list-text">如果要鏡射集合體、請選取*鏡射此集合體*核取方塊。</block>
   <block id="7957243dddfc1bce590f356589bccc26" category="paragraph">對於不鏡射的組態、建立無鏡射的集合體受到限制。MetroCluster因此、根據預設MetroCluster 、鏡射選項會啟用以供各種不完整的組態使用。</block>
   <block id="869b0ba50e4548099c13ba0a119077e2" category="paragraph">此Aggregate會以指定的組態建立、並新增至Aggregate視窗中的Aggregate清單。</block>
-  <block id="5bd7f238c43d37e955c094a904e83733" category="section-title">使用System Manager ONTAP （系統管理程式）手動建立Flash Pool Aggregate -更新版本</block>
   <block id="85867b0d35df1b329438dc7c422261f1" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）手動建立Flash Pool Aggregate、或是新增SSD、將現有的HDD Aggregate轉換成Flash Pool Aggregate。建立新的HDD Aggregate時、您可以將SSD快取資源配置給它、並建立Flash Pool Aggregate。</block>
   <block id="b06cb13f1b387a05cf34a10fd25c49c6" category="list-text">您必須瞭解適用於Flash Pool Aggregate SSD層級大小與組態的平台專屬最佳實務做法和工作負載專屬最佳實務做法。</block>
   <block id="6f7017b28fd2cc703df185f2b3d20b38" category="list-text">所有HDD都必須處於零位狀態。</block>
@@ -7047,7 +7043,6 @@
   <block id="10783ccdc5ba4304290b84a60680b6ff" category="list-text">選取SSD大小和要納入集合體的SSD數量。</block>
   <block id="fcb57f20580627669d76778a0a42ed66" category="list-text">如有必要、請修改RAID組態：</block>
   <block id="4c44dce966cd4906f0296640678bf789" category="paragraph">Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中的集合體清單。</block>
-  <block id="8f34d6f3f2c9cd69da0ea95a2a82d60f" category="section-title">使用System Manager手SnapLock 動建立一個不含更新ONTAP 版本的不含更新版本的不含更新版本的不含更新版本</block>
   <block id="9db847a02a4eaadfd02090106d319dcc" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）手SnapLock 動建立一套「不符合要求」的Aggregate或SnapLock 「不符合要求」的「企業」Aggregate。您可以在SnapLock 這些集合體上建立供應「一次寫入、多次讀取」（WORM）功能的功能。</block>
   <block id="38ef748223faace4d3330c24cb1484f8" category="paragraph">必須已新增此功能的使用許可。SnapLock</block>
   <block id="77db25bdfb80aa1d0ccdedf1bf8c4811" category="list-text">在「僅供參考的」組態中、您只能建立「僅供參考的企業級集合體」MetroCluster SnapLock</block>
@@ -7061,7 +7056,6 @@
   <block id="0ee3c2fb25e9ab3f4b27a7cc9b8f9c3c" category="paragraph">如果節點上已初始化「Compliance時鐘」、則不會顯示此選項。</block>
   <block id="758b1fa6642bb6e583d5dfe9db39496c" category="paragraph">您必須確保目前的系統時間正確。「完成時鐘」是根據系統時鐘設定。一旦設定「完成時鐘」、您就無法修改或停止「完成時鐘」。</block>
   <block id="7da47c87ec001355ddc9edb16297193f" category="paragraph">根據預設、SnapLock 「鏡射」選項會停用、以供「不符合指令集」的集合體使用。</block>
-  <block id="b27b332d5e45bf641d4fd65ed64ad8d3" category="section-title">使用System Manager ONTAP - NetApp 9.7及更早版本手動建立啟用FabricPool的Aggregate</block>
   <block id="93c41266584d5677e48dfa95ec4744c7" category="paragraph">您可以使用ONTAP 經典版的《支援FabricPool ONTAP 的功能》（適用於支援更新版本的版本）手動建立支援FabricPool的Aggregate、或是將雲端層附加到SSD Aggregate、將現有的SSD Aggregate轉換成啟用FabricPool的Aggregate。</block>
   <block id="c0c422959981d66f2367c3b7fd17279e" category="list-text">Alibaba Cloud（從System Manager 9.6開始）</block>
   <block id="9293724d6e432fd4ec06f7f6139d3fd0" category="inline-xref-macro">儲存資源池的運作方式</block>
@@ -8479,8 +8473,6 @@
   <block id="07e7d3046572e80a381af8f21795feb2" category="list-text">驗證您在* Date and Time*（*日期和時間*）窗口中對時間設置所做的更改。</block>
   <block id="6ed04f4bbf50c121ea91988604447c65" category="inline-xref-macro">建立Kerberos領域組態</block>
   <block id="decd49276b8e85a4e16287300ea5fc4a" category="paragraph"><block ref="decd49276b8e85a4e16287300ea5fc4a" category="inline-xref-macro-rx"></block></block>
-  <block id="1f69a8016cdc11fb948bf5ce26bc0de1" category="summary">您可以使用System Manager來設定NVMe傳輸協定。NVMe是一種傳輸傳輸傳輸傳輸協定、可高速存取Flash型網路儲存設備。使用NVMe傳輸協定的系統有一個子系統、包含特定的NVMe控制器、命名空間、非揮發性儲存媒體、主機、連接埠、以及控制器與儲存媒體之間的介面。</block>
-  <block id="0dd816e380a61ab15ced19aed96e781a" category="doc">NVMe傳輸協定</block>
   <block id="84757f1261e396294a92d11def603c6c" category="summary">您可以使用System Manager來檢視事件記錄和事件通知。</block>
   <block id="cc774f8540dbfb34aa191e2c20a49885" category="doc">使用System Manager管理事件- ONTAP 不含更新版本的更新版本</block>
   <block id="b2a11b91caffbacb865048a18d41d038" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來檢視事件記錄和事件通知。</block>
@@ -8981,7 +8973,6 @@
   <block id="ec8718556ea92c1ed5fddca0d75a889d" category="cell">有效磁碟類型</block>
   <block id="d8866c6c3e5ef01d8280393db0af5379" category="paragraph">FCAL和SAS</block>
   <block id="499f655331418326fddcfb1f78ffe612" category="summary">您可以使用System Manager來建立及管理儲存虛擬機器（SVM）使用者帳戶。</block>
-  <block id="706d088ecb014b185975448770e848fa" category="doc">使用System Manager ONTAP - NetApp 9.7及更早版本建立及管理儲存虛擬機器（SVM）使用者帳戶</block>
   <block id="9dd1a3bc9b77bce7cd8a13454090a064" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理儲存虛擬機器（SVM）使用者帳戶。</block>
   <block id="387f14291b14311759d04dad3e244aa0" category="section-title">新增SVM使用者帳戶</block>
   <block id="bd771c8432da05d148018bb75b318580" category="paragraph">您可以使用System Manager新增儲存虛擬機器（SVM）使用者帳戶、並指定使用者登入方法來存取儲存系統。</block>
@@ -9355,4 +9346,11 @@
   <block id="d351bbac1b18d316821e865a50a75d18" category="sidebar">管理QoS原則群組</block>
   <block id="2b61817f1a7e0ede39b016bc3fafe939" category="sidebar">本機Windows群組</block>
   <block id="79fedbd71df5ba90cfd3c3a7103e7ebb" category="sidebar">管理保存關係</block>
+  <block id="848dcad0446ea1d6a218cfce14bd4f83" category="section-title">根據儲存建議建立集合體</block>
+  <block id="1a0931643fb40c6c47be73fc4d6e036b" category="section-title">手動建立Aggregate</block>
+  <block id="7aa7ed2830461848d8d830ea0a310cd8" category="section-title">手動建立Flash Pool Aggregate</block>
+  <block id="a64350598d42cab960563d46109b6216" category="section-title">手動建立SnapLock 一個不協調的Aggregate</block>
+  <block id="2ccebd804a2ce77ca906d0e7b9c74307" category="section-title">手動建立啟用FabricPool的Aggregate</block>
+  <block id="d0e7a5e3372fc34ff0c77624a2bb33ac" category="doc">使用System Manager管理Volume - ONTAP NetApp 9.7及更早版本</block>
+  <block id="5cf0222128789f408e97a1222d101d9b" category="doc">使用System Manager（ONTAP 系統管理程式）建立及管理SVM使用者帳戶-更新版本</block>
 </blocks>

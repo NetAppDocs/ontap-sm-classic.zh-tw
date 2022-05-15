@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: system, manager, create, edit, delete, volume, tab, cif, nfs, online, help 
 summary: 您可以使用System Manager來建立、編輯及刪除磁碟區。 
 ---
-= 在System Manager中管理Volume - ONTAP 更新版本
+= 使用System Manager管理Volume - ONTAP NetApp 9.7及更早版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

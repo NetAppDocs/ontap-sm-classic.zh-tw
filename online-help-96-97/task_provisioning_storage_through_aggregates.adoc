@@ -29,7 +29,7 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 
 
 
-== 利用System Manager ONTAP -更新版本的版本、根據儲存建議建立集合體
+== 根據儲存建議建立集合體
 
 您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）、根據儲存建議建立集合體。System Manager會分析儲存系統的組態、並提供儲存建議、例如將要建立的集合體數量、可用節點和可用的備用磁碟。
 
@@ -58,7 +58,7 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 
 
 
-== 使用System Manager手動建立Aggregate - ONTAP 更新版本
+== 手動建立Aggregate
 
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於VMware 9.7及更早版本）、手動建立僅由HDD或僅由SSD組成的集合體。
 
@@ -107,7 +107,7 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 
 
 
-== 使用System Manager ONTAP （系統管理程式）手動建立Flash Pool Aggregate -更新版本
+== 手動建立Flash Pool Aggregate
 
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）手動建立Flash Pool Aggregate、或是新增SSD、將現有的HDD Aggregate轉換成Flash Pool Aggregate。建立新的HDD Aggregate時、您可以將SSD快取資源配置給它、並建立Flash Pool Aggregate。
 
@@ -176,7 +176,7 @@ Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中
 
 
 
-== 使用System Manager手SnapLock 動建立一個不含更新ONTAP 版本的不含更新版本的不含更新版本的不含更新版本
+== 手動建立SnapLock 一個不協調的Aggregate
 
 您可以使用System Manager經典版（ONTAP 以更新版本供應）手SnapLock 動建立一套「不符合要求」的Aggregate或SnapLock 「不符合要求」的「企業」Aggregate。您可以在SnapLock 這些集合體上建立供應「一次寫入、多次讀取」（WORM）功能的功能。
 
@@ -242,7 +242,7 @@ Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中
 
 
 
-== 使用System Manager ONTAP - NetApp 9.7及更早版本手動建立啟用FabricPool的Aggregate
+== 手動建立啟用FabricPool的Aggregate
 
 您可以使用ONTAP 經典版的《支援FabricPool ONTAP 的功能》（適用於支援更新版本的版本）手動建立支援FabricPool的Aggregate、或是將雲端層附加到SSD Aggregate、將現有的SSD Aggregate轉換成啟用FabricPool的Aggregate。
 
@@ -307,7 +307,5 @@ Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中
 
 
 *相關資訊*
-
-xref:concept_how_storage_pool_works.adoc[儲存資源池的運作方式]
 
 http://www.netapp.com/us/media/tr-4070.pdf["NetApp技術報告4070：Flash Pool設計與實作"^]

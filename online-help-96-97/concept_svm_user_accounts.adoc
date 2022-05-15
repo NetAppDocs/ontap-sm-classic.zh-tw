@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: system, manager, create, manage, online, help, storage, virtual, machine, svm, user, account, password, change, lock, unlock , command, button 
 summary: 您可以使用System Manager來建立及管理儲存虛擬機器（SVM）使用者帳戶。 
 ---
-= 使用System Manager ONTAP - NetApp 9.7及更早版本建立及管理儲存虛擬機器（SVM）使用者帳戶
+= 使用System Manager（ONTAP 系統管理程式）建立及管理SVM使用者帳戶-更新版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
