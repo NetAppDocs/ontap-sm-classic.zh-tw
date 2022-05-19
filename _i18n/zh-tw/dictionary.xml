@@ -4008,9 +4008,7 @@
   <block id="6554454b0b446406d68531c90f523542" category="paragraph">如果RAID群組已啟用RAID混合選項、例如磁碟類型混合和磁碟RPM混合、 Aggregate現有磁碟的磁碟類型和磁碟RPM會與備用磁碟的有效磁碟類型和有效磁碟RPM相符、以取得相容的備援磁碟。</block>
   <block id="3c7ac17931d7b7b66cf7c263fc1c828c" category="inline-xref-macro">新增容量磁碟</block>
   <block id="b43496159a45e73d14c7489b1036d050" category="paragraph"><block ref="b43496159a45e73d14c7489b1036d050" category="inline-xref-macro-rx"></block></block>
-  <block id="64ede1136b38d05639150dc84ce2ca68" category="summary">延遲時間是指目的地系統延遲至來源系統的時間量。</block>
   <block id="bb7c4cc3390268168d4d4a8537f329d6" category="doc">延遲時間是多少</block>
-  <block id="78453587fd66d72075a252c52b6e2713" category="paragraph">延遲時間是指上次成功傳輸至目的地系統之Snapshot複本的目前時間與時間戳記之間的差異。除非來源和目的地系統上的時鐘未同步、否則延遲時間一律至少會與上次成功傳輸的時間長度相同。時區差異會自動計算成延遲時間。</block>
   <block id="d4f90caf4e9ab3f171545701f78ab990" category="summary">當您想要離線使用某個版本時、可以使用System Manager來變更FlexGroup 該版本的狀態、FlexGroup 將FlexGroup 該版本重新上線、或限制存取FlexGroup 某個版本的功能。</block>
   <block id="db3926b0ec24b4f88e29703ea58bc16f" category="doc">使用FlexGroup System Manager ONTAP -更新版本的更新版本-更新版本</block>
   <block id="fe3379c0654ba52a8a0b29adde9d8be1" category="paragraph">當您想要離線使用某個版本時、可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來變更FlexGroup 該版本的狀態FlexGroup 、FlexGroup 將某個版本重新上線、或限制存取FlexGroup 某個版本的《更新版》。</block>
@@ -4239,8 +4237,6 @@
   <block id="ee06c3a75d2f90d528d0bdad6ee8b794" category="inline-link-macro">指定FlexCache 適用於靜態Volume的進階選項</block>
   <block id="bf1a8ac5c931866758030b4588ed85b1" category="paragraph">如果您想要FlexCache 新增資源來擴充此功能、請按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> （進階選項）。請參閱 <block ref="ff23e8b352173b9385a50749f03a49b1" category="inline-link-macro-rx"></block>。</block>
   <block id="689dc6ae2f8d54723af8baa6aff39f7d" category="list-text">按一下*「Save」（儲存）*以調整FlexCache 此等功能的大小。</block>
-  <block id="82e0fa489db30f304e5c422ca5c4ed7a" category="summary">您可以檢視介面中的圖示、以快速取得有關系統和作業的資訊。</block>
-  <block id="c87aa7ccb86776af182c8ff69abdb4af" category="doc">應用程式介面中使用的圖示</block>
   <block id="baa9c79245f7884810c575121d7d6a37" category="section-title">儀表板視窗圖示</block>
   <block id="eb95543f6e7e801ae8e527cfe8873f85" category="paragraph">檢視儲存系統的儀表板時、可能會看到下列圖示：</block>
   <block id="817434295a673aed431435658b65d9a7" category="cell">圖示</block>
@@ -6042,7 +6038,6 @@
   <block id="37a905546aa774183d23983630e67390" category="list-text">在「*建立FlexClone檔案*」對話方塊中、選取您要複製的檔案、然後指定FlexClone檔案的名稱。</block>
   <block id="fbca46e3691f970aaaa1557af66b3c03" category="paragraph">FlexClone檔案是在父檔案所在的同一個磁碟區中建立。</block>
   <block id="cdca416bdc3d69f2edc7f12283194616" category="summary">您可以使用System Manager新增及移除本機使用者、Active Directory使用者或Active Directory群組、以管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。</block>
-  <block id="9f7846eb6b93be23ec56786e828ee53e" category="paragraph">您可以使用ONTAP 經典版的《更新系統管理程式》（ONTAP 適用於更新版本的更新版本）、新增及移除本機使用者、Active Directory使用者或Active Directory群組、藉此管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。</block>
   <block id="9f527bf76f30148a40343c0526b8e1e5" category="paragraph">在新增成員至本機Windows群組或從本機Windows群組移除成員時、請務必謹記下列事項：</block>
   <block id="b5c8d2634d49789495b71d677a5e7e2d" category="list-text">您無法將使用者新增至或移除特殊_Everyon__群組中的使用者。</block>
   <block id="71da504c4c1b677d770fba449511d7fc" category="list-text">在*群組*索引標籤中、按一下*編輯*。</block>
@@ -9105,9 +9100,6 @@
   <block id="2e8a972dbf09cb9d9e8634a9ff967882" category="sidebar">開啟SVM根磁碟區的匯出原則（建立新的NFS型SVM）</block>
   <block id="6f001c629b64ce94f74af79735f0c5ad" category="sidebar">建立共用區並設定其權限</block>
   <block id="b0b5fb2ee1318a474b94dc229a9c3ae7" category="sidebar">瞭解System Manager</block>
-  <block id="f292651045c183bc7c4cf9d2df59c36f" category="sidebar">System Manager視窗配置</block>
-  <block id="636a8855963f727473bac2df49f2eeb8" category="sidebar">自訂視窗配置</block>
-  <block id="54398abab76b88472b675eabf1995da2" category="sidebar">系統管理程式增強功能ONTAP</block>
   <block id="dbbfa6ca249fe970fb024077e64d65b5" category="sidebar">使用ONTAP NetApp System Manager設定叢集</block>
   <block id="e574842f1499540cf5f9506775ce4982" category="sidebar">使用範本檔案設定叢集</block>
   <block id="2b4979e022671c78ec2a39d040234a7a" category="sidebar">手動設定叢集</block>
@@ -9339,13 +9331,6 @@
   <block id="8c848ffd60aae82bfdeaecc9cdc6e72c" category="section-title">將群組成員資格指派給使用者帳戶</block>
   <block id="f53fc6841153532fcb131ddc59517703" category="section-title">Windows視窗</block>
   <block id="52b7bdea477857b0549009ded6ed1610" category="paragraph">您可以使用System Manager來使用Windows視窗。Windows視窗可協助您維護叢集上每個儲存虛擬機器（SVM）的本機Windows使用者和群組清單。您可以使用本機Windows使用者和群組進行驗證和名稱對應。</block>
-  <block id="9b588f149e145ccee960f124c5e3d417" category="sidebar">關於SVM</block>
-  <block id="868555f74d53e8e661a5f31e4d7441e9" category="sidebar">關於ONTAP 名稱服務交換器組態</block>
-  <block id="30596850a631eadcd506fbd754bed204" category="sidebar">管理主目錄路徑</block>
-  <block id="03a7b9a6c19575b0318568c1fb99f27c" category="sidebar">管理CIFS群組原則組態</block>
-  <block id="d351bbac1b18d316821e865a50a75d18" category="sidebar">管理QoS原則群組</block>
-  <block id="2b61817f1a7e0ede39b016bc3fafe939" category="sidebar">本機Windows群組</block>
-  <block id="79fedbd71df5ba90cfd3c3a7103e7ebb" category="sidebar">管理保存關係</block>
   <block id="848dcad0446ea1d6a218cfce14bd4f83" category="section-title">根據儲存建議建立集合體</block>
   <block id="1a0931643fb40c6c47be73fc4d6e036b" category="section-title">手動建立Aggregate</block>
   <block id="7aa7ed2830461848d8d830ea0a310cd8" category="section-title">手動建立Flash Pool Aggregate</block>
@@ -9353,4 +9338,12 @@
   <block id="2ccebd804a2ce77ca906d0e7b9c74307" category="section-title">手動建立啟用FabricPool的Aggregate</block>
   <block id="d0e7a5e3372fc34ff0c77624a2bb33ac" category="doc">使用System Manager管理Volume - ONTAP NetApp 9.7及更早版本</block>
   <block id="5cf0222128789f408e97a1222d101d9b" category="doc">使用System Manager（ONTAP 系統管理程式）建立及管理SVM使用者帳戶-更新版本</block>
+  <block id="77e82b2e710b5cc9c6dfa16efeddeaea" category="sidebar">為何要使用SVM</block>
+  <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="sidebar">磁碟區</block>
+  <block id="7e07ef4fefaf5e9f135056d576316043" category="sidebar">新增主目錄路徑</block>
+  <block id="34c8cc3c55629eebeca9a7f5b7b3536d" category="sidebar">SVM使用者</block>
+  <block id="a61ef4381ae27c3f4823d95f1b2c7c23" category="sidebar">編輯本機Windows使用者內容</block>
+  <block id="b87dc40a9cd444db0c33c9cf74977997" category="sidebar">指派群組成員資格給使用者帳戶</block>
+  <block id="b172911abb23c845e5cc62ee1144120d" category="sidebar">從目的地SVM建立鏡射關係</block>
+  <block id="abf829b25449f6273d3b487ca5bdc3b3" category="sidebar">從目的地SVM建立資料保存關係</block>
 </blocks>

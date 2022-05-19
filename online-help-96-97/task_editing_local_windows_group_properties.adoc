@@ -20,7 +20,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 == 編輯本機Windows群組內容
 
 [role="lead"]
-您可以使用ONTAP 經典版的《更新系統管理程式》（ONTAP 適用於更新版本的更新版本）、新增及移除本機使用者、Active Directory使用者或Active Directory群組、藉此管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。
+您可以使用System Manager新增及移除本機使用者、Active Directory使用者或Active Directory群組、以管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。
 
 在新增成員至本機Windows群組或從本機Windows群組移除成員時、請務必謹記下列事項：
 
@@ -203,7 +203,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-= 刪除本機Windows群組
+== 刪除本機Windows群組
 
 [role="lead"]
 如果不再需要群組來判斷SVM上所含資料的存取權限、或將SVM使用者權限（權限）指派給群組成員、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows群組。
@@ -313,7 +313,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-= 將群組成員資格指派給使用者帳戶
+== 將群組成員資格指派給使用者帳戶
 
 [role="lead"]
 如果您希望使用者擁有與特定群組相關的權限、可以使用系統管理員將群組成員資格指派給使用者帳戶。
@@ -342,7 +342,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-= 重新命名本機Windows使用者
+== 重新命名本機Windows使用者
 
 [role="lead"]
 您可以使用System Manager重新命名本機Windows使用者帳戶、以便更輕鬆地識別本機使用者。
@@ -377,7 +377,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-= 重設Windows本機使用者的密碼
+== 重設Windows本機使用者的密碼
 
 [role="lead"]
 您可以使用System Manager重設Windows本機使用者的密碼。例如、如果目前的密碼遭入侵或使用者忘記密碼、您可能會想要重設密碼。
@@ -411,7 +411,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-= 刪除本機Windows使用者帳戶
+== 刪除本機Windows使用者帳戶
 
 [role="lead"]
 如果不再需要使用者帳戶來進行SVM CIFS伺服器的本機CIFS驗證、或是決定SVM所含資料的存取權限、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows使用者帳戶。
