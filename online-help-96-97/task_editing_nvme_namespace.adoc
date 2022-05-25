@@ -4,14 +4,12 @@ sidebar: sidebar
 keywords: edit, nvme, namespace, online, help, system, manager 
 summary: 您可以變更命名空間對應的子系統、使用System Manager來編輯命名空間。 
 ---
-= 使用System Manger（ONTAP 系統管理器）編輯NVMe命名空間-更新版本
+= 使用System Manager（ONTAP 系統管理程式）編輯NVMe命名空間-更新版本
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用ONTAP 經典版的功能（ONTAP 以更新版本的版本供應）來編輯命名空間、方法是變更命名空間對應的子系統。
+您可以變更ONTAP 命名空間對應的子系統、使用經典版（ONTAP 以更新版本的版本提供）的支援功能來編輯命名空間。
 
 您只能在此視窗中修改NVMe子系統設定、無法編輯其他命名空間詳細資料。
 

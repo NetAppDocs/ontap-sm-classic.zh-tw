@@ -5685,17 +5685,8 @@
   <block id="5046598b544c7fcd018e2eb3273e5bab" category="paragraph">SVM可透過多種資料存取傳輸協定同時提供資料。SVM透過NAS傳輸協定（例如CIFS和NFS）提供檔案層級的資料存取、並透過SAN傳輸協定（例如iSCSI、FC/FCoE和NVMe）提供區塊層級的資料存取。SVM可同時為SAN和NAS用戶端獨立提供資料。</block>
   <block id="88fa7d722f39b4b9af3f6249d77e3349" category="list-text">管理委派</block>
   <block id="fcc27c9a3d8629eba9cd7af0245dd884" category="paragraph">SVM管理員擁有由叢集管理員指派的權限。</block>
-  <block id="4ce4dda529d7d70f9c36d022aa9449c8" category="summary">您可以使用System Manager來建立及管理角色。</block>
-  <block id="262333fc510a217309de41b775906e37" category="doc">利用System Manager建立及管理角色- ONTAP 不含更新版本的更新版本</block>
-  <block id="9a8f0d506aed3b767779b83964cf1b1a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及管理職務。</block>
   <block id="680bc53c2140210b4a76bfa69cdc2535" category="section-title">新增角色</block>
-  <block id="c1edbc4c9e061c62e85d9779adb916f3" category="paragraph">您可以使用System Manager新增存取控制角色、並指定角色使用者可以存取的命令或命令目錄。您也可以控制角色對命令或命令目錄的存取層級、也可以指定套用至命令或命令目錄的查詢。</block>
-  <block id="7267345a94face97a0b4b2e735d51b1d" category="list-text">在「* SVM使用者詳細資料*」窗格中、按一下「*角色*」。</block>
-  <block id="7fb2d686fde24abfccde92f263682945" category="list-text">在「*新增角色*」對話方塊中、指定角色名稱、然後新增角色屬性。</block>
   <block id="66fb6a47814af51ff5ccbdcde304978d" category="section-title">編輯角色</block>
-  <block id="af2ea4d8f843befba34328807ddef7e2" category="paragraph">您可以使用System Manager修改命令或命令目錄的存取控制角色、並限制使用者只能存取一組指定的命令。</block>
-  <block id="184d7287e45870df2985a70608171872" category="list-text">選取您要修改的角色、然後按一下*編輯*。</block>
-  <block id="db9e97c1b3b403653857d8198470a678" category="list-text">修改角色屬性、然後按一下*修改*。</block>
   <block id="8f5688ecc5f753d1e2318662729de7f9" category="section-title">角色視窗</block>
   <block id="27adb7ee914c0748172ec6fe665f7cf5" category="paragraph">您可以使用「角色」視窗來管理與使用者帳戶相關的角色。</block>
   <block id="1b8034978dc054c628fde7090de331a7" category="paragraph">開啟「新增角色」對話方塊、可讓您建立存取控制角色、並指定角色使用者可以存取的命令或命令目錄。</block>
@@ -6075,9 +6066,6 @@
   <block id="7113d722943a79c0363f52082d9e2772" category="list-text">藉由指定匯出名稱、大小和權限、為NFS儲存設備配置磁碟區。</block>
   <block id="42488800b178066ccca6c050aabe50cd" category="paragraph">CIFS伺服器和NIS網域是以指定的組態設定、並建立資料生命量。根據預設、資料生命量具有管理存取權。您可以在「摘要」頁面上檢視組態詳細資料。</block>
   <block id="cfa566be6299e9e3d5fade67a78c3e74" category="summary">您可以變更命名空間對應的子系統、使用System Manager來編輯命名空間。</block>
-  <block id="932602fa5fa764793ab1fa81fc0be6d7" category="doc">使用System Manger（ONTAP 系統管理器）編輯NVMe命名空間-更新版本</block>
-  <block id="727ece68052790d13859f0d00c5bc97d" category="paragraph">您可以使用ONTAP 經典版的功能（ONTAP 以更新版本的版本供應）來編輯命名空間、方法是變更命名空間對應的子系統。</block>
-  <block id="9ec7401b6f04c416e336acd652043b73" category="paragraph">您只能在此視窗中修改NVMe子系統設定、無法編輯其他命名空間詳細資料。</block>
   <block id="d1305ce0377b200e122b7ba0692c3131" category="list-text">按一下「* NVMe *&gt;* NVMe命名空間*」。</block>
   <block id="f7e3bbd4fe5c0d8ca1b63838f152aa81" category="list-text">在* NVMe命名空間視窗*中、選取您要編輯的命名空間。</block>
   <block id="f675a7bc5b1163c3b4fcd04df9e2b068" category="list-text">選取子系統選項：</block>
@@ -9346,4 +9334,7 @@
   <block id="b87dc40a9cd444db0c33c9cf74977997" category="sidebar">指派群組成員資格給使用者帳戶</block>
   <block id="b172911abb23c845e5cc62ee1144120d" category="sidebar">從目的地SVM建立鏡射關係</block>
   <block id="abf829b25449f6273d3b487ca5bdc3b3" category="sidebar">從目的地SVM建立資料保存關係</block>
+  <block id="5320519656008cb5df3f08380e301995" category="doc">使用System Manager（ONTAP 系統管理程式）編輯NVMe命名空間-更新版本</block>
+  <block id="e98d8ae8fa01fcc5c723de5567d4b5a5" category="paragraph">您可以變更ONTAP 命名空間對應的子系統、使用經典版（ONTAP 以更新版本的版本提供）的支援功能來編輯命名空間。</block>
+  <block id="e605d3c73e4fdd4e52aaf2c1465605c6" category="paragraph">您只能在此視窗中修改NVMe子系統設定、無法編輯其他命名空間詳細資料。</block>
 </blocks>
