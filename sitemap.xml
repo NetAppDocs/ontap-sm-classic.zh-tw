@@ -190,7 +190,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_configuration_update.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -666,7 +666,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_managing_clusters.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -932,7 +932,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_setting_up_cluster.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -960,7 +960,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_setting_up_nvme.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -1345,7 +1345,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_why_you_use_svms.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -1709,7 +1709,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_cifs_window.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -2080,7 +2080,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_disks_window.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -2738,7 +2738,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic//search.html</loc>
       
-      <lastmod>2022-05-25T01:30:56+00:00</lastmod>
+      <lastmod>2022-05-28T03:16:15+00:00</lastmod>
       
     </url>
   
@@ -2920,7 +2920,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_preferred_domain_controllers.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -3837,7 +3837,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_luns.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -4257,7 +4257,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_application.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -4754,7 +4754,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_local_windows_group_properties.html</loc>
       
-      <lastmod>2022-05-19T17:46:19+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -4775,7 +4775,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_mirror_relationships.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -4950,14 +4950,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_vault_relationships.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_volume_properties.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -5832,7 +5832,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_running_deduplication_operations.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
@@ -6021,7 +6021,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_starting_or_stopping_nvme_service.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
       
     </url>
   
