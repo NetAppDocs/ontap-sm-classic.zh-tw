@@ -17,7 +17,6 @@ summary: 您可以使用System Manager編輯鏡射關係、方法是選取叢集
 
 == 刪除關係
 
-[role="lead"]
 您可以使用System Manager刪除鏡射關係、並永久結束來源與目的地磁碟區之間的鏡射關係。刪除鏡射關係時、會刪除來源磁碟區上的基礎Snapshot複本。
 
 刪除關係之前、最好先中斷鏡射關係。
@@ -30,15 +29,10 @@ summary: 您可以使用System Manager編輯鏡射關係、方法是選取叢集
 
 關係隨即刪除、並刪除來源磁碟區上的基礎Snapshot複本。
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 重新同步關係
 
-[role="lead"]
 您可以使用System Manager重新建立先前中斷的鏡射關係。您可以執行重新同步作業、從停用來源Volume的災難中恢復。
 
 來源叢集和目的地叢集、以及來源SVM和目的地SVM必須處於對等關係中。
@@ -66,15 +60,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 選取確認核取方塊、然後按一下*重新同步*。
 
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 恢復靜止的關係
 
-[role="lead"]
 您可以使用System Manager來恢復靜止的鏡射關係。當您恢復關係時、會恢復正常資料傳輸至鏡射目的地、並重新啟動所有鏡射活動。
 
 如果從命令列介面（CLI）中斷鏡射關係、則無法從系統管理員恢復關係。您必須使用CLI恢復關係。
@@ -88,15 +77,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 針對選取的鏡射關係、會繼續傳輸資料至鏡射目的地。
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 更新關係
 
-[role="lead"]
 您可以使用System Manager來啟動目的地的非排程鏡射更新。您可能必須執行手動更新、以避免因即將停電、排程維護或資料移轉而導致資料遺失。
 
 鏡射關係必須處於Snapmirror狀態。
@@ -115,15 +99,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 在* Details（詳細資料）*選項卡中驗證傳輸狀態。
 
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 靜止關係
 
-[role="lead"]
 您可以在建立Snapshot複本之前、使用System Manager來靜止鏡射目的地以穩定它。「靜止」作業可讓作用中的鏡射傳輸完成、並停用鏡射關係的未來傳輸。
 
 您只能靜止處於Snapmirror狀態的鏡射關係。
@@ -135,15 +114,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 選取確認核取方塊、然後按一下*靜止*。
 
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 初始化關係
 
-[role="lead"]
 當您開始鏡射關係時、必須初始化該關係。初始化關係是將資料從來源磁碟區傳輸到目的地的完整基礎。如果您在建立關聯時尚未初始化、可以使用System Manager來初始化鏡射關係。
 
 .步驟
@@ -156,15 +130,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 建立Snapshot複本並傳輸至目的地。此Snapshot複本可作為後續遞增Snapshot複本的基礎。
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 編輯關係
 
-[role="lead"]
 您可以使用System Manager編輯鏡射關係、方法是選取叢集中的現有原則或排程、或是建立原則或排程。
 
 .關於這項工作
@@ -242,15 +211,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 按一下「*確定*」以儲存變更。
 
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 從目的地SVM建立鏡射關係
 
-[role="lead"]
 您可以使用System Manager從目的地儲存虛擬機器（SVM）建立鏡射關係、並將原則和排程指派給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。
 
 .開始之前
@@ -313,15 +277,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 來源Volume與目的地Volume之間會建立鏡射關係。如果您選擇初始化關係、基礎Snapshot複本會傳輸到目的地Volume。
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 反轉重新同步鏡射關係
 
-[role="lead"]
 您可以使用System Manager重新建立先前中斷的鏡射關係。在反向重新同步作業中、您可以反轉來源Volume和目的地Volume的功能。
 
 來源Volume必須在線上。

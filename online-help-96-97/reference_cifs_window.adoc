@@ -11,7 +11,7 @@ summary: 您可以使用CIFS視窗來設定CIFS伺服器、管理網域控制器
 
 
 [role="lead"]
-您可以使用System Manager（ONTAP 更新版本）中的CIFS視窗來設定CIFS伺服器、管理網域控制器、管理符號UNIX對應、以及設定BranchCache。
+您可以使用ONTAP 「CIFS」視窗來ONTAP 設定CIFS伺服器、管理網域控制器、管理符號UNIX對應、以及設定BranchCache。
 
 
 

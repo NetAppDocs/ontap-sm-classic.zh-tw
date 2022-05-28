@@ -17,7 +17,6 @@ summary: 您可以使用System Manager編輯資料保險箱關係、方法是選
 
 == 編輯關係
 
-[role="lead"]
 您可以使用System Manager編輯資料保險箱關係、方法是選取叢集中的現有原則或排程、或建立新的原則或排程。不過、您無法編輯現有原則或排程的參數。
 
 來源與目的地叢集必須處於健全的對等關係中。
@@ -108,7 +107,6 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 == 初始化關係
 
-[role="lead"]
 如果您在建立關聯時尚未初始化資料保險箱關係、則可以使用System Manager來初始化資料保險箱關係。資料的基礎傳輸是從來源FlexVol 的來源供應區開始、並移至目的地FlexVol 的供應區。
 
 來源與目的地叢集必須處於健全的對等關係中。
@@ -131,7 +129,6 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 == 從目的地SVM建立關係
 
-[role="lead"]
 您可以使用System Manager從目的地儲存虛擬機器（SVM）建立資料保險箱關係、並指派資料保險箱原則以建立備份資料庫。如果系統資料遺失或毀損、可從備份資料保存庫目的地還原備份資料。
 
 .開始之前
@@ -205,15 +202,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 會在目的地Volume與來源Volume之間建立資料保存關係。如果您選擇初始化關係、基礎Snapshot複本會傳輸到目的地Volume。
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 更新關係
 
-[role="lead"]
 您可以使用System Manager手動啟動非排程的遞增更新。您可能需要手動更新、以避免因即將停電、排程維護或資料移轉而導致資料遺失。
 
 必須初始化資料保險箱關係。
@@ -232,15 +224,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 在* Details（詳細資料）*選項卡中驗證傳輸狀態。
 
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 刪除關係
 
-[role="lead"]
 您可以使用System Manager結束來源與目的地Volume之間的資料保存關係、然後從來源釋出Snapshot複本。
 
 釋出關係會永久移除來源磁碟區上資料保存關係所使用的基礎Snapshot複本。若要重新建立資料保險箱關係、您必須使用命令列介面（CLI）從來源磁碟區執行重新同步作業。
@@ -257,15 +244,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 恢復關係
 
-[role="lead"]
 您可以使用System Manager來恢復靜止的資料保險箱關係。當您恢復關係時、系統FlexVol 會恢復正常資料傳輸至目的地的還原磁碟區、並重新啟動所有的保存活動。
 
 .步驟
@@ -276,15 +258,10 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 恢復正常資料傳輸。如果關係有排程的傳輸、則會從下一個排程開始傳輸。
 
-*相關資訊*
-
-xref:reference_protection_window.adoc[保護所需時間]
-
 
 
 == 靜止關係
 
-[role="lead"]
 您可以FlexVol 使用System Manager來停止資料傳輸至目的地的資料流通、方法是停止資料保存關係。
 
 .步驟

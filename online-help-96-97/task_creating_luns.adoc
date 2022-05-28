@@ -11,7 +11,7 @@ summary: 當有可用空間時、您可以使用System Manager為現有的Aggreg
 
 
 [role="lead"]
-當有可用空間時、您可以使用ONTAP 經典版的《經典版》（ONTAP 僅供參考資料9.8及更早版本）、為現有的Aggregate、Volume或qtree建立LUN。您可以在現有磁碟區中建立LUN、或為FlexVol LUN建立新的功能區。您也可以啟用儲存服務品質（QoS）來管理工作負載效能。
+當有可用空間時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來為現有的Aggregate、Volume或qtree建立LUN。您可以在現有磁碟區中建立LUN、或為FlexVol LUN建立新的功能區。您也可以啟用儲存服務品質（QoS）來管理工作負載效能。
 
 如果您指定LUN ID、System Manager會先檢查LUN ID的有效性、然後再新增。如果您未指定LUN ID、ONTAP 則無法使用的功能會自動指派LUN ID。
 

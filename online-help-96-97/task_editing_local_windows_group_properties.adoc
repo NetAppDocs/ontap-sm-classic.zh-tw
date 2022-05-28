@@ -6,11 +6,9 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 ---
 = 使用System Manager（ONTAP 系統管理程式）管理本機Windows群組-不含更新版本
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
-
-
-
-== 使用System Manager（ONTAP 系統管理程式）管理本機Windows群組-不含更新版本
 
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來管理本機Windows群組。您可以修改群組內容、成員資格、帳戶、並將特定權限指派給群組。
@@ -19,7 +17,6 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 
 == 編輯本機Windows群組內容
 
-[role="lead"]
 您可以使用System Manager新增及移除本機使用者、Active Directory使用者或Active Directory群組、以管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。
 
 在新增成員至本機Windows群組或從本機Windows群組移除成員時、請務必謹記下列事項：
@@ -50,15 +47,10 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 
 本機Windows群組設定會被修改、變更會顯示在*群組*索引標籤中。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 建立本機Windows群組
 
-[role="lead"]
 您可以使用System Manager建立本機Windows群組、以便透過SMB連線來授權存取儲存虛擬機器（SVM）中所含的資料。您也可以指派權限、以定義群組成員在執行管理活動時擁有的使用者權限或功能。
 
 必須為SVM設定CIFS伺服器。
@@ -121,15 +113,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 本機Windows群組隨即建立、並列在「群組」視窗中。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 新增使用者帳戶至Windows本機群組
 
-[role="lead"]
 您可以使用System Manager將本機使用者、Active Directory使用者或Active Directory群組（如果您想要使用者擁有與該群組相關的權限）新增至Windows本機群組。
 
 .開始之前
@@ -163,15 +150,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 您新增的使用者會列在*群組*索引標籤的使用者資料表中。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 重新命名本機Windows群組
 
-[role="lead"]
 您可以使用System Manager重新命名本機Windows群組、以便更輕鬆地識別群組。
 
 .關於這項工作
@@ -197,15 +179,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 本機群組名稱隨即變更、群組會在「群組」視窗中以新名稱列出。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 刪除本機Windows群組
 
-[role="lead"]
 如果不再需要群組來判斷SVM上所含資料的存取權限、或將SVM使用者權限（權限）指派給群組成員、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows群組。
 
 .關於這項工作
@@ -228,15 +205,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 本機群組會連同其成員資格記錄一起刪除。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 建立本機Windows使用者帳戶
 
-[role="lead"]
 您可以使用System Manager建立本機Windows使用者帳戶、以便透過SMB連線授權存取儲存虛擬機器（SVM）中所含的資料。您也可以在建立CIFS工作階段時、使用本機Windows使用者帳戶進行驗證。
 
 .開始之前
@@ -285,15 +257,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 本機Windows使用者帳戶隨即建立、並指派成員資格給所選群組。使用者帳戶會列在*使用者*索引標籤中。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 編輯本機Windows使用者內容
 
-[role="lead"]
 如果您想要變更現有使用者的完整名稱或說明、或是想要啟用或停用使用者帳戶、您可以使用系統管理員來修改本機Windows使用者帳戶。您也可以修改指派給使用者帳戶的群組成員資格。
 
 .步驟
@@ -307,15 +274,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 本機Windows使用者帳戶的屬性會被修改、並顯示在「*使用者*」索引標籤中。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 將群組成員資格指派給使用者帳戶
 
-[role="lead"]
 如果您希望使用者擁有與特定群組相關的權限、可以使用系統管理員將群組成員資格指派給使用者帳戶。
 
 .開始之前
@@ -336,15 +298,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 使用者帳戶會指派成員資格給所有選取的群組、而且使用者具有與這些群組相關聯的權限。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 重新命名本機Windows使用者
 
-[role="lead"]
 您可以使用System Manager重新命名本機Windows使用者帳戶、以便更輕鬆地識別本機使用者。
 
 .關於這項工作
@@ -371,15 +328,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 使用者名稱隨即變更、新名稱會列在「*使用者*」索引標籤中。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 重設Windows本機使用者的密碼
 
-[role="lead"]
 您可以使用System Manager重設Windows本機使用者的密碼。例如、如果目前的密碼遭入侵或使用者忘記密碼、您可能會想要重設密碼。
 
 您設定的密碼必須符合下列條件：
@@ -405,15 +357,10 @@ xref:reference_windows_window.adoc[Windows視窗]
 . 確認新密碼、然後按一下*重設*。
 
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == 刪除本機Windows使用者帳戶
 
-[role="lead"]
 如果不再需要使用者帳戶來進行SVM CIFS伺服器的本機CIFS驗證、或是決定SVM所含資料的存取權限、您可以使用System Manager從儲存虛擬機器（SVM）刪除本機Windows使用者帳戶。
 
 .關於這項工作
@@ -431,26 +378,21 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 本機使用者帳戶與其群組成員資格項目一起刪除。
 
-*相關資訊*
-
-xref:reference_windows_window.adoc[Windows視窗]
-
 
 
 == Windows視窗
 
-[role="lead"]
 您可以使用System Manager來使用Windows視窗。Windows視窗可協助您維護叢集上每個儲存虛擬機器（SVM）的本機Windows使用者和群組清單。您可以使用本機Windows使用者和群組進行驗證和名稱對應。
 
 
 
-== 使用者索引標籤
+=== 使用者索引標籤
 
 您可以使用「使用者」索引標籤來檢視SVM本機的Windows使用者。
 
 
 
-== 命令按鈕
+=== 命令按鈕
 
 * *建立*
 +
@@ -484,7 +426,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-== 使用者清單
+=== 使用者清單
 
 * *名稱*
 +
@@ -506,7 +448,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-== 使用者詳細資料區域
+=== 使用者詳細資料區域
 
 * *群組*
 +
@@ -516,13 +458,13 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-== 群組索引標籤
+=== 群組索引標籤
 
 您可以使用群組索引標籤來新增、編輯或刪除SVM本機的Windows群組。
 
 
 
-== 命令按鈕
+=== 命令按鈕
 
 * *建立*
 +
@@ -552,7 +494,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-== 群組清單
+=== 群組清單
 
 * *名稱*
 +
@@ -566,7 +508,7 @@ xref:reference_windows_window.adoc[Windows視窗]
 
 
 
-== 群組詳細資料區域
+=== 群組詳細資料區域
 
 * *權限*
 +

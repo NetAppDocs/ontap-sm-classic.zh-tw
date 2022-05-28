@@ -2814,7 +2814,6 @@
   <block id="bcbcfcff99d92a05a766e59d232122cd" category="paragraph"><block ref="bcbcfcff99d92a05a766e59d232122cd" category="inline-link-rx"></block></block>
   <block id="bb6179eeaaa19115df8e1ebff0fb181b" category="summary">您可以在不再需要已配置的應用程式時刪除該應用程式。</block>
   <block id="0e9cd8252c144768701a64ff9ab1f7e8" category="doc">使用System Manager刪除應用程式- ONTAP NetApp 9.7及更早版本</block>
-  <block id="f8c7aff1779acf3b9dc85a549c8f4d4f" category="paragraph">您可以使用ONTAP 經典版的功能（9.7版及更早版本）刪除已配置的應用程式（不再需要）。</block>
   <block id="cf1ec3c79763ae8384e9fd61bf210cbd" category="paragraph">身為叢集管理員、您可以在佈建應用程式之後、在不再需要時將其刪除。以下程序範例說明如何刪除* NAS Container-*應用程式。</block>
   <block id="e4f56a438ff9fa588f3ae2b1e4316d36" category="list-text">按一下*應用程式與層級*&gt;*應用程式*</block>
   <block id="1663a078f54fee1b43b7f8a9f0bee2ce" category="list-text">按一下NAS Container應用程式的名稱。</block>
@@ -2935,8 +2934,6 @@
   <block id="a292e6b20e984807fe7fc7fbab57a006" category="list-text">在*修改使用者*視窗中、進行必要的變更。</block>
   <block id="c76634372559d896d4884f617ad0b132" category="list-text">按一下*修改*。</block>
   <block id="91650f5965ba3fed5dc9af6ebcf68e26" category="paragraph">本機Windows使用者帳戶的屬性會被修改、並顯示在「*使用者*」索引標籤中。</block>
-  <block id="f9aa0ac6f93a50d6e5146c27fccd2309" category="inline-xref-macro">Windows視窗</block>
-  <block id="d787d97d1ef711916810f55e106054e4" category="paragraph"><block ref="d787d97d1ef711916810f55e106054e4" category="inline-xref-macro-rx"></block></block>
   <block id="7bcfe62a89850496a49500438de98c3d" category="summary">您可以使用System Manager建立、編輯及刪除qtree。</block>
   <block id="976f00634832cb31e248aad233285917" category="doc">使用System Manager（ONTAP 系統管理程式）管理qtree -更新版本</block>
   <block id="77e357ee968621d5cdf41b43c70e8a85" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及刪除qtree。</block>
@@ -3222,7 +3219,6 @@
   <block id="a632e7e0f8139ecce6623cfde03d0771" category="list-text">將服務處理器設定為遠端登入、管理、監控及管理節點、無論節點的狀態為何。</block>
   <block id="724c50c12ad7e09a8879403c6e95797f" category="summary">您可以使用CIFS視窗來設定CIFS伺服器、管理網域控制器、管理符號UNIX對應、以及設定BranchCache。</block>
   <block id="5402da9bf169f313391fe2df34c5e9c8" category="doc">System Manager中的CIFS視窗- ONTAP 更新版本</block>
-  <block id="eeed665e66794c54433d3a763c6f9a29" category="paragraph">您可以使用System Manager（ONTAP 更新版本）中的CIFS視窗來設定CIFS伺服器、管理網域控制器、管理符號UNIX對應、以及設定BranchCache。</block>
   <block id="e95890b45746f6c67fa619cd249ed6c0" category="section-title">組態索引標籤</block>
   <block id="f00f93cf522e8201d8d9b74b181b4eae" category="paragraph">「組態」索引標籤可讓您建立及管理CIFS伺服器。</block>
   <block id="40142fee915d9c636c34c1581018dfaa" category="list-text">*伺服器*</block>
@@ -3592,7 +3588,6 @@
   <block id="4b64f557abbb25aea01613c8318bb296" category="paragraph"><block ref="4b64f557abbb25aea01613c8318bb296" category="inline-link-rx"></block></block>
   <block id="7a1261ca41ac4a1c4e425ca7fd7bf3f0" category="summary">當有可用空間時、您可以使用System Manager為現有的Aggregate、Volume或qtree建立LUN。您可以在現有磁碟區中建立LUN、或為FlexVol LUN建立新的功能區。您也可以啟用儲存服務品質（QoS）來管理工作負載效能。</block>
   <block id="57c0533d398adb4e7f062a380c074a16" category="doc">使用System Manager（ONTAP 系統管理程式）建立LUN - NetApp 9.7及更早版本</block>
-  <block id="44d085e7c22d7a56b01ae83977fb0c9b" category="paragraph">當有可用空間時、您可以使用ONTAP 經典版的《經典版》（ONTAP 僅供參考資料9.8及更早版本）、為現有的Aggregate、Volume或qtree建立LUN。您可以在現有磁碟區中建立LUN、或為FlexVol LUN建立新的功能區。您也可以啟用儲存服務品質（QoS）來管理工作負載效能。</block>
   <block id="654b6d4faa996a97c8af2ba360282326" category="paragraph">如果您指定LUN ID、System Manager會先檢查LUN ID的有效性、然後再新增。如果您未指定LUN ID、ONTAP 則無法使用的功能會自動指派LUN ID。</block>
   <block id="c9115d4c25cf530fb7f9e485acf7aa48" category="paragraph">選取LUN多重傳輸協定類型時、您應該已考慮使用每種類型的準則。LUN多重傳輸協定類型（或作業系統類型）決定LUN上的資料配置、以及LUN的最小和最大大小。建立LUN之後、您就無法修改LUN主機作業系統類型。</block>
   <block id="8e8bde4c7d072959adb1ea8b46550f69" category="paragraph">在這個組態中、System Manager只會顯示下列集合體、以建立LUN的各個功能區：MetroCluster FlexVol</block>
@@ -3721,7 +3716,6 @@
   <block id="cb968c10ae0c50ae74e2833ed1532d61" category="list-text">選取確認核取方塊、然後按一下*確定*。</block>
   <block id="caffe237e203deff7da0ba170f501be9" category="summary">您可以使用System Manager、從「Volumes（磁碟區）」視窗下方窗格的「Snapshot Copies（快照複本）」索引標籤、檢視所選磁碟區的所有已儲存Snapshot複本清單。您可以使用已儲存的Snapshot複本清單來重新命名、還原或刪除Snapshot複本。</block>
   <block id="564791b987f0846ef3c17ad7e3a475c2" category="doc">使用System Manager（ONTAP 系統管理程式）-更新版本、查看已儲存的Snapshot複本清單</block>
-  <block id="3a529a084aa6539c3cf0ff1e6a82eebb" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）、從「Volumes」（Volume）視窗下方窗格的「Snapshot Copies」（Snapshot複本）標籤中、檢視所選Volume的所有已儲存Snapshot複本清單。您可以使用已儲存的Snapshot複本清單來重新命名、還原或刪除Snapshot複本。</block>
   <block id="667ee17b3c0432eb3093d41b8acf2900" category="paragraph">Volume必須處於線上狀態。</block>
   <block id="2a24310e6b3a5ba6e7bf061cbda5a983" category="paragraph">您一次只能檢視一個Volume的Snapshot複本。</block>
   <block id="ac7f70dc67c04109b95c51b4fdfba0f2" category="list-text">按一下要檢視已儲存Snapshot複本之Volume旁的加號（+）。</block>
@@ -3793,7 +3787,6 @@
   <block id="eb5874bcdfccb7c48cf9287b6b1fa310" category="list-text">在「* Volumes *」視窗的「* Snapshot Copies *」標籤中、確認Snapshot複本名稱。</block>
   <block id="eb65f8f9f45566b4320c4f96a057063f" category="summary">您可以使用System Manager在建立FlexVol 完一個NetApp磁碟區之後立即執行重複資料刪除、或是排程在指定時間執行重複資料刪除。</block>
   <block id="296d3389cd2112082ce2545f02d9782a" category="doc">使用ONTAP System Manager執行重複資料刪除作業-更新版本</block>
-  <block id="c1704396b0a08ab03516a9295fa05265" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7版及更早版本）、在建立FlexVol 完這個版本之後立即執行重複資料刪除、或是排程在指定時間執行重複資料刪除。</block>
   <block id="a9b3c134a6f2f00b4102ad6b03a99673" category="list-text">必須在磁碟區上啟用重複資料刪除功能。</block>
   <block id="353a04042c6e53c8846e7a6ae90667ab" category="list-text">磁碟區必須在線上且已掛載。</block>
   <block id="1830a4c7f8b1bf191a4e98fcd26c0026" category="paragraph">重複資料刪除是在作業期間消耗系統資源的背景程序、因此可能會影響其他進行中的作業。您必須先取消重複資料刪除、才能執行任何其他作業。</block>
@@ -4008,7 +4001,6 @@
   <block id="6554454b0b446406d68531c90f523542" category="paragraph">如果RAID群組已啟用RAID混合選項、例如磁碟類型混合和磁碟RPM混合、 Aggregate現有磁碟的磁碟類型和磁碟RPM會與備用磁碟的有效磁碟類型和有效磁碟RPM相符、以取得相容的備援磁碟。</block>
   <block id="3c7ac17931d7b7b66cf7c263fc1c828c" category="inline-xref-macro">新增容量磁碟</block>
   <block id="b43496159a45e73d14c7489b1036d050" category="paragraph"><block ref="b43496159a45e73d14c7489b1036d050" category="inline-xref-macro-rx"></block></block>
-  <block id="bb7c4cc3390268168d4d4a8537f329d6" category="doc">延遲時間是多少</block>
   <block id="d4f90caf4e9ab3f171545701f78ab990" category="summary">當您想要離線使用某個版本時、可以使用System Manager來變更FlexGroup 該版本的狀態、FlexGroup 將FlexGroup 該版本重新上線、或限制存取FlexGroup 某個版本的功能。</block>
   <block id="db3926b0ec24b4f88e29703ea58bc16f" category="doc">使用FlexGroup System Manager ONTAP -更新版本的更新版本-更新版本</block>
   <block id="fe3379c0654ba52a8a0b29adde9d8be1" category="paragraph">當您想要離線使用某個版本時、可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來變更FlexGroup 該版本的狀態FlexGroup 、FlexGroup 將某個版本重新上線、或限制存取FlexGroup 某個版本的《更新版》。</block>
@@ -4225,8 +4217,6 @@
   <block id="cd6151f94431cdba04cd29e654a10e6b" category="paragraph">如果您不再想在設定為使用BranchCache的儲存虛擬機器（SVM）上提供快取服務、可以使用System Manager刪除BranchCache組態。</block>
   <block id="88d6781cf806384abcd8fe896ee6923f" category="list-text">在「* BranchCache *」標籤中、按一下「*刪除*」。</block>
   <block id="6ba17062ed5989dd6bbdd82b1eb34f92" category="paragraph">您也可以從雜湊存放區移除現有的雜湊。</block>
-  <block id="c2f327f343aa6ce05d97498ad4d2bd5e" category="summary">您可以使用System Manager來管理叢集。</block>
-  <block id="d129f6c98e37c0be76c2f406b61b16fe" category="doc">管理叢集</block>
   <block id="68fd6fabd23e2ade4b52410c1f22651f" category="summary">從System Manager 9.6開始、您可以FlexCache 調整現有資源的大小或新增資源、來調整支援範本的大小。</block>
   <block id="72293914dec694e43ee308f22c362898" category="doc">重新調整FlexCache 功能</block>
   <block id="89e4b4f1428a44007a8d6f78b2c6316d" category="list-text">若要調整FlexCache 一個大小的流通量、現有的集合體上必須有足夠的可用空間。</block>
@@ -4488,7 +4478,6 @@
   <block id="6525c33bffe7e18b5082ee362f89e075" category="list-text">按一下*指派*。</block>
   <block id="1a494378f6959538cc7d62bc78a3aa20" category="summary">您可以使用「磁碟」視窗來檢視儲存系統中的所有磁碟。</block>
   <block id="af278e4cbaba5d7640f03c7d8ccd3a53" category="doc">System Manager ONTAP 中的「磁碟」視窗-更新版本</block>
-  <block id="de93e474f59d689bd502d50a3463819e" category="paragraph">您可以使用ONTAP 「磁碟」視窗來ONTAP 檢視儲存系統中的所有磁碟（可在更新版本的版本中使用）。</block>
   <block id="c23c6bf48270ab5a6abc73daf5b0da5a" category="list-text">*指派*</block>
   <block id="3d32596e72219d2ac881a608f422a5dc" category="paragraph">將磁碟的擁有權指派或重新指派給節點。</block>
   <block id="5f834932eed1124e7b84208687496ec3" category="paragraph">只有選取磁碟的容器類型為未指派、備援或共用時、才會啟用此按鈕。</block>
@@ -6160,7 +6149,6 @@
   <block id="8efbf0147b80c7203d909e8f9bcdbbf4" category="paragraph">這些選項僅適用於FlexVol Flash Pool Aggregate中的資料保護功能。</block>
   <block id="c6cf4b94cc52ebb65e44fb968e0ec8a7" category="summary">您可以使用System Manager設定SVM的NVMe傳輸協定。在SVM上啟用NVMe傳輸協定時、您可以配置命名空間或命名空間、然後將它們指派給主機和子系統。</block>
   <block id="8dc521e6088213a6ca4845b2e447ad1f" category="doc">使用System Manager設定NVMe - ONTAP 支援升級至更新版本</block>
-  <block id="ba359a34f06422eae8bbfc598dc574cc" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）來設定SVM的NVMe傳輸協定。在SVM上啟用NVMe傳輸協定時、您可以配置命名空間或命名空間、然後將它們指派給主機和子系統。</block>
   <block id="e23275ea7297d3239b7dd72d554793b1" category="paragraph">從ONTAP 使用支援NVMe 9.5開始、您必須針對使用NVMe傳輸協定的HA配對中的每個節點、至少設定一個NVMe LIF。您也可以定義每個節點最多兩個NVMe LIF。您可以在使用System Manager建立或編輯SVM設定時、設定NVMe LIF。</block>
   <block id="1a169b0c93fde678e7545eea664d622c" category="paragraph">下圖顯示設定NVMe的工作流程：</block>
   <block id="f986c0d1608453a3100a148119f1f6d3" category="image-alt">NVMe設定工作流程</block>
@@ -7478,7 +7466,6 @@
   <block id="3dae94afcc8d727ebad4348533cb5278" category="list-text">按一下「*確定*」以儲存變更並開始Snapshot複本排程。</block>
   <block id="7ff3ceafbcd5dee311465939c5c2c592" category="summary">您可以使用System Manager修改Volume內容、例如Volume名稱、安全樣式、分數保留和空間保證。您可以修改儲存效率設定（重複資料刪除排程、重複資料刪除原則及壓縮）和空間回收設定。</block>
   <block id="8e5d707678bf42772cd958910a63a685" category="doc">使用System Manager（ONTAP 系統管理程式）編輯Volume內容-更新版本</block>
-  <block id="58e12808aee592a68ef0eba7de9b2fad" category="paragraph">您可以使用System Manager經典版（ONTAP 僅適用於更新版本的版本）來修改Volume內容、例如Volume名稱、安全樣式、分數保留和空間保證。您可以修改儲存效率設定（重複資料刪除排程、重複資料刪除原則及壓縮）和空間回收設定。</block>
   <block id="082cf66b410accaeb472402372b20380" category="paragraph">若要啟用Volume加密、您必須使用System Manager安裝Volume加密授權、而且必須使用命令列介面（CLI）啟用「金鑰管理程式設定」。啟用「key-manager setup」之後、您必須重新整理網頁瀏覽器。</block>
   <block id="19ccb207a3d1e96b44ce459b51d3f055" category="list-text">您可以將分餘額設為零百分比或100%。</block>
   <block id="db0bee877812c146729f5872ba928cc8" category="list-text">32位元磁碟區不支援資料壓縮。</block>
@@ -8440,7 +8427,6 @@
   <block id="cd6c9ebf84a4ab2c9729c1d1f6229858" category="paragraph">顯示所選節點的處理量、IOPS和延遲。</block>
   <block id="efd6deaa57c127649ff996a6581d77b1" category="summary">NVMe服務可讓您管理NVMe介面卡以搭配命名空間使用。您可以使用System Manager啟動NVMe服務、讓介面卡上線。您可以停止NVMe服務、使NVMe介面卡離線、並停用對命名空間的存取。</block>
   <block id="40ac4c7cdd68bb2416925b40af178901" category="doc">使用System Manager ONTAP （系統管理程式）-支援更新版本的更新版本、以更新版本的更新版本</block>
-  <block id="917b92acb38ad7b6209e26de91ce38a9" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7版及更早版本）來啟動NVMe服務、讓介面卡上線。NVMe服務可讓您管理NVMe介面卡以搭配命名空間使用。您可以停止NVMe服務、使NVMe介面卡離線、並停用對命名空間的存取。</block>
   <block id="385da830895079eabe56c8475a2f4ee7" category="paragraph">NVMe功能介面卡必須先存在、才能啟動NVMe服務。</block>
   <block id="2b1e7498489f41e4ab0f84375197af2b" category="list-text">在*傳輸協定*功能表中、按一下* NVMe *。</block>
   <block id="ecb15d4512908b57ead42c4707c53349" category="list-text">視需要按一下* Start*或* Stop *服務。</block>
@@ -8635,7 +8621,6 @@
   <block id="1ac02bfdaf414a50042d47a131e43144" category="list-text">按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 可修改FlexCache 功能的進階設定。請參閱 <block ref="4aa5b8ffba7fb44e3974191d1beac02c" category="inline-link-macro-rx"></block>。</block>
   <block id="d3eef7461d48108cd918ef066cc45fe9" category="summary">您可以使用System Manager來設定儲存虛擬機器（SVM）的管理詳細資料。</block>
   <block id="c25f011b08f295a29bbd500b17b738ed" category="doc">系統管理程式組態更新- ONTAP 更新版本：BIOS 9.7及更新版本</block>
-  <block id="1c82fcdf598db00f440965ba676c0e66" category="paragraph">您可以使用ONTAP 經典版的經典版（9.7版及更早版本）來設定儲存虛擬機器（SVM）的管理詳細資料。</block>
   <block id="dc7b0deb2f77cc84a07356028bc63ae9" category="section-title">設定SVM的管理詳細資料</block>
   <block id="b7741109a9b1c061304a8da08dccc9de" category="paragraph">您可以使用System Manager快速設定astorage虛擬機器（SVM）的管理詳細資料。您可以選擇性地將SVM的管理委派給SVM系統管理員。</block>
   <block id="aa672d71a085ada5e9a54f90f48abb5e" category="paragraph">身為SVM管理員、您無法使用System Manager來管理委派的SVM。您只能使用命令列介面（CLI）來管理SVMsOnly。</block>
@@ -8975,7 +8960,6 @@
   <block id="e630682fb1cc1c750105d9e99738b611" category="list-text">在「*使用者*」視窗中、選取您要修改其帳戶狀態的使用者帳戶、然後視需要按一下「*鎖定*」或「*解除鎖定*」。</block>
   <block id="dfd74b24d6ec21684e40bb98a4eef2dc" category="summary">System Manager會透過DNS自動探索網域控制器。或者、您可以將一個或多個網域控制器新增至特定網域的慣用網域控制器清單。</block>
   <block id="b9bf7d43b339de24350647273adf0828" category="doc">使用System Manager（ONTAP 系統管理程式）管理偏好的網域控制器-更新版本</block>
-  <block id="1c8df30269c0b7d68fd0908d4455290a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來管理偏好的網域控制器</block>
   <block id="c4456430c24e24bb2493c5c08a5cd240" category="section-title">新增慣用的網域控制器</block>
   <block id="1267b6e2bc7b63df3cdac85d320c529f" category="list-text">在「*網域*」標籤中、按一下「*慣用網域控制器*」區域中的「*新增*」。</block>
   <block id="8950f3330539b3b1d76c883e3d8258af" category="list-text">輸入您要新增之網域控制站的完整網域名稱（FQDN）和IP位址。</block>
@@ -9090,7 +9074,6 @@
   <block id="b0b5fb2ee1318a474b94dc229a9c3ae7" category="sidebar">瞭解System Manager</block>
   <block id="dbbfa6ca249fe970fb024077e64d65b5" category="sidebar">使用ONTAP NetApp System Manager設定叢集</block>
   <block id="e574842f1499540cf5f9506775ce4982" category="sidebar">使用範本檔案設定叢集</block>
-  <block id="2b4979e022671c78ec2a39d040234a7a" category="sidebar">手動設定叢集</block>
   <block id="f1783cedf199ea90c1cf0ff538262716" category="sidebar">建立叢集</block>
   <block id="65444ec183406e4d1b6958214e129abf" category="sidebar">設定網路</block>
   <block id="2a91fdd731eb66d6bb1f8beb287ddeaf" category="sidebar">設定支援頁面</block>
@@ -9118,7 +9101,6 @@
   <block id="390c1a3f69d68ea2d55078be2be4c36d" category="sidebar">儀表板視窗</block>
   <block id="bb1a898150cba9c435ba241d8cba4ec7" category="sidebar">還原切換與切換MetroCluster</block>
   <block id="8b24b43a668f5b51ebbc86856f6b5017" category="sidebar">準備切換和切換作業</block>
-  <block id="c375efa579ec9b8792423ddb072b1b77" category="sidebar">重新命名MetroCluster 本機站台（站台A）</block>
   <block id="1ddf333c6654f7f89c739dddfb4cc429" category="sidebar">應用程式</block>
   <block id="44797690ae0560f826637437d94313df" category="sidebar">配置基本範本</block>
   <block id="be3ad8ffec2920f1fa8c9a6df9b3cf75" category="sidebar">儲存服務定義</block>
@@ -9326,15 +9308,26 @@
   <block id="2ccebd804a2ce77ca906d0e7b9c74307" category="section-title">手動建立啟用FabricPool的Aggregate</block>
   <block id="d0e7a5e3372fc34ff0c77624a2bb33ac" category="doc">使用System Manager管理Volume - ONTAP NetApp 9.7及更早版本</block>
   <block id="5cf0222128789f408e97a1222d101d9b" category="doc">使用System Manager（ONTAP 系統管理程式）建立及管理SVM使用者帳戶-更新版本</block>
-  <block id="77e82b2e710b5cc9c6dfa16efeddeaea" category="sidebar">為何要使用SVM</block>
   <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="sidebar">磁碟區</block>
   <block id="7e07ef4fefaf5e9f135056d576316043" category="sidebar">新增主目錄路徑</block>
   <block id="34c8cc3c55629eebeca9a7f5b7b3536d" category="sidebar">SVM使用者</block>
-  <block id="a61ef4381ae27c3f4823d95f1b2c7c23" category="sidebar">編輯本機Windows使用者內容</block>
-  <block id="b87dc40a9cd444db0c33c9cf74977997" category="sidebar">指派群組成員資格給使用者帳戶</block>
-  <block id="b172911abb23c845e5cc62ee1144120d" category="sidebar">從目的地SVM建立鏡射關係</block>
-  <block id="abf829b25449f6273d3b487ca5bdc3b3" category="sidebar">從目的地SVM建立資料保存關係</block>
   <block id="5320519656008cb5df3f08380e301995" category="doc">使用System Manager（ONTAP 系統管理程式）編輯NVMe命名空間-更新版本</block>
   <block id="e98d8ae8fa01fcc5c723de5567d4b5a5" category="paragraph">您可以變更ONTAP 命名空間對應的子系統、使用經典版（ONTAP 以更新版本的版本提供）的支援功能來編輯命名空間。</block>
   <block id="e605d3c73e4fdd4e52aaf2c1465605c6" category="paragraph">您只能在此視窗中修改NVMe子系統設定、無法編輯其他命名空間詳細資料。</block>
+  <block id="7247e2bbb4656b94570de4b9a18b427a" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於《支援》9.7及更早版本）來啟動NVMe服務、讓介面卡上線。NVMe服務可讓您管理NVMe介面卡以搭配命名空間使用。您可以停止NVMe服務、使NVMe介面卡離線、並停用對命名空間的存取。</block>
+  <block id="99689298a81a7450ae5dee7b7a64ac95" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 僅適用於VMware 9.7及更早版本）來設定儲存虛擬機器（SVM）的管理詳細資料。</block>
+  <block id="e8ce8561f5fcc4b7088e795d85093038" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）、從「Volumes」（Volume）視窗下方窗格的「Snapshot Copies」（Snapshot複本）標籤中、檢視所選Volume的所有已儲存Snapshot複本清單。您可以使用已儲存的Snapshot複本清單來重新命名、還原或刪除Snapshot複本。</block>
+  <block id="96ef680007b9b6a4ed27f07ba3a181df" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於《支援》9.7及更早版本）來設定SVM的NVMe傳輸協定。在SVM上啟用NVMe傳輸協定時、您可以配置命名空間或命名空間、然後將它們指派給主機和子系統。</block>
+  <block id="2b4709aa5503253a3c372e015319fdd7" category="paragraph">您可以使用ONTAP 經典版的功能（ONTAP 適用於不再需要的更新版本）來刪除已配置的應用程式。</block>
+  <block id="446723290cd69f19f32cc095bf0cddfb" category="paragraph">您可以使用ONTAP 經典版的《支援功能》（ONTAP 適用於支援功能更新版本的版本）來修改Volume內容、例如Volume名稱、安全樣式、分數保留和空間保證。您可以修改儲存效率設定（重複資料刪除排程、重複資料刪除原則及壓縮）和空間回收設定。</block>
+  <block id="cf053656f16636b59956ec9143c23979" category="paragraph">當有可用空間時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來為現有的Aggregate、Volume或qtree建立LUN。您可以在現有磁碟區中建立LUN、或為FlexVol LUN建立新的功能區。您也可以啟用儲存服務品質（QoS）來管理工作負載效能。</block>
+  <block id="592ef708c6b97d3ff7c592abc67831b2" category="paragraph">您可以搭配ONTAP 使用SVMS搭配經典版的《經典版》（ONTAP 適用於更新版本的版本）、無論實體儲存設備或控制器為何、都能提供資料存取功能給用戶端、與任何儲存系統類似。SVM提供不中斷營運、擴充性、安全性及統一化儲存等優點。</block>
+  <block id="b11d6464810e93ed648ab9f9e6e67038" category="paragraph">您可以使用ONTAP 「CIFS」視窗來ONTAP 設定CIFS伺服器、管理網域控制器、管理符號UNIX對應、以及設定BranchCache。</block>
+  <block id="11df44b0946a9107b09b3a6385a5de25" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來管理偏好的網域控制器。</block>
+  <block id="220d749ca6c37262c9b6285052f43745" category="paragraph">您可以使用ONTAP 經典版的「磁碟」視窗（ONTAP 可在更新版本的版本中使用）來檢視儲存系統中的所有磁碟。</block>
+  <block id="6d5805b78ace2f7977fbcf68733ab7ab" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 以更新版本的版本供應）、在建立FlexVol 完這個版本之後立即執行重複資料刪除、或是排程在指定時間執行重複資料刪除。</block>
+  <block id="9b588f149e145ccee960f124c5e3d417" category="sidebar">關於SVM</block>
+  <block id="868555f74d53e8e661a5f31e4d7441e9" category="sidebar">關於ONTAP 名稱服務交換器組態</block>
+  <block id="d351bbac1b18d316821e865a50a75d18" category="sidebar">管理QoS原則群組</block>
+  <block id="79fedbd71df5ba90cfd3c3a7103e7ebb" category="sidebar">管理保存關係</block>
 </blocks>

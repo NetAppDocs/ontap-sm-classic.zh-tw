@@ -11,7 +11,7 @@ summary: 您可以使用System Manager來設定儲存虛擬機器（SVM）的管
 
 
 [role="lead"]
-您可以使用ONTAP 經典版的經典版（9.7版及更早版本）來設定儲存虛擬機器（SVM）的管理詳細資料。
+您可以使用ONTAP 經典版的經典版（ONTAP 僅適用於VMware 9.7及更早版本）來設定儲存虛擬機器（SVM）的管理詳細資料。
 
 
 

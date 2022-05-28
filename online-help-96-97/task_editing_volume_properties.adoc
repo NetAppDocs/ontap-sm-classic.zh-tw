@@ -11,7 +11,7 @@ summary: 您可以使用System Manager修改Volume內容、例如Volume名稱、
 
 
 [role="lead"]
-您可以使用System Manager經典版（ONTAP 僅適用於更新版本的版本）來修改Volume內容、例如Volume名稱、安全樣式、分數保留和空間保證。您可以修改儲存效率設定（重複資料刪除排程、重複資料刪除原則及壓縮）和空間回收設定。
+您可以使用ONTAP 經典版的《支援功能》（ONTAP 適用於支援功能更新版本的版本）來修改Volume內容、例如Volume名稱、安全樣式、分數保留和空間保證。您可以修改儲存效率設定（重複資料刪除排程、重複資料刪除原則及壓縮）和空間回收設定。
 
 若要啟用Volume加密、您必須使用System Manager安裝Volume加密授權、而且必須使用命令列介面（CLI）啟用「金鑰管理程式設定」。啟用「key-manager setup」之後、您必須重新整理網頁瀏覽器。
 

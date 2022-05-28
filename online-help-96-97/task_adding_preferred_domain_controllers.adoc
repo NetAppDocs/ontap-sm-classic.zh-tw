@@ -11,7 +11,7 @@ summary: System Manager會透過DNS自動探索網域控制器。或者、您可
 
 
 [role="lead"]
-您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來管理偏好的網域控制器
+您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來管理偏好的網域控制器。
 
 
 
