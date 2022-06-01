@@ -449,11 +449,9 @@ entries:
   url: "/online-help-96-97/concept_svm_user_accounts.html"
 - title: UNIX
   url: "/online-help-96-97/concept_unix.html"
-- title: Windows
+- title: 本機Windows群組
   entries:
-  - title: 建立本機Windows群組
-    url: "/online-help-96-97/task_creating_local_user_group.html"
-  - title: 編輯本機Windows群組內容
+  - title: 管理本機Windows群組
     url: "/online-help-96-97/task_editing_local_windows_group_properties.html"
 - title: 名稱對應
   url: "/online-help-96-97/concept_name_mapping.html"

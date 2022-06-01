@@ -2,7 +2,7 @@
 permalink: online-help-96-97/task_splitting_flexclone_volume_from_its_parent_volume.html 
 sidebar: sidebar 
 keywords: split, flexclone, volume, parent, online, help, disk, space 
-summary: 如果您想讓FlexClone Volume擁有自己的磁碟空間、而非使用父磁碟區的磁碟空間、您可以使用System Manager將磁碟區從其父磁碟區分割開來。分割完成後、FlexClone Volume便成為正常FlexVol 的現象。 
+summary: 您可以使用System Manager Classic（ONTAP 以更新版本的版本供應）、從其父Volume分割FlexClone Volume。分割完成後、FlexClone Volume便成為正常FlexVol 的現象。它會繼續使用父磁碟區的磁碟空間、並保留儲存效率。 
 ---
 = 使用System Manager ONTAP 從其父Volume分割FlexClone Volume -更新版本
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果您想讓FlexClone Volume擁有自己的磁碟空間、而非使�
 
 
 [role="lead"]
-如果您想讓FlexClone Volume擁有自己的磁碟空間、而不是使用其父Volume的磁碟空間、您可以使用System Manager Classic（ONTAP 以更新版本的版本供應）將FlexClone Volume從其父Volume分割開來。分割完成後、FlexClone Volume便成為正常FlexVol 的現象。
+您可以使用System Manager Classic（ONTAP 以更新版本的版本供應）、從其父Volume分割FlexClone Volume。分割完成後、FlexClone Volume便成為正常FlexVol 的現象。它會繼續使用父磁碟區的磁碟空間、並保留儲存效率。
 
 FlexClone Volume必須處於線上狀態。
 
