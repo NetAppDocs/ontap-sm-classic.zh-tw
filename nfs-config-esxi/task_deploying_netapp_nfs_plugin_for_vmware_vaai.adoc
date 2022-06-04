@@ -27,7 +27,7 @@ https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]
 +
 在VMware vSphere 5.0及更新版本中、VAAI預設為啟用。
 
-. 在中、前往*工具*>* NFS VAAI工具*。
+. 在虛擬儲存主控台中、前往*工具*>* NFS VAAI工具*。
 . 單擊*選擇File.*上傳"NetAppNasPlugIn.vib"文件。
 . 按一下*上傳*。
 +

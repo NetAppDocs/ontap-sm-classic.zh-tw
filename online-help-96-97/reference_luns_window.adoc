@@ -257,12 +257,6 @@ xref:task_deleting_luns.adoc[刪除LUN]
 
 xref:task_creating_initiator_groups.adoc[正在建立啟動器群組]
 
-xref:task_deleting_initiator_groups.adoc[刪除啟動器群組]
-
-xref:task_adding_initiators.adoc[新增啟動器]
-
-xref:task_deleting_initiators_from_initiator_group.adoc[從啟動器群組刪除啟動器]
-
 xref:task_editing_luns.adoc[編輯LUN]
 
 xref:task_editing_initiator_groups.adoc[編輯啟動器群組]

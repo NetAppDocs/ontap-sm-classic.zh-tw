@@ -102,24 +102,12 @@ image::../media/network_fc_or_iscsi_express_fc_windows.gif[圖中顯示四個節
 
 
  a| 
-
-
-
- a| 
 Aggregate名稱
 
 
 
  a| 
-
-
-
- a| 
 SVM名稱
-
-
-
- a| 
 
 |===
 
@@ -131,15 +119,7 @@ SVM名稱
 
 
  a| 
-
-
-
- a| 
 主機作業系統
-
-
-
- a| 
 
 
 
@@ -149,15 +129,7 @@ LUN名稱（選用）
 
 
  a| 
-
-
-
- a| 
 LUN說明（選用）
-
-
-
- a| 
 
 |===
 
@@ -166,20 +138,13 @@ LUN說明（選用）
 
 如果您不使用現有的SVM、則需要下列資訊來建立新的SVM：
 
+[cols="1a,1a"]
 |===
-| SVM名稱 
-
-
- a| 
-
+2+| SVM名稱 
 
 
  a| 
 SVM IPspace
-
-
-
- a| 
 
 
 
@@ -189,15 +154,7 @@ SVM根Volume的Aggregate
 
 
  a| 
-
-
-
- a| 
 SVM使用者名稱（選用）
-
-
-
- a| 
 
 
 
@@ -207,39 +164,41 @@ SVM密碼（選用）
 
 
  a| 
-
-
-
- a| 
 SVM管理LIF（選用）
 
 
 
+ a| 
  a| 
 子網路：
 
 
 
  a| 
+ a| 
 IP位址：
 
 
 
+ a| 
  a| 
 網路遮罩：
 
 
 
  a| 
+ a| 
 閘道：
 
 
 
  a| 
+ a| 
 主節點：
 
 
 
+ a| 
  a| 
 主連接埠：
 

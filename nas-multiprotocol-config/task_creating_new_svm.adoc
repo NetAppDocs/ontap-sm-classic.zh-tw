@@ -47,18 +47,18 @@ summary: 您可以使用精靈來引導您完成建立新儲存虛擬機器（SV
 如果您同時支援NFS和SMB/CIFS用戶端的國際字元顯示、請考慮使用* UTF8MB4*語言代碼、此程式碼可從ONTAP 英文版的更新版本開始提供。
 
 ====
-.. 請確定安全樣式已設定為您的偏好。
+.. *選用*：請確定安全樣式已設定為您的偏好。
 +
 選取CIFS傳輸協定時、預設會將安全樣式設定為NTFS。
 
-.. 選取要包含SVM根磁碟區的根Aggregate。
+.. *選用*：選取要包含SVM根磁碟區的根Aggregate。
 +
 您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。資料磁碟區的Aggregate會在稍後的步驟中個別選取。
 
 +
 image::../media/svm_setup_details_page_ntfs_selected_nas_mp.gif[此圖形由周圍的文字說明。]
 
-.. 在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。
+.. *選用*：在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。
 +
 image::../media/svm_setup_details_dns_nas_mp.gif[此圖形由周圍的文字說明。]
 

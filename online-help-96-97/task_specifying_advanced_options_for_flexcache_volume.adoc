@@ -14,11 +14,11 @@ summary: 從System Manager 9.6開始、當您編輯FlexCache 完一份《聲音�
 從System Manager 9.6開始、當您編輯FlexCache 完一份《聲音集》時、可以指定您要與FlexCache 《聲音集》相關聯的進階選項。
 
 .步驟
-. 在*「Edit FlexCache Sof the *」（編輯*更新版*）視窗中、按一下 image:../media/advanced_options.gif[""] 以指定進階選項。
+. *選用：*在*「Edit FlexCache Sof the *」（編輯*更新版）視窗中、按一下 image:../media/advanced_options.gif[""] 以指定進階選項。
 +
 此時會顯示「進階選項」視窗。其中包含區段（左欄的標題）、您可以在其中指定各種選項。
 
-. 在「*一般詳細資料*」區段中、您可以編輯該磁碟區的權限。
+. *可選：*在*一般詳細資料*區段中、您可以編輯磁碟區的權限。
 . 在* Aggregate *區段中、您可以啟用* Select Aggregate *切換按鈕來覆寫最佳實務做法的預設值、並從集合體清單中選取您的選項。
 . 在「*儲存效率*」區段中、您可以在磁碟區上啟用壓縮和重複資料刪除功能。
 +

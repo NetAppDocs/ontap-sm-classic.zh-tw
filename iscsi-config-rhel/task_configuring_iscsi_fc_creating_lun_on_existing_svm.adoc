@@ -38,8 +38,8 @@ image::../media/existing_svm_protocols_iscsi_rhel.gif[影像顯示詳細資料�
 
 . 從「*設定iSCSI傳輸協定*」頁面設定iSCSI服務和lifs：
 +
-.. 輸入目標別名。
-.. 在* lifs per node*欄位中輸入「2」。
+.. *選用：*輸入目標別名。
+.. 在* lifs per node*字段中輸入"*2*"。
 +
 每個節點都需要兩個生命期、以確保可用度和資料移動性。
 

@@ -22,15 +22,7 @@ summary: 您需要iSCSI識別碼、網路位址和儲存組態資訊、才能執
 
 
  a| 
-
-
-
- a| 
 目標別名（選用）
-
-
-
- a| 
 
 |===
 
@@ -45,7 +37,7 @@ summary: 您需要iSCSI識別碼、網路位址和儲存組態資訊、才能執
 
 image::../media/network_fc_or_iscsi_express_iscsi_rhel.gif[圖中顯示四個節點,two switches,and a host. Each node has two LIFs]
 
-用於生命的子網：*_**_-**___
+生命之子網路：
 
 |===
 | 節點或LIF搭配連接埠至交換器 | IP 位址 | 網路遮罩 | 閘道 | VLAN ID | 主連接埠 
@@ -141,24 +133,12 @@ image::../media/network_fc_or_iscsi_express_iscsi_rhel.gif[圖中顯示四個節
 
 
  a| 
-
-
-
- a| 
 Aggregate名稱
 
 
 
  a| 
-
-
-
- a| 
 SVM名稱
-
-
-
- a| 
 
 |===
 
@@ -170,24 +150,12 @@ SVM名稱
 
 
  a| 
-
-
-
- a| 
 LUN名稱（選用）
 
 
 
  a| 
-
-
-
- a| 
 LUN說明（選用）
-
-
-
- a| 
 
 |===
 
@@ -196,20 +164,13 @@ LUN說明（選用）
 
 如果您不使用現有的SVM、則需要下列資訊來建立新的SVM：
 
+[cols="1a,1a"]
 |===
-| SVM名稱 
-
-
- a| 
-
+2+| SVM名稱 
 
 
  a| 
 SVM IPspace
-
-
-
- a| 
 
 
 
@@ -219,15 +180,7 @@ SVM根Volume的Aggregate
 
 
  a| 
-
-
-
- a| 
 SVM使用者名稱（選用）
-
-
-
- a| 
 
 
 
@@ -237,39 +190,41 @@ SVM密碼（選用）
 
 
  a| 
-
-
-
- a| 
 SVM管理LIF（選用）
 
 
 
+ a| 
  a| 
 子網路：
 
 
 
  a| 
+ a| 
 IP位址：
 
 
 
+ a| 
  a| 
 網路遮罩：
 
 
 
  a| 
+ a| 
 閘道：
 
 
 
  a| 
+ a| 
 主節點：
 
 
 
+ a| 
  a| 
 主連接埠：
 

@@ -16,11 +16,23 @@ Linux主機必須與儲存叢集中的每個節點（目標）建立iSCSI連線�
 在本功能中、iSCSI主機必須有通往叢集中每個節點的路徑。ONTAPDM-Multikpath會選取要使用的最佳路徑。如果路徑失敗、DM-Multikpath會選取替代路徑。
 
 .步驟
-. 從Linux主機命令提示字元「service iscsid force-start」啟動iSCSI服務
-. 探索iSCSI目標：「iscsiadm -模式探索-作業更新-類型endtarget -入口網站目標IP」
+. 從Linux主機命令提示字元啟動iSCSI服務：
++
+「服務功能強制啟動」
+
+. 探索iSCSI目標：
++
+「iscsiadm-mode dDiscovery --op update --type endtimalse-入口 網站目標IP」
+
 +
 每個探索到的目標IP位址會顯示在不同的一行。
 
-. 登入每個目標、建立iSCSI工作階段：「iscsiadm - mode node-l all」
-. 您可以檢視使用中iSCSI工作階段的清單：「iscsiadm - mode工作階段」
+. 登入每個目標以建立iSCSI工作階段：
++
+"iscsiadm-mode node-l all"
+
+. 您可以檢視使用中iSCSI工作階段的清單：
++
+「iscsiad-mode工作階段」
+
 

@@ -18,7 +18,7 @@ summary: 您可以在現有的儲存虛擬機器（SVM）上設定iSCSI。iSCSI�
 .步驟
 . 瀏覽至* SVMS*視窗。
 . 選取您要設定的SVM。
-. 在SVM** Details（SVM**詳細資料）窗格中、確認* iscs*以灰色背景顯示、表示傳輸協定已啟用但尚未完整設定。
+. 在SVM ** Details（詳細資料）*窗格中、確認* iscs*以灰色背景顯示、表示傳輸協定已啟用但尚未完整設定。
 +
 如果顯示* iscs*時背景為綠色、表示SVM已設定完成。
 
@@ -32,7 +32,7 @@ image::../media/existing_svm_protocols_iscsi_esxi.gif[影像顯示詳細資料�
 . 從「*設定iSCSI傳輸協定*」頁面設定iSCSI服務和lifs：
 +
 .. 輸入目標別名。
-.. 在* lifs per node*欄位中輸入「2」。
+.. 在* lifs per node*字段中輸入"*2*"。
 +
 每個節點都需要兩個生命期、以確保可用度和資料移動性。
 

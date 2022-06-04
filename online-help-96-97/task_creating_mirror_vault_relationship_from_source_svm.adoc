@@ -89,6 +89,6 @@ summary: 您可以使用System Manager從來源儲存虛擬機器（SVM）建立
 
 
 |===
-. 按一下*image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*、更新保護原則與保護排程、選取*啟用FabricPool的Aggregate *、然後初始化保護關係。
+. *選用：*按一下*image:../media/nas_bridge_202_icon_settings_olh_96_97.gif[""]*、更新保護原則與保護排程、選取*啟用FabricPool的Aggregate *、然後初始化保護關係。
 . 按一下「 * 儲存 * 」。
 

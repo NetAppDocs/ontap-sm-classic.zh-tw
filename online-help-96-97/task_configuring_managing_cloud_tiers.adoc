@@ -74,7 +74,7 @@ image::../media/fabricpool_workflow.gif[流程FabricPool]
 ** 啟用或停用* SSL*選項、可讓您安全地將資料傳輸至雲端層
 
 
-. 如果您想要新增StorageGRID 適用於功能不穩定的雲端層、或是想要搭配FabricPool 使用IBM Cloud Object Storage環境（例如Cleverafe）搭配使用、您應該指定CA憑證。移動「*物件存放區憑證*」切換按鈕並複製憑證內容、以指定CA憑證。然後將憑證內容貼到已簽署的認證中。
+. *選用：*如果您想要新增雲端層以供StorageGRID 使用、或是想搭配FabricPool 使用IBM Cloud Object Storage環境（例如Cleverafe）搭配使用、則應指定CA憑證。移動「*物件存放區憑證*」切換按鈕並複製憑證內容、以指定CA憑證。然後將憑證內容貼到已簽署的認證中。
 . 從* IPspace*清單中、選取用於連線至雲端層的IPspace。
 . 按一下「*儲存*」以儲存雲端層。
 . 按一下*儲存並附加Aggregate *以儲存雲端層、並將Aggregate附加至雲端層。
@@ -148,7 +148,7 @@ image::../media/fabricpool_workflow.gif[流程FabricPool]
 +
 最小熱備援規則會套用至磁碟大小最大的磁碟群組。
 
-.. 修改Aggregate的RAID組態：
+.. *選用：*修改Aggregate的RAID組態：
 +
 ... 按一下 * 變更 * 。
 ... 在變更RAID組態對話方塊中、指定RAID類型和RAID群組大小。

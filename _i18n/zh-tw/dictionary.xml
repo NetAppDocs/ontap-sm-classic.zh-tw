@@ -117,12 +117,8 @@
   <block id="8cf1420c6fd5960ffc332e97d3cf207e" category="doc">確認主機可以寫入多重路徑裝置、也可以從多重路徑裝置讀取</block>
   <block id="eafea6a1a12e4d3a8bd09c23ccd6949c" category="paragraph">您必須在Linux主機上為您要存取的儲存叢集節點設定DM-Multipath。</block>
   <block id="6645e8c9675d014cfeae9ff554d4632b" category="paragraph">如果多重路徑裝置對應的儲存叢集節點可以容錯移轉至其合作夥伴節點、則應在節點容錯移轉期間驗證資料的讀取。如果儲存叢集正在正式作業中使用、則可能無法進行此驗證。</block>
-  <block id="da1becf2fc02b14183b2561191af671a" category="list-text">在指定的多重路徑裝置上執行部分I/O：「Dd if=/dev/零of =&lt;multipath_device_name\&gt;'</block>
-  <block id="22e185d6985fca3d9b6ef3c0f43b2664" category="list-text">驗證I/O是否在多重路徑裝置上執行、並指定重新整理統計資料的秒數（例如、每兩秒、如圖所示）：「iostat 2」</block>
   <block id="d68d398e812f1b47817e723314c20efa" category="paragraph">當I/O在多重路徑裝置上執行時、您會看到各種I/O計數器輸出會動態變更、表示I/O在多重路徑裝置上成功執行。</block>
-  <block id="8f1c00c71aa06ef26f5d1b54f0ea4444" category="list-text">如有可能、請在儲存叢集節點上執行「takeover」命令：「torage容錯移轉takeover -ofnode&lt;node_name\&gt;」</block>
   <block id="9d53399459dd5c35ceedc5c94ba7500b" category="list-text">重新執行'iostat'命令、確認I/O仍在多重路徑裝置上執行。</block>
-  <block id="21fca969e85be726091fe64d00f87b9b" category="list-text">在儲存叢集節點上執行「恢復」命令：「儲存容錯移轉恢復-ofnode_name\&gt;」</block>
   <block id="72c4a67dacad190f59ac9305b06ec73a" category="list-text">檢查「iostat」輸出、確認I/O仍在執行中。</block>
   <block id="3f710cadb0123c693533da68aaf5b596" category="section-title">接下來該怎麼做</block>
   <block id="17eee827b1f070a64f5112268212d2a0" category="paragraph">如果有任何測試失敗、請確認FC服務正在執行、然後重新檢查DM-Multipath組態和通往多重路徑裝置的FC路徑。</block>
@@ -205,13 +201,10 @@
   <block id="82ff2830f349f71cd76b32826e2d5f3d" category="paragraph">這些設備在您輸入「左LUN show」命令時不會顯示。</block>
   <block id="de5c870253ff48f858a6bd5e17d9236c" category="list-text">如果要排除非NetApp SCSI裝置、請在「multiPath.conf」檔案的黑名單區段中輸入裝置的全球識別碼（WWID）。</block>
   <block id="fbded7cf8eaa171bb04ad74428e5113b" category="paragraph">若要顯示非NetApp SCSI裝置的WWID、請在您要排除的裝置上輸入下列命令、其中「csi_device_name」是您指定的裝置：「/lib/udev/scsi_id -gud /dev/scsi_device_names」</block>
-  <block id="b97d0e570f542edc59889cd810d5f6bc" category="paragraph">例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：「/lib/udev/scsi_id -gud dev/sda'</block>
   <block id="34685a26c7d26f1e9d08d36342215c8f" category="paragraph">這會顯示裝置的WWID、您可以在「多路徑.conf」檔案中複製及貼上該裝置。</block>
   <block id="d69d92eb747bb0448fc17fb3819235e9" category="paragraph">在顯示「multiPath.conf」檔案黑名單區段的下列範例中、不包括使用WWID「3600508e000000000753250f933cc4606」的非NetApp SCSI裝置：</block>
   <block id="37ff374b19dc03eafe431542442696c2" category="list-text">如果沒有要排除的裝置、請從「multiPath.conf」檔案中移除_WWID_行。</block>
   <block id="0ed3f71b72d6e39d73422ff843314d23" category="list-text">在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multippath設定：「rdaLoaddriver=SCSI_DH_alua」</block>
-  <block id="f5aba4c30c3d13c89b8c3a2f66936759" category="list-text">啟動DM-Multikpath精靈：`/etc/init.d/multipathd start'</block>
-  <block id="573a5e139ca51f55749e8a0d572b90f9" category="list-text">將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：「chkconfig multpathd on」</block>
   <block id="29b7d085ed0000da522cbd280520075f" category="list-text">重新啟動Linux主機。</block>
   <block id="b97b9bae4c85d4c331774956a89f62b3" category="list-text">在運行"cat /proc/cmd line"時，請驗證輸出中是否顯示"rdaloaddriver"設置。</block>
   <block id="a17ae323fb9c26a2f6ec8fbb209885b4" category="paragraph">將「rdaloaddrivone」設定顯示為傳遞給核心的數個開機選項之一：</block>
@@ -265,7 +258,6 @@
   <block id="86c85b25fddcb2fb272562998532a2c7" category="doc">探索新的SCSI裝置（LUN）和多重路徑裝置</block>
   <block id="4ef08b572d0e527c1263f0c9aa6e0b29" category="paragraph">您必須擁有一份「掃描」指令碼的複本、該指令碼位於Linux OS發行套件的「sg3_utils」套件中。</block>
   <block id="5e3b915450d773878b64f00560f5813f" category="list-text">探索新的SCSI裝置（LUN）、並為LUN建立對應的多重路徑裝置：「/usr/bin/resce-scsi-bus.sh」</block>
-  <block id="89a4d12be7404e06f5aa6d92a786ffba" category="list-text">驗證DM-Multipath組態：「multiPack -ll」</block>
   <block id="7293ec7db160acce9f7ae49252d83947" category="paragraph">這會顯示下列輸出類型、列出每個NetApp LUN的建議設定：</block>
   <block id="f032d5b309b3efb7280cc7126adae686" category="summary">如果您選擇使用現有的儲存虛擬機器（SVM）、則必須使用ONTAP 「系統管理程式」來驗證SVM上的FC服務是否正在執行。您也必須確認已建立FC邏輯介面（LIF）。</block>
   <block id="0c0bf84f65dbfeefef108b5ac6e35021" category="doc">確認FC服務正在現有的SVM上執行</block>
@@ -643,9 +635,7 @@
   <block id="c8dc78fc3d48b06305de87cc8c0ea5c3" category="list-text">保留預設語言設定、C。utf-8。</block>
   <block id="52186766a78f9b4a1e4f9810017ecef4" category="paragraph">如果您同時支援NFS和SMB/CIFS用戶端的國際字元顯示、請考慮使用* UTF8MB4*語言代碼、此程式碼可從ONTAP 英文版的更新版本開始提供。</block>
   <block id="bb4ec6130a0516fe699116c0defeaa52" category="paragraph">此語言由您稍後建立的磁碟區繼承、而且無法變更磁碟區的語言。</block>
-  <block id="ef3056e992ff7bbd69b26237d1c64256" category="list-text">如果啟用CIFS傳輸協定、請將安全樣式變更為* UNIUNIX*。</block>
   <block id="9021f90351684df4791529591da0c123" category="paragraph">選取CIFS傳輸協定時、預設會將安全樣式設定為NTFS。</block>
-  <block id="0d6ecf62b256b48491e9831ef800b3c1" category="list-text">選取要包含SVM根磁碟區的根Aggregate。</block>
   <block id="866c1a32e23c5fe94a6448bf104b3006" category="paragraph">您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。在後續步驟中配置儲存設備時、會自動選取資料磁碟區的Aggregate。</block>
   <block id="0e7f295fbfa30bc8b1f8b416012267ad" category="image-alt">此圖形由周圍的文字說明。</block>
   <block id="8b0f54715687f5e5119bca67faecceeb" category="list-text">在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。</block>
@@ -874,9 +864,7 @@
   <block id="73bea672702aeaf2059c37ca278ade84" category="list-text">在資料存放區中建立新資料夾、然後將檔案上傳至新資料夾。</block>
   <block id="cfe6221ffbc35c7128aca6b66552953e" category="paragraph">您可能需要安裝用戶端整合外掛程式。</block>
   <block id="2a3cef292a31130c6d6d554681d7e6a6" category="list-text">請確認您可以存取剛才寫入的檔案。</block>
-  <block id="dee9e27f3d036fd5a5856843ca73ba40" category="list-text">容錯移轉包含LUN的叢集節點、並確認您仍可寫入及讀取檔案。</block>
   <block id="4593e2432306bcea64d49dcce3ddc04b" category="paragraph">如果任何測試失敗、請確認儲存叢集上的FC服務正在執行、並檢查通往LUN和FC交換器分區的FC路徑。</block>
-  <block id="b11b2195a9c008ad8202668f0c9faefc" category="list-text">如果您在叢集節點上容錯移轉、請務必將節點歸還、並將所有生命點傳回其主連接埠。</block>
   <block id="edda059722776384e89df1284c92009f" category="list-text">對於ESXi叢集、請從叢集中的每個ESXi主機檢視資料存放區、並驗證是否顯示您上傳的檔案。</block>
   <block id="46a395c0623be8505acd6070d3eb9111" category="inline-link">供應能力組態ONTAP</block>
   <block id="4db6b49a00ed23aa4135e38e833bc6e6" category="paragraph"><block ref="4db6b49a00ed23aa4135e38e833bc6e6" category="inline-link-rx"></block></block>
@@ -918,7 +906,6 @@
   <block id="816df9dee4f652f89c74521ca02e3801" category="list-text">建立適當的配額規則。</block>
   <block id="adc07c92fffeaa2d5824cf65b24b065d" category="list-text">SAN環境：</block>
   <block id="5eae0f939d1832b75a8792b44eade3bf" category="list-text">建立SAN LIF。</block>
-  <block id="045923be6b5cac4799406e3cd1602061" category="list-text">設定連接埠集。</block>
   <block id="dcd03ce41d1d9c6cc9cf3e083214abb2" category="list-text">設定啟動器群組。</block>
   <block id="806bd2060360da6ee8d453e81ba3a341" category="list-text">對於FC、將FC交換器分區、讓SAN用戶端能夠存取lifs。</block>
   <block id="08779ad510704e697e31499315d9d6a5" category="paragraph">如果在包含來源磁碟區的SVM上進行任何變更、您必須在包含目的地磁碟區的SVM上手動複寫變更。</block>
@@ -1099,7 +1086,6 @@
   <block id="9577c04452c31efe7dbcc2f943e94294" category="image-alt">設定CIFS共用區的快照</block>
   <block id="7f6435ca837d12ff06cfff58992df531" category="list-text">在*權限*欄位中、按一下*變更*。</block>
   <block id="bb3112e54507860cd12a19609ff8f1ee" category="list-text">選取「所有人」群組、然後按一下「*移除*」。</block>
-  <block id="0b95db3f00815c0be1aa8cd0e13aac8a" category="list-text">按一下「*新增*」、然後輸入在Windows Active Directory網域中定義的管理員群組名稱、其中包含SVM。</block>
   <block id="4c077ab81df7e869d35893b62a5dba50" category="list-text">選取新的系統管理員群組、然後選取*完整控制*。</block>
   <block id="5e5290f20adf089c88d34cf9b8b8940f" category="list-text">以SVM命名的資料LIF、其後置詞為「`_CIFs_lif1'」</block>
   <block id="3ce8b609c7091ffcd272f4483fccaf51" category="list-text">屬於AD網域的CIFS伺服器</block>
@@ -1120,7 +1106,6 @@
   <block id="ff9f8af3f836eed7a816fd381c0fe04c" category="inline-link-macro">將CIFS磁碟區新增至啟用CIFS的SVM</block>
   <block id="c74c2d83d09589596ae90e68883c7492" category="paragraph"><block ref="c74c2d83d09589596ae90e68883c7492" category="inline-link-macro-rx"></block></block>
   <block id="1c4d3b9f9c2419b820df026601cf0ef1" category="paragraph">在System Manager中建立的任何新磁碟區、預設會以磁碟區名稱作為交會名稱、安裝在根磁碟區。設定CIFS共用時、請使用交會路徑和交會名稱。</block>
-  <block id="ec7ac513c1bae0a0aee73e35bcad5bf0" category="paragraph">+影像：../media/namespace_1_fore_smb.gif [此圖形由周邊文字說明。]</block>
   <block id="773b51ca4c8758ba2b6a954547dd5fd8" category="list-text">確定安全樣式為NTFS。</block>
   <block id="40a61122fd85dbb1ca8b58b4f44918d8" category="summary">將CIFS磁碟區新增至啟用CIFS的SVM、包括建立及設定磁碟區、建立共用區及設定其權限、以及驗證從Windows管理主機存取的權限。然後您可以設定CIFS用戶端存取。</block>
   <block id="d394446eb19387f789ade51cc4c8a9d6" category="doc">將CIFS磁碟區新增至啟用CIFS的SVM</block>
@@ -1186,7 +1171,6 @@
   <block id="bcae685fd81100483c46f5ac55f04b94" category="list-text">將檔案複製回原始磁碟上的其他資料夾。</block>
   <block id="f4a53150af9473f0a0fb88fd4deb9ab5" category="list-text">比較複製的檔案與原始檔案。</block>
   <block id="447c480edfc72e3b0525b42ae4e7891e" category="paragraph">您可以在Windows命令提示字元中使用「comp」命令來比較兩個檔案。</block>
-  <block id="814cbb8785ec2a44ae98055846f9708a" category="list-text">容錯移轉包含LUN的儲存叢集節點、並確認您仍可存取LUN上的檔案。</block>
   <block id="2978979215c956f9a343db6071be5419" category="list-text">使用原生DSM檢視通往LUN的路徑、並驗證路徑數量是否符合預期。</block>
   <block id="8458b3abc14c6227e63342e9faf4f773" category="paragraph">您應該會看到兩條通往建立LUN的儲存叢集節點路徑、以及兩條通往合作夥伴節點的路徑。</block>
   <block id="24f9cf41978197277a8223984ca964c4" category="paragraph">如果您在設定不同的傳輸協定時未遵循建立SVM的程序、則會出現這種情況。</block>
@@ -1309,7 +1293,6 @@
   <block id="8f120bc115f07983884f4c7ef231012b" category="paragraph">儲存虛擬機器（SVM）是iSCSI目標。</block>
   <block id="61ceb75a60cdb7e57e4c2b109575b00e" category="paragraph">您需要一個子網路、其中包含兩個IP位址、以便為叢集中的每個節點提供iSCSI資料生命期。應該有兩個獨立的網路來實現高可用度。當ONTAP 您建立LIF作為建立SVM的一部分時、將會指派特定的IP位址。</block>
   <block id="eedeb9528eb5c3fa6d80323cc3ec2c54" category="paragraph">如果可能、請將iSCSI流量分隔在不同的實體網路或VLAN上。</block>
-  <block id="80dc3ecd4f6aadf044d7779a372b1f61" category="paragraph">用於生命的子網：*_**_-**___</block>
   <block id="cbab63f8dcffbcddb5d83a6ed92b3448" category="cell">節點或LIF搭配連接埠至交換器</block>
   <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="cell">IP 位址</block>
   <block id="a85b22fe65b9e8fef1530964d6b1e3ab" category="cell">網路遮罩</block>
@@ -1464,7 +1447,6 @@
   <block id="5adc4bd2b702e68d30034cecee03c3c5" category="paragraph">您應該檢閱集合體的可用空間、總空間、RAID類型和儲存類型。例如、如果目標是改變磁碟區的效能特性、您可以將焦點放在具有所需儲存類型的集合體上。</block>
   <block id="f6851d82f07b61330eb30ab01d6432f0" category="list-text">按一下「*移動*」、然後再按一下「*移動*」、確認您要繼續進行Volume Move作業。</block>
   <block id="a27c061e64c0306d2fa2c0d104ae827e" category="paragraph">顯示「Move Volume」（移動Volume）對話方塊時、如果您要監控Volume移動工作、請保持對話方塊開啟。</block>
-  <block id="8c6f3a8f6143dcec911e35cf031fd7e1" category="list-text">[step4-監 控]監控Volume Move工作：</block>
   <block id="6cbcf1aeb813124fdb785ffab3f247f0" category="list-text">在*移動Volume *對話方塊中、按一下磁碟區移動工作*工作ID*的連結。</block>
   <block id="04a4565c69c92bc9fbe7629314797444" category="list-text">找到Volume Move工作、然後檢閱「* Status *（*狀態*）」欄中的資訊。</block>
   <block id="f548e6c535c8fd10fdcffe6be9d53c09" category="paragraph">工作可處於多個階段的任一階段、例如傳輸資料的初始基準線或開始轉換嘗試。</block>
@@ -1504,7 +1486,6 @@
   <block id="27ee9abe0b9b886fc49e960b296dcfdb" category="paragraph">無論您選擇自動或手動轉換、Volume移動作業都不會中斷。</block>
   <block id="c391b8aa4f975e5e8366150d81905fdd" category="list-text">如果磁碟區包含LUN、且叢集包含四個以上的節點、則當磁碟區移至不同的HA配對時、請使用CLI來更新LUN報告節點。</block>
   <block id="67661110495ec940cd073a6350a8d163" category="paragraph">如果磁碟區未包含LUN、或叢集僅包含兩個節點、您可以跳過此步驟。</block>
-  <block id="20d49e79378fcce26577680e36ef85cd" category="list-text">請利用下列考量來規劃時間：</block>
   <block id="9c5a09f52fb4fd71b2b3b1d43854f73f" category="list-text">Volume搬移作業可能需要比預期更多的時間、因為移動的設計是以保留用戶端存取和整體系統效能的方式、在背景中不中斷營運。</block>
   <block id="888c7a3d8100e00f9d1e0ea6d0d92a99" category="paragraph">例如ONTAP 、將Volume Move作業可用的資源進行節流。</block>
   <block id="5ae888cc909c3a2b911cb5803f6c1da3" category="list-text">如果您想要儘快進行移動、則必須選取較少叢集活動的時間、尤其是下列活動：</block>
@@ -1557,9 +1538,6 @@
   <block id="eeaa381e0c1c22208e5b53b5f89170e3" category="paragraph">如果有任何測試失敗、請確認iSCSI服務正在執行、然後重新檢查DM-Multipath組態和通往多重路徑裝置的iSCSI路徑。</block>
   <block id="b9d5eb0ccc401c9f51d655b67ec79aca" category="image-alt">設定Linux的iSCSI傳輸協定</block>
   <block id="3eb492bfe5d69b4d147a52c2fffbd299" category="image-alt">此影像由周邊文字說明</block>
-  <block id="9364bc572eae572af197a8cd4f3ba9a1" category="paragraph">+這會顯示裝置的WWID、您可以在「多路徑.conf」檔案中複製及貼上。</block>
-  <block id="2452336e08d8c3fbdb93c85bb26a1fdd" category="paragraph">+在顯示「multiPath.conf」檔案黑名單區段的下列範例中、不包括使用WWID「3600508e000000000753250f933cc4606」的非NetApp SCSI裝置：</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="9981eb36404dab76d25d5093708d4b4a" category="summary">編輯iSCSI組態檔之後、您必須啟動iSCSI服務、讓主機能夠探索目標並存取LUN。如果iSCSI服務正在執行、您必須重新啟動。</block>
   <block id="fc2913bfa325246e75d2432450f7cb44" category="doc">啟動iSCSI服務</block>
   <block id="349aaf570c625183e610ac4c8a3d5b7b" category="list-text">在Linux主機命令提示字元中啟動iSCSI服務：</block>
@@ -1582,11 +1560,7 @@
   <block id="e173cc20c0c607ca4197a97b29d1903c" category="summary">Linux主機必須與儲存叢集中的每個節點（目標）建立iSCSI連線。您可以從主機建立工作階段。</block>
   <block id="895b73c29c43e90b535c2319b97b951d" category="doc">以目標啟動iSCSI工作階段</block>
   <block id="5ace5801aa1c982278b758b8410247a1" category="paragraph">在本功能中、iSCSI主機必須有通往叢集中每個節點的路徑。ONTAPDM-Multikpath會選取要使用的最佳路徑。如果路徑失敗、DM-Multikpath會選取替代路徑。</block>
-  <block id="cdd2d6097ab3946e09f85da274ed8036" category="list-text">從Linux主機命令提示字元「service iscsid force-start」啟動iSCSI服務</block>
-  <block id="399edecb543bb97501408288de7dd896" category="list-text">探索iSCSI目標：「iscsiadm -模式探索-作業更新-類型endtarget -入口網站目標IP」</block>
   <block id="70d7dce05abfe332cb56b62599873cb5" category="paragraph">每個探索到的目標IP位址會顯示在不同的一行。</block>
-  <block id="86681e7847c09f40209530209aba6c58" category="list-text">登入每個目標、建立iSCSI工作階段：「iscsiadm - mode node-l all」</block>
-  <block id="73344756ddc68d2a235cca27fc03a737" category="list-text">您可以檢視使用中iSCSI工作階段的清單：「iscsiadm - mode工作階段」</block>
   <block id="e3c0e450ed23f9a24d0aad328dda6cd6" category="summary">Linux Unified Host Utilities軟體包含sanlun公用程式、這是一種NetApp LUN報告工具、可用來顯示儲存叢集節點的相關資訊。</block>
   <block id="175017a406212d92c7cb45223ba5dbf4" category="doc">安裝Linux Unified Host Utilities並最佳化I/O效能</block>
   <block id="36274900bedd7b6237ea6c16b1b53b50" category="paragraph">Linux Unified Host Utilities軟體包含「sanlun」公用程式、這是一種NetApp LUN報告工具、可用來顯示儲存叢集節點的相關資訊。您也必須在Linux主機上啟用正確的伺服器設定檔、以最佳化NetApp儲存效能。</block>
@@ -1955,7 +1929,6 @@
   <block id="e087fde17030168d1d6828a4db2c04ba" category="list-text">在來源與目的地磁碟區之間、從最近的通用Snapshot複本執行遞增傳輸。</block>
   <block id="17f96a07b22aadd9d026f06836cef80e" category="list-text">從ONTAP S等效9.3開始：選擇*根據原則*選項。</block>
   <block id="612c396cc4358d4a35672217227c116c" category="list-text">S9.2或更早版本：選擇*隨需*選項。ONTAP</block>
-  <block id="6acf38e93f126c4efef95f565e1e2f37" category="list-text">選取*限制傳輸頻寬至*以限制傳輸所用的網路頻寬、然後指定最大傳輸速度。</block>
   <block id="04252e4e5460971d7f33943bd841f366" category="list-text">按一下 * 更新 * 。</block>
   <block id="be9e090ef1b19ac88c8b3bb7d6f8c11a" category="list-text">確認傳輸狀態為「Idle（閒置）」、最後傳輸類型為「Update（更新）」（在* Details（詳細資料）*標籤中）。</block>
   <block id="4fc2789571357f7a9806f4b669aa3c44" category="image-alt">SnapMirror關係詳細資料</block>
@@ -2098,21 +2071,11 @@
   <block id="ecf940aaea2349e4982df80c0d68b1fb" category="cell">匯出大小</block>
   <block id="a158bb476e5e80bcf1e61f4b87d260e9" category="paragraph">匯出名稱（選用）</block>
   <block id="af2e2a8528b3b09b31bbc9e601e4032e" category="paragraph">匯出說明（選用）</block>
-  <block id="bb3ccd5881d651448ded1dac904054ac" category="section-title">資訊</block>
   <block id="286212487451d619de0dafa658b897cd" category="paragraph">如果您不使用現有的，則需要下列資訊來建立新的資訊：</block>
-  <block id="1d758b2fae9cae64cb2925dc64d7893c" category="paragraph">根Volume的Aggregate</block>
-  <block id="9c3dcd8224f385bbc800e1f8c20c0f33" category="paragraph">使用者名稱（選用）</block>
-  <block id="02ea3d488792da4e56fc332d912b123c" category="paragraph">密碼（選用）</block>
-  <block id="13d7c1ceaeeb790803f5bdfaddc2a045" category="paragraph">管理LIF（選用）</block>
   <block id="ea969559dd5cc111e771d23a7b91e7f0" category="summary">可自動執行與ESXi主機搭配使用儲存設備所需的許多組態和資源配置工作。是vCenter Server的外掛程式。</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="doc">安裝</block>
-  <block id="3190d1888e4eb5b5e687fd07685f9c6d" category="list-text">安裝為虛擬應用裝置、包括虛擬儲存主控台、儲存感知（VASA）供應商的vStorage API、以及VMware vSphere功能的儲存複寫介面卡（SRA）。</block>
-  <block id="1c60d58da22a509b5a61105e79b0eaa6" category="list-text">下載您的組態所支援的版本、如工具所示。</block>
-  <block id="00797114657572d8fc4561584fa8c83a" category="list-text">部署虛擬應用裝置、並依照_部署與設定_中的步驟進行設定。</block>
   <block id="881b0a2ef802a1004b956954773e6574" category="summary">資料存放區包含ESXi主機上的虛擬機器及其VMDK。ESXi主機上的資料存放區會配置在儲存叢集上的磁碟區上。</block>
   <block id="ae6008f02ca0b45c6a4cd4a393db0926" category="doc">配置資料存放區並建立內含Volume</block>
-  <block id="0758dfa0b398419c875f8615656d7294" category="paragraph">for（VSC）必須安裝並註冊至管理ESXi主機的vCenter Server。</block>
-  <block id="606f505cd8a5f562db000f27cd2ad1c0" category="paragraph">VSC必須有足夠的叢集或認證、才能建立磁碟區。</block>
   <block id="51793b9466d1621e417beec57432b48e" category="paragraph">VSC會自動執行資料存放區資源配置、包括在指定的SVM上建立磁碟區。</block>
   <block id="97446f85d622caa408c1900719e976fe" category="summary">若要新增NFS存取至現有的、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。</block>
   <block id="2463feb7085c1de79b2a536a798cc5e6" category="doc">新增NFS存取至現有的</block>
@@ -2141,7 +2104,6 @@
   <block id="a9bfcd7e0844a29fc830ed2aab359573" category="paragraph">您應該下載最新外掛程式的線上套裝組合（「NetAppNasPlugin.vib'）</block>
   <block id="9e94d850f26fb50f4359dc1d71845f7c" category="list-text">確認每部ESXi主機上都已啟用VAAI。</block>
   <block id="859fdcf37593d727a4f59d5b7abb03a4" category="paragraph">在VMware vSphere 5.0及更新版本中、VAAI預設為啟用。</block>
-  <block id="ef75e0228583e748464fa0f1b6cf02c7" category="list-text">在中、前往*工具*&gt;* NFS VAAI工具*。</block>
   <block id="92c144ce1cf5262a527c5772bba3a8e0" category="list-text">單擊*選擇File.*上傳"NetAppNasPlugIn.vib"文件。</block>
   <block id="c1d36bef52fc074303f12c52de7b144f" category="list-text">按一下*上傳*。</block>
   <block id="1d644a2768f228d9cc9739e04fe54ca8" category="paragraph">您會看到「上傳成功」的訊息。</block>
@@ -2163,7 +2125,6 @@
   <block id="8335f43bb715b8b81168959acc5ed2a6" category="list-text">在* Storage Virtual Machine（SVM）Setup（*儲存虛擬機器（SVM）設定*）視窗中、建立：</block>
   <block id="16d91ce3e54e199d42185d64282f16aa" category="list-text">選取* NFS*作為資料傳輸協定。</block>
   <block id="6cf4a7024cd8da06dfb2de07d0ab1de3" category="paragraph">如果您打算在同一個上使用其他通訊協定、即使您不想立即設定、也應該選取這些通訊協定。</block>
-  <block id="abdb06b3d2e4b91f1b360f6bca83f3e4" category="list-text">選取要包含根磁碟區的根Aggregate。</block>
   <block id="73d7dbe8dde20a9df035458e497ebc27" category="paragraph">您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。</block>
   <block id="17d37d4e5172456b53b44a4310af144b" category="image-alt">SVM設定</block>
   <block id="d28037416dced6462706c78db21b49f2" category="paragraph">已建立、但尚未設定傳輸協定。</block>
@@ -2332,7 +2293,6 @@
   <block id="c8ff1551fdeaae1f60639d8bf0cb7ed3" category="summary">您可以使用精靈來引導您完成建立新儲存虛擬機器（SVM）、設定網域名稱系統（DNS）、建立資料邏輯介面（LIF）、設定CIFS伺服器、啟用NFS、以及選擇性設定NIS等程序。</block>
   <block id="22e9c10e8b5210f81d06c6c6127d20e0" category="doc">建立基本SVM</block>
   <block id="43ae0b93bb25dfad0e22a7b6989015a5" category="paragraph">當您建立SVM以進行多重傳輸協定存取時、不應使用Storage Virtual Machine（SVM）Setup（儲存虛擬機器（SVM）設定）視窗的資源配置區段來建立兩個磁碟區、而非具有多重傳輸協定存取的單一磁碟區。您可以稍後在工作流程中配置磁碟區。</block>
-  <block id="99da357b54d7db625b8825141a3944b6" category="list-text">請確定安全樣式已設定為您的偏好。</block>
   <block id="fdcf3c8d51b2260ef85550b0fa9da4d6" category="paragraph">您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。資料磁碟區的Aggregate會在稍後的步驟中個別選取。</block>
   <block id="c0a9145d648282dec9ceec2d2cddc1ee" category="list-text">跳過*為CIFS Storage*配置磁碟區區域、因為它只為CIFS存取配置一個磁碟區、而非多重傳輸協定存取。</block>
   <block id="006b7ad9b893c787722ef736b3caeeba" category="list-text">跳過*為NFS Storage*資源配置磁碟區區域、因為它只為NFS存取提供磁碟區、而非多重傳輸協定存取。</block>
@@ -2350,7 +2310,6 @@
   <block id="79429ce43a5431ccff80c94467c838a4" category="paragraph">例如、您可以將UNIX使用者對應至網域中的Windows使用者、反之亦然。</block>
   <block id="6c80c210a121bee3f6f6c2dec7d0b1ac" category="list-text">預設使用者可讓您將使用者名稱指派給所有未被內含對應或名稱對應轉換規則對應的使用者。</block>
   <block id="8e37b66518ae82bca5b089ae4eca3009" category="paragraph">每個SVM都有一個名為「'pcuser'」的預設UNIX使用者、但沒有預設的Windows使用者。</block>
-  <block id="3064494f3bf5fb9b80cad52a53ad436f" category="list-text">建立名稱對應、將UNIX使用者帳戶轉換成Windows使用者帳戶、反之亦然：</block>
   <block id="329ce9310c7feceac853043de2a63639" category="list-text">在*主機使用者與群組*窗格中、按一下*名稱對應*。</block>
   <block id="a285d507faab7498617c7bd3206f8a34" category="list-text">按一下「*新增*」、保留預設的* Windows至UNIX*方向、然後建立當Windows使用者嘗試存取使用UNIX檔案權限的檔案時產生UNIX認證的規則運算式。</block>
   <block id="7714e8888aa08608e8a447fb3ab9d4c4" category="paragraph">使用下列項目、將英文網域中的任何Windows使用者轉換成同名的UNIX使用者。模式「ENG/（.+）」會找出任何含有前置詞「ENG/\」的Windows使用者名稱、而取代詞「1」會移除使用者名稱以外的所有項目、藉此建立UNIX版本。</block>
@@ -2359,15 +2318,10 @@
   <block id="c1e86253a06b1199cf51c60a7a41c955" category="paragraph">使用下列項目、將每個UNIX使用者轉換成英文網域中同名的Windows使用者。模式「（.+）」會找到任何UNIX名稱、而取代的「ENG/1」會在使用者名稱前插入「ENG/」、以建立Windows版本。</block>
   <block id="36ecec98e25c67239e72871d41fdf59d" category="image-alt">UNIX對Windows項目的快照</block>
   <block id="529c9549c2b514c7a355c9443293dba4" category="list-text">由於每項規則的位置決定了規則的套用順序、因此您應該檢閱結果、確認訂單符合您的期望。</block>
-  <block id="9c2a7b8d442b8939f2196073f4c82cb7" category="inline-xref">#Subford_8FD68A77864AAFAF680961CE879940</block>
-  <block id="37075983fb11ef7edddca2cab820e046" category="inline-xref">#Subford_E730068645DB4303B61744DB632A9803</block>
-  <block id="4b25a11c05c6f454e5e14fd85c95b7ac" category="list-text">重複步驟 <block ref="3651ce08149af1a6331095ff0f3e48e0" category="inline-xref-macro-rx"></block> 透過 <block ref="6b83a27180bcd86d3e3f688cf1372175" category="inline-xref-macro-rx"></block> 對應SVM上的所有網域和名稱。</block>
-  <block id="160c1f9407602456cd4c40e0c210c8a2" category="list-text">建立預設的Windows使用者：</block>
   <block id="ef69199e1bfd8429546a8eb90493c2c4" category="list-text">在LDAP、NIS或SVM的本機使用者中建立Windows使用者帳戶。</block>
   <block id="2f1ab1ad2a5d28dddce71f29aa89ccb3" category="paragraph">如果您使用本機使用者、可以在「主機使用者與群組」窗格的* Windows *下建立帳戶。</block>
   <block id="59d46f1dd678a565a60f72647f993047" category="list-text">在*傳輸協定*窗格中選取* NFS*&gt;*編輯*、然後輸入使用者名稱、即可設定預設的Windows使用者。</block>
   <block id="01bda084a794e294dca394a745aa00c8" category="paragraph">您可以建立名為「unixuse...」的本機Windows使用者、並將其設為預設的Windows使用者。</block>
-  <block id="78c3843c6f37081dc906270371e7e8b6" category="list-text">如果您希望使用者與預設值不同（即「pcuser'」使用者）、請設定預設UNIX使用者。</block>
   <block id="f955bac1f27289e23897b49c0b70ab45" category="list-text">在LDAP、NIS或SVM的本機使用者中建立UNIX使用者帳戶。</block>
   <block id="365ffe4ad6b975ce6e6748166ba12350" category="paragraph">如果您使用本機使用者、可以在「主機使用者與群組」窗格的* UNIX*下建立帳戶。</block>
   <block id="281e9a015316aad7dfb6b10218549537" category="list-text">在*傳輸協定*窗格中選取* CIFS/*&gt;*選項*、然後輸入使用者名稱、即可設定預設的UNIX使用者。</block>
@@ -2377,7 +2331,6 @@
   <block id="9bd5b0b73d9e7f529507148a100be624" category="paragraph">在建立新的多重傳輸協定磁碟區之前、您必須決定是否要將磁碟區放入現有的儲存虛擬機器（SVM）、如果是、則必須決定SVM需要多少組態。此決定決定決定您的工作流程。</block>
   <block id="aeb38a19bd9630e8b09f881897085c75" category="list-text">如果您想要在新的SVM上配置磁碟區、請建立基本SVM。</block>
   <block id="d7074fb645d07c741e392b6ace23db1e" category="inline-link-macro">建立基本SVM</block>
-  <block id="8ad6ee98147e49785921b21f1eb4a8e6" category="paragraph"><block ref="8ad6ee98147e49785921b21f1eb4a8e6" category="inline-link-macro-rx"></block></block>
   <block id="982fca9c7818ccb19d65f539ee14cf72" category="paragraph">如果在現有SVM上尚未啟用CIFS和NFS、則必須選擇此選項。</block>
   <block id="a15677c03b18981256e9de73817c9522" category="list-text">如果您想要在已啟用CIFS和NFS但尚未設定的現有SVM上配置磁碟區、請在現有SVM上新增CIFS和NFS存取。</block>
   <block id="6b7c7970bdcb41db6688672f56b80678" category="inline-link-macro">在現有SVM上新增CIFS和NFS存取</block>
@@ -2593,7 +2546,6 @@
   <block id="6ff6df86873403eae9118bafd06d40d7" category="list-text">按一下「*保護*&gt;*磁碟區關係*」。</block>
   <block id="4120fa4e2c29c0e457f8c2f168662a9f" category="list-text">選取您要停止資料傳輸的關係、然後按一下「*作業*」&gt;「*中止*」。</block>
   <block id="ce99fd1f40a25439cb6244c37ddad5f1" category="list-text">選取「*是、我要中止傳輸*」核取方塊以確認作業。</block>
-  <block id="9b14937d874cffa7b0102b94f2948e6a" category="list-text">選取*保留任何部分傳輸的資料*核取方塊、以保留已傳輸至目的地Volume的資料。</block>
   <block id="a5782b7ea39d26020bb8cdb46dd47c97" category="list-text">按一下*中止*。</block>
   <block id="4f4f92caee1c24480b21b74608aa600c" category="paragraph">傳輸狀態會顯示為「Aborting」、直到作業完成後顯示為「Idle」（閒置）。</block>
   <block id="7683948af41c949fd579849f25d5fcb7" category="inline-xref-macro">保護所需時間</block>
@@ -2680,12 +2632,6 @@
   <block id="96bdd47bf9f26bc4ff8e4b6347d9ee94" category="paragraph"><block ref="96bdd47bf9f26bc4ff8e4b6347d9ee94" category="inline-xref-macro-rx"></block></block>
   <block id="b1d9a77843056b99370cba5cb555c27b" category="inline-xref-macro">正在建立啟動器群組</block>
   <block id="a2f0d48ce6857c209ab1569cf936d202" category="paragraph"><block ref="a2f0d48ce6857c209ab1569cf936d202" category="inline-xref-macro-rx"></block></block>
-  <block id="61a87a665f09af00c05b11658bd3304d" category="inline-xref-macro">刪除啟動器群組</block>
-  <block id="a4a4a59d46519a279699267144b3aca8" category="paragraph"><block ref="a4a4a59d46519a279699267144b3aca8" category="inline-xref-macro-rx"></block></block>
-  <block id="551051c23ee0088b06b04af5b250ab07" category="inline-xref-macro">新增啟動器</block>
-  <block id="8294d5bb89fea411bf5e233ca7d6a4d3" category="paragraph"><block ref="8294d5bb89fea411bf5e233ca7d6a4d3" category="inline-xref-macro-rx"></block></block>
-  <block id="c599e3a17497c8e97289dc5a0bd24a9a" category="inline-xref-macro">從啟動器群組刪除啟動器</block>
-  <block id="623ea366bfdef716a0ca0017cfb625f8" category="paragraph"><block ref="623ea366bfdef716a0ca0017cfb625f8" category="inline-xref-macro-rx"></block></block>
   <block id="67f4cb8829ab7e9a9f73f6d8e163cca1" category="inline-xref-macro">編輯LUN</block>
   <block id="33442f8ea00e19d3ca6d3a8cffdb5924" category="paragraph"><block ref="33442f8ea00e19d3ca6d3a8cffdb5924" category="inline-xref-macro-rx"></block></block>
   <block id="eb3bca02d31859fb667ae3b4c2d60a56" category="inline-xref-macro">編輯啟動器群組</block>
@@ -2709,10 +2655,8 @@
   <block id="77595f78f9133961a7457297f795cd07" category="list-text">按一下「*保護*」&gt;「* SVM關係*」&gt;「*建立*」。</block>
   <block id="bcb1d33ec176a891e9e3ae86e2c199d8" category="list-text">從「* SVM關係類型*」清單中選取SVM關係類型。</block>
   <block id="41fe1b889a1b3e1fedeb7e2bb7ac3707" category="list-text">從*來源儲存虛擬機器*窗格中、選取叢集和SVM。</block>
-  <block id="881dd8777cece3528f698c72778c1a5e" category="list-text">若要檢視沒有必要權限的SVM、請按一下*導覽至來源叢集*、然後提供必要的權限。</block>
   <block id="93fa90e331f56c82caa2a1f3c8f4a75d" category="list-text">從*目的地儲存虛擬機器*窗格中、指定將在目的地叢集上建立的SVM名稱。</block>
   <block id="d88db3fffac974aac217e7a7d3aa5dd2" category="list-text">選取選項以複製來源SVM組態。</block>
-  <block id="56d4d5ff6a5a3b2d919663370afdf105" category="list-text">按一下*<block ref="3fd4b2c218dcec4c2eb9e85f1d283321" category="inline-image-macro-rx" type="image"></block>*、更新保護原則和保護排程、選取Aggregate、然後初始化保護關係。</block>
   <block id="62e2eefd7aed0ec0b8bc7303f45a45b5" category="list-text">按一下「*儲存*」建立SVM關係。</block>
   <block id="05f7eaa2c3f4d229c4485c4628f22a2e" category="paragraph">此時會顯示SVM關係：摘要視窗。</block>
   <block id="53f1e0aba7693bcbdfdad5ec51dacfe5" category="list-text">按一下「*完成*」以完成程序。</block>
@@ -2894,7 +2838,6 @@
   <block id="d7213afe8cbbab92d25d7794e199f5c2" category="paragraph">如果您要指派給節點的生命量超過兩個、則必須為每個LIF指派至少一個連接埠集。</block>
   <block id="f1deb1eebd781987dc5928a29563008e" category="list-text">如果您要驗證或修改自動產生的lifs組態、請選取*檢閱或編輯介面關聯*。</block>
   <block id="6ae5e4aff7b4baf185267f383f8e510e" category="paragraph">您只能修改LIF名稱和主連接埠。您必須確保未指定重複的項目。</block>
-  <block id="ac208f4f587c57e7973c5ae4579a00d0" category="list-text">在設定傳輸協定時、請提供LUN大小、LUN的作業系統類型、以及主機啟動器詳細資料、以配置FC儲存設備或FCoE儲存設備的LUN。</block>
   <block id="ff4c77d043def3eb5719e2920310cb36" category="paragraph">資料生命量和連接埠集是以指定的組態建立。這些生命分佈在各連接埠集之間。如果已成功為至少一個傳輸協定建立所有的LIF、則會啟動FCP服務。</block>
   <block id="91f750dc1743f641bc63ffb38dc8456a" category="paragraph">如果LIF建立失敗、您可以建立LIF、然後從FC/FCoE視窗啟動FCP服務。</block>
   <block id="58bd3f8eddbd2def6918aaeddc1aeb38" category="summary">您可以使用System Manager來管理DNS/DDNS服務。</block>
@@ -3056,12 +2999,10 @@
   <block id="ddf3c43b8ebc516f8db3819c92cf33bb" category="list-text">在這個組態中、當您在主要叢集與外部叢集之間建立對等關係時、最佳做法是在正常運作的站台叢集與外部叢集之間建立對等關係。MetroCluster</block>
   <block id="955295e5dabf6183ad6484e09d5dfda1" category="list-text">您可以建立自訂通關係、也可以使用系統產生的通關密碼來驗證叢集對等關係。不過、兩個叢集的複雜密碼必須相符。</block>
   <block id="e8ecd2f04d15f84f0731c1958cc0700d" category="list-text">在「*目標叢集叢集間LIF IP位址*」欄位中、輸入遠端叢集間LIF的IP位址。</block>
-  <block id="a9eefa30f0ae5650cff0f75853dabc58" category="list-text">如果您要在執行ONTAP 《叢集技術與執行ONTAP 《叢集技術與技術開發與技術開發與技術開發與技術開發與技術開發的叢集之間建立對等關係、請勾選核取方塊。</block>
   <block id="25eed832462f2d841a1626f4f5cc36be" category="paragraph">對等關係不會加密。如果您未選取核取方塊、則不會建立對等關係。</block>
   <block id="1a4560d0fd0e3d83e70dfb6109d9db20" category="list-text">在「* Passphrase *」欄位中、指定叢集對等關係的通關密碼。</block>
   <block id="fca1fa143f89c76aadd72bb0bde80911" category="paragraph">如果您建立自訂通關密碼、系統會根據對等叢集的通關密碼來驗證通關密碼、以確保叢集對等關係已驗證。</block>
   <block id="cc243f7502338ef99c61566f17eb36b8" category="paragraph">如果本機叢集和遠端叢集的名稱相同、而且您使用的是自訂通關密碼、則會為遠端叢集建立別名。</block>
-  <block id="33d5bae310283d8bc6bc309a1b6ef166" category="list-text">若要從遠端叢集產生通關密碼、請輸入遠端叢集的管理IP位址。</block>
   <block id="d6c95742d084829b068c0c204bc81eb5" category="list-text">啟動叢集對等。</block>
   <block id="f28ef0af80ea6470653e5eb453f2be35" category="paragraph">從啟動器叢集啟動叢集對等</block>
   <block id="35f2cd730c7ceb817f7ec66c302c7c86" category="paragraph">從遠端叢集啟動叢集對等（若已建立自訂通關密碼、則適用）</block>
@@ -3337,13 +3278,11 @@
   <block id="15c8b485ae1f0faa23da206983b2db28" category="list-text">選取「* NVMe *」方塊。</block>
   <block id="f78b05e36a26c2b760405a63dcc6f709" category="list-text">選取NVMe傳輸協定的NVMe連接埠。</block>
   <block id="73443c81a17542138d21e74ee8b9c0f6" category="paragraph">其中一個節點必須至少有一個支援NVMe的介面卡可供使用、才能設定NVMe。此外、從ONTAP 版本號為2、9.5開始、必須針對與SVM相關的HA配對中的每個節點、至少設定一個NVMe LIF。您最多可以為配對中的每個節點建立兩個NVMe LIF。</block>
-  <block id="01751c46a4623e5ca76c644f7df362e4" category="list-text">按一下*進階選項*圖示、並提供詳細資料、以設定進階選項、例如預設語言、安全樣式、CIFS伺服器詳細資料及NFS詳細資料。</block>
   <block id="dec7a9cf637ab7e5ec703056266f4cf7" category="list-text">按一下*提交並繼續*以建立SVM。</block>
   <block id="ec4be32f47fa69e0726361f9f7d93251" category="paragraph">如果您已按一下*提交並繼續*、則必須驗證您在「摘要」視窗中提供的詳細資料、然後按一下*管理叢集*以啟動系統管理員、或按一下*資源配置應用程式*以配置儲存應用程式、或按一下*匯出組態*下載組態檔。</block>
   <block id="1d226977e25ff0748c81b0ef9156e807" category="summary">當您建立FlexGroup 一個聲音區時、可以指定您要與FlexGroup 該聲音區建立關聯的選項。</block>
   <block id="402229f8ce0167d0a78bbd044f5164cf" category="doc">使用FlexGroup System Manager - ONTAP 更新版本的更新版本、指定適用於此產品的進階選項</block>
   <block id="97da1d3682fa19cce007f55dd00e9257" category="paragraph">當您建立FlexGroup 一個版本時、可以使用ONTAP 經典版的《經典版》（ONTAP 可在更新版本的版本中使用）來指定您想要與FlexGroup 該版本關聯的選項。</block>
-  <block id="7e5cfbf86d9c5cd07fe2d4727aa84591" category="list-text">在* Create FlexGroup S還原*視窗中、按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 以指定進階選項。</block>
   <block id="cc6147bf70776e78f1689c5b5ec50cdf" category="paragraph">此時會顯示「進階選項」視窗。其中包含區段（左欄的標題）、您可以在其中指定各種選項。</block>
   <block id="771c51fdfe14e209bbf3372e85216fc9" category="list-text">在「*一般詳細資料*」區段中、選取空間保留和安全樣式、然後設定該磁碟區的UNIX權限。</block>
   <block id="e722561c54240493896eff618531d51d" category="paragraph">您應該注意下列限制：</block>
@@ -3392,7 +3331,6 @@
   <block id="b7302b760aefe119788230b5d7251f67" category="list-text">對於資料LIF、「連接埠詳細資料」區域會顯示與SVM IPspace相關聯之廣播網域的所有連接埠。</block>
   <block id="6bf0e64afded1cfca673aefbdd7e1927" category="list-text">對於叢集間的LIF、「連接埠詳細資料」區域會顯示來自廣播網域的所有連接埠、這些連接埠與所需的IPspace相關聯。</block>
   <block id="320162c6b834fe049ad1a5fddc0d73fb" category="list-text">如果選取NVMe傳輸協定、「連接埠詳細資料」區域只會顯示支援NVMe的介面卡。</block>
-  <block id="e08185a2d6b5b77183f6e7821c1d0e26" category="list-text">選取*動態DNS（DDNS）*核取方塊以啟用DDNS。</block>
   <block id="1d46466d6888567abda563bdf7e0efc0" category="section-title">編輯網路介面設定</block>
   <block id="e06a264219e4be22b6024590be6851fc" category="paragraph">您可以使用System Manager修改網路介面、以啟用資料LIF的管理存取。</block>
   <block id="5d5cbdbd93151fdaac2835d937adb8cd" category="list-text">您無法透過System Manager修改叢集生命、叢集管理生命、或節點管理生命里的網路設定。</block>
@@ -3410,7 +3348,6 @@
   <block id="db2e79d9693289d91bba2ab9ff15eb2c" category="list-text">您無法移轉iSCSI LIF或FC LIF。</block>
   <block id="b3ebfcd0c8d698ba3ea46b1e109e3950" category="list-text">選取您要移轉的介面、然後按一下*移轉*。</block>
   <block id="16d27311fa2fc81679d4bd2279fb5950" category="list-text">在*移轉介面*對話方塊中、選取您要移轉LIF的目的地連接埠。</block>
-  <block id="f6744fd5f178d6e9ad466d5f733a7cc8" category="list-text">如果您要將目的地連接埠設定為LIF的新主連接埠、請選取*永久移轉*核取方塊。</block>
   <block id="3448a1d5e7a8aad36abd21809538176a" category="list-text">按一下*移轉*。</block>
   <block id="cf7e5af013c561e4441064bb2e7f5e49" category="inline-xref-macro">在SVM上設定iSCSI傳輸協定</block>
   <block id="aea360b94eba5ad45f55e615a1e58409" category="paragraph"><block ref="aea360b94eba5ad45f55e615a1e58409" category="inline-xref-macro-rx"></block></block>
@@ -3429,7 +3366,6 @@
   <block id="7849e92346678a0ffd88e8ea34d75d14" category="list-text">設定System Manager使用SAML驗證：</block>
   <block id="48f177c959a948928286a4f2231655a1" category="list-text">輸入IDP的URI。</block>
   <block id="a7cde5e2240f9a9807d70025a4b68214" category="list-text">輸入主機系統的IP位址。</block>
-  <block id="5be29a37ad1df31fff6e5005ffac856f" category="list-text">如有必要、請變更主機系統憑證。</block>
   <block id="1be7617a5f94efcf7eeb22fcd4bf5044" category="list-text">按一下*擷取主機中繼資料*以擷取主機URI和主機中繼資料資訊。</block>
   <block id="d644761f0f0162734528b561d095019b" category="list-text">複製主機URI或主機中繼資料詳細資料、存取IDP、然後在IDP視窗中指定主機URI或主機中繼資料詳細資料及信任規則。</block>
   <block id="5a913a273be71ff2bc01c087f3846ffe" category="paragraph">隨即顯示IDP登入視窗。</block>
@@ -3747,7 +3683,6 @@
   <block id="d6e51623193cab65d28affa7ae8c5a14" category="paragraph">您應該改用CLI。</block>
   <block id="6ff45ebcc792fafbae716cca45e99ae3" category="list-text">您無法將LUN移到SnapLock 無法在等量資料區上。</block>
   <block id="13f236a15d69cc0eabc8f7306eb9587f" category="list-text">在「* LUN管理*」索引標籤中、從LUN清單中選取您要移動的LUN、然後按一下「*移動*」。</block>
-  <block id="e8b72b1985238debde0bbec4931a92b7" category="list-text">在*移動LUN*對話方塊的*移動選項*區域中、如果您要變更預設名稱、請為LUN指定新名稱。</block>
   <block id="1859eb8f910a0841fb15ff7e7a4c13a6" category="list-text">選取您要將LUN移至的儲存物件、然後執行下列其中一項動作：</block>
   <block id="60ec5e9a46e1668c5c9c5ff67488c9f7" category="cell">如果您要將LUN移至...</block>
   <block id="0a8e79b3205b3a64a57b517f0ae4c0d5" category="list-text">選取您要在其中建立新磁碟區的集合體。</block>
@@ -3764,7 +3699,6 @@
   <block id="eb53ad6b29e4928c761d2c0603ffdb80" category="paragraph">您必須FlexCache 先取得「不含功能」授權、才能建立FlexCache 一個「不含功能」的Volume。</block>
   <block id="a57d03d1c0981c5a08acdef16460ea79" category="list-text">在* Volumes（*磁碟區）*視窗中、按一下* Create*&gt;* FlexCache S還原*。</block>
   <block id="c8c00d655110d4b263ca641854427914" category="paragraph">「Create FlexCache Rs功能」視窗即會顯示。</block>
-  <block id="0ebe68638311330eca50bf75f46e2c46" category="list-text">「*來源Volume *」區域中的下列欄位會顯示您想要建立FlexCache 此磁碟區之來源磁碟區的值。您可以加以修改。</block>
   <block id="638e1df605e935795578a57443f7ab34" category="list-text">*叢集*：使用下拉式功能表選取與來源磁碟區相關的叢集。</block>
   <block id="24a9c659e34ab6bddc02e34e9540d8f5" category="list-text">* SVM*：使用下拉式功能表選取包含來源磁碟區的SVM。</block>
   <block id="1117c14a1fd17506c4f46c2581274851" category="paragraph">如果您選擇的SVM不是對等端點、而是允許對等端點、則System Manager可讓您明確地對其對等端點。</block>
@@ -3866,10 +3800,8 @@
   <block id="daf46f30da09ba273856b457c169e88f" category="paragraph">如果指定的叢集執行ONTAP 的是版本早於ONTAP 版本的更新版本、則只會列出已執行的SVM。如果指定的叢集執行ONTAP 的是Sfe9.3或更新版本、則會列出已執行的SVM和允許的SVM。</block>
   <block id="e20f7cec374a24f730d51dc91ff05cce" category="list-text">輸入Volume名稱字尾。</block>
   <block id="3122676633f70675910b4bb631f8306d" category="paragraph">磁碟區名稱尾碼會附加至來源磁碟區名稱、以產生目的地磁碟區名稱。</block>
-  <block id="dde7710f3c3f6f0a72c8ee98bbc7724e" category="list-text">按一下*瀏覽*、然後變更鏡射與資料保存原則。</block>
   <block id="429fe5679087dfa7570d094e7dad1146" category="paragraph">您可以選取具有與來源磁碟區附加之Snapshot原則相符之標籤數目上限的原則。</block>
   <block id="0a7363a61409d19e779576977decd818" category="list-text">從現有排程清單中選取關係的排程。</block>
-  <block id="08b4fd0a0d0064c3f871451b252b401c" category="list-text">選擇*初始化關係*以初始化關係。</block>
   <block id="924f69e4ea9a931aaacaf1163a657c51" category="list-text">啟用啟用FabricPool的Aggregate、然後選取適當的分層原則。</block>
   <block id="ad0f56940f57f0507c4d36e619b88369" category="list-text">按一下「*驗證*」以驗證所選磁碟區是否有相符的標籤。</block>
   <block id="c635a3eba9f55669cb810f90f9277156" category="section-title">重新同步關係</block>
@@ -3957,7 +3889,6 @@
   <block id="2fd31c025fae94406db26f660b0bcce6" category="list-text">按一下*繼續*開始檔案追蹤程序。</block>
   <block id="10e8bbfe3840d1904e9ee75029024bb1" category="list-text">選取用來存取所選SVM上的檔案或共用的傳輸協定。</block>
   <block id="0fddf3ba5354d0302fcdd3f1a444e4ab" category="list-text">在*使用者名稱*欄位中、輸入嘗試存取檔案或共用區的使用者名稱。</block>
-  <block id="1e641e95009f8948c6d6b7b4ded412fc" category="list-text">按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 指定更多詳細資料以縮小追蹤範圍。</block>
   <block id="a1d52fca6609f6ceae1e7b0dc368c1a2" category="paragraph">「進階選項」對話方塊視窗可讓您指定下列詳細資料：</block>
   <block id="9430c8c9455d0a71e88758d5f0cb5f9c" category="list-text">*用戶端IP位址*：指定用戶端的IP位址。</block>
   <block id="0a2be69058c2dadb60ef8bd4f7128b12" category="list-text">*檔案*：指定要追蹤的檔案名稱或檔案路徑。</block>
@@ -3966,12 +3897,10 @@
   <block id="bd8666969886eb0dc26ca52323f2b393" category="paragraph">系統會啟動追蹤、並顯示結果表。在使用者要求檔案存取時收到錯誤之前、表格會是空白的。結果表會每15秒重新整理一次、並以相反的時間順序顯示訊息。</block>
   <block id="eaec0f10aec09c6be8e5f5e9cefde382" category="list-text">通知受影響的使用者、他們應該在接下來的60分鐘內嘗試存取檔案。</block>
   <block id="372a55239036bf10a1280207eb05c728" category="paragraph">當追蹤期間發生指定使用者名稱的錯誤時、結果表會顯示拒絕檔案存取要求的詳細資料。原因欄會指出妨礙使用者存取檔案的問題、以及這些問題發生的原因。</block>
-  <block id="199b38a7f4c8faa458072b0c76d10122" category="list-text">在結果表的「*理由*」欄中、按一下「*檢視權限*」以檢視使用者嘗試存取之檔案的權限。</block>
   <block id="a8bb4bbf1d306b898b5cf5f776b07504" category="list-text">當追蹤結果顯示訊息、指出「Synchronize（同步）」、「Read Control（讀取控制）」、「Read Attributes"（讀取屬性）、「Execute（執行）」、「Read EA（讀取EA）」、 「寫入」或「讀取」訊息表示所需的存取權限尚未授予所列的權限集。若要檢視實際權限狀態、您必須使用提供的連結來檢視權限。</block>
   <block id="0e3fef7fcc9fc8317517bcef5a11fdb7" category="list-text">如果您指定CIFS傳輸協定、則會顯示「有效檔案與共用權限」對話方塊、列出與使用者嘗試存取之共用區和檔案相關的檔案和共用權限。</block>
   <block id="4a45e916c0a869371cc31c91a923d95b" category="list-text">如果您指定NFS傳輸協定、則會顯示「有效檔案權限」對話方塊、列出使用者嘗試存取之檔案的相關檔案權限。核取符號表示已授與權限、而「X」表示未授與權限。</block>
   <block id="3c6d939a67b238992cb339772ca12a39" category="paragraph">按一下「*確定*」以返回「追蹤檔案存取」視窗。</block>
-  <block id="7dde757dc363a6c50d333fe016b78c72" category="list-text">結果表會顯示唯讀資料。您可以對追蹤結果執行下列動作：</block>
   <block id="a7b5c83908ad9daaf85f841d341a7360" category="list-text">按一下*複製到剪貼簿*、將結果複製到剪貼簿。</block>
   <block id="2538dc141227d9a0706c848d12ccc029" category="list-text">按一下「*匯出追蹤結果*」、將結果匯出至一個以逗號分隔的值（CSV）檔案。</block>
   <block id="b7434387d50a2d8d6d366fb362c92ed6" category="list-text">當您想要結束追蹤作業時、請按一下*停止追蹤*。</block>
@@ -4026,7 +3955,6 @@
   <block id="f0e02ab5b0cdf7117b8b07547aca0775" category="list-text">如果您未指定最小處理量限制、則可以設定IOPS、B/s、kb/s、MB/s等的最大處理量限制。</block>
   <block id="f72dc8f6981de0676ac0dd61eddcdb18" category="list-text">如果您未指定最大處理量值、系統會自動顯示「'Unlimited'」作為值。</block>
   <block id="883ae422808f3b79c94f0c66ab30fde1" category="paragraph">此值區分大小寫。您指定的單位不會影響最大處理量。</block>
-  <block id="e64f3c649915f45fe738260ac4ca6e2c" category="list-text">如果您要檢閱選取的磁碟區清單、請按一下指定磁碟區數量的連結、如果您要從清單中移除任何磁碟區、請按一下* Discard*。</block>
   <block id="d1c07200e6182da56445b8e08b0a0723" category="paragraph">只有在選取多個磁碟區時、才會顯示連結。</block>
   <block id="5b29a4bed645258625d425d5491c85ba" category="summary">將類型與每個磁碟建立關聯。ONTAP本報告的某些磁碟類型與產業標準不同、您應該瞭解哪些類型的磁碟類型符合產業標準、以避免混淆。ONTAP ONTAP</block>
   <block id="5ed5b84d36c171fac20f225616064bee" category="doc">如何在System Manager中報告磁碟類型-例如更新版本的更新版本ONTAP ONTAP</block>
@@ -4114,7 +4042,6 @@
   <block id="a3773366954a165774d35e6e6f54a0dc" category="list-text">每個節點必須至少有兩個資料連接埠、而且連接埠狀態必須為「up」。</block>
   <block id="9ffa7b367acb56314d82389a4f8a9161" category="list-text">您可以在建立SVM時設定iSCSI傳輸協定、也可以稍後再設定。</block>
   <block id="230e838f45889ac22c478383116abb0d" category="list-text">如果您在建立SVM時尚未設定iSCSI傳輸協定、請按一下「*儲存設備*」&gt;「* SVMS*」。</block>
-  <block id="c5afc18847d5134c1fbdf66cf5fb8b7c" category="list-text">在「*網路存取*」區段中、指定iSCSI目標的別名。</block>
   <block id="57c098ce4aac8173ef970632fbb33ab2" category="paragraph">別名的最大字元數為128。如果您未指定目標別名、則SVM名稱會用作別名。</block>
   <block id="715cd58a186a3d89100b1cb299fa8a9a" category="list-text">指定可指派給單一節點的iSCSI LIF數目。</block>
   <block id="580830a5bfa44064e3417ec94e5b9366" category="paragraph">一個4節點叢集有節點1、節點2和節點3、每個節點有六個連接埠處於「up」狀態、節點4則有七個連接埠處於「up」狀態。叢集的有效最大值為6。</block>
@@ -4126,7 +4053,6 @@
   <block id="e76f14bb67b78cbbdcdc6c78eb7a60cc" category="paragraph">如果您的叢集已設定了主權會議卡、您應該選取* CNA*。</block>
   <block id="eb2b3acfbfbe5007664d6a71a3423bec" category="paragraph">如果叢集中已設定ifgrps、則應選取*介面群組*。</block>
   <block id="6c0d053b4d6cc01653782bee2360519d" category="paragraph">必須在廣播網域中新增ifgrp連接埠。</block>
-  <block id="917e9e3f2f584f4d2b943275f80ffaab" category="list-text">設定iSCSI傳輸協定時、請指定LUN大小、LUN的作業系統類型、以及主機啟動器詳細資料、以配置iSCSI儲存設備的LUN。</block>
   <block id="9c9ee2c8ea7f98076a8dcd6452769468" category="list-text">如果您要驗證或修改自動產生的iSCSI LIF組態、請選取*檢閱或修改LIF組態（進階設定）*。</block>
   <block id="7fd31df98ddac562f9edfc81fd908cd3" category="paragraph">您只能修改LIF名稱和主連接埠。預設情況下、portset會設為最小值。您必須指定唯一的項目。如果您指定重複的LIF名稱、System Manager會將數值附加至重複的LIF名稱。</block>
   <block id="2f2c687def439613da9b0e5e0dda737a" category="paragraph">根據所選的連接埠集、lifs會透過循環配置資源方法分散到各個連接埠集、以確保在節點故障或連接埠故障時提供備援。</block>
@@ -4158,8 +4084,6 @@
   <block id="0a567a9da3aace0fdb39175c46a2194d" category="list-text">您只能在非SnapLock（主要）Volume和SnapLock 一個目的地（次要）Volume之間建立保存關係。</block>
   <block id="c18e8adbb0bfff89c0c57a746072a51c" category="list-text">如果您要建立SnapLock 一個現象區、請指定預設保留期間。</block>
   <block id="d163c7a27d66dcf048cd9306d213b252" category="paragraph">預設保留期間可設定為介於1天到70年之間的任何值、或「無限大」。</block>
-  <block id="c8dc73afec524284126d20bcfc71bf2c" category="list-text">按一下*瀏覽*、然後變更資料保存原則。</block>
-  <block id="e288671b07babc0e4aac1725e9ea68e9" category="list-text">選擇*初始化關係*以初始化資料保險箱關係。</block>
   <block id="bc36030e4ce3c19ae34c6f6fa581b297" category="list-text">啟用SnapLock 「支援整合」功能、然後選取SnapLock 「支援不一致」的集合體或SnapLock 「支援不一致」的「企業」集合體。</block>
   <block id="c8e8a54ae010dcc82173b513bed570cf" category="paragraph">如果您選擇建立目的地Volume、會以下列預設設定建立類型為_DP_的Volume：</block>
   <block id="8ff2ed2b55393ff5f421a09f2fa6c33b" category="list-text">自動擴充已啟用。</block>
@@ -4170,7 +4094,6 @@
   <block id="ab344d7fb1689680a0d4cdbbc5de1e05" category="section-title">更新關係</block>
   <block id="437d5622a2429e112d69ee2db6cb558c" category="paragraph">必須初始化資料保險箱關係。</block>
   <block id="e04724aa1b9e30ca802c3fb8ed06e49c" category="list-text">選取您要更新資料的關係、然後按一下「*作業*」&gt;「*更新*」。</block>
-  <block id="614425ddd9c0c19df182d6b12dcf8587" category="list-text">選取*限制傳輸頻寬至*以限制傳輸所用的網路頻寬、並指定最大傳輸速度。</block>
   <block id="d11455c2e1ea1432c1e7e86840cda43e" category="paragraph">您可以使用System Manager結束來源與目的地Volume之間的資料保存關係、然後從來源釋出Snapshot複本。</block>
   <block id="6770e23439ebd3b93e37272c1b392059" category="paragraph">釋出關係會永久移除來源磁碟區上資料保存關係所使用的基礎Snapshot複本。若要重新建立資料保險箱關係、您必須使用命令列介面（CLI）從來源磁碟區執行重新同步作業。</block>
   <block id="7120cd33d3734d70a1060995bcc6222c" category="list-text">選取您要刪除資料保險箱關聯的磁碟區、然後按一下*刪除*。</block>
@@ -4598,7 +4521,6 @@
   <block id="3c6b636b52f4ee0b5d619d487135638c" category="list-text">從* SVM*欄位的下拉式功能表中、選取您要在其中建立CIFS共用的SVM。</block>
   <block id="a5b98ff7955f554a6ab08c3a07b3fb83" category="list-text">在「*建立共用*」視窗中、按一下「*瀏覽*」、然後選取應共用的資料夾、qtree或Volume。</block>
   <block id="b4f2a0dfcf3a06588721c3cf46426f55" category="list-text">指定新CIFS共用的名稱。</block>
-  <block id="cf63fad81a6c52194715c588fc201e02" category="list-text">選取「*啟用Hyper-V和SQL*的持續可用度」核取方塊、允許支援SMB 3.0及更新版本的用戶端在不中斷營運的情況下持續開啟檔案。</block>
   <block id="81c3a43e87c04aa4f2867930228320dd" category="paragraph">使用此選項開啟的檔案、可防止發生中斷事件、例如容錯移轉、還原及LIF移轉。</block>
   <block id="174695729a46aa0db160108074800cc8" category="paragraph">從System Manager 9.6開始、FlexGroup 支援不中斷供應的功能。</block>
   <block id="44ec628d221f20d3a532dfdc1a49b9cc" category="list-text">選取「存取此共享區時加密資料*」核取方塊以啟用SMB 3.0加密。</block>
@@ -4633,7 +4555,6 @@
   <block id="9cec6f3479185182d510faeb5c88e095" category="paragraph">共用名稱可以使用下列動態名稱：</block>
   <block id="cf46804cd7f94ff0f06229165a1e08bc" category="list-text">「%w」（使用者的Windows使用者名稱）</block>
   <block id="c7d7c222f5eb544bb7a6e17489d16fb1" category="list-text">「%d」（使用者的Windows網域名稱）</block>
-  <block id="ba3bb595a46580f2acb4519449963208" category="list-text">「%u」（使用者對應的UNIX使用者名稱）若要使所有主目錄的共用名稱都是唯一的、共用名稱必須包含「%w」或「%u」變數。共享區名稱可以同時包含「%d」和「%w」變數（例如、「%d」/「%w」）、或是共享區名稱可以包含靜態部分和變數部分（例如、home_`%w）。</block>
   <block id="0521b4a71a02a28d9873367a66e9d83a" category="list-text">*共享路徑*</block>
   <block id="7f794a8325e108e30caf0916da9858f8" category="paragraph">這是由共用定義的相對路徑、因此會與其中一個共用名稱相關聯、並附加到每個搜尋路徑、以從SVM根目錄產生使用者的完整主目錄路徑。它可以是靜態的（例如「主頁」）、動態的（例如「%w」）、或是兩者的組合（例如「eng/%w」）。</block>
   <block id="6fcc718fd1fe6c61104b90deb1cf42a2" category="list-text">*搜尋路徑*</block>
@@ -4717,7 +4638,6 @@
   <block id="b6d92cde2320c66ed270173a2f5ff1c6" category="paragraph">對於Volume移動作業、您可以使用System Manager在Volume進入轉換延後階段時手動觸發轉換。您可以設定轉換的持續時間、以及當操作在該期間內失敗時、系統要執行的轉換動作。</block>
   <block id="97496d83c26eea3da3dfb6963fe5367c" category="list-text">展開已啟動Volume移動作業的Volume。</block>
   <block id="f1f7238ba7ed154f9b34469a9756274a" category="list-text">在*轉換*對話方塊中、按一下*進階選項*。</block>
-  <block id="4330ad75398ca5fc4b8a556deadc2744" category="list-text">指定切換動作和切換期間。</block>
   <block id="1d0d544f1b31a0e6bfadcc298162e9d6" category="summary">您可以使用System Manager來建立、編輯及刪除效率原則。</block>
   <block id="a0741be6845827b2c37f25cafc9c2f47" category="doc">利用System Manager管理效率政策- ONTAP 不含更新版本的更新版本</block>
   <block id="a5c2d8dc1e387afefbdd25cb50c35386" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及刪除效率原則。</block>
@@ -4729,7 +4649,6 @@
   <block id="fbdb1939f712c3c4b98533bfba7c7938" category="list-text">選取*排程*、然後指定排程名稱和排程詳細資料。</block>
   <block id="807b301068ea1b83c43cba7b478da27f" category="paragraph">如有需要、您可以指定效率原則的最長執行時間長度。</block>
   <block id="bf54ab48107f6fc69d8d8d6f1c3140e6" category="list-text">選取*變更記錄臨界值*、然後指定磁碟區資料變更的臨界值（以百分比表示）。</block>
-  <block id="b8cd7d0028a5acf35f27924683f7aaa7" category="list-text">選取「*將QoS原則設為背景*」核取方塊、以降低對用戶端作業的效能影響。</block>
   <block id="3164fd89a68464694ba147a73b1340d8" category="section-title">編輯效率原則</block>
   <block id="cf5272205316e623c915743b6f6c3830" category="paragraph">您可以使用System Manager來修改效率原則的屬性、例如原則名稱、排程名稱和最大執行時間。</block>
   <block id="d3abca15f6b22195064321922e319944" category="list-text">在*效率原則*視窗中、選取您要編輯的原則、然後按一下*編輯*。</block>
@@ -4856,7 +4775,6 @@
   <block id="da7f53d60e8f50d0ffd0216af224b25f" category="paragraph">關於儲存效率的設定FlexCache 。</block>
   <block id="64bd5015546813c113a50d1d816a2fce" category="paragraph">*效能*</block>
   <block id="796f6713efbcc344469d08848986457f" category="paragraph">根據延遲、IOPS和處理量、提供平均效能指標、讀取效能指標、以及寫入FlexCache 效能指標。此外、也會顯示快取命中或快取未命中的百分比。</block>
-  <block id="f9e864ad80bc160db6bb19fc780a3b5f" category="list-text">按一下*更多動作*以檢視其他資訊、並從下拉式功能表中的選項中採取行動：</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
   <block id="af5519d5b46da35f34c10fb4a6fb97b4" category="paragraph">變更狀態</block>
   <block id="a20f7d41b2cda612190a0da100d8ea35" category="inline-link-macro">變更FlexCache 一個聲音區的狀態</block>
@@ -4935,7 +4853,6 @@
   <block id="56198bf717c4be176ee8bd7b5129d1f8" category="list-text">按一下「*保護*」&gt;「*保護原則*」。</block>
   <block id="f0b63c1288694a792b1b3ef5d989d21a" category="list-text">在「*建立原則*」對話方塊中、選取您要建立的原則類型。</block>
   <block id="ed8c91c377584639ceeeada5aa99e08b" category="paragraph">「低」表示傳輸的優先順序最低。低優先順序傳輸通常排定在一般優先順序傳輸之後。依預設、傳輸優先順序設為「正常」。</block>
-  <block id="8817f13a1342998578162a98e8e9c920" category="list-text">對於非同步鏡射原則、請選取「*傳輸所有來源Snapshot複本*」核取方塊、將「all來源快照」規則納入鏡射原則、此原則會從來源Volume備份所有Snapshot複本。</block>
   <block id="65939eec0391a6bf3b74934cf8016557" category="list-text">針對資料保存原則或鏡射資料保存原則、請指定SnapMirror標籤和目的地保留計數。</block>
   <block id="18c15d8a4625e7e99dc149a3a4de81ff" category="section-title">保護原則視窗</block>
   <block id="6c488db2dbdb403e173a8faf90796004" category="paragraph">您可以使用「保護原則」視窗來建立、管理及顯示有關鏡射、保存庫及鏡射保存原則的資訊。</block>
@@ -5164,7 +5081,6 @@
   <block id="9a937b3bb3ba6ff155022c69722c1b2d" category="list-text">請前往步驟7。</block>
   <block id="ee820650a17466c8a0037fed908731b3" category="list-text">將資料還原至新磁碟區或現有磁碟區：</block>
   <block id="27c4657e5f4396c522ec297970c5ae91" category="list-text">選取確認核取方塊、從Snapshot複本還原磁碟區。</block>
-  <block id="7a543dec135c2b8ae5b0ae73e4f1cd07" category="list-text">選取「*啟用網路壓縮*」核取方塊、以壓縮還原作業期間傳輸的資料。</block>
   <block id="1fa8dd542d2fae039e92f70b51cc6e23" category="summary">建立Aggregate時、您可以使用System Manager修改Aggregate的RAID類型和RAID群組大小選項的預設值。</block>
   <block id="f506739702d824c3af46ea35fd4ac572" category="doc">使用System Manager建立Aggregate時、請變更RAID組態- ONTAP 更新版本</block>
   <block id="cb074bad8fd5d0e553d0bfd70c9cab9d" category="paragraph">建立Aggregate時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於支援的版本號為9、7及更早版本）來修改Aggregate的RAID類型和RAID群組大小選項的預設值。</block>
@@ -5306,7 +5222,6 @@
   <block id="256af721592bff203876da2e4b2192fb" category="paragraph">指定用於存取資料的傳輸協定。</block>
   <block id="e38a964d1be1930804f1664062b5a912" category="list-text">*管理存取*</block>
   <block id="c4420137c5d3bafea28d68fc18cb535d" category="paragraph">指定是否在介面上啟用管理存取。</block>
-  <block id="ab0d1f1c8eac759e4de3ff1f519e6f70" category="paragraph">指定介面所屬的子網路。MX**角色*</block>
   <block id="3b1592e4c237c4ae8553875661ccb45d" category="paragraph">指定介面的作業角色、可以是資料、叢集間、叢集、叢集管理或節點管理。</block>
   <block id="b68bb9d29b223e110fa3499acdb4183d" category="paragraph">介面清單下方的區域會顯示所選介面的詳細資訊：容錯移轉內容、例如主連接埠、目前連接埠、連接埠速度、容錯移轉原則、容錯移轉群組及容錯移轉狀態、以及一般內容、例如管理狀態、角色、IPspace、廣播網域、網路遮罩、 閘道和DDNS狀態。</block>
   <block id="1ba552e19aeb3271425589178768f307" category="section-title">乙太網路連接埠索引標籤</block>
@@ -5317,7 +5232,6 @@
   <block id="65390ed7c13ceab65590ad7e07edc049" category="paragraph">開啟下列其中一個對話方塊：</block>
   <block id="3ce7edefd58224b5593f3a16d933da6b" category="list-text">編輯乙太網路連接埠對話方塊：可讓您修改乙太網路連接埠設定。</block>
   <block id="114cc554b32ff6c1058cace2bc7da73e" category="list-text">編輯VLAN對話方塊：可讓您修改VLAN設定。</block>
-  <block id="e8b4f64ab694c5890404182563fbbc4e" category="list-text">Edit Interface Group（編輯介面群組）對話方塊：可讓您修改介面群組。您只能編輯與廣播網域無關的VLAN。</block>
   <block id="ce90cc0416b65d9d77e87a968bae40c1" category="list-text">刪除VLAN對話方塊：可讓您刪除VLAN。</block>
   <block id="34662a2b713346ad99cd8fc68d9eb05a" category="list-text">刪除介面群組對話方塊：可讓您刪除介面群組。</block>
   <block id="47fbf5a9837384d1a7ee6c26288cb500" category="section-title">連接埠清單</block>
@@ -5388,7 +5302,6 @@
   <block id="1b00ea755a2dd2cb2e14d542e8c4710b" category="paragraph">您可以使用System Manager中的Edit Snapshot Policy（編輯Snapshot原則）對話方塊、修改現有Snapshot原則的詳細資料、例如排程名稱、SnapMirror標籤或建立的Snapshot複本數量上限。</block>
   <block id="9f8900c014cd0e80726228076e3734bd" category="list-text">在* Snapshot Policies（快照策略）*窗口中，選擇要修改的Snapshot策略，然後單擊* Edit（編輯）*。</block>
   <block id="1347940b8d593811e851b37b57333374" category="list-text">在「*編輯Snapshot Policy*」對話方塊中、選取您要修改的排程、然後按一下「*編輯*」。</block>
-  <block id="43beb39cf92dd66431f7a29555809971" category="list-text">驗證您在「*編輯Snapshot Policy*」對話方塊中對所選Snapshot原則所做的變更、然後按一下「*儲存*」。=刪除Snapshot原則</block>
   <block id="f74c5364f20437cf47955a7915a1d337" category="paragraph">您可以使用System Manager刪除Snapshot原則。如果您刪除一個或多個磁碟區正在使用的Snapshot原則、則不會再根據刪除的原則建立磁碟區或磁碟區的Snapshot複本。</block>
   <block id="99627a135d45506911208d4245376c67" category="paragraph">您必須已將Snapshot原則與使用該原則的每個磁碟區分離。</block>
   <block id="6b376275e2dcc3e451f8e7909ea9726f" category="list-text">選取Snapshot原則、然後按一下*刪除*。</block>
@@ -5426,9 +5339,7 @@
   <block id="bf485d4d9a5f545fadccc002f618c875" category="list-text">如果您有相關聯FlexCache 的來源Volume、則必須先刪除FlexCache 該等資料、然後才能刪除來源Volume。</block>
   <block id="9567f8b6362dcf68a3b7cb9e69eec7b9" category="list-text">從* SVM*欄位的下拉式功能表中、選取您要刪除的磁碟區所在的儲存虛擬機器（SVM）。</block>
   <block id="94921f519091f21387c9c8616fae327d" category="list-text">選取您要刪除的磁碟區。</block>
-  <block id="ffc4c51a24ebf1f8f5efd3f5e4a1c095" category="list-text">[附註]</block>
   <block id="caddbe79dfe318b99e905b290f703f6e" category="paragraph">確認您已選取要刪除的正確磁碟區。刪除磁碟區時、磁碟區中的所有資料都會遭到銷毀、而且您無法恢復該資料。</block>
-  <block id="ae196d550cbc39345f70d51c10a14363" category="paragraph">+按一下*刪除*。</block>
   <block id="03c004378e96b704d39ad62ba9d383c6" category="summary">您可以使用System Manager中的Create NFS Datastore for VMware精靈、為VMware建立NFS資料存放區。您可以為NFS資料存放區建立磁碟區、並指定可存取NFS資料存放區的ESX伺服器。</block>
   <block id="1a9c869a6bfc17032518e267afda3fe5" category="doc">使用System Manager建立適用於VMware的NFS資料存放區ONTAP - VMware的更新版本-更新版本</block>
   <block id="414d44592771786254f784e9d856900c" category="paragraph">您可以使用ONTAP 《Create NFS Datastore for VMware》（為VMware建立NFS資料存放區）精靈、以經典版本（ONTAP 適用於VMware）建立NFS資料存放區。您可以為NFS資料存放區建立磁碟區、並指定可存取NFS資料存放區的ESX伺服器。</block>
@@ -5492,7 +5403,6 @@
   <block id="0990cb73474e39c5535e3973cf58c2d5" category="paragraph">依預設、System Manager會將容量磁碟新增至「All RAID Groups（所有RAID群組）」。</block>
   <block id="114c9385eb89085073e3cb9906eee045" category="list-text">在「* RAID群組選擇*」對話方塊中、使用*新增磁碟至*選項、將RAID群組指定為「新增RAID群組」或「特定RAID群組」。</block>
   <block id="48b61783f7f5e590f2bd9932506c4670" category="paragraph">共享磁碟只能新增至「New RAID group」（新RAID群組）選項。</block>
-  <block id="bc4ab5e0d5e65728ae5fa6fffdc1f71c" category="paragraph">對於鏡射Aggregate、系統會顯示「Add Capacity」（新增容量）對話方塊、其中會顯示所選磁碟數目的兩倍資訊。</block>
   <block id="473273238391b9113d05c9e9f2de3b78" category="list-text">在「*新增容量*」對話方塊中、按一下「*是*」以新增容量磁碟。</block>
   <block id="1a3b2eb7e10d2d6597e735a6a0e60593" category="paragraph">容量磁碟會新增至選取的Aggregate、並增加Aggregate大小。</block>
   <block id="71701e4478c774c1ff7ff23ddc259084" category="inline-xref-macro">哪些是相容的備用磁碟</block>
@@ -5598,7 +5508,6 @@
   <block id="71bffb6a33e98f88fab832116ed7dced" category="list-text">如果您要修改下列任何設定、請按一下「進階選項」圖示 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 若要顯示*進階選項*對話方塊視窗、您可以在其中進行變更：</block>
   <block id="466c4f4287d2b270a412473911428058" category="list-text">用於存取雲端層的連接埠號碼</block>
   <block id="f2a1cbf8ea8f7901f12aa799b104a80d" category="list-text">啟用或停用* SSL*選項、可讓您安全地將資料傳輸至雲端層</block>
-  <block id="82970d7e87d88995a577eba21fb99b05" category="list-text">如果您想要新增StorageGRID 適用於功能不穩定的雲端層、或是想要搭配FabricPool 使用IBM Cloud Object Storage環境（例如Cleverafe）搭配使用、您應該指定CA憑證。移動「*物件存放區憑證*」切換按鈕並複製憑證內容、以指定CA憑證。然後將憑證內容貼到已簽署的認證中。</block>
   <block id="846157e13041477296aa4bd573165d69" category="list-text">從* IPspace*清單中、選取用於連線至雲端層的IPspace。</block>
   <block id="54858ad892c97f264ca1c890f5029ccf" category="list-text">按一下「*儲存*」以儲存雲端層。</block>
   <block id="c5c541bfd008ab19608ae3520ad088ea" category="list-text">按一下*儲存並附加Aggregate *以儲存雲端層、並將Aggregate附加至雲端層。</block>
@@ -5623,7 +5532,6 @@
   <block id="f2aa61683a2df1f14e7f72b286210639" category="list-text">指定集合體的名稱、磁碟類型、以及要包含在集合體中的磁碟或磁碟分割數目。</block>
   <block id="59db0ed8544433dd23a45a0d049cb7cb" category="paragraph">只有All Flash（All SSD）Aggregate支援FabricPool的Aggregate。</block>
   <block id="ce8699c2a6822cb9ceaef1439411b1f8" category="paragraph">最小熱備援規則會套用至磁碟大小最大的磁碟群組。</block>
-  <block id="9e7dd6ea2ff22cb9c2cb410935bfb717" category="list-text">修改Aggregate的RAID組態：</block>
   <block id="2be9fd03d3720dfbd87b6fdb2ee715f2" category="list-text">在變更RAID組態對話方塊中、指定RAID類型和RAID群組大小。</block>
   <block id="edb9b94b0f951a6474959d410132bf0f" category="paragraph">共享磁碟可支援兩種RAID類型：RAID-DP和RAID-TEC</block>
   <block id="512824ad0f34e8da9a22c730c2971318" category="list-text">選取* FabricPool 《*》複選框、然後從清單中選取雲端層。</block>
@@ -6046,10 +5954,8 @@
   <block id="3c49bdc7a841bdb9a361ed4ec5ec6231" category="list-text">Active Directory網域內與CIFS伺服器相關聯的組織單位（OU）</block>
   <block id="d8551e55ad411ee792be9c30c55e551f" category="paragraph">依預設、此參數設為「CN=電腦」。</block>
   <block id="efd8926b9791ca4786ec6d8ca84de02c" category="list-text">具有足夠權限將CIFS伺服器新增至OU之系統管理帳戶的認證</block>
-  <block id="14cd98b1e31b12468f50ff1044ce7771" category="list-text">選取*存取此SVM*的所有共用時加密資料、以啟用SVM所有共用的SMB 3.0加密。</block>
   <block id="6a917f469b034fe921be132f38c4ecee" category="list-text">在設定傳輸協定時、透過指定共用名稱、共用大小及存取權限來配置CIFS儲存區。</block>
   <block id="1ac762f9756a125c716fc437cf780684" category="list-text">選取*存取此共享區時加密資料*、為特定共用區啟用SMB 3.0加密。</block>
-  <block id="96094c77d755542682200e4fab31498a" category="list-text">設定NIS服務：</block>
   <block id="1adfe80c31727cb8a9d6dd0f4f0c743d" category="list-text">指定NIS伺服器的IP位址和NIS網域名稱、以在SVM上設定NIS服務。</block>
   <block id="7502af53be0dbe1ec21fda5086581d96" category="list-text">選取您要新增「'NIS」名稱服務來源的適當資料庫類型。</block>
   <block id="7113d722943a79c0363f52082d9e2772" category="list-text">藉由指定匯出名稱、大小和權限、為NFS儲存設備配置磁碟區。</block>
@@ -6127,9 +6033,7 @@
   <block id="57ca8b193989008021d78acb26f543b2" category="list-text">在「*叢集*」頁面中、輸入叢集的名稱。</block>
   <block id="5117ee94329d8d0d9999048aabbd0b1e" category="paragraph">如果未發現所有節點、請按一下*重新整理*。</block>
   <block id="fbe877eb880bb20b576da2e8c03f56b1" category="paragraph">該叢集網路中的節點會顯示在節點欄位中。</block>
-  <block id="4e79e7af5c900b5c1dec50d7e7d354f5" category="list-text">如有需要、請在*節點*欄位中更新節點名稱。</block>
   <block id="393bef9fec32255f2d27c10f1199fb3c" category="list-text">輸入叢集的密碼。</block>
-  <block id="120678e5a211dc88a9bfa7736b5009a4" category="list-text">輸入功能授權金鑰。</block>
   <block id="4b5d2dd70af718ebe67bfea5b43d8667" category="list-text">按一下*提交*。</block>
   <block id="5bf73928262e645254f50ad5c68abff4" category="paragraph">在「Network（網路）」頁面中輸入網路詳細資料、以繼續進行叢集設定。</block>
   <block id="45910c75dc3a84f929e6b5fcaeb795d6" category="inline-xref-macro">組態更新視窗</block>
@@ -6143,7 +6047,6 @@
   <block id="dd3fb0c65163daf9e0f45a4f2b3c7526" category="list-text">在*編輯資料保護磁碟區*對話方塊中、修改磁碟區名稱。</block>
   <block id="5e4cb536b4f56a4bfa600f7ac662692a" category="list-text">確保選中* Enable Storage Effiusiusi*（*啓用儲存效率）選項。</block>
   <block id="76b29b574b00f0fbddf63421159b3ebf" category="paragraph">如果磁碟區上已啟用儲存效率、則預設會選取此核取方塊。</block>
-  <block id="1dddcce2bedcbc6ac7b96c4d4ed94a20" category="list-text">按一下*進階*索引標籤、然後執行下列步驟：</block>
   <block id="248fa3d2a71d90da3a5df7cd739e4b14" category="list-text">選取您要指派給磁碟區的快取原則。</block>
   <block id="769601a678bff5cee56bc8e85756d1c2" category="list-text">選取磁碟區中快取資料的保留優先順序。</block>
   <block id="8efbf0147b80c7203d909e8f9bcdbbf4" category="paragraph">這些選項僅適用於FlexVol Flash Pool Aggregate中的資料保護功能。</block>
@@ -6802,7 +6705,6 @@
   <block id="2976c240f095f572c401489b5ac3e328" category="doc">叢集對等端點搭配System Manager - ONTAP 更新版本</block>
   <block id="997772740a755ed8d7530b890bec9f7e" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 適用於支援的版本號為2 9.7或更早版本）對等兩個叢集、讓連接的叢集能夠在它們之間協調及共用資源。使用SnapMirror技術和SnapVault SnapMirror技術進行資料複寫時、需要使用對等叢集、FlexCache 而使用支援SyncMirror 各種功能的支援功能、則MetroCluster 需要使用支援各種功能的支援功能來進行資料複寫。</block>
   <block id="2f63b3d68f0ba01bb94b14d7a3fd6177" category="section-title">產生對等通關密碼</block>
-  <block id="b8cdd43d1b26cbe709647dba8c6a5a29" category="paragraph">從System Manager 9.6開始、您可以為本機叢集IPspace產生通關密碼、並在建立對等關係時、在遠端叢集中使用相同的通關密碼。</block>
   <block id="00dd38a84a52b78303bb10d5409eb2d9" category="list-text">按一下*產生對等關係密碼*。</block>
   <block id="590c98302fe91a04312e9327e28dbf4f" category="paragraph">此時會顯示「產生對等關係密碼」對話方塊視窗。</block>
   <block id="986133c6a16199a611ea548ebb552827" category="list-text">填寫下列欄位：</block>
@@ -6811,7 +6713,6 @@
   <block id="a164f17ba3160c163f2e7e0c8edc263d" category="list-text">* SVM權限*：選取下列其中一項：</block>
   <block id="84dc57eb8fc2bd2265789357a6cf5de2" category="list-text">*所有SVMS*表示允許所有SVM存取叢集。</block>
   <block id="ddb4e1a95af589d76e374ac93cfa87b2" category="list-text">*選取的SVMS*表示允許存取叢集的特定SVM。在您要指定的欄位中反白顯示SVM名稱。</block>
-  <block id="fbe884d8766afea6eb4343a1f9737405" category="list-text">如果遠端叢集的有效叢集版本早於ONTAP BIOS 9.6、請選取核取方塊。否則、叢集對等關係就無法產生。</block>
   <block id="0f71ca2a8ec1ae386f82613bdeda2558" category="list-text">按一下「*產生*」以產生通關密碼。</block>
   <block id="d41804d7e716cd47cf1462c4f4207796" category="paragraph">為了成功產生、會顯示一則訊息、指出您的通關密碼。</block>
   <block id="61af2d88f51ea2fe0f60c8f4cee790f1" category="list-text">如果您要以電子郵件傳送或複製通關密碼、請執行下列其中一項動作：</block>
@@ -6856,7 +6757,6 @@
   <block id="9756d0263ee60cba558387cda796377b" category="list-text">如果您選擇*產生通關密碼*、請填寫必要欄位：</block>
   <block id="4d032c51a90ef9700bb8597126f4159e" category="list-text">* IPspace*：從下拉式功能表中選取IPspace。</block>
   <block id="3dbea1724e43e2a86cc176b59bf96f66" category="list-text">*所有SVMS*、表示所有SVM均可存取叢集。</block>
-  <block id="497f47d507abd624e9c32de8870f239e" category="list-text">如果遠端叢集的有效叢集版本早於ONTAP BIOS 9.6、請選取核取方塊。否則、複雜密碼無法產生。</block>
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">按一下「 * 套用 * 」。</block>
   <block id="b8c0f7870e836538e7c07dd029d9c4b3" category="paragraph">系統會針對關係產生複雜密碼並加以顯示。您可以複製通關密碼或以電子郵件寄送。</block>
   <block id="e93e26ba7d240df308692f1c63609e01" category="paragraph">在遠端叢集提供通關密碼之前、本機叢集的驗證狀態會在所選通關密碼有效期內顯示為「Ok與_提議」。</block>
@@ -7167,8 +7067,6 @@
   <block id="785ce4ec419d97d18338fc498d536deb" category="paragraph">您可以使用ONTAP 經典版的《經典版》功能來設定邏輯儲存設備（ONTAP 適用於更新版本的《》）。設定邏輯儲存設備包括建立儲存虛擬機器（SVM）和磁碟區。</block>
   <block id="114168a53a6b42c89026b910fc64289f" category="summary">從System Manager 9.6開始、當您編輯FlexCache 完一份《聲音集》時、可以指定您要與FlexCache 《聲音集》相關聯的進階選項。</block>
   <block id="fa8ddae57fb0b13c4eb7a2f3b7deaa99" category="doc">指定FlexCache 適用於某個聲音區的進階選項</block>
-  <block id="443a7f3e7ab189cba1285850af1e34f2" category="list-text">在*「Edit FlexCache Sof the *」（編輯*更新版*）視窗中、按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 以指定進階選項。</block>
-  <block id="fcbe4d48f9aa24f885d9f09f49297419" category="list-text">在「*一般詳細資料*」區段中、您可以編輯該磁碟區的權限。</block>
   <block id="ffe0fe06e388737190c902ee2d01f847" category="list-text">在* Aggregate *區段中、您可以啟用* Select Aggregate *切換按鈕來覆寫最佳實務做法的預設值、並從集合體清單中選取您的選項。</block>
   <block id="1c3a4cfcb29e850fca2fc4fb1a8dbd80" category="list-text">在「*儲存效率*」區段中、您可以在磁碟區上啟用壓縮和重複資料刪除功能。</block>
   <block id="d7bd78485ffd94a32f7b750ad6f647e2" category="paragraph">根據預設FlexCache 、不針對支援重複資料刪除的功能。如果指定的磁碟區大小超過執行重複資料刪除所需的限制、System Manager會使用預設的重複資料刪除排程。</block>
@@ -7205,7 +7103,6 @@
   <block id="37265f40cdc34be32c9ae6f815b30a13" category="list-text">以netgroup的形式、netgroup名稱前面加上at符號（@）；例如、@netgroup</block>
   <block id="3592f164460dc354f02b3bceeb42193a" category="list-text">以網域名稱開頭加上句點（.）、例如.example.com</block>
   <block id="70a228a80db4d29eff6376735526bd13" category="paragraph">您不得輸入IP位址範圍、例如10.1.12.10到10.1.12.70。此格式的項目會解譯為文字字串、並視為主機名稱。</block>
-  <block id="919b44ff134404e867f139c5aab34c9e" category="paragraph">+您可以輸入IPV4位址「0.00.0.0/0」、以便存取所有主機。</block>
   <block id="219d905520c46965bfe04e75786e0513" category="list-text">如果您想要修改規則索引編號、請選取適當的規則索引編號。</block>
   <block id="0aeeabfe3131d90dc35602477fef0dea" category="list-text">選取一或多個存取傳輸協定。</block>
   <block id="7ecb039fe3bfb63f15d75ea801b1f34c" category="paragraph">如果您未選取任何存取傳輸協定、則會將預設值「'any」指派給匯出規則。</block>
@@ -7315,7 +7212,6 @@
   <block id="0461e31d68bb3e29d8f720060814a3ce" category="list-text">按一下「*儲存設備*&gt;*交會路徑*」。</block>
   <block id="25836051a9ebcf86877686aab182c317" category="list-text">從「* SVM*」欄位的下拉式功能表中、選取要掛載磁碟區的SVM。</block>
   <block id="8640234f7b23f77ab42777658770f977" category="list-text">按一下*掛載*、然後選取要掛載的磁碟區。</block>
-  <block id="80db61a8810eb12f8d010b7c302df8bf" category="list-text">若要變更預設的交會名稱、請指定新名稱。</block>
   <block id="131fb442e1d82015a842d3684b48bf68" category="list-text">按一下*瀏覽*、然後選取您要掛載磁碟區的交會路徑。</block>
   <block id="3d16a3466cd757103f4eded59fa38e5c" category="list-text">按一下「*確定*」、然後按一下「*掛載*」。</block>
   <block id="ecb83a46b38b5f0b8404cedad45602da" category="list-text">驗證「*詳細資料*」標籤中的新交會路徑。</block>
@@ -7455,7 +7351,6 @@
   <block id="0c7e2cb4e2964d473601494f61b4e37e" category="list-text">按一下「*儲存QoS *」。</block>
   <block id="a8d2ca1c1edfc17e849aed2cd632bfd3" category="list-text">如果您要管理LUN的工作負載效能、請在*服務品質詳細資料*對話方塊中、選取*管理儲存服務品質*核取方塊。</block>
   <block id="b42d15e3bd1a2f5838990e303644f2d9" category="paragraph">如果您選取的部分LUN已指派給原則群組、您所做的變更可能會影響這些LUN的效能。</block>
-  <block id="d823518925883a02978856511e67c73b" category="list-text">按一下指定LUN數目的連結以檢閱選取的LUN清單、如果您要從清單中移除任何LUN、請按一下* Discard*。</block>
   <block id="ba2b6965f1429665ea4dd3fdb7b4c7e7" category="paragraph">只有在選取多個LUN時、才會顯示連結。</block>
   <block id="921b80fe6e8cca2c6db98a54b19efc65" category="summary">您可以使用System Manager設定排程、以自動建立Volume的Snapshot自動複本。您可以指定建立複本的時間和頻率。您也可以指定儲存的Snapshot複本數量。</block>
   <block id="836f907e1a3a35e35703941bae06b845" category="doc">使用System Manager排程自動建立Snapshot複本- ONTAP 不含更新版本</block>
@@ -7532,20 +7427,13 @@
   <block id="dcbd710cd0220877b615693f91d5d2cf" category="list-text">允許的傳輸協定</block>
   <block id="869053a5eb18a82e28cf52d4d4b9a391" category="list-text">SVM語言</block>
   <block id="1da2d639a0b6f7666e02b7f4646cab3e" category="list-text">根磁碟區的安全樣式</block>
-  <block id="863d7a0d3d62032ea72cf86d796bdee7" category="list-text">根Aggregate任何SVM的預設語言設定為C.utf-8。</block>
   <block id="711ccaefab37afb367d7f3664856ef82" category="paragraph">根據預設、會選取具有最大可用空間的Aggregate做為SVM根Volume的容器。根據選取的傳輸協定、會選取預設的安全樣式和根Aggregate。</block>
-  <block id="c520cdb543189ba91909a578ca62c1c9" category="paragraph">+如果您選取CIFS傳輸協定或CIFS傳輸協定與其他傳輸協定的組合、安全樣式會設為NTFS。如果您選取NFS、iSCSI、NVMe或FC/FCoE、或這些傳輸協定的組合、安全樣式會設為UNIX。</block>
   <block id="564ca1323555f238357b9e7a7b3d5f25" category="paragraph">NVMe不允許將傳輸協定結合使用。</block>
-  <block id="5ff2990c4355bba353efc6b0b7e8535b" category="paragraph">+ MetroCluster 在不含資源的組態中、只會顯示叢集中包含的集合體。</block>
   <block id="9b64855335f8842b374bcfc082de290f" category="list-text">指定DNS網域名稱和名稱伺服器IP位址、以設定DNS服務。</block>
   <block id="e37329d799746ae89c33efd91c15410b" category="paragraph">預設值會從現有的SVM組態中選取。</block>
-  <block id="d921f15e8861de2abe3fd06d18314dc0" category="list-text">設定資料LIF以使用傳輸協定存取資料時、請指定目標別名、子網路、以及每個節點的生命量。</block>
   <block id="9b83a49d6bdb118b6aa8e5bdaae7f56a" category="paragraph">您可以選取「*檢閱或修改lifs組態（進階設定）*」核取方塊、以修改LIF中的連接埠集數量。</block>
   <block id="7cc563dac506409e01888d41805252b4" category="paragraph">您可以從詳細資料區域的節點清單中選取節點、以編輯特定節點中的連接埠集詳細資料。</block>
-  <block id="1da8b81d788e1ca5e70e6a63e315a84b" category="list-text">提供SVM認證資料、讓SnapDrive SVM管理員啟用主機端應用程式、例如支援SVM SnapManager 管理員的功能。</block>
-  <block id="fd739e3d5f5d870b3ec2aa610f8c5ccb" category="list-text">若為NVMe以外的傳輸協定、請按一下*建立新的SVM管理LIF *、然後為新的管理LIF指定連接埠集和IP位址、無論是否有子網路。</block>
   <block id="0f84243377475ccd108fb8723b797988" category="paragraph">對於CIFS和NFS傳輸協定、資料生命量預設具有管理存取權。只有在必要時、您才必須建立新的管理LIF。對於iSCSI和FC、需要SVM管理LIF、因為資料傳輸協定和管理傳輸協定無法共用相同的LIF。</block>
-  <block id="b00591630384bce2a76272b449186c53" category="list-text">對於NVMe傳輸協定、請從ONTAP SVM設定精靈的第二頁*設定NVMe傳輸協定*、為每個節點至少設定一個LIF</block>
   <block id="40b69b1b198ff39d18008e5224c86c73" category="paragraph">您必須為HA配對中的每個節點至少設定一個LIF。您也可以為每個節點指定兩個生命期。按一下「設定」圖示、在一或兩個LIF組態之間切換。</block>
   <block id="3e2b01dd056074efa0e8b8d902a9ed51" category="paragraph">SVM是以指定的組態建立。</block>
   <block id="c08f968b4a1ba0a72f049cfb7549ca7d" category="paragraph">您建立的SVM會自動啟動。根磁碟區名稱會自動產生為「VM name_root」。預設會建立「vsadmin」使用者帳戶、並處於鎖定狀態。</block>
@@ -7651,7 +7539,6 @@
   <block id="0d33c1ff7c087069da33d00057d1c5a0" category="paragraph">鏡射關係必須處於Snapmirror狀態。</block>
   <block id="d83ad2ba9c189be7b44eec5c2a2d78c3" category="list-text">選取您要更新資料的鏡射關係、然後按一下「*作業*」&gt;「*更新*」。</block>
   <block id="bb6c6c47b08b6be1c49c31535ecc92d0" category="list-text">選取*隨需*可在來源與目的地磁碟區之間執行最近通用Snapshot複本的遞增傳輸。</block>
-  <block id="d3f90018b80c297c2b8605b6eb2800eb" category="list-text">選擇*限制傳輸頻寬至*以限制傳輸所用的網路頻寬、並指定最大傳輸速度。</block>
   <block id="8abdd3cd60423f3dd55c06b10fd30454" category="paragraph">您可以在建立Snapshot複本之前、使用System Manager來靜止鏡射目的地以穩定它。「靜止」作業可讓作用中的鏡射傳輸完成、並停用鏡射關係的未來傳輸。</block>
   <block id="0c58e43ce8eb3d3e47a4152e6ef220f3" category="paragraph">您只能靜止處於Snapmirror狀態的鏡射關係。</block>
   <block id="380aacf30b9d9d5e46d2e23835ee2c3f" category="list-text">選取您要靜止的鏡射關係。</block>
@@ -7687,13 +7574,10 @@
   <block id="3918d06afb16b262f4d2da6510dee652" category="paragraph">此選項僅在您已啟用Volume Encryption授權、且對應的平台能夠支援加密時可用。</block>
   <block id="c4051b0b4635e747267cc458fe216f3e" category="paragraph">如果您要建立SnapMirror目的地Volume、則必須選取*資料保護*。您將獲得此Volume的唯讀存取權。</block>
   <block id="7278f951e9bc2ad830a2fc77df800997" category="paragraph">保留給Snapshot複本的預設空間為SAN磁碟區和VMware磁碟區的零百分比。NAS磁碟區的預設值為5%。</block>
-  <block id="db88b60dd0dbf25dd1b01eae5d55eb6c" category="list-text">選取*精簡配置*以啟用磁碟區的精簡配置。</block>
-  <block id="1eeb8271758bcc5ec9d7181b126f9e39" category="list-text">在「*儲存效率*」索引標籤中進行必要的變更、以在磁碟區上啟用重複資料刪除功能。</block>
   <block id="c81d5d5da42e464a073e94d900bc0c1e" category="paragraph">System Manager使用預設的重複資料刪除排程。如果指定的磁碟區大小超過執行重複資料刪除所需的限制、就會建立磁碟區、而且不會啟用重複資料刪除功能。</block>
   <block id="fa4ba492d02b31e4feac0bad15470119" category="list-text">選取* SnapLock 《*》索引標籤、然後執行下列步驟：</block>
   <block id="ce662950ae565b20328100ba60db2cd2" category="paragraph">磁碟區中的檔案在您指定的期間內保持不變、檔案才會被提交至WORM狀態。若要手動將檔案設定為WORM狀態、您必須選取*未指定*作為自動提交設定。</block>
   <block id="0757d443c6ab509d785af85ad0306772" category="paragraph">這些值必須介於5分鐘到10年之間。</block>
-  <block id="79602c7727ba154fb3c3e584fd405e8d" category="list-text">在「*服務品質*」標籤中選取「*管理儲存服務品質*」核取方塊、以啟用FlexVol 適用於整個VMware Volume的儲存QoS、以管理工作負載效能。</block>
   <block id="d0f7ce6706a5eabac5a3cbbcc4d1f2c6" category="list-text">建立儲存QoS原則群組、或選取現有的原則群組、以控制FlexVol 該磁碟區的輸入/輸出（I/O）效能。</block>
   <block id="a4b248fe83ac6473cdd17bbf44d2e296" category="paragraph">建立儲存QoS原則群組</block>
   <block id="b4f6c829b49d72208011654bdc5cacec" category="list-text">在* Protection（保護）*選項卡中啟用* Volume Protection（磁碟區保護）*來保護磁碟區：</block>
@@ -7712,7 +7596,6 @@
   <block id="11914c672e3cd936c7deb61e1884f726" category="list-text">從FlexVol 磁碟區清單中選取您要複製的實體磁碟區。</block>
   <block id="3b7dc8a03f132099cb5e661ca67e7f2b" category="list-text">單擊*更多操作*&gt;* Clone *&gt;* Create *&gt;* Volume *。</block>
   <block id="b52fa349e02fc423cd809413081b4462" category="list-text">輸入您要建立的FlexClone Volume名稱。</block>
-  <block id="56d8a5161aaeb4f0c6b11b7d1fdc9d88" category="list-text">如果您要為新的FlexClone磁碟區啟用精簡配置、請選取*精簡配置*。</block>
   <block id="0da4c89bab26fcdcae18b031bf059fda" category="paragraph">根據預設、此設定與父Volume相同。</block>
   <block id="b3d35a7f44f1f348b6e644f6c080dc15" category="list-text">建立Snapshot複本、或選取您要做為建立FlexClone Volume基礎Snapshot複本的現有Snapshot複本。</block>
   <block id="889a321e318f05b5fb89e005542f07fb" category="summary">您可以使用服務處理器、透過System Manager監控及管理儲存系統參數、例如溫度、電壓、電流及風扇速度。</block>
@@ -7863,52 +7746,7 @@
   <block id="1ec8a2212830954a5cf05a3bb95a60e4" category="paragraph">顯示指派給所選保護關係之原則的詳細資料。此索引標籤也會顯示來源Volume中符合指定標籤的SnapMirror標籤和Snapshot複本排程。</block>
   <block id="71309fe3ee13dab501ac1eb7bd73c9f7" category="list-text">* Snapshot複本索引標籤*</block>
   <block id="f473da473262cfc8881ca92b0648ec45" category="paragraph">顯示所選保護關係的Snapshot複本數、以及最新Snapshot複本的時間戳記、以及SnapMirror標籤屬性。</block>
-  <block id="9df77f352fe8af196ad1f007287467d4" category="inline-xref-macro">從來源SVM建立鏡射關係</block>
-  <block id="5fdecc87c0cc3346757293eec17afae4" category="paragraph"><block ref="5fdecc87c0cc3346757293eec17afae4" category="inline-xref-macro-rx"></block></block>
-  <block id="ecf80fc7664f86a933e9a07a0d4eee22" category="inline-xref-macro">從目的地SVM建立鏡射關係</block>
-  <block id="538cb934fadf011ac8ba562703d8acd2" category="paragraph"><block ref="538cb934fadf011ac8ba562703d8acd2" category="inline-xref-macro-rx"></block></block>
-  <block id="fc5c3c2350af9d0e63b1504d15a18066" category="inline-xref-macro">刪除鏡射關係</block>
-  <block id="2765931fc5b9bf74199f231fa058f1f4" category="paragraph"><block ref="2765931fc5b9bf74199f231fa058f1f4" category="inline-xref-macro-rx"></block></block>
-  <block id="93b4528dbefcfb3939090f015ce3f24e" category="inline-xref-macro">編輯鏡射關係</block>
-  <block id="abfe344be016c5e5dcf02225c4647369" category="paragraph"><block ref="abfe344be016c5e5dcf02225c4647369" category="inline-xref-macro-rx"></block></block>
-  <block id="9a927852a99f3837e71592eebd39eeaf" category="inline-xref-macro">正在初始化鏡射關係</block>
-  <block id="c2f7333694e875233b54ff4845f4f392" category="paragraph"><block ref="c2f7333694e875233b54ff4845f4f392" category="inline-xref-macro-rx"></block></block>
-  <block id="bc60a1cc8724ac173fab9fc8d8b7ce75" category="inline-xref-macro">正在更新鏡射關係</block>
-  <block id="4057a107e037f8515e0f5d83e0b11030" category="paragraph"><block ref="4057a107e037f8515e0f5d83e0b11030" category="inline-xref-macro-rx"></block></block>
-  <block id="c9008a0fd008c144eeb9aa7edbda15ce" category="inline-xref-macro">靜止鏡射關係</block>
-  <block id="0fb20d6e9647246ea7dda638b248252d" category="paragraph"><block ref="0fb20d6e9647246ea7dda638b248252d" category="inline-xref-macro-rx"></block></block>
-  <block id="da2bbe144e916e296ed5dc9811bf144b" category="inline-xref-macro">恢復鏡射關係</block>
-  <block id="839531f266dda42979d02ad316ae2b8e" category="paragraph"><block ref="839531f266dda42979d02ad316ae2b8e" category="inline-xref-macro-rx"></block></block>
-  <block id="476ae0ff6d538c876bb858bf767ef19a" category="inline-xref-macro">打破SnapMirror關係</block>
-  <block id="ed851fd0e6c13cd6338b557eb31159e4" category="paragraph"><block ref="ed851fd0e6c13cd6338b557eb31159e4" category="inline-xref-macro-rx"></block></block>
-  <block id="37e81588d3f4e8a37846a86fd20c7d2e" category="inline-xref-macro">重新同步鏡射關係</block>
-  <block id="8fd8d3986ae46f1becb03b9b0080b186" category="paragraph"><block ref="8fd8d3986ae46f1becb03b9b0080b186" category="inline-xref-macro-rx"></block></block>
   <block id="6b01752671edd586d6f4e2dd7801f722" category="inline-xref-macro">反轉重新同步鏡射關係</block>
-  <block id="fe22f3a2e1da68f89125bd8d029a6223" category="paragraph"><block ref="fe22f3a2e1da68f89125bd8d029a6223" category="inline-xref-macro-rx"></block></block>
-  <block id="127cdee63f6fcb6589694fce6bcc5fcd" category="inline-xref-macro">正在中止鏡射傳輸</block>
-  <block id="ebb54f7a065c5fe43457dc3e5004ef04" category="paragraph"><block ref="ebb54f7a065c5fe43457dc3e5004ef04" category="inline-xref-macro-rx"></block></block>
-  <block id="e619023cf12156e17a2637103e83c3ce" category="inline-xref-macro">什麼是不支援備份SnapVault</block>
-  <block id="acdc7fed53eca59f5bb261a56950d091" category="paragraph"><block ref="acdc7fed53eca59f5bb261a56950d091" category="inline-xref-macro-rx"></block></block>
-  <block id="1bfbf1dfc2bef4839e7e80eff9879cef" category="inline-xref-macro">從來源SVM建立資料保存關係</block>
-  <block id="f0a5910390c7b2249824772f9c86886c" category="paragraph"><block ref="f0a5910390c7b2249824772f9c86886c" category="inline-xref-macro-rx"></block></block>
-  <block id="c7f4c2f4ed3b3b73cdf4235f15324ed1" category="inline-xref-macro">從目的地SVM建立資料保險箱關係</block>
-  <block id="616c701c786e6f2153d77e79d888641d" category="paragraph"><block ref="616c701c786e6f2153d77e79d888641d" category="inline-xref-macro-rx"></block></block>
-  <block id="99153e1d531856ab921bc76a4c68d469" category="inline-xref-macro">刪除資料保險箱關係</block>
-  <block id="00ef0a208ca439657a2b6dcf866cf07c" category="paragraph"><block ref="00ef0a208ca439657a2b6dcf866cf07c" category="inline-xref-macro-rx"></block></block>
-  <block id="e82df844135071f9f9b9d5f3009f28bf" category="inline-xref-macro">編輯資料保險箱關係</block>
-  <block id="9452bc8c02a9d50fa16ff9f7adb9af92" category="paragraph"><block ref="9452bc8c02a9d50fa16ff9f7adb9af92" category="inline-xref-macro-rx"></block></block>
-  <block id="de7515718f5c1329383f8b2018f19fe3" category="inline-xref-macro">正在初始化資料保險箱關係</block>
-  <block id="0869892d3320f2558c369911f9847e96" category="paragraph"><block ref="0869892d3320f2558c369911f9847e96" category="inline-xref-macro-rx"></block></block>
-  <block id="424bb05f23cfcded7a9f02faa6e557c0" category="inline-xref-macro">更新資料保險箱關係</block>
-  <block id="232a15ca1a4503596d8aed0ff857a3d2" category="paragraph"><block ref="232a15ca1a4503596d8aed0ff857a3d2" category="inline-xref-macro-rx"></block></block>
-  <block id="2f501562cadd518589ef14265b84c908" category="inline-xref-macro">靜止保存庫關係</block>
-  <block id="e9dcac91018bd585175fc2cba054855c" category="paragraph"><block ref="e9dcac91018bd585175fc2cba054855c" category="inline-xref-macro-rx"></block></block>
-  <block id="8fa59a9b14a71b5fb2e28ae4121bfdd1" category="inline-xref-macro">恢復保存關係</block>
-  <block id="4c59bcafa6e6d1cd49a0c1f0ca35a8c1" category="paragraph"><block ref="4c59bcafa6e6d1cd49a0c1f0ca35a8c1" category="inline-xref-macro-rx"></block></block>
-  <block id="7c30126e21e33e10679b2074d87d41a9" category="inline-xref-macro">中止Snapshot複本傳輸</block>
-  <block id="48d4f2eabf70fde158d275655b28ef3f" category="paragraph"><block ref="48d4f2eabf70fde158d275655b28ef3f" category="inline-xref-macro-rx"></block></block>
-  <block id="7a5a6f53dcdfc76ae7c96d343e78aaf6" category="inline-xref-macro">還原資料保險箱關係中的磁碟區</block>
-  <block id="6121a20dc7eb934ce44aed9290d905e6" category="paragraph"><block ref="6121a20dc7eb934ce44aed9290d905e6" category="inline-xref-macro-rx"></block></block>
   <block id="b2ad1c81340fc72b3ad3bc04fceb78b1" category="paragraph">您可以使用「使用者」索引標籤來檢視SVM本機的Windows使用者。</block>
   <block id="2db5951e43169dab6dd75c3c1d310025" category="paragraph">開啟「建立使用者」對話方塊、可讓您建立本機Windows使用者帳戶、以便透過SMB連線授權存取SVM中所含的資料。</block>
   <block id="9168b7e739d6d6df8a7000d0b73a2a29" category="paragraph">開啟「編輯使用者」對話方塊、可讓您編輯本機Windows使用者內容、例如群組成員資格和完整名稱。您也可以啟用或停用使用者帳戶。</block>
@@ -7993,9 +7831,7 @@
   <block id="785e7abdebfba0c077f70ba137de92d3" category="list-text">在「* IP位址範圍*」欄位中輸入IP位址範圍、然後按一下「*套用*」。</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">選項</block>
   <block id="fda3d70d690cf239a0df47903d8ca82c" category="paragraph">您在同一個網路遮罩中有一系列的IP位址</block>
-  <block id="1d089814d7db8a07677eabca7975249e" category="paragraph">輸入IP位址範圍、然後按一下「*套用*」。IP位址會依序套用至叢集管理、節點管理和服務處理器管理網路。</block>
   <block id="06452fe7179e921ee6ae120684e8cc93" category="paragraph">您在不同的網路遮罩中有一系列IP位址</block>
-  <block id="935ff60da33c8985fe3148e740b72186" category="paragraph">在單獨一行輸入每個IP位址範圍、然後按一下*「Apply」（套用）*。套用至叢集管理和其他IP位址的第一個IP位址會依序套用至節點管理和服務處理器管理網路。</block>
   <block id="7cc04bec7d4720b1418723a2aa6915df" category="paragraph">在輸入用於叢集管理、節點管理和服務處理器管理的IP位址範圍之後、您不得手動修改這些欄位中的IP位址值。您必須確保所有IP位址都是IPV4位址。</block>
   <block id="fa445a83c3c37b69adb1766e7a38a97e" category="list-text">在「*連接埠*」欄位中選取叢集管理的連接埠。</block>
   <block id="0bd59777c3488b9df6144104939cdf25" category="list-text">如果節點管理中的「*連接埠*」欄位未填入* e0M*、請輸入連接埠詳細資料。</block>
@@ -8010,7 +7846,6 @@
   <block id="007b7d03a426d6cca62405aa81f91212" category="paragraph">在「網路」頁面中、如果* IP位址範圍*已停用、請輸入叢集管理、節點管理和服務處理器網路的個別IP位址。</block>
   <block id="1c6b4d7d0c0b167b282a50ea2a5bb880" category="list-text">在*叢集管理IP位址*欄位中輸入叢集管理IP位址。</block>
   <block id="9a1f18925ec9dddb39866f21c172b74a" category="list-text">輸入叢集管理的網路遮罩詳細資料。</block>
-  <block id="21ec32404dbf9d00cbb34eb2742ff647" category="list-text">輸入叢集管理的閘道詳細資料。</block>
   <block id="1a4f004da5bdbf2f9c6f79381e8dfa04" category="list-text">如果要提供網路遮罩和閘道詳細資料來管理節點、請清除「叢集管理*的*保留網路遮罩和閘道組態」核取方塊、然後輸入網路遮罩和閘道詳細資料。</block>
   <block id="bb8d13481729f7c081cb38097602338a" category="list-text">在「*節點管理*」欄位中輸入節點管理IP位址。</block>
   <block id="048f6e2312d77572036cd514f34305bd" category="list-text">輸入服務處理器管理網路遮罩和閘道詳細資料。</block>
@@ -8533,11 +8368,8 @@
   <block id="7c819b9f21c005937f1501486a3292fe" category="list-text">非FabricPool FlexGroup 的支援僅能透過非FabricPool Aggregate來擴充。</block>
   <block id="b653e7114b898a50197c4bd6458c0c92" category="list-text">如果FlexGroup 該解決方案包含FabricPool 混合使用的各種不同的功能、那麼FlexGroup 可以使用FabricPool 支援的功能區和非FabricPool集合體來擴充這個功能。</block>
   <block id="02ff0d646ef82f2e76743b3d40aa0a52" category="list-text">選取FlexGroup 您要修改的「流通量」、然後按一下「*編輯*」。</block>
-  <block id="0c4cd619b3025dc6a47c947c8cd66127" category="list-text">如果您要重新命名FlexGroup 此等磁碟區、請在*名稱*欄位中輸入新名稱。</block>
   <block id="7afec9c2554738ce7a7de58297d6c030" category="paragraph">從System Manager 9.6開始、您也可以重新命名FlexGroup RAID-DP Volume。</block>
-  <block id="d7bff6878e1771ba1b7d511bedd4b348" category="list-text">啟用「*加密*」選項以啟用磁碟區的加密。</block>
   <block id="82420e9f127f5641742dbb7e880fabbe" category="inline-link-macro">指定FlexGroup 適用於某個聲音區的進階選項</block>
-  <block id="6d82da7f723201a695eae1cf37e8fe85" category="list-text">按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 可修改FlexGroup 聲音恢復功能的設定。請參閱 <block ref="b061540f3903424de0fd13460a711a9e" category="inline-link-macro-rx"></block>。</block>
   <block id="4e5dab7015140f89b3c6813a37296dca" category="list-text">指定FlexGroup 您想要調整的大小以調整此等大小。</block>
   <block id="dc9d37a202e296240d704411fe802886" category="paragraph">根據預設、現有的Aggregate可用來調整FlexGroup 完這個問題。Volume允許的最小大小會顯示在「大小」欄位旁。</block>
   <block id="624ba68c42fd00942764f808571c9670" category="paragraph">如果您想要FlexGroup 新增資源來擴充此功能、請按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> （進階選項）。請參閱 <block ref="b061540f3903424de0fd13460a711a9e" category="inline-link-macro-rx"></block>。</block>
@@ -8612,11 +8444,7 @@
   <block id="0aee1fde7cc7a671d8d90e857e053d8b" category="summary">從System Manager 9.6開始、您可以編輯現有FlexCache 的功能區。</block>
   <block id="ca7e064d4dc8de530a6854d97b5c0076" category="doc">編輯FlexCache 功能</block>
   <block id="96899718bec48d4de3010b9825cde391" category="list-text">選取FlexCache 您要修改的「流通量」、然後按一下「*編輯*」。</block>
-  <block id="36dd889edd56613ece93737a3a6683aa" category="list-text">在FlexCache * FlexCache 《*》Volume *下的「* Volume *」欄位中輸入更新的名稱。</block>
-  <block id="9c2d5484d71433686d773e644b3fc69a" category="list-text">在FlexCache * FlexCache 《*》Volume *下的* Size*（*大小*）欄位中、輸入更新的「the * volume」大小、然後從下拉式功能表中選取測量單位。</block>
-  <block id="46155bb8e220c41ce0b56e02cf97f430" category="list-text">啟用或停用加密。</block>
   <block id="bfe5f75f6fc858468e2007ad5daf140b" category="inline-link-macro">設定FlexCache 進階設定以供使用</block>
-  <block id="1ac02bfdaf414a50042d47a131e43144" category="list-text">按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 可修改FlexCache 功能的進階設定。請參閱 <block ref="4aa5b8ffba7fb44e3974191d1beac02c" category="inline-link-macro-rx"></block>。</block>
   <block id="d3eef7461d48108cd918ef066cc45fe9" category="summary">您可以使用System Manager來設定儲存虛擬機器（SVM）的管理詳細資料。</block>
   <block id="c25f011b08f295a29bbd500b17b738ed" category="doc">系統管理程式組態更新- ONTAP 更新版本：BIOS 9.7及更新版本</block>
   <block id="dc7b0deb2f77cc84a07356028bc63ae9" category="section-title">設定SVM的管理詳細資料</block>
@@ -9331,4 +9159,164 @@
   <block id="e50dd294cf397303b2a00adc531519ff" category="summary">您可以使用System Manager Classic（ONTAP 以更新版本的版本供應）、從其父Volume分割FlexClone Volume。分割完成後、FlexClone Volume便成為正常FlexVol 的現象。它會繼續使用父磁碟區的磁碟空間、並保留儲存效率。</block>
   <block id="3c8b9315b4e5007a245058e0cff68754" category="sidebar">本機Windows群組</block>
   <block id="77099e972ae7a7fe259036767d3fe853" category="sidebar">管理本機Windows群組</block>
+  <block id="2167b6cc78c73051aff2dd4c26573bca" category="list-text">在* lifs per node*字段中輸入"*2*"。</block>
+  <block id="07ed465ff0a44a206760d324d1c08249" category="list-text">*選用：*輸入目標別名。</block>
+  <block id="de0a8b1ad2499d809f45085d29cd222a" category="list-text">*選用：*容錯移轉包含LUN的儲存叢集節點、並確認您仍可存取LUN上的檔案。</block>
+  <block id="6b4bfed3c0051a636448f72f898e2da1" category="list-text">*選用：*[step4-監 控]監控Volume Move工作：</block>
+  <block id="378b1b279719118ac9d5c8600e52fe26" category="list-text">*選用：*請根據下列考量來規劃時間：</block>
+  <block id="74452ce5ccfe910db6ce7caf2d46580f" category="list-text">*選用：*容錯移轉包含LUN的叢集節點、並確認您仍可寫入及讀取檔案。</block>
+  <block id="ca7152560b0bf26bf8544c8c6feb5860" category="list-text">*選用：*如果您在叢集節點上容錯移轉、請務必歸還節點、並將所有生命點傳回其主連接埠。</block>
+  <block id="299577be2caaa1e65fcb550f0e44ce9a" category="list-text">在指定的多重路徑裝置上執行部分I/O：</block>
+  <block id="8959d60081b4cbcb44ae78554e237cb9" category="paragraph">「Did if=/dev/零of =&lt;multipath_device_name\&gt;'</block>
+  <block id="8e1190bf83433577c047c00863b4c141" category="list-text">驗證I/O是否正在多重路徑裝置上執行、並指定重新整理統計資料的秒數（例如、每隔兩秒、如圖所示）：</block>
+  <block id="94380f622a8652ea69d3313b7839aaa1" category="paragraph">「iostat 2」</block>
+  <block id="21e9f4aad2104b53e21ccf83203ac22c" category="list-text">如果可能、請在儲存叢集節點上執行「takeover」命令：</block>
+  <block id="b8ff52d6a214140bcb3f0b3c26f0f100" category="paragraph">「容錯移轉接管-節點&lt;節點名稱&gt;」</block>
+  <block id="e0873e1f361ec2a9bfeb629b685be386" category="list-text">重新執行「iostat」命令、確認I/O仍在多重路徑裝置上執行。</block>
+  <block id="4946723a87e91c6b88ca469c375c16b1" category="list-text">在儲存叢集節點上執行「f贈 回（f恢復）指令：</block>
+  <block id="c566ca0f9ffc96cd9f258bb828b352ac" category="paragraph">「儲存容錯移轉還原-ofnode_name\&gt;」</block>
+  <block id="1bf24c5310ab6ad0bdcdc68667bea756" category="list-text">探索新的SCSI裝置（LUN）、並為LUN建立對應的多重路徑裝置：</block>
+  <block id="3c68f1f0a040dd350f9b8572d43a655c" category="paragraph">usr/bin/resce-scsi-bus.sh'</block>
+  <block id="dbabd8c8abf623dcd06199221179283c" category="list-text">驗證DM-Multipath組態：</block>
+  <block id="94275d66daee86bfac92037c631a7285" category="paragraph">"ultiPath-ll（多路徑- ll）"</block>
+  <block id="40dfa14ed97c7216a735373e228eba5b" category="paragraph">例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：</block>
+  <block id="fb24bd69f54fea8ff4b0d557f7690765" category="paragraph">Check Alignment of PHs&gt;/`/lib/udev/scsi_id -gud /dev/sda'</block>
+  <block id="6667f4bb63a24254da1055c76031456f" category="list-text">啟動DM-Multipath精靈：</block>
+  <block id="ea20b6871b30a75c01f1ac0604ac6fd7" category="paragraph">Check Alignment of PHs&gt;"etc/init.d/multipathd start"</block>
+  <block id="5d7e8548aac7ed8ad8df79b28282a0f6" category="list-text">將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：</block>
+  <block id="7dcb81f0d20c3d34062020b8cea4e8b1" category="paragraph">「kchconfig multpathd on」</block>
+  <block id="f909f3d3b695dfd4fcb9d9c8b7e34d8a" category="list-text">如果未安裝「調整」套件、請輸入下列命令：</block>
+  <block id="75d8184ca11db91e2beae3063c17ab79" category="paragraph">《Yum install》調校</block>
+  <block id="2bbdd83dd3e681fd4b60973d886e9927" category="list-text">對於實體主機、請確定您已設定「企業儲存設備」設定檔：</block>
+  <block id="4dd7d22a6ae04ca5cd3d2948fea52535" category="paragraph">「調校過的管理設定檔企業級儲存設備」</block>
+  <block id="1d5af455c21e5a12e3e8a2b2f6d9b985" category="list-text">對於虛擬主機、請確定您已設定「虛擬客體」設定檔：</block>
+  <block id="aaedb80c185a3408706a489e17bdcabb" category="paragraph">「調整過的-adm設定檔虛擬訪客」</block>
+  <block id="e216a06c67beed0b5dd76c9676ee361a" category="list-text">從Linux主機命令提示字元啟動iSCSI服務：</block>
+  <block id="64f4117eb4bf3dac5f097edd110da80c" category="list-text">探索iSCSI目標：</block>
+  <block id="e91911d71ec4caa5e10629ad38ed4ebe" category="paragraph">「iscsiadm-mode dDiscovery --op update --type endtimalse-入口 網站目標IP」</block>
+  <block id="bc945477b18634e7ffe118ecd6430ee4" category="list-text">登入每個目標以建立iSCSI工作階段：</block>
+  <block id="bbc46b065a2a5e3fa3de3d515c5092f4" category="paragraph">"iscsiadm-mode node-l all"</block>
+  <block id="f27b7a8891ea2d1400e59a9dc4b65c6b" category="list-text">您可以檢視使用中iSCSI工作階段的清單：</block>
+  <block id="e73d1aac1b7026c75466702304ad4f76" category="paragraph">「iscsiad-mode工作階段」</block>
+  <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">步驟</block>
+  <block id="d17610cab8dbcd3dd625b0d8d3a450d4" category="list-text">*選用*：選取要包含SVM根磁碟區的根Aggregate。</block>
+  <block id="93de04e4619fcc6641a7c9cea9d939b6" category="list-text">*選用*：在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。</block>
+  <block id="a194ac5984fa96309c2d12690a193b44" category="list-text">*選用*：修改共用ACL以限制共用區的存取：</block>
+  <block id="d9f5020c898fa0bc33fe82af2df8c873" category="list-text">*選用*：按一下*新增*、然後輸入在Windows Active Directory網域中定義的系統管理員群組名稱、其中包含SVM。</block>
+  <block id="c9021f672b51a52fc6e747521ec888d2" category="list-text">*選用*：如果您希望共用名稱與磁碟區名稱不同、請變更共用名稱。</block>
+  <block id="f5d700cf62ec87b85f98f691af328ae5" category="list-text">*選用*：如果您不希望磁碟區位於SVM的根目錄、請修改新磁碟區在現有命名空間中的位置：</block>
+  <block id="c66c2d5e3e3667ff3074429205e86509" category="list-text">*選用：*設定連接埠集。</block>
+  <block id="02c5c87e366e2f769b5847913aee732c" category="list-text">在SVM ** Details（詳細資料）*窗格中、確認* iscs*以灰色背景顯示、表示傳輸協定已啟用但尚未完整設定。</block>
+  <block id="026d103ec9353170dc1f0aa9b52d4d69" category="list-text">*選用*：如果您啟用CIFS傳輸協定、請將安全樣式變更為* UNIUNIX*。</block>
+  <block id="ba86c68ac4825da639c809691a74505a" category="list-text">*選用：*選取「*啟用網路壓縮*」核取方塊、以壓縮還原作業期間傳輸的資料。</block>
+  <block id="68999859068a7cad770d216049833275" category="list-text">*選用：*按一下*瀏覽*、然後變更鏡射與資料保存原則。</block>
+  <block id="f4cadc06670b1f076d32420cb5d39c9c" category="list-text">*可選：*選擇*初始化關係*以初始化關係。</block>
+  <block id="0f05bcdadeb2c7a8bfc6c2acf3c29256" category="list-text">如果您使用IPv6：「https://[cluster-mgmt-LIF]`</block>
+  <block id="74d14d007d0cc9201e5acb84b3b59f8d" category="paragraph">僅支援HTTPS、瀏覽器才能存取ONTAP 《支援的功能》。</block>
+  <block id="538cff27ae018f806a95d1375f43e19c" category="list-text">*選用：*如果您使用CLI設定了存取橫幅、請閱讀*警告*對話方塊中顯示的訊息、然後選擇所需的選項繼續。</block>
+  <block id="4a91dd918c5543d102c898a609da2b12" category="list-text">*選用：*如果您要在執行ONTAP 版本資訊技術9.5的叢集與執行ONTAP 版本資訊技術9.6的叢集之間建立對等關係、請勾選核取方塊。</block>
+  <block id="1c0fc20abe98df60398c9c0d1a889c47" category="list-text">*選用：*若要從遠端叢集產生通關密碼、請輸入遠端叢集的管理IP位址。</block>
+  <block id="b573a96e4bf17ee0a6978424e76eab30" category="list-text">*可選：*如果要對新的FlexClone磁碟區啟用精簡配置、請選取*精簡配置*。</block>
+  <block id="3f737d00053f7c5c45d0637dfdb180e2" category="list-text">*選用：*指定切換動作和切換期間。</block>
+  <block id="d437837c1a7f1cef9d7e6471237f0d2b" category="list-text">*選用：*修改Aggregate的RAID組態：</block>
+  <block id="5d32e3bfc17842f890a9a46a0a6254be" category="list-text">在「*變更RAID組態*」對話方塊中、指定RAID類型和RAID群組大小。</block>
+  <block id="cf1156c444023ae39d1b0259f11b587b" category="list-text">*選用：*如果您要鏡射集合體、請選取*鏡射此集合體*核取方塊。</block>
+  <block id="7287d0805774e49e1bca05e556ea16a7" category="list-text">*選用：*選取「*啟用網路壓縮*」核取方塊、以壓縮還原作業期間傳輸的資料。</block>
+  <block id="5ee14f4082427cb7999477b69aa840f4" category="list-text">*選用：*選取*精簡配置*以啟用磁碟區的精簡配置。</block>
+  <block id="4774f8d0bfe79916a1748e9c45f5e02d" category="list-text">*可選：*在「*儲存效率*」索引標籤中進行必要的變更、以在磁碟區上啟用重複資料刪除功能。</block>
+  <block id="89d2036f976af7e98d7df43f06b87aac" category="list-text">*選用：*指定自動提交期間。</block>
+  <block id="f670ceaeb8a85b69d0ab39446d4dec0e" category="list-text">*可選：*在*服務品質*標籤中選取*管理儲存服務品質*核取方塊、以啟用FlexVol 適用於整個VMware Volume的儲存QoS、以管理工作負載效能。</block>
+  <block id="89d3d03582a0eea6ebf98d99e189969e" category="list-text">*選用：*若要檢視不具備所需權限的SVM、請按一下*導覽至來源叢集*、然後提供所需的權限。</block>
+  <block id="4a8fdf11116c613144728b9cdf4f0a40" category="list-text">*選用：*按一下*<block ref="3fd4b2c218dcec4c2eb9e85f1d283321" category="inline-image-macro-rx" type="image"></block>*、更新保護原則和保護排程、選取Aggregate、然後初始化保護關係。</block>
+  <block id="033b2063dda0545cbfd4fa75d02943a7" category="list-text">*選用：*在*「Create FlexGroup S還原*」視窗中、按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 以指定進階選項。</block>
+  <block id="9d5bf589fa9c00216983205c58ee4969" category="paragraph">監控叢集層級的磁碟櫃、以取得通往兩個HA叢集節點的適當路徑。</block>
+  <block id="7eb754848b80a1faf296b6573058f292" category="list-text">如果未指定最大處理量值、系統會自動顯示「'Unlimited'」作為值、此值會區分大小寫。+您指定的單位不會影響最大處理量。</block>
+  <block id="b36bf4c7c73c0faded947df9233e638c" category="list-text">*可選：*單擊指定LUN數量的鏈接以查看選定LUN的列表，如果要從列表中刪除任何LUN，請單擊* Discard*。</block>
+  <block id="63ab9c69ea88001b9267fc6c57ba3d72" category="list-text">*選用：*選取*保留任何部分傳輸的資料*核取方塊、以保留已傳輸至目的地Volume的資料。</block>
+  <block id="a8eeadfc90dd0683d64292441185919c" category="list-text">驗證您在「*編輯Snapshot Policy*」對話方塊中對所選Snapshot原則所做的變更、然後按一下「*儲存*」。</block>
+  <block id="c4374218de35d2b4bc8b5b1304ff7e65" category="section-title">刪除Snapshot原則</block>
+  <block id="96ae139f53bf533fdb8ac29280302026" category="list-text">*選用：*來源Volume *區域中的下列欄位、會顯示您要建立FlexCache 一個來源Volume的來源Volume值。您可以加以修改。</block>
+  <block id="1b78797a93048844498b509de34439db" category="list-text">*選用：*選取*限制傳輸頻寬至*、以限制傳輸所用的網路頻寬、並指定最大傳輸速度。</block>
+  <block id="41e125608bdf75adc6c1d8fb9f8d8449" category="list-text">*可選：*如果需要、請在*節點*欄位中更新節點名稱。</block>
+  <block id="1b1c4d2465a3abce589a57ce8f4c69ad" category="list-text">*選用：*輸入功能授權金鑰。</block>
+  <block id="8026709c8fa8fb76cbf71a811f797fea" category="list-text">根Aggregate</block>
+  <block id="b3a25cfa70bbb70a76ecca24a2dfabac" category="paragraph">任何SVM的預設語言設定為C.utf-8。</block>
+  <block id="bcabe521a38e157cbc37aa75b16fb275" category="paragraph">如果您選取CIFS傳輸協定或CIFS傳輸協定與其他傳輸協定的組合、則安全樣式會設為NTFS。如果您選取NFS、iSCSI、NVMe或FC/FCoE、或這些傳輸協定的組合、安全樣式會設為UNIX。</block>
+  <block id="bfb25f34e1004b9ca94ef269d18a0ee5" category="paragraph">在這個組態中、只會顯示叢集中包含的集合體。MetroCluster</block>
+  <block id="4f378bc564f46f944de7f6fc5dfd6fe6" category="list-text">*選用：*當設定資料LIF以使用傳輸協定存取資料時、請指定目標別名、子網路、以及每個節點的生命量。</block>
+  <block id="e5f281875322cc1179192cef386eb459" category="list-text">*選用：* SnapDrive 提供SVM認證資料、讓SnapManager SVM管理員能夠使用主機端應用程式、例如：</block>
+  <block id="5e41a16b4f04ac3bbc98e73380634128" category="list-text">*選用：*若為NVMe以外的傳輸協定、請按一下*「Create a new LIF for SVM management *（為SVM管理建立新的LIF）」、然後為新的管理LIF指定連接埠集和IP位址（不論是否有子網路）。</block>
+  <block id="fda82d94587e47d5e434a05a09267b33" category="list-text">*選用：*適用於NVMe傳輸協定、從ONTAP 支援支援支援功能的9.5開始、在SVM設定精靈的第二頁上、為每個節點設定至少一個LIF：*設定NVMe傳輸協定。*</block>
+  <block id="c4ddb7df099b2ba12dd578d45e2c25b0" category="list-text">*選用：*在FlexCache *《Volume》*下的「* Volume *」欄位中輸入更新的名稱。FlexCache</block>
+  <block id="32032cf60e20cb1e13004a35c19895f0" category="list-text">*選用：*在FlexCache * FlexCache 《*》Volume *下的* Size*欄位中、輸入更新的版號、然後從下拉式功能表中選取測量單位。</block>
+  <block id="390c84eadfb369c9bba59931c7fc2b02" category="list-text">*選用：*啟用或停用加密。</block>
+  <block id="c39cc8afaab586b9dbba4dffaf5f57ea" category="list-text">*選填：*按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 可修改FlexCache 功能的進階設定。請參閱 <block ref="4aa5b8ffba7fb44e3974191d1beac02c" category="inline-link-macro-rx"></block>。</block>
+  <block id="492b89534aff64b4ffa1731c967d9242" category="paragraph">您可以輸入IPV4位址「0.00.0.0/0」、以便存取所有主機。</block>
+  <block id="becaa185f5a030a515aadc0aeabbb6ea" category="list-text">*可選：*在*移動LUN*對話框的*移動選項*區域中、如果您想變更預設名稱、請為LUN指定新名稱。</block>
+  <block id="8be28ba82a6dd69c55a3f8793bd0d63c" category="paragraph">從System Manager 9.6開始、您可以為本機叢集IPspace產生通關密碼、並在建立對等關係時、在遠端叢集中使用相同的通關密碼。</block>
+  <block id="fc3dce60dca0d430a7ff12db0848d160" category="list-text">*選用：*如果遠端叢集的有效叢集版本早於ONTAP BIOS 9.6、請選取核取方塊。否則、叢集對等關係就無法產生。</block>
+  <block id="0f996a40da153400a25aedfb769edcf9" category="list-text">*選用：*如果遠端叢集的有效叢集版本早於ONTAP BIOS 9.6、請選取核取方塊。否則、複雜密碼無法產生。</block>
+  <block id="243f1fd197bf7fa79315a076feaf79fa" category="list-text">*選填：*按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 指定更多詳細資料以縮小追蹤範圍。</block>
+  <block id="873efe19b700a7a6649a9502456b6f5c" category="list-text">*選用：*在結果表的*理由*欄中、按一下*檢視權限*、即可檢視使用者嘗試存取之檔案的權限。</block>
+  <block id="97697f601707c40412d72c60bf8e0c25" category="list-text">*選用：*結果表會顯示唯讀資料。您可以對追蹤結果執行下列動作：</block>
+  <block id="8a1a8dcd2161b242768c0af8da0f8cbf" category="list-text">*選用：*選取*將QoS原則設為背景*核取方塊、以降低對用戶端作業的效能影響。</block>
+  <block id="01a7f44ccffdea6f78f82fcc0285b061" category="list-text">*選用：*選取「*啟用網路壓縮*」核取方塊、以壓縮資料傳輸期間傳輸的資料。</block>
+  <block id="b88b5577f1c595defbfec28b10fce6c5" category="list-text">*選用：*對於非同步鏡像原則、請選取*傳輸所有來源Snapshot Copies（傳輸所有來源Snapshot複本）*核取方塊、將「'all_source_snapshots（所有來源快照）」規則納入鏡射原則、此原則會從來源磁碟區備份所有Snapshot複本。</block>
+  <block id="c61b97a568cdbe49a9f47e9778ce6903" category="list-text">*可選：*單擊*添加註釋*以添加該策略的其他註釋。</block>
+  <block id="c4b9c7fbc1913797a71584868922407d" category="paragraph">輸入IP位址範圍、然後按一下「*套用*」。</block>
+  <block id="326a5f653e8c1e22eaa78c7c75ee1d9b" category="paragraph">IP位址會依序套用至叢集管理、節點管理和服務處理器管理網路。</block>
+  <block id="84596681e9c27fc8373bb66888c8810d" category="paragraph">在單獨一行輸入每個IP位址範圍、然後按一下*「Apply」（套用）*。</block>
+  <block id="f0cda452bab533345b3b49acc511eec5" category="paragraph">套用至叢集管理和其他IP位址的第一個IP位址會依序套用至節點管理和服務處理器管理網路。</block>
+  <block id="18cb644c6e498a86db9f5b646aa4fe08" category="list-text">*選用：*輸入叢集管理的閘道詳細資料。</block>
+  <block id="ba5b0f302eba2e71386e902272546c81" category="list-text">*可選：*單擊*更多操作*可查看更多信息，並從下拉菜單中的選項中執行操作：</block>
+  <block id="3b3672594431d1681f1b12f5690c3a26" category="list-text">*選用：*按一下*進階*索引標籤、然後執行下列步驟：</block>
+  <block id="ff0167481b8bdc3a1e0af03f1a713dfa" category="list-text">*選用：*如果您想要新增雲端層以供StorageGRID 使用、或是想搭配FabricPool 使用IBM Cloud Object Storage環境（例如Cleverafe）搭配使用、則應指定CA憑證。移動「*物件存放區憑證*」切換按鈕並複製憑證內容、以指定CA憑證。然後將憑證內容貼到已簽署的認證中。</block>
+  <block id="9c3d152472d23afb696d89a45d92f323" category="list-text">*選用：*必要時、請變更主機系統憑證。</block>
+  <block id="d583afb528b356423c92e1dc596558d5" category="list-text">*選用：*在「*網路存取*」區段中、指定iSCSI目標的別名。</block>
+  <block id="73fd2fe57f5849ad4ccbd582bf3f47ff" category="list-text">*選用：*在設定iSCSI傳輸協定時、透過指定LUN大小、LUN的作業系統類型、以及主機啟動器詳細資料來配置iSCSI儲存設備的LUN。</block>
+  <block id="4f85fb4935aa6b55fea8f378f92ecdc8" category="list-text">如果您未指定最大處理量值、系統會自動顯示「'Unlimited'」作為值。+此值區分大小寫。您指定的單位不會影響最大處理量。</block>
+  <block id="a8466bee7423e1acd071dec666780125" category="list-text">*選用：*如果您要檢閱選取的磁碟區清單、請按一下指定磁碟區數量的連結、如果您要從清單中移除任何磁碟區、請按一下* Discard*。</block>
+  <block id="8f51b4e853f8f8190d9ce869e3f71555" category="list-text">*選用：*在*「Edit FlexCache Sof the *」（編輯*更新版）視窗中、按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 以指定進階選項。</block>
+  <block id="1f272132f306cd712954818240769549" category="list-text">*可選：*在*一般詳細資料*區段中、您可以編輯磁碟區的權限。</block>
+  <block id="c179c86478dc87a1e6ecba0d3cc586a9" category="list-text">*選用：*按一下*<block ref="3fd4b2c218dcec4c2eb9e85f1d283321" category="inline-image-macro-rx" type="image"></block>*、更新保護原則與保護排程、選取*啟用FabricPool的Aggregate *、然後初始化保護關係。</block>
+  <block id="fddd6898fa48dae6ad16b03c1647a8a9" category="paragraph">指定介面所屬的子網路。</block>
+  <block id="d6ed85989db71d5f1edd648ad3d10e92" category="list-text">* mx角色*</block>
+  <block id="7c47724762d471660f5d9482c6949496" category="list-text">Edit Interface Group（編輯介面群組）對話方塊：可讓您修改介面群組。</block>
+  <block id="c6c83cb06fe89a1721ee27a84b498582" category="paragraph">您只能編輯與廣播網域無關的VLAN。</block>
+  <block id="85dbd98a69e8b488cb90b5c03e0a5a74" category="list-text">*選用：*提供LUN大小、LUN的作業系統類型、以及主機啟動器詳細資料、以便在設定傳輸協定時、為FC儲存設備或FCoE儲存設備配置LUN。</block>
+  <block id="02283b6dc3a8c9652631ce26518c2344" category="paragraph">對於鏡射Aggregate、會顯示* Add Cache（新增快取）*對話方塊、其中會顯示所選磁碟數目的兩倍資訊。</block>
+  <block id="89d54016c2a7c0f0da90f8a8496ff80e" category="list-text">*選用：*選取*存取此SVM*的所有共用時加密資料、以啟用SVM所有共用的SMB 3.0加密。</block>
+  <block id="bac4af047128402bf29bcf5fcf9c5a89" category="list-text">*選用：*設定NIS服務：</block>
+  <block id="ede7f1ea5f8033a3ddc8b303e6c3fe16" category="list-text">*選用：*選取*「啟用Hyper-V和SQL*的持續可用度」核取方塊、允許支援SMB 3.0及更新版本的用戶端在不中斷營運期間持續開啟檔案。</block>
+  <block id="c3e0b780eb59c719da0f62c0418963e2" category="list-text">「%u」（使用者對應的UNIX使用者名稱）</block>
+  <block id="053021b69a316a9b62283baaca04bdee" category="paragraph">若要讓所有主目錄的共用名稱都是唯一的、共用名稱必須包含「%w」或「%u」變數。共享區名稱可以同時包含「%d」和「%w」變數（例如、「%d」/「%w」）、或是共享區名稱可以包含靜態部分和變數部分（例如、home_`%w）。</block>
+  <block id="bd4839934b7388006bd94c08b17676e5" category="list-text">*選用：*按一下*瀏覽*、然後變更資料保存原則。</block>
+  <block id="8abddecdd7334ed047185ca38dbb97e5" category="list-text">*選用：*選取*初始化關係*以初始化資料保險箱關係。</block>
+  <block id="923753aa37d448d3e3db5ef19c5f8671" category="list-text">*選用：*選取*限制傳輸頻寬至*、以限制傳輸所用的網路頻寬、並指定最大傳輸速度。</block>
+  <block id="57381e1840d0b4e657ac36c3c0b181a2" category="list-text">*選用：*如果您想要重新命名FlexGroup 此功能、請在*名稱*欄位中輸入新名稱。</block>
+  <block id="a3bd68f70522585bc51163fa9590fa4e" category="list-text">*選用：*啟用*加密*選項以啟用磁碟區加密。</block>
+  <block id="69889796f685b453b0d37607822fd783" category="list-text">*選填：*按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> 可修改FlexGroup 聲音恢復功能的設定。請參閱 <block ref="b061540f3903424de0fd13460a711a9e" category="inline-link-macro-rx"></block>。</block>
+  <block id="f106df5b54232abe3518bdece076f160" category="paragraph">對於鏡射Aggregate、會顯示* Add Capacity *（新增容量*）對話方塊、其中會顯示所選磁碟數目的兩倍資訊。</block>
+  <block id="a959af38fa02346964b4ebb831bb5006" category="list-text">*選用：*如果您要變更預設的交會名稱、請指定新名稱。</block>
+  <block id="c8602499dbb8aa9b67ce255298845de0" category="list-text">*選用：*按一下*進階選項*圖示、並提供詳細資料、以設定進階選項、例如預設語言、安全樣式、CIFS伺服器詳細資料及NFS詳細資料。</block>
+  <block id="1408cfe6b3aef70c13f7a3fd0bbf2131" category="list-text">*選用：*選取*動態DNS（DDNS）*核取方塊以啟用DDNS。</block>
+  <block id="843bb66a446744bb6b787125c63e936a" category="list-text">*選用：*如果您要將目的地連接埠設定為LIF的新主連接埠、請選取*永久移轉*核取方塊。</block>
+  <block id="fdf3e03c90c428c34fc188fed5920c48" category="paragraph">虛擬儲存主控台可自動化許多與ESXi主機搭配使用儲存設備所需的組態和資源配置工作。是vCenter Server的外掛程式。</block>
+  <block id="31f2f8524f9f2b027c119f6f40a06fdd" category="list-text">下載您的組態所支援的版本、如互通性對照表工具所示。</block>
+  <block id="952786b60dfd8f82ba763b2061ea9cd1" category="list-text">部署虛擬應用裝置、並依照部署與設定指南_中的步驟進行設定。</block>
+  <block id="954c4924ea7f8157bca0da29ed6ba9fe" category="list-text">*選用*：選取要包含根磁碟區的根Aggregate。</block>
+  <block id="4e79a9f59f029fd6d35aac150385e2e0" category="paragraph">VMware vSphere for（VSC）的虛擬儲存主控台必須安裝並註冊至管理ESXi主機的vCenter Server。</block>
+  <block id="2229a1b23fe8d20acaf9965756382187" category="paragraph">VSC必須有足夠的叢集或認證、才能在指定的SVM上建立磁碟區。</block>
+  <block id="08266712a93300cea38857d891d782e6" category="list-text">在虛擬儲存主控台中、前往*工具*&gt;* NFS VAAI工具*。</block>
+  <block id="7d04c571205d212a4da0ec009e5159c9" category="list-text">*選用：*選取*限制傳輸頻寬至*、以限制傳輸所用的網路頻寬、然後指定最大傳輸速度。</block>
+  <block id="53b72ae43018b17d722ea8e296efc826" category="paragraph">若要顯示非NetApp SCSI裝置的WWID、請在您要排除的裝置上輸入下列命令、其中「csi裝置名稱」是您指定的裝置：</block>
+  <block id="b5ca334aab704d20e9066f8c9b1d84c7" category="paragraph">Check Alignment of PHs&gt;/zh/lib/udev/scsi_id -gud /dev/scsi_device_name`</block>
+  <block id="5f3d1e418461cf271014ec024b2282e2" category="list-text">在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multipath設定：</block>
+  <block id="e731114d2b62e8ff93ae344a25284fbe" category="paragraph">"rloaddriver=scsi_dd_alua"</block>
+  <block id="e644bcb72de043bfd819b1f923bce274" category="list-text">*選用*：請確定安全樣式已設定為您的偏好。</block>
+  <block id="4fead8b22ba9e31541b859c55e625eaa" category="paragraph"><block ref="4fead8b22ba9e31541b859c55e625eaa" category="inline-link-macro-rx"></block></block>
+  <block id="eff76f42c51e77889fac235bb1fe5bbf" category="list-text">*選用*：建立名稱對應、將UNIX使用者帳戶轉換成Windows使用者帳戶、反之亦然：</block>
+  <block id="37d7a482fff3cbc78535db1d381fbc9d" category="list-text">重複步驟5b到5d、對應SVM上的所有網域和名稱。</block>
+  <block id="57845f9417a55f7f873021142bcf4a81" category="list-text">*選用*：建立預設的Windows使用者：</block>
+  <block id="13a6d31e838d141b884cf7c5460be9a0" category="list-text">*選用*：如果您希望使用者與預設值不同（即「pcuser'」使用者）、請設定預設UNIX使用者。</block>
 </blocks>

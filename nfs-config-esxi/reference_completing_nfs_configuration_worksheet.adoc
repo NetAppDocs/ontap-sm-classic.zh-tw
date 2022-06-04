@@ -23,7 +23,7 @@ summary: 您需要網路位址和儲存組態資訊、才能執行NFS用戶端�
 
 image::../media/network_for_nfs_eg.gif[用戶端組態的網路拓撲]
 
-用於生命的子網：*_**_-**___
+生命之子網路：
 
 |===
 | 節點或LIF搭配連接埠至交換器 | IP 位址 | 網路遮罩 | 閘道 | VLAN ID | 主連接埠 
@@ -119,24 +119,12 @@ image::../media/network_for_nfs_eg.gif[用戶端組態的網路拓撲]
 
 
  a| 
-
-
-
- a| 
 Aggregate名稱
 
 
 
  a| 
-
-
-
- a| 
 名稱
-
-
-
- a| 
 
 |===
 
@@ -148,98 +136,71 @@ Aggregate名稱
 
 
  a| 
-
-
-
- a| 
 匯出名稱（選用）
-
-
-
- a| 
 
 
 
  a| 
 匯出說明（選用）
 
-
-
- a| 
-
 |===
 
 
-== 資訊
+== SVM資訊
 
 如果您不使用現有的，則需要下列資訊來建立新的資訊：
 
+[cols="1a,1a"]
 |===
-| 名稱 
+2+| SVM名稱 
 
 
  a| 
-
-
-
- a| 
-根Volume的Aggregate
+SVM根Volume的Aggregate
 
 
 
  a| 
+SVM使用者名稱（選用）
 
 
 
  a| 
-使用者名稱（選用）
+SVM密碼（選用）
 
 
 
  a| 
+SVM管理LIF（選用）
 
 
 
  a| 
-密碼（選用）
-
-
-
- a| 
-
-
-
- a| 
-管理LIF（選用）
-
-
-
  a| 
 子網路：
 
 
 
  a| 
+ a| 
 IP位址：
 
 
 
+ a| 
  a| 
 網路遮罩：
 
 
 
  a| 
+ a| 
 閘道：
 
 
 
  a| 
-主節點：
-
-
-
  a| 
-主連接埠：
+主節點：
 
 |===

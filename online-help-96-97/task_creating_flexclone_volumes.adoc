@@ -26,7 +26,7 @@ summary: 您可以在需要現有FlexVol 的流通量可寫入的時間點複本
 . 從FlexVol 磁碟區清單中選取您要複製的實體磁碟區。
 . 單擊*更多操作*>* Clone *>* Create *>* Volume *。
 . 輸入您要建立的FlexClone Volume名稱。
-. 如果您要為新的FlexClone磁碟區啟用精簡配置、請選取*精簡配置*。
+. *可選：*如果要對新的FlexClone磁碟區啟用精簡配置、請選取*精簡配置*。
 +
 根據預設、此設定與父Volume相同。
 

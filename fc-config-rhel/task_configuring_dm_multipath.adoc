@@ -34,10 +34,16 @@ https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
 
 
 +
-若要顯示非NetApp SCSI裝置的WWID、請在您要排除的裝置上輸入下列命令、其中「csi_device_name」是您指定的裝置：「/lib/udev/scsi_id -gud /dev/scsi_device_names」
+若要顯示非NetApp SCSI裝置的WWID、請在您要排除的裝置上輸入下列命令、其中「csi裝置名稱」是您指定的裝置：
 
 +
-例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：「/lib/udev/scsi_id -gud dev/sda'
+Check Alignment of PHs>/zh/lib/udev/scsi_id -gud /dev/scsi_device_name`
+
++
+例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：
+
++
+Check Alignment of PHs>/`/lib/udev/scsi_id -gud /dev/sda'
 
 +
 這會顯示裝置的WWID、您可以在「多路徑.conf」檔案中複製及貼上該裝置。
@@ -59,11 +65,20 @@ blacklist {
 *** 如果沒有要排除的裝置、請從「multiPath.conf」檔案中移除_WWID_行。
 
 
-.. 在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multippath設定：「rdaLoaddriver=SCSI_DH_alua」
+.. 在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multipath設定：
++
+"rloaddriver=scsi_dd_alua"
 
 
-. 啟動DM-Multikpath精靈：`/etc/init.d/multipathd start'
-. 將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：「chkconfig multpathd on」
+
+. 啟動DM-Multipath精靈：
++
+Check Alignment of PHs>"etc/init.d/multipathd start"
+
+. 將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：
++
+「kchconfig multpathd on」
+
 . 重新啟動Linux主機。
 . 在運行"cat /proc/cmd line"時，請驗證輸出中是否顯示"rdaloaddriver"設置。
 +

@@ -32,7 +32,7 @@ summary: 使用含有更新版本的《經典》介面、您可以選擇一個Vo
 
 
 
-. [step4-監 控]監控Volume Move工作：
+. *選用：*[step4-監 控]監控Volume Move工作：
 +
 .. 在*移動Volume *對話方塊中、按一下磁碟區移動工作*工作ID*的連結。
 .. 找到Volume Move工作、然後檢閱「* Status *（*狀態*）」欄中的資訊。

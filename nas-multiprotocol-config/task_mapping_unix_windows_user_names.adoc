@@ -31,7 +31,7 @@ summary: 如果您的網站同時擁有Windows和UNIX使用者帳戶、您應該
 . 瀏覽至* SVMS*視窗。
 . 選取您要設定的SVM。
 . 按一下「* SVM設定*」索引標籤。
-. 建立名稱對應、將UNIX使用者帳戶轉換成Windows使用者帳戶、反之亦然：
+. *選用*：建立名稱對應、將UNIX使用者帳戶轉換成Windows使用者帳戶、反之亦然：
 +
 .. 在*主機使用者與群組*窗格中、按一下*名稱對應*。
 .. 按一下「*新增*」、保留預設的* Windows至UNIX*方向、然後建立當Windows使用者嘗試存取使用UNIX檔案權限的檔案時產生UNIX認證的規則運算式。
@@ -52,10 +52,10 @@ image::../media/name_mappings_2_unix_to_windows.gif[UNIX對Windows項目的快�
 +
 image::../media/name_mappings_3_outcome.gif[此圖形由周圍的文字說明。]
 
-.. 重複步驟 <<SUBSTEP_8BDAF68A77864AAFAF680961CE879940,#Subford_8FD68A77864AAFAF680961CE879940>> 透過 <<SUBSTEP_E730068645DB4303B61744DB632A9803,#Subford_E730068645DB4303B61744DB632A9803>> 對應SVM上的所有網域和名稱。
+.. 重複步驟5b到5d、對應SVM上的所有網域和名稱。
 
 
-. 建立預設的Windows使用者：
+. *選用*：建立預設的Windows使用者：
 +
 .. 在LDAP、NIS或SVM的本機使用者中建立Windows使用者帳戶。
 +
@@ -67,7 +67,7 @@ image::../media/name_mappings_3_outcome.gif[此圖形由周圍的文字說明。
 +
 您可以建立名為「unixuse...」的本機Windows使用者、並將其設為預設的Windows使用者。
 
-. 如果您希望使用者與預設值不同（即「pcuser'」使用者）、請設定預設UNIX使用者。
+. *選用*：如果您希望使用者與預設值不同（即「pcuser'」使用者）、請設定預設UNIX使用者。
 +
 .. 在LDAP、NIS或SVM的本機使用者中建立UNIX使用者帳戶。
 +

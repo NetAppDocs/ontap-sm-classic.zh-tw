@@ -50,14 +50,14 @@ summary: 您可以使用精靈來引導您完成建立新儲存虛擬機器（SV
 +
 此語言由您稍後建立的磁碟區繼承、而且無法變更磁碟區的語言。
 
-.. 選取要包含SVM根磁碟區的根Aggregate。
+.. *選用*：選取要包含SVM根磁碟區的根Aggregate。
 +
 您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。在後續步驟中配置儲存設備時、會自動選取資料磁碟區的Aggregate。
 
 +
 image::../media/svm_setup_details_page_ntfs_selected_smb.gif[此圖形由周圍的文字說明。]
 
-.. 在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。
+.. *選用*：在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。
 +
 image::../media/svm_setup_details_dns_smb.gif[此圖形由周圍的文字說明。]
 
@@ -103,11 +103,11 @@ image::../media/svm_setup_cifs_nfs_page_cifs_share_smb.gif[設定CIFS共用區�
 +
 您不需要為磁碟區指定集合體、因為它會自動位於具有最大可用空間的集合體上。
 
-. 修改共用ACL以限制共用區的存取：
+. *選用*：修改共用ACL以限制共用區的存取：
 +
 .. 在*權限*欄位中、按一下*變更*。
 .. 選取「所有人」群組、然後按一下「*移除*」。
-.. 按一下「*新增*」、然後輸入在Windows Active Directory網域中定義的管理員群組名稱、其中包含SVM。
+.. *選用*：按一下*新增*、然後輸入在Windows Active Directory網域中定義的系統管理員群組名稱、其中包含SVM。
 .. 選取新的系統管理員群組、然後選取*完整控制*。
 .. 按一下*儲存並關閉*。
 

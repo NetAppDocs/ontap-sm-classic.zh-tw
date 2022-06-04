@@ -16,8 +16,14 @@ summary: 儲存叢集上的LUN在Linux主機上顯示為SCSI裝置、這些裝�
 您必須擁有一份「掃描」指令碼的複本、該指令碼位於Linux OS發行套件的「sg3_utils」套件中。
 
 .步驟
-. 探索新的SCSI裝置（LUN）、並為LUN建立對應的多重路徑裝置：「/usr/bin/resce-scsi-bus.sh」
-. 驗證DM-Multipath組態：「multiPack -ll」
+. 探索新的SCSI裝置（LUN）、並為LUN建立對應的多重路徑裝置：
++
+usr/bin/resce-scsi-bus.sh'
+
+. 驗證DM-Multipath組態：
++
+"ultiPath-ll（多路徑- ll）"
+
 +
 這會顯示下列輸出類型、列出每個NetApp LUN的建議設定：
 
