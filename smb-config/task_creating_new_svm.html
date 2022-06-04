@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/smb-config/task_creating_new_svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/smb-config/task_creating_new_svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/smb-config/task_creating_new_svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/smb-config/task_creating_new_svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_new_svm.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_new_svm.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/smb-config/task_creating_new_svm.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/smb-config/task_creating_new_svm.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/smb-config/task_creating_new_svm.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/smb-config/task_creating_new_svm.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4780,7 +4772,7 @@
 </div>
 </li>
 <li>
-<p>選取要包含SVM根磁碟區的根Aggregate。</p>
+<p><strong>選用</strong>：選取要包含SVM根磁碟區的根Aggregate。</p>
 <div class="paragraph">
 <p>您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。在後續步驟中配置儲存設備時、會自動選取資料磁碟區的Aggregate。</p>
 </div>
@@ -4791,7 +4783,7 @@
 </div>
 </li>
 <li>
-<p>在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。</p>
+<p><strong>選用</strong>：在「* DNS組態*」區域中、確定預設DNS搜尋網域和名稱伺服器是您要用於此SVM的伺服器。</p>
 <div class="imageblock">
 <div class="content">
 <img src="../media/svm_setup_details_dns_smb.gif" alt="此圖形由周圍的文字說明。">
@@ -4877,7 +4869,7 @@
 </div>
 </li>
 <li>
-<p>修改共用ACL以限制共用區的存取：</p>
+<p><strong>選用</strong>：修改共用ACL以限制共用區的存取：</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -4887,7 +4879,7 @@
 <p>選取「所有人」群組、然後按一下「<strong>移除</strong>」。</p>
 </li>
 <li>
-<p>按一下「<strong>新增</strong>」、然後輸入在Windows Active Directory網域中定義的管理員群組名稱、其中包含SVM。</p>
+<p><strong>選用</strong>：按一下*新增*、然後輸入在Windows Active Directory網域中定義的系統管理員群組名稱、其中包含SVM。</p>
 </li>
 <li>
 <p>選取新的系統管理員群組、然後選取*完整控制*。</p>
@@ -5093,4 +5085,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4741,19 +4733,19 @@
 <p>若要顯示非NetApp SCSI裝置的WWID、請在您要排除的裝置上輸入下列命令、其中「csi_device_name」是您指定的裝置：「/lib/udev/scsi_id -gud /dev/scsi_device_names」</p>
 </div>
 <div class="paragraph">
-<p>例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：「/lib/udev/scsi_id -gud dev/sda'</p>
+<p>例如、如果「/dev/sda」是您要排除的非NetApp SCSI裝置、您可以輸入下列內容：</p>
 </div>
 <div class="paragraph">
-<p>+這會顯示裝置的WWID、您可以在「多路徑.conf」檔案中複製及貼上。</p>
+<p>Check Alignment of PHs&gt;/`/lib/udev/scsi_id -gud /dev/sda'</p>
 </div>
 <div class="paragraph">
-<p>+在顯示「multiPath.conf」檔案黑名單區段的下列範例中、不包括使用WWID「3600508e000000000753250f933cc4606」的非NetApp SCSI裝置：</p>
+<p>這會顯示裝置的WWID、您可以在「多路徑.conf」檔案中複製及貼上該裝置。</p>
 </div>
 </li>
 </ul>
 </div>
-</li>
-</ol>
+<div class="paragraph">
+<p>在顯示「multiPath.conf」檔案黑名單區段的下列範例中、不包括使用WWID「3600508e000000000753250f933cc4606」的非NetApp SCSI裝置：</p>
 </div>
 </li>
 </ol>
@@ -4768,21 +4760,32 @@
 }</pre>
 </div>
 </div>
-<div class="paragraph">
-<p>+
-** 如果沒有要排除的裝置、請從「multiPath.conf」檔案中移除_WWID_行。</p>
-</div>
-<div class="paragraph">
-<p>+
-&#8230;&#8203; 在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multippath設定：「rdaLoaddriver=SCSI_DH_alua」</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
-<p>啟動DM-Multikpath精靈：`/etc/init.d/multipathd start'</p>
+<p>如果沒有要排除的裝置、請從「multiPath.conf」檔案中移除_WWID_行。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>在開機載入程式的核心行尾端附加下列字串、以啟用NetApp建議的DM-Multippath設定：「rdaLoaddriver=SCSI_DH_alua」</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：「chkconfig multpathd on」</p>
+<p>啟動DM-Multipath精靈：</p>
+<div class="paragraph">
+<p>Check Alignment of PHs&gt;"etc/init.d/multipathd start"</p>
+</div>
+</li>
+<li>
+<p>將多重路徑服務新增至開機順序、以便多重路徑精靈在系統開機期間一律啟動：</p>
+<div class="paragraph">
+<p>「kchconfig multpathd on」</p>
+</div>
 </li>
 <li>
 <p>重新啟動Linux主機。</p>
@@ -4947,4 +4950,5 @@ ro root=/dev/mapper/vg_ibmx3650210104-lv_root rd_NO_LUKS LANG=en_US.UTF-8 rd_NO_
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

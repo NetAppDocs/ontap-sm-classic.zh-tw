@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4738,7 +4730,7 @@
 <p>從*來源儲存虛擬機器*窗格中、選取叢集和SVM。</p>
 </li>
 <li>
-<p>若要檢視沒有必要權限的SVM、請按一下*導覽至來源叢集*、然後提供必要的權限。</p>
+<p><strong>選用：*若要檢視不具備所需權限的SVM、請按一下*導覽至來源叢集</strong>、然後提供所需的權限。</p>
 </li>
 <li>
 <p>從*目的地儲存虛擬機器*窗格中、指定將在目的地叢集上建立的SVM名稱。</p>
@@ -4747,7 +4739,7 @@
 <p>選取選項以複製來源SVM組態。</p>
 </li>
 <li>
-<p>按一下*<span class="image"><img src="../media/nas_bridge_202_icon_settings_olh_96_97.gif" alt=""></span>*、更新保護原則和保護排程、選取Aggregate、然後初始化保護關係。</p>
+<p><strong>選用：*按一下*<span class="image"><img src="../media/nas_bridge_202_icon_settings_olh_96_97.gif" alt=""></span></strong>、更新保護原則和保護排程、選取Aggregate、然後初始化保護關係。</p>
 </li>
 <li>
 <p>按一下「<strong>儲存</strong>」建立SVM關係。</p>
@@ -5298,4 +5290,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

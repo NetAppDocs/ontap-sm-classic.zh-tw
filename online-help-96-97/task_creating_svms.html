@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_creating_svms.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/task_creating_svms.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/task_creating_svms.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/task_creating_svms.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svms.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svms.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_creating_svms.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/task_creating_svms.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/task_creating_svms.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/task_creating_svms.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4808,32 +4800,37 @@
 <p>根磁碟區的安全樣式</p>
 </li>
 <li>
-<p>根Aggregate任何SVM的預設語言設定為C.utf-8。</p>
+<p>根Aggregate</p>
+<div class="paragraph">
+<p>任何SVM的預設語言設定為C.utf-8。</p>
+</div>
 <div class="paragraph">
 <p>根據預設、會選取具有最大可用空間的Aggregate做為SVM根Volume的容器。根據選取的傳輸協定、會選取預設的安全樣式和根Aggregate。</p>
 </div>
 <div class="paragraph">
-<p>+如果您選取CIFS傳輸協定或CIFS傳輸協定與其他傳輸協定的組合、安全樣式會設為NTFS。如果您選取NFS、iSCSI、NVMe或FC/FCoE、或這些傳輸協定的組合、安全樣式會設為UNIX。</p>
+<p>如果您選取CIFS傳輸協定或CIFS傳輸協定與其他傳輸協定的組合、則安全樣式會設為NTFS。如果您選取NFS、iSCSI、NVMe或FC/FCoE、或這些傳輸協定的組合、安全樣式會設為UNIX。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-sm-classic/images/note.svg" alt="附註">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>NVMe不允許將傳輸協定結合使用。</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>在這個組態中、只會顯示叢集中包含的集合體。MetroCluster</p>
+</div>
 </li>
-</ol>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>NVMe不允許將傳輸協定結合使用。</p>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>+
-+ MetroCluster 在不含資源的組態中、只會顯示叢集中包含的集合體。</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
 <li>
 <p>指定DNS網域名稱和名稱伺服器IP位址、以設定DNS服務。</p>
 <div class="paragraph">
@@ -4841,7 +4838,7 @@
 </div>
 </li>
 <li>
-<p>設定資料LIF以使用傳輸協定存取資料時、請指定目標別名、子網路、以及每個節點的生命量。</p>
+<p>*選用：*當設定資料LIF以使用傳輸協定存取資料時、請指定目標別名、子網路、以及每個節點的生命量。</p>
 <div class="paragraph">
 <p>您可以選取「<strong>檢閱或修改lifs組態（進階設定）</strong>」核取方塊、以修改LIF中的連接埠集數量。</p>
 </div>
@@ -4850,16 +4847,16 @@
 </div>
 </li>
 <li>
-<p>提供SVM認證資料、讓SnapDrive SVM管理員啟用主機端應用程式、例如支援SVM SnapManager 管理員的功能。</p>
+<p><strong>選用：</strong> SnapDrive 提供SVM認證資料、讓SnapManager SVM管理員能夠使用主機端應用程式、例如：</p>
 </li>
 <li>
-<p>若為NVMe以外的傳輸協定、請按一下*建立新的SVM管理LIF *、然後為新的管理LIF指定連接埠集和IP位址、無論是否有子網路。</p>
+<p><strong>選用：*若為NVMe以外的傳輸協定、請按一下</strong>「Create a new LIF for SVM management *（為SVM管理建立新的LIF）」、然後為新的管理LIF指定連接埠集和IP位址（不論是否有子網路）。</p>
 <div class="paragraph">
 <p>對於CIFS和NFS傳輸協定、資料生命量預設具有管理存取權。只有在必要時、您才必須建立新的管理LIF。對於iSCSI和FC、需要SVM管理LIF、因為資料傳輸協定和管理傳輸協定無法共用相同的LIF。</p>
 </div>
 </li>
 <li>
-<p>對於NVMe傳輸協定、請從ONTAP SVM設定精靈的第二頁*設定NVMe傳輸協定*、為每個節點至少設定一個LIF</p>
+<p><strong>選用：*適用於NVMe傳輸協定、從ONTAP 支援支援支援功能的9.5開始、在SVM設定精靈的第二頁上、為每個節點設定至少一個LIF：*設定NVMe傳輸協定。</strong></p>
 <div class="paragraph">
 <p>您必須為HA配對中的每個節點至少設定一個LIF。您也可以為每個節點指定兩個生命期。按一下「設定」圖示、在一或兩個LIF組態之間切換。</p>
 </div>
@@ -5031,4 +5028,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

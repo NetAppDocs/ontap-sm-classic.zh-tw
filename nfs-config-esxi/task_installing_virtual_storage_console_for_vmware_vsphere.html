@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4699,7 +4691,7 @@
 </p>
 
 <div class="paragraph lead">
-<p>可自動執行與ESXi主機搭配使用儲存設備所需的許多組態和資源配置工作。是vCenter Server的外掛程式。</p>
+<p>虛擬儲存主控台可自動化許多與ESXi主機搭配使用儲存設備所需的組態和資源配置工作。是vCenter Server的外掛程式。</p>
 </div>
 <div class="paragraph">
 <p>您必須擁有vCenter Server上用於管理ESXi主機的管理員認證。</p>
@@ -4708,7 +4700,7 @@
 <div class="title">關於這項工作</div>
 <ul>
 <li>
-<p>安裝為虛擬應用裝置、包括虛擬儲存主控台、儲存感知（VASA）供應商的vStorage API、以及VMware vSphere功能的儲存複寫介面卡（SRA）。</p>
+<p>虛擬儲存主控台是以虛擬應用裝置的形式安裝、其中包括虛擬儲存主控台、適用於儲存感知（VASA）供應商的vStorage API、以及適用於VMware vSphere功能的儲存複寫介面卡（SRA）。</p>
 </li>
 </ul>
 </div>
@@ -4716,13 +4708,13 @@
 <div class="title">步驟</div>
 <ol class="arabic">
 <li>
-<p>下載您的組態所支援的版本、如工具所示。</p>
+<p>下載您的組態所支援的版本、如互通性對照表工具所示。</p>
 <div class="paragraph">
 <p><a href="https://mysupport.netapp.com/site/global/dashboard">"NetApp支援"</a></p>
 </div>
 </li>
 <li>
-<p>部署虛擬應用裝置、並依照_部署與設定_中的步驟進行設定。</p>
+<p>部署虛擬應用裝置、並依照部署與設定指南_中的步驟進行設定。</p>
 </li>
 </ol>
 </div>
@@ -4872,4 +4864,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

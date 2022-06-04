@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-15 21:47:11 +0000">05/15/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4832,14 +4824,14 @@
 </div>
 </li>
 <li>
-<p>修改Aggregate的RAID組態：</p>
+<p>*選用：*修改Aggregate的RAID組態：</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
 <p>按一下 * 變更 * 。</p>
 </li>
 <li>
-<p>在變更RAID組態對話方塊中、指定RAID類型和RAID群組大小。</p>
+<p>在「<strong>變更RAID組態</strong>」對話方塊中、指定RAID類型和RAID群組大小。</p>
 <div class="paragraph">
 <p>共享磁碟可支援RAID DP 兩種RAID類型：功能區和RAID-TEC 功能區。</p>
 </div>
@@ -5075,7 +5067,7 @@
 </div>
 </li>
 <li>
-<p>修改Aggregate的RAID組態：</p>
+<p>*選用：*修改Aggregate的RAID組態：</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
@@ -5117,7 +5109,7 @@
 </div>
 </li>
 <li>
-<p>如果要鏡射集合體、請選取*鏡射此集合體*核取方塊。</p>
+<p>*選用：*如果您要鏡射集合體、請選取*鏡射此集合體*核取方塊。</p>
 <div class="paragraph">
 <p>對於不鏡射的組態、建立無鏡射的集合體受到限制。MetroCluster因此、根據預設MetroCluster 、鏡射選項會啟用以供各種不完整的組態使用。</p>
 </div>
@@ -5248,7 +5240,7 @@
 </div>
 </li>
 <li>
-<p>修改Aggregate的RAID組態：</p>
+<p>*選用：*修改Aggregate的RAID組態：</p>
 <div class="olist lowerroman">
 <ol class="lowerroman" type="i">
 <li>
@@ -5431,4 +5423,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

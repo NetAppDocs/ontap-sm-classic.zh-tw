@@ -27,9 +27,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/concept_adding_nas_access_to_existing_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/concept_adding_nas_access_to_existing_svm.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -41,7 +41,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/concept_adding_nas_access_to_existing_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/concept_adding_nas_access_to_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -55,14 +55,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -125,7 +125,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/concept_cifs_nfs_configuration_workflow.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/concept_cifs_nfs_configuration_workflow.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -139,7 +139,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/concept_cifs_nfs_configuration_workflow.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/concept_cifs_nfs_configuration_workflow.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -176,7 +176,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_cluster_peers.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -281,7 +281,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_efficiency_policies.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -302,7 +302,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_export_policies.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -314,14 +314,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/concept_fc_configuration_workflow.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/concept_fc_configuration_workflow.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/concept_fc_configuration_workflow.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/concept_fc_configuration_workflow.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -538,14 +538,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/concept_iscsi_configuration_provisioning_workflow.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/concept_iscsi_configuration_provisioning_workflow.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/concept_iscsi_configuration_provisioning_workflow.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/concept_iscsi_configuration_provisioning_workflow.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -687,7 +687,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_managing_network.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -757,14 +757,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_namespace.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_network_interfaces.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -813,7 +813,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_protection_policies.html</loc>
       
-      <lastmod>2022-05-06T22:15:43+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -855,7 +855,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_quotas.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -925,7 +925,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_service_processors.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -981,7 +981,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_shares.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -1016,7 +1016,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_snapshot_policies.html</loc>
       
-      <lastmod>2022-05-10T14:38:10+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -1086,7 +1086,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_svm_relationships.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -1100,7 +1100,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_system_alerts.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -1392,7 +1392,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/generic_machine_translation_disclaimer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/generic_machine_translation_disclaimer.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1400,6 +1407,34 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/generic_machine_translation_disclaimer.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1420,20 +1455,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/generic_machine_translation_disclaimer.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/generic_machine_translation_disclaimer.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/generic_machine_translation_disclaimer.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -1441,14 +1462,28 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/generic_machine_translation_disclaimer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/generic_machine_translation_disclaimer.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/generic_machine_translation_disclaimer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/generic_machine_translation_disclaimer.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/generic_machine_translation_disclaimer.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1476,21 +1511,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/generic_machine_translation_disclaimer.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/generic_machine_translation_disclaimer.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/generic_machine_translation_disclaimer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/generic_machine_translation_disclaimer.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1504,28 +1525,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/generic_machine_translation_disclaimer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/generic_machine_translation_disclaimer.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/generic_machine_translation_disclaimer.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1533,6 +1540,34 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1553,20 +1588,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -1574,16 +1595,30 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/</loc>
+      
+      <lastmod>2022-05-19T17:46:19+00:00</lastmod>
       
     </url>
   
@@ -1609,21 +1644,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/</loc>
-      
-      <lastmod>2022-05-19T17:46:19+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1631,27 +1652,6 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1735,51 +1735,51 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_completing_iscsi_configuration_worksheet.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/reference_completing_iscsi_configuration_worksheet.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/reference_completing_iscsi_configuration_worksheet.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_completing_iscsi_configuration_worksheet.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_completing_iscsi_configuration_worksheet.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/reference_completing_iscsi_configuration_worksheet.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/reference_completing_iscsi_configuration_worksheet.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_completing_iscsi_configuration_worksheet.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_completing_iscsi_configuration_worksheet.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/reference_completing_nfs_configuration_worksheet.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -1798,7 +1798,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_copyright.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_copyright.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1806,6 +1813,34 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_copyright.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1826,20 +1861,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/reference_copyright.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_copyright.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/reference_copyright.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -1847,14 +1868,28 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_copyright.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/reference_copyright.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_copyright.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/reference_copyright.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_copyright.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1882,21 +1917,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_copyright.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_copyright.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_copyright.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_copyright.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1910,28 +1931,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/reference_copyright.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_copyright.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/reference_copyright.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_copyright_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1939,6 +1946,34 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/reference_copyright_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_copyright_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/reference_copyright_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_copyright_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -1959,20 +1994,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -1980,14 +2001,28 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_copyright_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_copyright_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_copyright_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/reference_copyright_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2015,21 +2050,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_copyright_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2037,27 +2058,6 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_copyright_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/reference_copyright_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2227,7 +2227,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_luns_window.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -2332,7 +2332,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_protection_window.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -2463,7 +2463,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2471,6 +2478,34 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2491,20 +2526,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -2512,14 +2533,28 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/peering/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/reference_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/reference_trademark.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2547,21 +2582,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_trademark.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2569,27 +2590,6 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_trademark.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/reference_trademark.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2631,7 +2631,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_where_to_find_additional_information.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_where_to_find_additional_information.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_where_to_find_additional_information.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2645,7 +2652,28 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_where_to_find_additional_information.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/reference_where_to_find_additional_information.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-restore-snapvault/reference_where_to_find_additional_information.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/reference_where_to_find_additional_information.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2659,14 +2687,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/snmp-config/reference_where_to_find_additional_information.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/expansion/reference_where_to_find_additional_information.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_where_to_find_additional_information.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2687,28 +2708,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-backup-snapvault/reference_where_to_find_additional_information.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/reference_where_to_find_additional_information.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/reference_where_to_find_additional_information.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/reference_where_to_find_additional_information.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -2738,7 +2738,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic//search.html</loc>
       
-      <lastmod>2022-06-01T02:24:22+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:46+00:00</lastmod>
       
     </url>
   
@@ -2752,21 +2752,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_aborting_mirror_vault_relationships.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_aborting_vault_relationships.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_accessing_cluster_by_using_system_manager_brower_based_gui.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -2780,7 +2780,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_accessing_cluster_using_system_manager.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -2815,7 +2815,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_adding_capacity_disks.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3053,14 +3053,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_assigning_luns_to_storage_qos.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_assigning_volumes_to_storage_qos.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3247,14 +3247,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_configuring_access_to_existing_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_configuring_access_to_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_configuring_access_to_existing_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_configuring_access_to_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3277,7 +3277,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_cifs_nfs_protocols_on_svms.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3289,16 +3289,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_dm_multipath.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_dm_multipath.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_dm_multipath.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3333,7 +3333,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_fc_fcoe_protocol_on_svms.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3352,6 +3352,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -3359,7 +3366,21 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3373,42 +3394,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_configuring_iscsi_fc_creating_lun_on_existing_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_iscsi_protocol_on_svms.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_configuring_ldap_existing_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_configuring_ldap_new_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3422,7 +3415,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_configuring_ldap_new_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3436,9 +3429,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_managing_cloud_tiers.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_configuring_logical_volumes_on_multipath_devices_creating_file_system.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_managing_cloud_tiers.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3499,14 +3499,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_configuring_verifying_client_access_new_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_configuring_verifying_client_access_new_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_configuring_verifying_client_access_new_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_configuring_verifying_client_access_new_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3527,7 +3527,28 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_aggregate.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/task_creating_aggregate.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_aggregate.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_aggregate.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3541,14 +3562,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_aggregate.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_aggregate.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_aggregate.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3569,28 +3583,14 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_aggregate.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_aggregate.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_aggregate.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_aggregate.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_aggregate.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3613,7 +3613,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_cluster.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3646,9 +3646,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_configuring_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_configuring_volume.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3660,9 +3660,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_configuring_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_configuring_volume.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3674,14 +3674,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_export_policy_for_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_export_policy_for_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_export_policy_for_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_export_policy_for_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3697,7 +3697,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexcache_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3711,7 +3711,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexclone_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3807,7 +3807,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_lun_its_containing_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_lun_its_containing_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3828,7 +3828,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_lun_its_containing_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_lun_its_containing_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3865,7 +3865,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_mirror_vault_relationship_from_source_svm.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3879,28 +3879,28 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_creating_new_nfs_enabled_svm.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_new_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_new_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_new_svm.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_new_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_new_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -3954,14 +3954,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_protocol_enabled_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_protocol_enabled_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_protocol_enabled_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_creating_protocol_enabled_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -3996,14 +3996,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_share_setting_its_permissions.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_share_setting_its_permissions.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_creating_share_setting_its_permissions.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_creating_share_setting_its_permissions.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -4012,7 +4012,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_snaplock_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4066,9 +4066,23 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/task_creating_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_svm.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4080,37 +4094,23 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svm.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_creating_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_creating_svm.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svm.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_creating_svm.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_creating_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4138,7 +4138,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svms.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4164,14 +4164,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_deciding_where_to_provision_new_volume.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_deciding_where_to_provision_new_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_deciding_where_to_provision_new_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -4185,7 +4178,21 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_deciding_where_to_provision_new_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_deciding_where_to_provision_new_volume.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_deciding_where_to_provision_new_volume.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_deciding_where_to_provision_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -4199,21 +4206,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_deciding_where_to_provision_volume.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_deciding_where_to_provision_volume.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_deciding_where_to_provision_volume.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_deciding_where_to_provision_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -4227,7 +4227,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_deciding_where_to_provision_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_deciding_where_to_provision_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -4530,14 +4530,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_deleting_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_deploying_netapp_nfs_plugin_for_vmware_vaai.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4549,13 +4549,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_discovering_new_disks.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_discovering_new_disks.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -4563,7 +4556,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_discovering_new_disks.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -4572,7 +4565,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_discovering_new_scsi_devices_dm_multipath_devices.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4635,7 +4635,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_data_protection_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4684,14 +4684,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_flexcache_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4775,14 +4775,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_mirror_relationships.html</loc>
       
-      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_mirror_vault_relationships.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -4950,7 +4950,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_vault_relationships.html</loc>
       
-      <lastmod>2022-05-28T03:15:51+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5116,14 +5116,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_initializing_formatting_lun.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_initializing_formatting_lun.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_initializing_formatting_lun.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_initializing_formatting_lun.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5165,13 +5165,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_installing_hba_utility_from_hba_vendor.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_installing_hba_utility_from_hba_vendor.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -5179,7 +5172,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_installing_hba_utility_from_hba_vendor.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5187,6 +5180,13 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_installing_linux_unified_host_utilities_optimizing_i_o_performance.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5216,19 +5216,19 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_installing_virtual_storage_console_for_vmware_vsphere.html</loc>
       
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_installing_windows_unified_host_utilities.html</loc>
+      
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_installing_windows_unified_host_utilities.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_installing_windows_unified_host_utilities.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5263,14 +5263,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_mapping_smb_server_dns_server.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_mapping_smb_server_dns_server.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_mapping_smb_server_dns_server.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_mapping_smb_server_dns_server.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5279,7 +5279,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_mapping_unix_windows_user_names.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5384,21 +5384,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_moving_flexvol_volumes_between_aggregates_or_nodes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_moving_luns.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/task_moving_volume_using_system_manager.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5417,14 +5417,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_opening_export_policy_svm_root_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_opening_export_policy_svm_root_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_opening_export_policy_svm_root_volume.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_opening_export_policy_svm_root_volume.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5461,7 +5461,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-move/task_planning_method_timing_volume_move.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5503,7 +5503,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_cache_by_adding_disks.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5524,7 +5524,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5573,7 +5573,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_provisioning_storage_through_aggregates.html</loc>
       
-      <lastmod>2022-05-15T21:47:11+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5620,13 +5620,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_record_wwpn_for_each_host_fc_port.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_record_wwpn_for_each_host_fc_port.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -5634,7 +5627,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_recording_iscsi_node_name.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_record_wwpn_for_each_host_fc_port.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5642,6 +5635,13 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_recording_iscsi_node_name.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_recording_iscsi_node_name.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -5741,21 +5741,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_mirror_relationship.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_mirror_vault_relationship.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_restoring_volume_vault_relationship.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5916,14 +5916,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-prep/task_setting_up_destination_svm_for_data_access.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_network.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5944,14 +5944,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_peering.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_saml_authentication.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5965,14 +5965,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_specifying_advanced_options_for_flexcache_volume.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_specifying_advanced_options_for_flexgroup_volume.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -5991,16 +5991,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_starting_iscsi_sessions_with_target.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_starting_iscsi_sessions_with_target.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_starting_iscsi_sessions_with_target.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_starting_iscsi_sessions_with_target.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -6098,7 +6098,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_tracing_file_access_to_diagnose_access_errors_on_svms.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -6131,14 +6131,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_updating_hba_driver_firmware_bios.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_updating_hba_driver_firmware_bios.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_updating_hba_driver_firmware_bios.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_updating_hba_driver_firmware_bios.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6196,7 +6196,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/volume-disaster-recovery/task_updating_source_volume.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -6273,19 +6273,19 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-esxi/task_verifying_host_can_write_to_read_from_lun.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_host_can_write_to_read_from_lun.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_iscsi_is_running_on_existing_vserver.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_iscsi_is_running_on_existing_vserver.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6299,7 +6299,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_iscsi_is_running_on_existing_vserver.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_iscsi_is_running_on_existing_vserver.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6320,14 +6320,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_verifying_nfs_access_from_unix_administration_host.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nfs-config/task_verifying_nfs_access_from_unix_administration_host.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_verifying_nfs_access_from_unix_administration_host.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6348,14 +6348,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_verifying_smb_client_access.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_verifying_smb_client_access.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/smb-config/task_verifying_smb_client_access.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/nas-multiprotocol-config/task_verifying_smb_client_access.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6383,13 +6383,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_fc_service_is_running_on_existing_svm.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_verifying_that_fc_service_is_running_on_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
@@ -6397,7 +6390,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_fc_service_is_running_on_existing_svm.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6406,19 +6399,33 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_host_can_write_to_read_fom_lun.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_that_host_can_write_to_read_from_lun.html</loc>
+      
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_verifying_that_host_can_write_to_read_from_lun.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_that_host_can_write_to_read_from_lun.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6432,21 +6439,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
-      
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
+      
+      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-esxi/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6460,7 +6460,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/iscsi-config-windows/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_verifying_that_iscsi_fc_configuration_is_supported.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
@@ -6504,7 +6504,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_viewing_flexcache_volume_information.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
       
     </url>
   
@@ -6600,14 +6600,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_zoning_fc_switches_by_host_lif_wwpns.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_zoning_fc_switches_by_host_lif_wwpns.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-windows/task_zoning_fc_switches_by_host_lif_wwpns.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/fc-config-rhel/task_zoning_fc_switches_by_host_lif_wwpns.html</loc>
       
       <lastmod>2022-05-03T06:14:45+00:00</lastmod>
       

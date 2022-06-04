@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/task_editing_flexgroup_volumes.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4733,13 +4725,13 @@
 <p>選取FlexGroup 您要修改的「流通量」、然後按一下「<strong>編輯</strong>」。</p>
 </li>
 <li>
-<p>如果您要重新命名FlexGroup 此等磁碟區、請在*名稱*欄位中輸入新名稱。</p>
+<p>*選用：*如果您想要重新命名FlexGroup 此功能、請在*名稱*欄位中輸入新名稱。</p>
 <div class="paragraph">
 <p>從System Manager 9.6開始、您也可以重新命名FlexGroup RAID-DP Volume。</p>
 </div>
 </li>
 <li>
-<p>啟用「<strong>加密</strong>」選項以啟用磁碟區的加密。</p>
+<p>*選用：*啟用*加密*選項以啟用磁碟區加密。</p>
 <div class="paragraph">
 <p>此選項僅在您已啟用Volume Encryption授權、且對應的平台支援加密時可用。</p>
 </div>
@@ -4748,7 +4740,7 @@
 <p>指定Snapshot複本保留的百分比。</p>
 </li>
 <li>
-<p>按一下 <span class="image"><img src="../media/advanced_options.gif" alt=""></span> 可修改FlexGroup 聲音恢復功能的設定。請參閱 <a href="task_specifying_advanced_options_for_flexgroup_volume.md#GUID-021C533F-BBA1-41A9-A191-DE223A158B4B">"指定FlexGroup 適用於某個聲音區的進階選項"</a>。</p>
+<p>*選填：*按一下 <span class="image"><img src="../media/advanced_options.gif" alt=""></span> 可修改FlexGroup 聲音恢復功能的設定。請參閱 <a href="task_specifying_advanced_options_for_flexgroup_volume.md#GUID-021C533F-BBA1-41A9-A191-DE223A158B4B">"指定FlexGroup 適用於某個聲音區的進階選項"</a>。</p>
 </li>
 <li>
 <p>指定FlexGroup 您想要調整的大小以調整此等大小。</p>
@@ -4927,4 +4919,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>

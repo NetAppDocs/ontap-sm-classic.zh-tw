@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-sm-classic/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/reference_protection_window.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/reference_protection_window.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/reference_protection_window.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/reference_protection_window.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_protection_window.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/reference_protection_window.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/reference_protection_window.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-sm-classic/online-help-96-97/reference_protection_window.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-sm-classic/online-help-96-97/reference_protection_window.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-sm-classic/online-help-96-97/reference_protection_window.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3463,7 +3455,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-sm-classic/index.html">
         System Manager經典文件
       </a></li><li class="subfolders "><a href="#">
@@ -4691,7 +4683,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-06-04 16:25:28 +0000">06/04/2022</time>
     
   
 
@@ -4850,78 +4842,6 @@
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><strong>相關資訊</strong></p>
-</div>
-<div class="paragraph">
-<p><a href="task_creating_mirror_relationship_from_source_volume.html">從來源SVM建立鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_creating_mirror_relationship_from_destination_svm.html">從目的地SVM建立鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_deleting_mirror_relationships.html">刪除鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_editing_mirror_relationships.html">編輯鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_initializing_mirror_relationships.html">正在初始化鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_updating_mirror_relationships.html">正在更新鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_quiescing_mirror_relationships.html">靜止鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_resuming_mirror_relationships.html">恢復鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_breaking_snapmirror_relationships.html">打破SnapMirror關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_resynchronizing_mirror_relationships.html">重新同步鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_reverse_resynchronizing_snapmirror_relationships.html">反轉重新同步鏡射關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_aborting_mirror_relationships.html">正在中止鏡射傳輸</a></p>
-</div>
-<div class="paragraph">
-<p><a href="concept_what_snapvault_backup_is.html">什麼是不支援備份SnapVault</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_creating_vault_relationship_from_source_svm.html">從來源SVM建立資料保存關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_creating_vault_relationship_from_destination_svm.html">從目的地SVM建立資料保險箱關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_deleting_vault_relationships.html">刪除資料保險箱關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_editing_vault_relationships.html">編輯資料保險箱關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_initializing_vault_relationships.html">正在初始化資料保險箱關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_updating_vault_relationships.html">更新資料保險箱關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_quiescing_vault_relationships.html">靜止保存庫關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_resuming_vault_relationships.html">恢復保存關係</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_aborting_vault_relationships.html">中止Snapshot複本傳輸</a></p>
-</div>
-<div class="paragraph">
-<p><a href="task_restoring_volume_vault_relationship.html">還原資料保險箱關係中的磁碟區</a></p>
-</div>
 </div>
 </div>
 
@@ -5070,4 +4990,5 @@
     </script>
     <script src='/zh-tw/ontap-sm-classic/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-sm-classic/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-sm-classic/js/sidebar.js'></script>
   </body></html>
