@@ -617,7 +617,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/concept_ldap.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -2738,7 +2738,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic//search.html</loc>
       
-      <lastmod>2022-06-04T16:25:46+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:48+00:00</lastmod>
       
     </url>
   
@@ -3277,7 +3277,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_cifs_nfs_protocols_on_svms.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -3333,7 +3333,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_fc_fcoe_protocol_on_svms.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -3396,7 +3396,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_iscsi_protocol_on_svms.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -3459,7 +3459,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_configuring_nvme_protocol_on_svms.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -3725,7 +3725,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_flexvol_volumes.html</loc>
       
-      <lastmod>2022-05-03T06:14:45+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -4012,7 +4012,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_snaplock_volumes.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -4138,7 +4138,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_creating_svms.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -4236,7 +4236,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_delegating_administration_to_svm_administrators.html</loc>
       
-      <lastmod>2022-05-11T22:27:34+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
@@ -5944,14 +5944,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_peering.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/ontap-sm-classic/online-help-96-97/task_setting_up_saml_authentication.html</loc>
       
-      <lastmod>2022-06-04T16:25:28+00:00</lastmod>
+      <lastmod>2022-06-10T23:20:20+00:00</lastmod>
       
     </url>
   
