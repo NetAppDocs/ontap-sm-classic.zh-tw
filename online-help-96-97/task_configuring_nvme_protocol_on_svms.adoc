@@ -11,7 +11,7 @@ summary: 您可以使用System Manager在儲存虛擬機器（SVM）上設定NVM
 
 
 [role="lead"]
-您可以使用System Manager經典版（ONTAP 以更新版本供應）、在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。
+您可以使用ONTAP 經典版的《支援靜態系統管理程式》ONTAP （僅適用於支援更新版本的版本）、在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。
 
 採用NVMe的SVM不應有任何其他傳輸協定。如果您選取NVMe、其餘的傳輸協定將會停用。您也可以在建立SVM時設定NVMe。
 

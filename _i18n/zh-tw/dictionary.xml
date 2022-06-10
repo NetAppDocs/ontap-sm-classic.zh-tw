@@ -2823,7 +2823,6 @@
   <block id="26dcde329e179a3219fbaa3d78da4bf7" category="list-text">在*其他*索引標籤中、選取傳送電子郵件訊息的傳輸傳輸協定、然後指定HTTP或HTTPS Proxy伺服器詳細資料。</block>
   <block id="a6de5df70a9341b2c519603388ce9ccf" category="summary">您可以在SAN主機的儲存虛擬機器（SVM）上設定FC傳輸協定和FCoE傳輸協定。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。根據您的需求、您可以使用System Manager來設定FC傳輸協定或FCoE傳輸協定、或同時設定這兩種傳輸協定。</block>
   <block id="38fd3ecf8201750e55c0c5bce14fd4da" category="doc">使用System Manager（ONTAP 系統管理程式）在SVM上設定FC傳輸協定和FCoE傳輸協定（更新版本）-更新版本</block>
-  <block id="6add29da08c990d29ef923f9f502fb2f" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本的版本供應）、在SAN主機的儲存虛擬機器（SVM）上設定FC傳輸協定和FCoE傳輸協定。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。根據您的需求、您可以使用System Manager來設定FC傳輸協定或FCoE傳輸協定、或同時設定這兩種傳輸協定。</block>
   <block id="9d27060c3a62d44d72280d0d2d41c901" category="list-text">必須在叢集上啟用FCP授權。</block>
   <block id="96222e8bf67f5da9b7b2f526d964507c" category="list-text">叢集中的所有節點都必須正常運作。</block>
   <block id="dc979ee23207688dcfeafb28a197e5a5" category="list-text">每個節點至少必須針對每個傳輸協定（FC和FCoE）設定兩個正確的連接埠。</block>
@@ -2982,7 +2981,6 @@
   <block id="86b7b4a4408505d435dca7c563f4565a" category="paragraph">如果您登入站台B並檢視MetroCluster 「還原切換和切換作業」視窗、則站台A的狀態會顯示為「'inactive」、站台B的狀態會顯示為「'WITVERCHO模式」。</block>
   <block id="9e007cde0294836d49fce82a0770d6fa" category="summary">設定對等關係包括在每個節點上建立叢集間邏輯介面（LIF）、建立叢集對等關係、以及建立SVM對等關係。</block>
   <block id="829111bc2f9e8438581c99c65c273ac5" category="doc">使用System Manager設定對等關係- ONTAP 不含更新版本</block>
-  <block id="1a73142d9e2244e70e8bbf958894302c" category="paragraph">您可以使用System Manager經典版（ONTAP 適用於更新版本的版本）來設定對等關係。設定對等關係包括在每個節點上建立叢集間邏輯介面（LIF）、建立叢集對等關係、以及建立SVM對等關係。</block>
   <block id="6af8acc69bcdc16b7f8e5adeec4d8b16" category="image-alt">對等工作流程</block>
   <block id="6b6ad8c82295777d87897d52b0fa88f0" category="paragraph">在設定叢集對等之前、您應該確認連線能力、連接埠、IP位址、子網路、防火牆、 並符合叢集命名需求。</block>
   <block id="a8416e889da6102accaf0c0db08552a7" category="list-text">子網路必須屬於廣播網域、其中包含用於叢集間通訊的連接埠。</block>
@@ -4461,7 +4459,6 @@
   <block id="9be33596938d5c4bd6c50efc04b28599" category="paragraph"><block ref="9be33596938d5c4bd6c50efc04b28599" category="inline-xref-macro-rx"></block></block>
   <block id="0c4d65385b76402fd04f4bb365c0b7c4" category="summary">您可以使用System Manager來設定集中維護使用者資訊的LDAP伺服器。</block>
   <block id="b10038089b0aa2450f7c5e88c187484f" category="doc">使用System Manager（ONTAP 系統管理程式）設定LDAP伺服器-更新版本</block>
-  <block id="1cbeaf1a546d95c9bc9037f69d4fcf08" category="paragraph">您可以使用ONTAP 經典版的《經典版》（9.7及更早版本）來設定集中維護使用者資訊的LDAP伺服器。</block>
   <block id="80ff3003b0d015abbf6e414bd59e964f" category="section-title">檢視LDAP用戶端組態</block>
   <block id="3dac87b593dc154f886cb0c2d0370e8f" category="paragraph">您可以使用System Manager檢視為叢集中的儲存虛擬機器（SVM）設定的LDAP用戶端。</block>
   <block id="3d18a6c060bf36b73107820286a1079f" category="list-text">在*設定*窗格中、按一下* LDAP *。</block>
@@ -5652,7 +5649,6 @@
   <block id="107bea07d2bf29e67c0aa91b72728753" category="paragraph">顯示SNMP伺服器的安全樣式。</block>
   <block id="8a77abed1213af6411fba5a856d61cb7" category="summary">您可以FlexVol 使用System Manager中的「Create Volume」（建立Volume）對話方塊、為資料建立一個供應區。您必須永遠為資料建立獨立的磁碟區、而非將資料儲存在根磁碟區中。</block>
   <block id="489980c7967cf6ae840737bc9670c341" category="doc">利用FlexVol System Manager建立包含ONTAP 更新版本的功能</block>
-  <block id="b54401ea7e235c7d426b9bdeb475a430" category="paragraph">您可以FlexVol 使用System Manager經典版中的「Create Volume（建立Volume）」對話方塊（ONTAP 適用於更新版本的版本）、為資料建立一個供應的功能區。您必須永遠為資料建立獨立的磁碟區、而非將資料儲存在根磁碟區中。</block>
   <block id="03613a7e2942feef30e5ad9a790d3967" category="list-text">叢集必須包含非根Aggregate和儲存虛擬機器（SVM）。</block>
   <block id="be613547e66b582e6fd60dd5024bc3b2" category="list-text">如果您想要建立讀寫磁碟區、必須已設定SVM的傳輸協定、而且必須安裝SnapMirror授權或SnapVault Sf2授權。</block>
   <block id="acfa6e584e070ef28d553b50e86617fa" category="paragraph">如果您尚未設定傳輸協定、但已安裝其中任何一個授權、則只能建立資料保護（DP）磁碟區。</block>
@@ -5936,7 +5932,6 @@
   <block id="3d22824068cf84bbeec24424f27b95e4" category="paragraph">本機Windows群組設定會被修改、變更會顯示在*群組*索引標籤中。</block>
   <block id="4f02650b1c0ac5ab7ddd0acf9e184ece" category="summary">您可以使用System Manager在儲存虛擬機器（SVM）上設定CIFS和NFS傳輸協定、為NAS用戶端提供檔案層級的資料存取。若要啟用CIFS傳輸協定、您必須建立資料生命期和CIFS伺服器。若要啟用NFS傳輸協定、您可以指定NIS詳細資料和資料生命期。</block>
   <block id="70874cc3a4a9888ac212eaaf23b43c77" category="doc">使用System Manager（ONTAP 系統管理程式）在SVM上設定CIFS和NFS傳輸協定-支援更新版本的更新版本</block>
-  <block id="248f2ec6686f4fbce6771ddc5abc09d1" category="paragraph">您可以使用System Manager Classic（ONTAP 以更新版本供應）在儲存虛擬機器（SVM）上設定CIFS和NFS傳輸協定、為NAS用戶端提供檔案層級的資料存取。若要啟用CIFS傳輸協定、您必須建立資料生命期和CIFS伺服器。若要啟用NFS傳輸協定、您可以指定NIS詳細資料和資料生命期。</block>
   <block id="a6f39c85b7066c0925baac10bcded864" category="list-text">您要在SVM上設定或啟用的傳輸協定必須獲得授權。</block>
   <block id="39ff956239765ccbb6c470b771938340" category="paragraph">如果您要設定的傳輸協定未在SVM上啟用、您可以使用Edit Storage Virtual Machine視窗來啟用SVM的傳輸協定。</block>
   <block id="63907d113eab7f5b093b62d7306b5b85" category="list-text">您必須擁有Active Directory、組織單位和管理帳戶認證、才能設定CIFS傳輸協定。</block>
@@ -7404,7 +7399,6 @@
   <block id="7a18c18c21882b399dad21dedb5efcf9" category="paragraph">此選項已停用SnapLock 、適用於不完整的資料區。</block>
   <block id="558572778923af94dd9317779250b4d7" category="summary">您可以使用System Manager建立完整設定的儲存虛擬機器（SVM）、以便立即提供資料。叢集可以有一或多個SVM。</block>
   <block id="d8f8316f7f24f5a2514269ed1e587626" category="doc">使用System Manager建立SVM - ONTAP 支援S9.7及更早版本</block>
-  <block id="c9dec5a7f72136d2dbb54a45740dfc5f" category="paragraph">您可以使用System Manager經典版（ONTAP 適用於VMware 9.7及更早版本）來建立完整組態的儲存虛擬機器（SVM）、以便立即提供資料。叢集可以有一或多個SVM。</block>
   <block id="97b6840ff010e48892bca7bbf7b21b52" category="list-text">叢集必須在線上狀態中至少有一個非根Aggregate。</block>
   <block id="94ed53f430e438ef68f366b7b19fd300" category="list-text">Aggregate必須有足夠的空間用於SVM根磁碟區。</block>
   <block id="33040a84069497a322a8e46cdc5309a5" category="list-text">您必須設定並啟用NTP、以防止CIFS建立和驗證失敗、以同步整個叢集的時間。</block>
@@ -7562,7 +7556,6 @@
   <block id="18b560242d11820a90a52fd376616aae" category="list-text">「進階」會建立cron樣式的排程。</block>
   <block id="3340d42c69ec6f9068da0130e9ae58f5" category="summary">您可以使用System Manager來建立SnapLock 「不符合要求」的Volume或SnapLock 「不符合要求」的Enterprise Volume。建立磁碟區時、您也可以設定保留時間、並選擇是否要自動設定磁碟區中資料的WORM狀態。</block>
   <block id="94a185593edb330f99889ac7b7a02ae2" category="doc">利用SnapLock System Manager建立包含ONTAP 更新版本的功能</block>
-  <block id="b330e978f60c29cf1c89b88d9bd0de4c" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）來建立SnapLock 《不符合要求》（《不符合要求》）或SnapLock 《不符合要求》（《不符合要求》）。建立磁碟區時、您也可以設定保留時間、並選擇是否要自動設定磁碟區中資料的WORM狀態。</block>
   <block id="e86a7dc140194ce7912a9e0a4e52ae31" category="list-text">必須已安裝此功能。SnapLock</block>
   <block id="c26d7643e43e7e2dbab21af0cc34cac5" category="list-text">此資訊必須在線上。SnapLock</block>
   <block id="5d5d71c0b9b1e00337d6781c0ccfe4be" category="list-text">瀏覽並選取您要在其中建立磁碟區的儲存虛擬機器（SVM）。</block>
@@ -9109,14 +9102,10 @@
   <block id="f689d15a9acb85ee5a20447fbdc07cf4" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立、編輯及管理匯出原則。</block>
   <block id="c61b8028f650abffd119f84f09d17f74" category="doc">使用System Manager建立SVM - ONTAP 不含更新版本的更新版本</block>
   <block id="14d79d2eef1d80cd2470e785b15178f8" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來檢視、管理或刪除叢集或節點上安裝的任何軟體授權。</block>
-  <block id="071e9f0551cf1151fad07c37ea207e3b" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）、在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。</block>
-  <block id="74a9c6f7d15b41facbe48a228851099c" category="paragraph">您可以使用System Manager經典版（ONTAP 以更新版本供應）、在儲存虛擬機器（SVM）上設定iSCSI傳輸協定、以提供區塊層級的資料存取。您可以建立iSCSI生命期和連接埠集、然後將生命期新增至連接埠集。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。</block>
   <block id="2b80954c6a85fe8e039a494c6c625853" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於19、9.7及更早版本）來管理鏡射關係。您可以更新、建立、靜止、初始化、重新建立、 除了恢復靜止的鏡射關係之外、也可刪除及編輯鏡射關係。</block>
   <block id="f46cf6c1e84fb12f13b7c06207146a43" category="section-title">從目的地SVM建立鏡射關係</block>
   <block id="42ba35aabcb38bd0b0a5d5bc89d84095" category="paragraph">您可以使用System Manager從目的地儲存虛擬機器（SVM）建立鏡射關係、並將原則和排程指派給鏡射關係。鏡射複本可在來源磁碟區上的資料毀損或遺失時、快速提供資料。</block>
   <block id="25d48c749559d1d4de21242c0c742b97" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 可在更新版本的更新版本中使用）來建立及管理乙太網路連接埠。</block>
-  <block id="c0d6806b68a3d39f90734f6ab8a3f56a" category="paragraph">您可以使用ONTAP 經典版的支援功能（ONTAP 適用於支援支援支援支援的版本）來設定安全聲明標記語言（SAML）驗證。遠端使用者在登入System Manager之前、會先透過安全的身分識別供應商（IDP）進行驗證。</block>
-  <block id="f25e8077183eab2cecad23a8ec6c295a" category="paragraph">設定具備基本網路組態的功能性儲存虛擬機器（SVM）或SVM之後、您可以使用System Manager Classic（ONTAP 以版本9.7及更早版本提供）、選擇性地將SVM的管理委派給SVM系統管理員。</block>
   <block id="e92b960df6e994d41ee05b6df147afe7" category="doc">關於ONTAP System Manager中的名稱服務交換器組態ONTAP -更新版本</block>
   <block id="1d29c318268409714ed0dd949adf99ad" category="paragraph">經典版的《系統管理程式》（以更新版本提供）將名稱服務組態資訊儲存在表格中、表格相當於UNIX系統上的「/etc/nsswitch.conf」檔案。ONTAP ONTAP您必須瞭解表格的功能及ONTAP 其使用方式、以便根據環境適當設定。</block>
   <block id="ac92ac41cea62dfecd5b5dd772bfc78d" category="doc">使用System Manager（ONTAP 系統管理程式）管理本機Windows群組-不含更新版本</block>
@@ -9319,4 +9308,15 @@
   <block id="37d7a482fff3cbc78535db1d381fbc9d" category="list-text">重複步驟5b到5d、對應SVM上的所有網域和名稱。</block>
   <block id="57845f9417a55f7f873021142bcf4a81" category="list-text">*選用*：建立預設的Windows使用者：</block>
   <block id="13a6d31e838d141b884cf7c5460be9a0" category="list-text">*選用*：如果您希望使用者與預設值不同（即「pcuser'」使用者）、請設定預設UNIX使用者。</block>
+  <block id="7e1817ade72aa48bb92d7c2ab07e88a1" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來設定對等關係。設定對等關係包括在每個節點上建立叢集間邏輯介面（LIF）、建立叢集對等關係、以及建立SVM對等關係。</block>
+  <block id="f76cba510e0d09ec08269e30513d633c" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來製作SnapLock 《不符合要求》（《不符合要求》）或SnapLock 《不符合要求》（《不符合要求》）。建立磁碟區時、您也可以設定保留時間、並選擇是否要自動設定磁碟區中資料的WORM狀態。</block>
+  <block id="70bc55ce2414a074451b65164da8a3a6" category="paragraph">您可以使用ONTAP 經典版的《支援靜態系統管理程式》ONTAP （僅適用於支援更新版本的版本）、在儲存虛擬機器（SVM）上設定NVMe傳輸協定。然後您可以建立命名空間、並將其指派給NVMe子系統和主機。</block>
+  <block id="7c7a12cfc104ee779102d69cef857db6" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 以VMware 9.7及更早版本提供）來建立完整組態的儲存虛擬機器（SVM）、以便立即提供資料。叢集可以有一或多個SVM。</block>
+  <block id="4faac1209e2dd59059b4209f859ac88f" category="paragraph">您可以FlexVol 使用ONTAP 經典版的「Create Volume」（建立Volume）對話方塊（ONTAP 可在更新版本的更新版本中使用）、為資料建立一個「供應」功能區。您必須永遠為資料建立獨立的磁碟區、而非將資料儲存在根磁碟區中。</block>
+  <block id="bf6614668e8b55e90946e9509d4f0917" category="paragraph">您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來設定集中維護使用者資訊的LDAP伺服器。</block>
+  <block id="782f1156076101990b814a229110b078" category="paragraph">您可以使用ONTAP 經典版的支援功能（ONTAP 僅適用於支援支援的版本）來設定安全聲明標記語言（SAML）驗證。遠端使用者在登入System Manager之前、會先透過安全的身分識別供應商（IDP）進行驗證。</block>
+  <block id="ec2db670766e7c9e9f2e74dde2f934f4" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 適用於支援的版本為S9.7及更早版本）、在儲存虛擬機器（SVM）上設定iSCSI傳輸協定、以提供區塊層級的資料存取。您可以建立iSCSI生命期和連接埠集、然後將生命期新增至連接埠集。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。</block>
+  <block id="d73a1bbe7bd0149cca8c9fa64d7f58bc" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 僅適用於支援支援的版本）、在設定功能性儲存虛擬機器（SVM）或SVM（具備基本網路組態）之後、選擇性地將SVM的管理委派給SVM管理員。</block>
+  <block id="1e7c18dca5baf689eb77365e4897ed8b" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 以版本9.7及更早版本提供）、在SAN主機的儲存虛擬機器（SVM）上設定FC傳輸協定和FCoE傳輸協定。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。根據您的需求、您可以使用System Manager來設定FC傳輸協定或FCoE傳輸協定、或同時設定這兩種傳輸協定。</block>
+  <block id="b11a96e74a2cd810945103e98f648e14" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 適用於支援支援支援的版本）、在儲存虛擬機器（SVM）上設定CIFS和NFS傳輸協定、為NAS用戶端提供檔案層級的資料存取。若要啟用CIFS傳輸協定、您必須建立資料生命期和CIFS伺服器。若要啟用NFS傳輸協定、您可以指定NIS詳細資料和資料生命期。</block>
 </blocks>

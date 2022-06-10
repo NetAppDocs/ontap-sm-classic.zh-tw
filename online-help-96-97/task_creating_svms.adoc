@@ -11,7 +11,7 @@ summary: 您可以使用System Manager建立完整設定的儲存虛擬機器（
 
 
 [role="lead"]
-您可以使用System Manager經典版（ONTAP 適用於VMware 9.7及更早版本）來建立完整組態的儲存虛擬機器（SVM）、以便立即提供資料。叢集可以有一或多個SVM。
+您可以使用ONTAP 經典版的經典版（ONTAP 以VMware 9.7及更早版本提供）來建立完整組態的儲存虛擬機器（SVM）、以便立即提供資料。叢集可以有一或多個SVM。
 
 .開始之前
 * 叢集必須在線上狀態中至少有一個非根Aggregate。

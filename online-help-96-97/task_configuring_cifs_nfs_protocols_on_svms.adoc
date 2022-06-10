@@ -11,7 +11,7 @@ summary: 您可以使用System Manager在儲存虛擬機器（SVM）上設定CIF
 
 
 [role="lead"]
-您可以使用System Manager Classic（ONTAP 以更新版本供應）在儲存虛擬機器（SVM）上設定CIFS和NFS傳輸協定、為NAS用戶端提供檔案層級的資料存取。若要啟用CIFS傳輸協定、您必須建立資料生命期和CIFS伺服器。若要啟用NFS傳輸協定、您可以指定NIS詳細資料和資料生命期。
+您可以使用ONTAP 經典版的經典版（ONTAP 適用於支援支援支援的版本）、在儲存虛擬機器（SVM）上設定CIFS和NFS傳輸協定、為NAS用戶端提供檔案層級的資料存取。若要啟用CIFS傳輸協定、您必須建立資料生命期和CIFS伺服器。若要啟用NFS傳輸協定、您可以指定NIS詳細資料和資料生命期。
 
 .開始之前
 * 您要在SVM上設定或啟用的傳輸協定必須獲得授權。

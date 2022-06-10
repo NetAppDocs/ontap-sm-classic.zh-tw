@@ -11,7 +11,7 @@ summary: 您可以FlexVol 使用System Manager中的「Create Volume」（建立
 
 
 [role="lead"]
-您可以FlexVol 使用System Manager經典版中的「Create Volume（建立Volume）」對話方塊（ONTAP 適用於更新版本的版本）、為資料建立一個供應的功能區。您必須永遠為資料建立獨立的磁碟區、而非將資料儲存在根磁碟區中。
+您可以FlexVol 使用ONTAP 經典版的「Create Volume」（建立Volume）對話方塊（ONTAP 可在更新版本的更新版本中使用）、為資料建立一個「供應」功能區。您必須永遠為資料建立獨立的磁碟區、而非將資料儲存在根磁碟區中。
 
 .開始之前
 * 叢集必須包含非根Aggregate和儲存虛擬機器（SVM）。

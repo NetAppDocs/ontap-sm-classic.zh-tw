@@ -11,7 +11,7 @@ summary: 您可以使用System Manager來建立SnapLock 「不符合要求」的
 
 
 [role="lead"]
-您可以使用System Manager經典版（ONTAP 以更新版本供應）來建立SnapLock 《不符合要求》（《不符合要求》）或SnapLock 《不符合要求》（《不符合要求》）。建立磁碟區時、您也可以設定保留時間、並選擇是否要自動設定磁碟區中資料的WORM狀態。
+您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來製作SnapLock 《不符合要求》（《不符合要求》）或SnapLock 《不符合要求》（《不符合要求》）。建立磁碟區時、您也可以設定保留時間、並選擇是否要自動設定磁碟區中資料的WORM狀態。
 
 .開始之前
 * 必須已安裝此功能。SnapLock
