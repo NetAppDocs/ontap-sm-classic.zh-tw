@@ -8258,7 +8258,6 @@
   <block id="cd02a15c2ff4cd97d34b98752d8aed1e" category="summary">您可以使用System Manager中的Edit Date and Time（編輯日期和時間）對話方塊、手動設定或修改叢集的時區。您也可以將時間伺服器新增至叢集。</block>
   <block id="aba0d4534cb127db2509180202369c03" category="doc">使用System Manager ONTAP -更新版本設定叢集的時區</block>
   <block id="d8c48a42a81a8438050a9c7c83cafecc" category="paragraph">您可以使用ONTAP 經典版的「編輯日期與時間」對話方塊（ONTAP 適用於更新版本的更新版本）、手動設定或修改叢集的時區。您也可以將時間伺服器新增至叢集。</block>
-  <block id="10c5d6ad0d54ae7c8ed07a934067e792" category="paragraph">叢集上一律會啟用網路時間傳輸協定（NTP）。您可以聯絡技術支援部門來停用NTP。不過、不建議停用NTP。</block>
   <block id="e8ac7958e6a329c33e95e74027d4c0b3" category="paragraph">您可以在站台新增NTP伺服器的IP位址。此伺服器用於同步整個叢集的時間。</block>
   <block id="aa98c5b60ca5704610d91cae957e1ddd" category="paragraph">您可以為時間伺服器指定一個IPv4位址或IPv6位址。</block>
   <block id="0916783674796b8751f8361a859412c1" category="list-text">在「*設定*」面板中、按一下「*日期與時間*」。</block>
@@ -8514,7 +8513,6 @@
   <block id="567963ddc5cf22aa2cb758899fa2fb58" category="list-text">選取您要建立鏡射與資料保險箱關聯的磁碟區、然後按一下*「更多動作」*&gt;*「保護」*。</block>
   <block id="4746723048665ff6ddc5ddea6ef9dfd3" category="summary">如果您在使用System Manager時遇到任何問題、可以將記錄檔傳送給技術支援部門、以協助疑難排解問題。System Manager記錄檔與ONTAP 還原記錄檔位於mlog目錄中。</block>
   <block id="8e4cfdd5f2a44a82c383c0562730105b" category="doc">檢視System Manager記錄檔- ONTAP 不包括更新版本的更新版本</block>
-  <block id="e32d35a30d776517222a8cb49dfde78b" category="paragraph">如果您在使用ONTAP 經典版的經典版《經典版》時遇到任何問題（ONTAP 可在VMware®上找到）、您可以將記錄檔傳送至技術支援部門、以協助疑難排解問題。System Manager記錄檔與ONTAP 還原記錄檔位於「mlog」目錄中。</block>
   <block id="6e1c5444e96f0a37fca4472284a0e818" category="list-text">識別裝載叢集管理LIF的節點。</block>
   <block id="09941825a6402233683e2b54ac613476" category="list-text">在網頁瀏覽器中輸入下列URL：「+https://cluster-mgmt-LIF/spi+`」</block>
   <block id="8488024a8aa12e29797c0bd3283035c7" category="paragraph">「叢集管理- LIF」是叢集管理LIF的IP位址。</block>
@@ -9319,4 +9317,6 @@
   <block id="1e7c18dca5baf689eb77365e4897ed8b" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 以版本9.7及更早版本提供）、在SAN主機的儲存虛擬機器（SVM）上設定FC傳輸協定和FCoE傳輸協定。LIF是在最適合的介面卡上建立、並指派給連接埠集、以確保資料路徑備援。根據您的需求、您可以使用System Manager來設定FC傳輸協定或FCoE傳輸協定、或同時設定這兩種傳輸協定。</block>
   <block id="b11a96e74a2cd810945103e98f648e14" category="paragraph">您可以使用ONTAP 經典版的經典版（ONTAP 適用於支援支援支援的版本）、在儲存虛擬機器（SVM）上設定CIFS和NFS傳輸協定、為NAS用戶端提供檔案層級的資料存取。若要啟用CIFS傳輸協定、您必須建立資料生命期和CIFS伺服器。若要啟用NFS傳輸協定、您可以指定NIS詳細資料和資料生命期。</block>
   <block id="7d5188aa4e5eb813646e2fb2a52c4e9f" category="paragraph">「LUN對應移除報告節點-遠端節點-vserver vserver_name -path LUN_path -igroup igroup_name」</block>
+  <block id="56ee085ee9b22a4b36ce3b7988853da3" category="paragraph">如果您在使用ONTAP 經典版的《支援》時遇到任何問題（ONTAP 適用於VMware 9.7及更早版本）、您可以傳送記錄檔來協助疑難排解問題（如NetApp Support所指示）。System Manager記錄檔與ONTAP 還原記錄檔位於「mlog」目錄中。</block>
+  <block id="1124479f0b36cfdc0c874c70e2e87d7f" category="paragraph">叢集上一律會啟用網路時間傳輸協定（NTP）。您可以停用NTP、但不建議停用NTP。</block>
 </blocks>

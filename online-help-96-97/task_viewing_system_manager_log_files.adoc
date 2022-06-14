@@ -11,7 +11,7 @@ summary: 如果您在使用System Manager時遇到任何問題、可以將記錄
 
 
 [role="lead"]
-如果您在使用ONTAP 經典版的經典版《經典版》時遇到任何問題（ONTAP 可在VMware®上找到）、您可以將記錄檔傳送至技術支援部門、以協助疑難排解問題。System Manager記錄檔與ONTAP 還原記錄檔位於「mlog」目錄中。
+如果您在使用ONTAP 經典版的《支援》時遇到任何問題（ONTAP 適用於VMware 9.7及更早版本）、您可以傳送記錄檔來協助疑難排解問題（如NetApp Support所指示）。System Manager記錄檔與ONTAP 還原記錄檔位於「mlog」目錄中。
 
 .步驟
 . 識別裝載叢集管理LIF的節點。
