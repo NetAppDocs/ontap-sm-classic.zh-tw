@@ -28,7 +28,7 @@ summary: 您可以新增LUN報告節點、以協助維護最佳化的LUN路徑�
 . 新增MPIO組態的新路徑。
 . 從報告節點清單中移除先前的LUN擁有者及其合作夥伴節點：
 +
-「LUN對應移除報告節點遠端節點-vserver vserver_name -path LUN_path -igroup igroup_name」
+「LUN對應移除報告節點-遠端節點-vserver vserver_name -path LUN_path -igroup igroup_name」
 
 . 重新掃描主機以驗證是否移除舊路徑。
 +
