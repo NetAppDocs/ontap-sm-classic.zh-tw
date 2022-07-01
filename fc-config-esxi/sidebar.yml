@@ -36,5 +36,3 @@ entries:
     url: "/fc-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html"
   - title: 驗證主機是否可以寫入及讀取LUN
     url: "/fc-config-esxi/task_verifying_host_can_write_to_read_from_lun.html"
-- title: 何處可找到其他資訊
-  url: "/fc-config-esxi/reference_where_to_find_additional_information.html"

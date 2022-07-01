@@ -752,22 +752,8 @@
   <block id="71c57e822d593632e0c60fec0e41dcac" category="list-text">如果站台使用NIS進行名稱服務或名稱對應、請指定NIS伺服器的網域和IP位址、然後選取要新增NIS名稱服務來源的資料庫類型。</block>
   <block id="ac41ba9d9f09b87367d432717cc6c194" category="paragraph">如果NIS服務無法使用、請勿嘗試進行設定。不當設定的NIS服務可能會導致資料存放區存取問題。</block>
   <block id="5bc7ef17ab3e5af4b837a0148ebd826b" category="list-text">按一下*提交並關閉*、然後按一下*確定*。</block>
-  <block id="f8fad6712cc74aaf58696fe5741fcf76" category="summary">還有其他文件可協助您深入瞭解FC組態。</block>
-  <block id="5dd1f51dddd66f8a65eadff5313aa5ae" category="paragraph">您可以取得下列所有文件：</block>
-  <block id="8f123b6f4ad978f9c6803038618a9b8c" category="inline-link">支援SAN組態ONTAP</block>
-  <block id="30c9bf2fd4921da10d1760727d7dc6cd" category="list-text"><block ref="30c9bf2fd4921da10d1760727d7dc6cd" category="inline-link-rx"></block></block>
-  <block id="4f7fa3b4a184c3cda5627e0078c044e4" category="paragraph">說明支援的FC、iSCSI和FCoE拓撲、可將主機電腦連接至叢集中的儲存控制器。</block>
-  <block id="d6dd3e964a45af39f1a2d0d162a9c917" category="inline-link">支援SAN管理ONTAP</block>
-  <block id="19a784614020f03847308e98240415b6" category="list-text"><block ref="19a784614020f03847308e98240415b6" category="inline-link-rx"></block></block>
-  <block id="c986aac4db67c6064107d038fe08c841" category="paragraph">說明如何針對叢集式SAN環境設定及管理iSCSI、FCoE及FC傳輸協定、包括LUN組態、igroup及目標。</block>
-  <block id="70cd8bfb8fd7a4082087201414ab2fe4" category="section-title">VMware文件</block>
-  <block id="ab912994b4aa16fba6be2c16896c3115" category="paragraph">有關ESXi伺服器iSCSI的文件可直接從VMware取得。</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="inline-link">VMware</block>
   <block id="6159684771937b098137a4e36cec3bfd" category="paragraph"><block ref="6159684771937b098137a4e36cec3bfd" category="inline-link-rx"></block></block>
-  <block id="e012bb8bfed783fdc9ae512fc954250c" category="list-text">_vSphere儲存設備_</block>
-  <block id="ac486e8c7eaa144720f9743326a1eb94" category="paragraph">本VMware內容說明ESXi 5.x的FC和iSCSI組態</block>
-  <block id="1e7a821c0fffd45e16b8e9fbdf58abd9" category="list-text">_使用連接埠繫結的軟體iSCSI多路徑組態_</block>
-  <block id="eecf341f578c40b0088a2c825bcf9fae" category="paragraph">技術白皮書說明ESXi伺服器的MPIO設定。</block>
   <block id="71f3a57d3c80b26e640b84b27c2b8e4e" category="summary">使用ONTAP 經典的支援功能（ONTAP 不含更新版本的支援）、您可以在儲存虛擬機器（SVM）上快速設定FC服務、配置LUN、並使用ESX主機電腦上的FC HBA、將LUN設為資料存放區。</block>
   <block id="caeab82c4f9b5aa8223e7cf94f44d99d" category="doc">使用VSC的ESXi FC組態總覽</block>
   <block id="039d2d1f92ed5762bd1672bf32bb614a" category="paragraph">如果發生下列情況、請使用此程序：</block>
@@ -871,11 +857,6 @@
   <block id="e4f23fa5eebad806cea9c12d5857146a" category="summary">您可以取得其他文件來協助您啟動目的地Volume、以測試災難恢復設定或發生災難時。您也可以深入瞭解如何在災難發生後重新啟動來源Volume。</block>
   <block id="c79552c3752b64e4900c6490f17147ce" category="inline-xref-macro">Volume災難恢復</block>
   <block id="d1d6ba1e49d10a6a2753f7d8d1caed94" category="list-text"><block ref="d1d6ba1e49d10a6a2753f7d8d1caed94" category="inline-xref-macro-rx"></block></block>
-  <block id="994b9e24558386119def2c5e542475ea" category="paragraph">說明如何在災難發生後快速啟動目的地Volume、然後重新啟動ONTAP 來源Volume。</block>
-  <block id="37a4c5f171f9c477191bc02b862d6a32" category="inline-link">適用於管理叢集健全狀況的流程Active IQ Unified Manager</block>
-  <block id="4585324eb6aec1c92c62db522205c13c" category="list-text"><block ref="4585324eb6aec1c92c62db522205c13c" category="inline-link-rx"></block></block>
-  <block id="7c7f8994892d0b2a6ed2b9f10c24964a" category="paragraph">提供Active IQ Unified Manager 使用Web UI執行功能不完整的功能（前身OnCommand 為「支援整合管理程式」）工作的相關資訊、以及疑難排解的相關資訊、並提供深入的概念性資訊。</block>
-  <block id="f1f9c2b0860a27aa32c1e0c059a0e7bc" category="paragraph">提供使用SnapMirror技術進行災難恢復的概念性資訊。</block>
   <block id="b2763c325ff29a11475210e77550cdbf" category="summary">您可以在支援PEDR ONTAP 叢集上快速保護來源磁碟區、以做好災難恢復的準備。如果您想要設定及監控各叢集之間的SnapMirror關係、以進行Volume災難恢復、而且不需要大量概念背景來執行工作、請使用此內容。</block>
   <block id="c3ac504be8df36e9eac8ddbefb0af128" category="doc">Volume災難恢復準備總覽</block>
   <block id="94641eed38f4fad5e7300a757fe24007" category="paragraph">您可以在支援PEDR ONTAP 叢集上快速保護來源磁碟區、以做好災難恢復的準備。如果您想要設定及監控連接叢集之間的SnapMirror關係、以進行Volume災難恢復、而且不需要大量概念背景來執行工作、請使用此程序。</block>
@@ -1274,15 +1255,6 @@
   <block id="1e01452bf3b8d68277cafb5479383741" category="image-alt">此影像顯示SNMP組態畫面中顯示SNMP啟用狀態和設陷啟用狀態的部分。</block>
   <block id="50c92866e2e75bed1c6c075bef66c90b" category="paragraph">您可以檢視叢集的目前SNMP狀態。</block>
   <block id="a57ed62e5049069939fcdd959fbcace6" category="paragraph">如果未啟用SNMP、請按一下「*啟用*」。</block>
-  <block id="f1f8463a64e93440a6b88aa7f10e9dbe" category="summary">還有其他文件可協助您深入瞭解iSCSI組態。</block>
-  <block id="727d6ec7c143ece348a58c5723f2f025" category="section-title">Microsoft文件</block>
-  <block id="ffe732a76690d8495fdb0c0bbbde49d9" category="paragraph">Microsoft可直接取得Microsoft iSCSI軟體啟動器的相關文件。</block>
-  <block id="dc6723f0157e6e51ae83777c3910ff17" category="list-text">_Microsoft iSCSI軟體啟動器版本2.X使用者指南_</block>
-  <block id="246a34e59cb3ee20a527a09c3e77760f" category="paragraph">說明適用於Windows Server 2008的Microsoft iSCSI軟體啟動器。iSCSI軟體啟動器下載檔案隨附此功能。</block>
-  <block id="cffcdf01933eb8672e4d2cfbaecbd778" category="list-text">_Microsoft iSCSI啟動器總覽_</block>
-  <block id="606f6d36931ed61114983bf60933f6a8" category="paragraph">Windows Server 2012 iSCSI啟動器的線上說明（可從啟動器取得）。說明軟體啟動器、並包含Microsoft網站的連結、以取得進一步資訊。</block>
-  <block id="140864078aeca1c7c35b4beb33c53c34" category="inline-link">Microsoft</block>
-  <block id="cac3b61a19ad01d79649c712ac882352" category="paragraph"><block ref="cac3b61a19ad01d79649c712ac882352" category="inline-link-rx"></block></block>
   <block id="a392ef0d5de1e2e16353d6582fbea1ee" category="summary">您需要iSCSI識別碼、網路位址和儲存組態資訊、才能執行iSCSI組態工作。</block>
   <block id="a4193d3014ae779773459634552e9c28" category="doc">完成iSCSI組態工作表</block>
   <block id="3ab78a474513938e2d97e42ac9d25c0f" category="paragraph">您需要iSCSI識別碼、網路位址和儲存組態資訊、才能執行iSCSI組態工作。</block>
@@ -1566,11 +1538,6 @@
   <block id="3729565d51de6ef0a8375595d1ae5807" category="paragraph">*相關資訊*<block ref="a5f8ef6b5d1189a231aea7325cc686e7" category="inline-link-rx"></block></block>
   <block id="b9c779117c5a23aaa36bee7f5c9fca1e" category="summary">叢集擴充工作流程</block>
   <block id="a30c3cdc206df83ddba616258bab04c2" category="paragraph">將兩個節點新增至現有叢集、包括驗證叢集是否已準備好進行擴充、準備叢集、安裝新節點、以及完成擴充。</block>
-  <block id="c1f4234043f24b65e6b04de33fad8001" category="summary">擴充叢集之後、您可以在新節點上建立新磁碟區、或是將現有資料移至新節點、開始在新節點上儲存資料。</block>
-  <block id="77c61fd6aef6817840becd82172bd57c" category="paragraph">如果SnapVault 您使用叢集內的SnapMirror或相依關係來保護資料、請參閱 <block ref="cbb596e26b08606ba2582d682bef9bd9" category="inline-link-macro-rx"></block> 指南、為新節點設定適當的叢集間生命體。</block>
-  <block id="05eac09172b61971be85d0a01b8162b9" category="paragraph">如果您想要將資料移至新增的節點、可以使用下列資訊：</block>
-  <block id="286658c24ca59ebf54d30a4ca466d9e1" category="paragraph">說明如何管理叢集中的邏輯儲存資源、包括FlexVol ：flexdVolume、FlexClone Volume、檔案和LUN、FlexCache 以及 使用重複資料刪除、壓縮、qtree和配額。</block>
-  <block id="5e142b2510ac017f0d0b460f84e482f0" category="paragraph">說明叢集中邏輯儲存資源的概念性資訊、包括FlexVol 諸如下列內容的功能：卷集、FlexClone磁碟區、檔案和LUN、FlexCache 以及 使用重複資料刪除、壓縮、qtree和配額。</block>
   <block id="cf60e092711952c2c868d7d19e86f100" category="summary">您可以新增HA配對、快速且不中斷營運地擴充現有的叢集。較大的叢集可提升叢集的效能與儲存容量。</block>
   <block id="36f6eeaab9a4b697e7ccd0c7535596d4" category="doc">叢集擴充總覽</block>
   <block id="e8fd990d5fe6a50d516b83641fb7fc4a" category="paragraph">只有在下列情況下、才應使用此程序：</block>
@@ -1848,10 +1815,6 @@
   <block id="50580e1f2cd43d40ef6e056bb5fc2ce7" category="list-text"><block ref="50580e1f2cd43d40ef6e056bb5fc2ce7" category="inline-xref-macro-rx"></block></block>
   <block id="44ea9f0ed591049dd8bd6b6587397fd7" category="paragraph">說明如何在不同ONTAP 的叢集上快速設定目的地Volume、以準備災難恢復。</block>
   <block id="66ca3c38cb3909a4e5d341b4c95d1e1a" category="paragraph">說明如何在ONTAP 災難發生後、從不同的叢集快速啟動目的地Volume、以及如何在來源Volume恢復後重新啟動、將SnapMirror關係還原至其原始狀態。</block>
-  <block id="ae35a7645e117deffc1a921838461f46" category="inline-link">使用磁帶備份來保護資料</block>
-  <block id="0cad657c2feaf8364bde8cf73e51c6b4" category="list-text"><block ref="0cad657c2feaf8364bde8cf73e51c6b4" category="inline-link-rx"></block></block>
-  <block id="4540391cf89cc1aa1f36aa40e59182db" category="paragraph">說明如何使用NDMP和傾印技術、使用叢集中的磁帶備份與還原功能來備份及還原資料。</block>
-  <block id="ac1a1da03e093afb2af0d0bd79ace5a7" category="paragraph">說明ONTAP 準備災難恢復時有關支援叢集的概念性資訊。</block>
   <block id="f1da5eb0d0af3b72296ff6ea293abf1d" category="summary">當資料遺失時、您可以從SnapVault 位於支援中心的支援中心快速還原磁碟區ONTAP 。</block>
   <block id="12fb85c35a832a45fe275b73ae8a8e62" category="doc">使用SnapVault 功能概述進行Volume還原</block>
   <block id="a83933a5831bf519e27991cf44ceb37d" category="paragraph">如果您想要以下列方式從資料保險箱備份還原、請使用此程序：</block>
@@ -1906,12 +1869,8 @@
   <block id="09fc6f48dd97ed416fbbde338efcfa4b" category="paragraph">您應該疑難排解SnapVault 任何有關「不穩固」關係的問題。SnapMirror關係的疑難排解程序也適用於SnapVault 不必要的關係。</block>
   <block id="b5a68721f84465afc63f9b2df2f905ae" category="summary">我們提供更多資訊來協助您管理磁碟區層級的災難恢復關係、並提供其他災難恢復方法來保護資料資源的可用度。</block>
   <block id="f374ab402892ea91daa38f079bc00eff" category="list-text"><block ref="f374ab402892ea91daa38f079bc00eff" category="inline-xref-macro-rx"></block></block>
-  <block id="11f72f4c3bd9d348b7579fbd1fc019c6" category="paragraph">說明如何在位於不同ONTAP 的叢集內的磁碟區之間快速設定備份資料庫關係。</block>
   <block id="6bc1243e75fc1858d3d414570259fd5f" category="inline-xref-macro">Volume還原管理功能SnapVault</block>
   <block id="94169667dd416a5297ed3b46a622fa62" category="list-text"><block ref="94169667dd416a5297ed3b46a622fa62" category="inline-xref-macro-rx"></block></block>
-  <block id="cb58fc1134f76b358260cdb5b9943956" category="paragraph">說明如何在ONTAP 還原中、從備份資料庫快速還原磁碟區。</block>
-  <block id="25b67dc5180ef638acf68abf19cd20ce" category="paragraph">說明在ONTAP 功能性驗證中設定複寫的相關資訊和最佳實務做法。</block>
-  <block id="c13f09e860d57e9e946bb8c4833f9f54" category="paragraph">提供有關叢集式系統的災難恢復和磁碟對磁碟備份的概念資訊。</block>
   <block id="10225b4a3220f4567287aaebfb262b69" category="summary">災難發生後、您可以快速啟動目的地Volume、然後ONTAP 使用ONTAP 經典的支援介面ONTAP （例如、更新版本的版本）、在支援的過程中重新啟動來源Volume。</block>
   <block id="b976d074c34b1b6db0e9a13e82b3cfd7" category="doc">Volume災難恢復總覽</block>
   <block id="cb275f350cc0aec728316638deb59ec9" category="paragraph">若要以下列方式執行磁碟區層級的災難恢復、請使用此程序：</block>
@@ -2012,26 +1971,10 @@
   <block id="7c99e1c96275e73971c3274eea4bfc6a" category="image-alt">SnapMirror目的地93</block>
   <block id="54b184892f23afa68d9eab493ac216da" category="list-text">S29.2或更早版本：按一下「Volumes（磁碟區）」頁面底部的* Data Protection（資料保護）*索引標籤、以識別SnapMirror關係中的目的地磁碟區、以及包含該磁碟區的SVM名稱。ONTAP</block>
   <block id="7bba42ab30c3eef639318c4cbe6cb31e" category="image-alt">影像顯示目的地Volume</block>
-  <block id="f83d9513e5785c599b940874b81ce7c4" category="summary">成功測試NFS用戶端存取之後、您可以執行其他NFS組態或新增SAN存取。當傳輸協定存取完成時、您應該保護的根磁碟區。我們提供全方位的內容與技術報告、協助您達成這些目標。</block>
   <block id="10edbbba4e4c39fc161aeac9fbb88aef" category="section-title">NFS組態</block>
-  <block id="21ae56f6aa9d52a6117102a2043a8ab3" category="paragraph">您可以使用下列內容和技術報告進一步設定NFS存取：</block>
   <block id="ad87cdf66d1dd42a93d527243f468772" category="list-text"><block ref="ad87cdf66d1dd42a93d527243f468772" category="inline-link-rx"></block></block>
-  <block id="9731f349780de77af2ad9c6ef9bf326e" category="paragraph">說明如何使用CLI命令來設定進階NFS用戶端對新磁碟區或qtree中所含檔案的存取。</block>
   <block id="2cc25a4f99449a7599c23ffac20f5f0a" category="inline-link">NFS管理</block>
   <block id="6d4bb840dff989bc2ef19b73556a7a83" category="list-text"><block ref="6d4bb840dff989bc2ef19b73556a7a83" category="inline-link-rx"></block></block>
-  <block id="aa50384f57470ecc3cd57c193fbe56b8" category="paragraph">說明如何使用NFS傳輸協定來管理檔案存取、包括驗證、授權和安全性。</block>
-  <block id="4fa7027f5c486116a971b22d989ffdc3" category="inline-link">NetApp技術報告4597：VMware vSphere with ONTAP VMware</block>
-  <block id="692a969ba2c3d4a614223404347adda8" category="list-text"><block ref="692a969ba2c3d4a614223404347adda8" category="inline-link-rx"></block></block>
-  <block id="38c10cd520dfe5c1f6f54f2a2b53e13b" category="paragraph">說明使用ONTAP VMware vSphere伺服器虛擬化環境時應遵循的最佳實務做法。</block>
-  <block id="e2d406f34dca3665308ea0fe5df39308" category="inline-link">NetApp技術報告4668：名稱服務最佳實務做法</block>
-  <block id="66e72a73ea31081d558c3961ceb4caf0" category="list-text"><block ref="66e72a73ea31081d558c3961ceb4caf0" category="inline-link-rx"></block></block>
-  <block id="2670471c3693debcd84cafb18698692f" category="paragraph">提供完整的最佳實務做法、限制、建議及考量清單、以供設定LDAP、NIS、DNS及本機使用者與群組檔案進行驗證。</block>
-  <block id="5c7b39fa0ac319237594c811115fa7ef" category="inline-link">NetApp技術報告4067：NFS最佳實務與實作</block>
-  <block id="aa6535ba68f899261fb57fc7f4d6e6ee" category="list-text"><block ref="aa6535ba68f899261fb57fc7f4d6e6ee" category="inline-link-rx"></block></block>
-  <block id="b9e873d1c81460d5ff87bb5366d578e1" category="paragraph">提供ONTAP 關於功能的概述、重點放在NFSv4上。</block>
-  <block id="faae9782a49940846862f2a32231e07f" category="section-title">根Volume保護</block>
-  <block id="51e02859c0b7c44b7441c12e6b68d54b" category="paragraph">在SVM上設定傳輸協定之後、您應確保其根Volume受到保護：</block>
-  <block id="f6dad1a866b6daf167c2286f4aa1a5df" category="paragraph">說明如何建立負載共用鏡像來保護根磁碟區、這是NetApp啟用NAS的SVM的最佳實務做法。同時也說明如何從負載共用鏡像中提升SVM根磁碟區、以快速從磁碟區故障或損失中恢復。</block>
   <block id="f5023a5c5ebaa724c96c3c7a53978310" category="summary">ESXi主機需要網路連接埠、才能將NFS連線至儲存叢集。</block>
   <block id="9e1950c20156352f4bf448c788e51237" category="doc">設定主機連接埠和VSwitches</block>
   <block id="4709725ccdd452d84580ba5a4ed45567" category="paragraph">建議您使用IP雜湊做為NIC群組原則、這需要在單一vSwitch上使用單一VMkernel連接埠。</block>
@@ -2248,26 +2191,6 @@
   <block id="2de83e9c17a14b3008db151fa16c152f" category="paragraph"><block ref="2de83e9c17a14b3008db151fa16c152f" category="inline-link-rx"></block></block>
   <block id="f3f1c9bb6e6bc3a4ffa1a63d3908adeb" category="inline-link">NetApp技術報告4835：如何在ONTAP 功能方面設定LDAP</block>
   <block id="0eda30a5b755f0d7712f2291698c8166" category="paragraph"><block ref="0eda30a5b755f0d7712f2291698c8166" category="inline-link-rx"></block></block>
-  <block id="b0ac7418280972fa069bbc2a11514d3e" category="summary">在成功測試CIFS和NFS用戶端存取之後、您可以執行進階CIFS和NFS組態或新增SAN存取。傳輸協定存取完成時、您應該保護SVM的根Volume。我們提供全方位的內容和技術報告、協助您達成這些目標。</block>
-  <block id="23353013b42b6a98388dd2bce5be051a" category="paragraph">在成功測試CIFS和NFS用戶端存取之後、您可以執行進階CIFS和NFS組態或新增SAN存取。傳輸協定存取完成時、您應該保護SVM的根Volume。我們提供全方位的內容與技術報告、協助您達成這些目標。</block>
-  <block id="dd72e8231c2ab0c2133630fe6bc76e20" category="section-title">CIFS/SMB組態</block>
-  <block id="5e65ed5040441519dbf697f9ba224c8e" category="paragraph">您可以使用下列資訊和技術報告進一步設定CIFS存取：</block>
-  <block id="6730d4603d3f770e9758b0495c9a2a62" category="inline-link">CIFS管理</block>
-  <block id="575124ad880ed28864d887a160002ff9" category="list-text"><block ref="575124ad880ed28864d887a160002ff9" category="inline-link-rx"></block></block>
-  <block id="67a933ca8c13b0371da20884d6ea7ebe" category="paragraph">說明如何使用CIFS/SMB傳輸協定來設定及管理檔案存取。</block>
-  <block id="df7018e8b5dea8270e2b53ed45ca3664" category="inline-link">NetApp技術報告4191：叢集Data ONTAP 式更新的最佳實務做法指南8.2 Windows檔案服務</block>
-  <block id="d7c04e1dc685306d20b6ac98cbc8abcf" category="list-text"><block ref="d7c04e1dc685306d20b6ac98cbc8abcf" category="inline-link-rx"></block></block>
-  <block id="40261511a12711af686f66a0ba5aee3e" category="paragraph">提供SMB實作與其他Windows檔案服務功能的簡短概述、並提供ONTAP 有關的建議與基本疑難排解資訊。</block>
-  <block id="f34506326aba5bd2e96ea949212bfb7f" category="inline-link">NetApp技術報告3740：SMB 2 Next-Generation CIFS Protocol in Data ONTAP</block>
-  <block id="31c2bf0ec91d71ed35f91e6ebf5a28c1" category="list-text"><block ref="31c2bf0ec91d71ed35f91e6ebf5a28c1" category="inline-link-rx"></block></block>
-  <block id="61e501f46c7150f878e0af89f471c9ef" category="paragraph">介紹SMB 2的功能、組態詳細資料、以及ONTAP 其在功能方面的實作。</block>
-  <block id="789b5f0afd817cef21cddcb1e0bcec40" category="paragraph">您可以使用下列資訊和技術報告進一步設定NFS存取：</block>
-  <block id="fdd906b3ec7fd28d857deaeaeec1ed3b" category="paragraph">說明如何使用NFS傳輸協定來設定及管理檔案存取。</block>
-  <block id="554f8f91fd053df3641c049c7d347e51" category="paragraph">可做為NFSv3和NFSv3作業指南、提供ONTAP 關於以NFSv3為焦點的各種作業系統的概述。</block>
-  <block id="664ed7f89359986e03d8ad4c39f35a20" category="inline-link">NetApp技術報告3580：NFSv4增強功能與最佳實務做法指南Data ONTAP -實作</block>
-  <block id="bdce1016f77fd0c1a9aea40e262163d4" category="list-text"><block ref="bdce1016f77fd0c1a9aea40e262163d4" category="inline-link-rx"></block></block>
-  <block id="e134f6887670f332c2b86db886021c0e" category="paragraph">說明在掛接到執行ONTAP 此功能的系統上、在AIX、Linux或Solaris用戶端上實作NFSv4元件時應遵循的最佳實務做法。</block>
-  <block id="3b4dfd331ed7ccbf7d283ce016bb62b7" category="paragraph">說明如何建立負載共用鏡像來保護SVM根磁碟區、這是NetApp啟用NAS的SVM最佳實務做法。同時也說明如何從負載共用鏡像中提升SVM根磁碟區、以快速從磁碟區故障或損失中恢復</block>
   <block id="44ea8eb2df89afa7b099aa23027cba85" category="summary">設定SMB/CIFS和NFS都需要選擇性地建立集合體、選擇性地建立新的SVM或設定現有的SVM、建立磁碟區、共用區和匯出、以及驗證UNIX和Windows管理主機的存取。然後您可以開啟對SMB/CIFS和NFS用戶端的存取。</block>
   <block id="e0cb8bdb942b5a5756750a9ad13f5278" category="doc">多重傳輸協定組態工作流程</block>
   <block id="59709e0b502adf4dc8604fb58c5b4fa2" category="image-alt">概述ONTAP 在功能介紹中設定NFS和CIFS所需的步驟。</block>
@@ -2368,7 +2291,6 @@
   <block id="6a34cf18fb7026d09fc129111db8a169" category="summary">您可以取得其他文件、協助您從目的地磁碟區還原資料、以測試備份資料、或在來源磁碟區遺失時進行還原。</block>
   <block id="580df0707800400af79839e20238fb6e" category="paragraph">說明如何在SnapVault 還原中快速從還原的功能區中還原磁碟區ONTAP</block>
   <block id="53cd3c8aed79ae721dfdef73f3531f3a" category="list-text"><block ref="53cd3c8aed79ae721dfdef73f3531f3a" category="inline-link-rx"></block></block>
-  <block id="02bd2eca2939d07c436bc3118e6f838f" category="paragraph">說明叢集式系統的災難恢復與磁碟對磁碟備份的概念性資訊</block>
   <block id="0dda7a83024c1a48482d48cb5cc0197e" category="summary">設定SnapVault 支援功能的關係包括驗證叢集對等關係、建立SnapVault 來源與目的地Volume之間的支援關係、以及監控SnapVault 彼此之間的支援關係。</block>
   <block id="2f17efffc575aac669d2b6d5b6e3ce0c" category="doc">支援備份組態工作流程SnapVault</block>
   <block id="33d698c5405b59cf282a091b0fab54f4" category="image-alt">此圖為SnapVault 一份流程圖、說明各項功能的流程圖。工作流程中的步驟與主題相符。</block>
@@ -9319,4 +9241,5 @@
   <block id="7d5188aa4e5eb813646e2fb2a52c4e9f" category="paragraph">「LUN對應移除報告節點-遠端節點-vserver vserver_name -path LUN_path -igroup igroup_name」</block>
   <block id="56ee085ee9b22a4b36ce3b7988853da3" category="paragraph">如果您在使用ONTAP 經典版的《支援》時遇到任何問題（ONTAP 適用於VMware 9.7及更早版本）、您可以傳送記錄檔來協助疑難排解問題（如NetApp Support所指示）。System Manager記錄檔與ONTAP 還原記錄檔位於「mlog」目錄中。</block>
   <block id="1124479f0b36cfdc0c874c70e2e87d7f" category="paragraph">叢集上一律會啟用網路時間傳輸協定（NTP）。您可以停用NTP、但不建議停用NTP。</block>
+  <block id="16eba74b838138b1c9d34e93a3730cc6" category="paragraph">+說明如何在災難發生後快速啟動目的地Volume、然後重新啟動ONTAP 來源Volume。</block>
 </blocks>

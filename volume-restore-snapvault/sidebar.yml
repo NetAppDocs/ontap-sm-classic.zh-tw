@@ -13,5 +13,3 @@ entries:
     url: "/volume-restore-snapvault/task_restoring_data_from_snapvault_backup.html"
   - title: 驗證還原作業
     url: "/volume-restore-snapvault/task_verifying_restore_operation.html"
-  - title: 何處可找到其他資訊
-    url: "/volume-restore-snapvault/reference_where_to_find_additional_information.html"

@@ -17,5 +17,3 @@ entries:
     url: "/volume-disaster-prep/task_setting_up_destination_svm_for_data_access.html"
   - title: 監控SnapMirror資料傳輸的狀態
     url: "/volume-disaster-prep/task_monitoring_status_snapmirror_data_transfers.html"
-- title: 何處可找到其他資訊
-  url: "/volume-disaster-prep/reference_where_to_find_additional_information.html"

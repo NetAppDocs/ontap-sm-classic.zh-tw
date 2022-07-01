@@ -59,5 +59,3 @@ entries:
         url: "/expansion/task_generating_autosupport_message_about_completing_expansion.html"
       - title: 更新新節點的LUN路徑
         url: "/expansion/task_updating_lun_paths_for_new_nodes.html"
-  - title: 何處可找到其他資訊
-    url: "/expansion/reference_where_to_find_additional_information.html"

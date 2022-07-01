@@ -27,5 +27,3 @@ entries:
       url: "/volume-disaster-recovery/task_updating_source_volume.html"
     - title: 重新啟動來源Volume
       url: "/volume-disaster-recovery/task_returning_recovered_volume_to_source_role.html"
-- title: 何處可找到其他資訊
-  url: "/volume-disaster-recovery/reference_where_to_find_additional_information.html"
