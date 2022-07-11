@@ -17,4 +17,12 @@ image::../media/snapmirror_failover_resync_workflow_eg.gif[此圖為SnapMirror�
 
 我們提供更多資訊來協助您管理磁碟區層級的災難恢復關係、並提供其他災難恢復方法來保護資料資源的可用度。
 
-xref:../volume-backup-snapvault/index.html[使用SnapVault 功能進行Volume備份]
+* xref:../volume-backup-snapvault/index.html[使用SnapVault 功能進行Volume備份]
++
+說明如何在位於不同ONTAP 的叢集內的磁碟區之間快速設定備份資料庫關係。
+
+* xref:../volume-restore-snapvault/index.html[Volume還原管理功能SnapVault]
++
+說明如何在ONTAP 還原中、從備份資料庫快速還原磁碟區。
+
+

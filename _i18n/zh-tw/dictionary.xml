@@ -9242,4 +9242,6 @@
   <block id="56ee085ee9b22a4b36ce3b7988853da3" category="paragraph">如果您在使用ONTAP 經典版的《支援》時遇到任何問題（ONTAP 適用於VMware 9.7及更早版本）、您可以傳送記錄檔來協助疑難排解問題（如NetApp Support所指示）。System Manager記錄檔與ONTAP 還原記錄檔位於「mlog」目錄中。</block>
   <block id="1124479f0b36cfdc0c874c70e2e87d7f" category="paragraph">叢集上一律會啟用網路時間傳輸協定（NTP）。您可以停用NTP、但不建議停用NTP。</block>
   <block id="16eba74b838138b1c9d34e93a3730cc6" category="paragraph">+說明如何在災難發生後快速啟動目的地Volume、然後重新啟動ONTAP 來源Volume。</block>
+  <block id="11f72f4c3bd9d348b7579fbd1fc019c6" category="paragraph">說明如何在位於不同ONTAP 的叢集內的磁碟區之間快速設定備份資料庫關係。</block>
+  <block id="cb58fc1134f76b358260cdb5b9943956" category="paragraph">說明如何在ONTAP 還原中、從備份資料庫快速還原磁碟區。</block>
 </blocks>
