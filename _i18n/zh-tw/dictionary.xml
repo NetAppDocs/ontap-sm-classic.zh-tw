@@ -9244,4 +9244,12 @@
   <block id="16eba74b838138b1c9d34e93a3730cc6" category="paragraph">+說明如何在災難發生後快速啟動目的地Volume、然後重新啟動ONTAP 來源Volume。</block>
   <block id="11f72f4c3bd9d348b7579fbd1fc019c6" category="paragraph">說明如何在位於不同ONTAP 的叢集內的磁碟區之間快速設定備份資料庫關係。</block>
   <block id="cb58fc1134f76b358260cdb5b9943956" category="paragraph">說明如何在ONTAP 還原中、從備份資料庫快速還原磁碟區。</block>
+  <block id="df39128709788b5d11e19397bbed7e5e" category="paragraph">如需使用ONTAP 更新版本的資訊、請參閱下列資訊：</block>
+  <block id="85180b24dbd0c343b9c87bf144ede023" category="inline-link-macro">管理授權總覽（僅限叢集管理員）</block>
+  <block id="ce1ae1f692dcc386afa95c6f51ac8788" category="list-text"><block ref="ce1ae1f692dcc386afa95c6f51ac8788" category="inline-link-macro-rx"></block></block>
+  <block id="a9a72d6af23763d014760a444a6e414b" category="inline-link">新增授權金鑰以啟用新功能</block>
+  <block id="79e933e86e0dbffc33f713b1dd45913b" category="list-text"><block ref="79e933e86e0dbffc33f713b1dd45913b" category="inline-link-rx"></block></block>
+  <block id="9eb2f679e34f007fb487deb886aea701" category="list-text">從ONTAP 版本號《支援》9.10.1開始、您可以使用System Manager安裝NetApp授權檔案（NLF）、一次啟用多項授權功能。使用NetApp授權檔案可簡化授權安裝、因為您不再需要新增個別的功能授權金鑰。您可從NetApp支援網站下載NetApp授權檔案。</block>
+  <block id="08cb1da33bf826c64dbcece5a06b7881" category="paragraph">如需詳細資訊、請參閱 <block ref="7a8e6f659072e8056021df642c019ac1" category="inline-link-macro-rx"></block></block>
+  <block id="8aa8ad9857fa98f48cbbef9e553f013e" category="paragraph">如需管理授權的相關資訊、請參閱 <block ref="ce1ae1f692dcc386afa95c6f51ac8788" category="inline-link-macro-rx"></block></block>
 </blocks>

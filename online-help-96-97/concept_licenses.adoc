@@ -19,6 +19,12 @@ summary: 您可以使用System Manager來檢視、管理或刪除叢集或節點
 
 您可以使用System Manager中的「授權」視窗、刪除叢集或節點上安裝的任何軟體授權。
 
+如需使用ONTAP 更新版本的資訊、請參閱下列資訊：
+
+* link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["管理授權總覽（僅限叢集管理員）"^]
+* https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html["新增授權金鑰以啟用新功能"^]
+
+
 您要刪除的軟體授權不得用於任何服務或功能。
 
 .步驟
