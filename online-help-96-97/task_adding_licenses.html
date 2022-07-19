@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-tw/ontap-sm-classic/search.html"
           data-type="widget" 
-          data-placeholder="搜尋文件" 
-          data-no-results-found="找不到符合 {query} 的相關結果。" 
-          data-did-you-mean="搜尋 {suggestion}。" 
-          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
-          data-results-found="找到 {hitCount} 筆結果"  
+          data-placeholder="搜尋文件"
+          data-no-results-found="找不到符合 {query} 的相關結果。"
+          data-did-you-mean="搜尋 {suggestion}。"
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？"
+          data-results-found="找到 {hitCount} 筆結果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -4467,7 +4469,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:14:45 +0000">05/03/2022</time>
+    <time datetime="2022-07-19 04:45:24 +0000">07/19/2022</time>
     
   
 
@@ -4486,6 +4488,15 @@
 <div class="ulist">
 <div class="title">關於這項工作</div>
 <ul>
+<li>
+<p>從ONTAP 版本號《支援》9.10.1開始、您可以使用System Manager安裝NetApp授權檔案（NLF）、一次啟用多項授權功能。使用NetApp授權檔案可簡化授權安裝、因為您不再需要新增個別的功能授權金鑰。您可從NetApp支援網站下載NetApp授權檔案。</p>
+<div class="paragraph">
+<p>如需詳細資訊、請參閱 <a href="https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html">"新增授權金鑰以啟用新功能"</a></p>
+</div>
+<div class="paragraph">
+<p>如需管理授權的相關資訊、請參閱 <a href="https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html" target="_blank" rel="noopener">"管理授權總覽（僅限叢集管理員）"</a></p>
+</div>
+</li>
 <li>
 <p>當您在MetroCluster 某個功能完善的組態中新增授權時、最好也將授權新增至運作中的站台叢集。</p>
 </li>
