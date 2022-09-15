@@ -29,6 +29,6 @@ SNMP traphost的IP位址可以是IPV4或IPV6。
 +
 image::../media/snmp_add_traphost.gif[此影像顯示「編輯SNMP設定」對話方塊,Traphosts tab,in which the traphost status "enabled" is checked and the example traphost IP address "192.0.2.0" is entered.]
 
-. 若要新增其他traphost、請重複執行 <<step2-verify-enable-traps,步驟2>> 和 <<step3-enter-traphost-ip,步驟3.>>。
+. 若要新增其他traphost、請重複執行 ,步驟2 和 ,步驟3.。
 . 當您完成新增traphosts時、請按一下「*編輯SNMP設定*」對話方塊中的「*確定*」。
 

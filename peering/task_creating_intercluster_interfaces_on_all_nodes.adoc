@@ -49,7 +49,7 @@ image::../media/lif_creation_intercluster.gif[「建立網路介面」對話方�
 .. 按一下「 * 建立 * 」。
 
 
-. 重複 <<step1-intercluster-lif,步驟1.>> 針對叢集中的每個節點。
+. 重複 ,步驟1. 針對叢集中的每個節點。
 +
 叢集中的每個節點都有叢集間LIF。
 

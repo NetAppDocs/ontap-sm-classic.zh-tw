@@ -5,8 +5,8 @@ settings:
     pdf_enabled: true
   prod:
     pdf_enabled: true
+    harmony_enabled: false
   search: ontap
-  harmony_enabled: true
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
 sidebar:
   entries:
@@ -107,3 +107,7 @@ homepage:
       url: https://docs.netapp.com/us-en/ontap/
     - title: 自動化及REST API文件
       url: https://docs.netapp.com/us-en/ontap-automation/index.html
+product-family:
+  name: ONTAP
+  repo: ontap-family
+  sidebar_label: All ONTAP product documentation

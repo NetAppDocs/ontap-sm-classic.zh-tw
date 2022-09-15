@@ -85,5 +85,5 @@ image::../media/vol_move_cutover.gif[此影像由周邊文字說明。]
 .. 按一下「*確定*」。
 
 
-. 重複 <<step4-monitor,步驟4.>>。
+. 重複 ,步驟4.。
 

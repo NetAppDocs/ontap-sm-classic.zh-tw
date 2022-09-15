@@ -100,7 +100,7 @@ image::../media/peering_workflow.gif[對等工作流程]
 .開始之前
 * 您必須已檢閱並完成執行此工作的要求。
 +
-<<prerequisites-peering,叢集對等關係的先決條件>>
+,叢集對等關係的先決條件
 
 * 您必須已建立叢集間邏輯介面（lifs）。
 * 您應該知道ONTAP 每個叢集所執行的版本為何。
