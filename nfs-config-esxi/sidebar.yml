@@ -28,11 +28,11 @@ entries:
     url: "/nfs-config-esxi/task_creating_aggregate.html"
   - title: 決定新磁碟區的資源配置位置
     url: "/nfs-config-esxi/task_deciding_where_to_provision_new_volume.html"
-  - title: 建立新的NFS功能
+  - title: 建立新的NFS型SVM
     url: "/nfs-config-esxi/task_creating_new_nfs_enabled_svm.html"
-  - title: 新增NFS存取至現有的
+  - title: 新增NFS存取至現有SVM
     url: "/nfs-config-esxi/concept_adding_nfs_access_to_existing_svm.html"
-  - title: 確認已在現有的上啟用NFS
+  - title: 確認已在現有SVM上啟用NFS
     url: "/nfs-config-esxi/task_verifying_that_nfs_is_enabled_on_existing_svm.html"
   - title: 配置資料存放區並建立內含Volume
     url: "/nfs-config-esxi/task_provisioning_datastore_creating_its_containing_lun_volume.html"

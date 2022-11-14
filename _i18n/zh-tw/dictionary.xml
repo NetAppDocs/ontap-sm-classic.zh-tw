@@ -1985,7 +1985,6 @@
   <block id="5d7ecb52a7755b35fd59c62518abd1d4" category="list-text">按一下*「Add Networking（新增網路）」*、然後選取* VMkernel *和*「Create a vSphere Standard switch*（建立vSphere標準交換器*）」以建立VMkernel連接埠和vSwitch。</block>
   <block id="46d72521781f43e8cff5936ae87a1a56" category="list-text">設定vSwitch的巨型框架（如果使用MTU大小9000）。</block>
   <block id="b1cb83cd4c72191e2c33f80d32661e9e" category="summary">如果您選擇使用現有的SVM、則必須先確認SVM上已啟用NFS。然後、您可以使用Virtual Storage Console設定NFS存取、並驗證是否已使用ESXi啟用ESXi的NFS。</block>
-  <block id="c55e4b00195074bed992d5e9f2637458" category="doc">確認已在現有的上啟用NFS</block>
   <block id="273e4130e50845a5e9d5f4538db4799b" category="list-text">在*傳輸協定*窗格中、按一下* NFS*。</block>
   <block id="4634424eddac4e5139eed002d9f57e0e" category="list-text">確認NFS顯示為已啟用。</block>
   <block id="66b55e440f72539f4895f89ea8a145a8" category="paragraph">如果未啟用NFS、您必須啟用NFS或建立新的SVM。</block>
@@ -2019,12 +2018,8 @@
   <block id="881b0a2ef802a1004b956954773e6574" category="summary">資料存放區包含ESXi主機上的虛擬機器及其VMDK。ESXi主機上的資料存放區會配置在儲存叢集上的磁碟區上。</block>
   <block id="ae6008f02ca0b45c6a4cd4a393db0926" category="doc">配置資料存放區並建立內含Volume</block>
   <block id="51793b9466d1621e417beec57432b48e" category="paragraph">VSC會自動執行資料存放區資源配置、包括在指定的SVM上建立磁碟區。</block>
-  <block id="97446f85d622caa408c1900719e976fe" category="summary">若要新增NFS存取至現有的、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。</block>
-  <block id="2463feb7085c1de79b2a536a798cc5e6" category="doc">新增NFS存取至現有的</block>
   <block id="b3cd292080da5468bda5b81ea6f6944e" category="list-text">您必須知道下列哪些網路元件將會使用：</block>
   <block id="e38f4915c562ac0524f64ba1d2309e50" category="list-text">將在該節點上建立資料LIF的節點和特定連接埠</block>
-  <block id="99ffc0c2d2de5a9c707e0cc9f57ee896" category="list-text">瀏覽至* Details（詳細資料）*窗格、您可在其中設定的傳輸協定：</block>
-  <block id="0e54ed6c5d54f8809e3fac442e018cb8" category="list-text">選取您要設定的。</block>
   <block id="b211141019007f2b9c919f45f464be6e" category="list-text">在「*設定NFS傳輸協定*」對話方塊中、建立資料LIF：</block>
   <block id="34047da9f91a8187fda235b588989bf0" category="paragraph">請勿輸入任何資訊來配置Volume。您可以稍後使用虛擬儲存主控台來配置資料存放區。</block>
   <block id="e5bd14ce4c306a79c0e8d3e50a90a52b" category="summary">乙太網路的效能差異極大。您可以選取特定的組態值、將網路效能最大化。</block>
@@ -2061,12 +2056,8 @@
   <block id="aff76ed6e9c69d72d55a1689c06cc9bb" category="paragraph">若要驗證NFS存取、您應該選取先前建立的資料中心、ESXi主機和資料存放區。</block>
   <block id="42c606c51275faf10988d2681a0e4ac9" category="paragraph">虛擬機器會顯示在vSphere Web Client詳細目錄中。</block>
   <block id="7dfe435e9b351d5268743823071eb107" category="list-text">開啟虛擬機器電源。</block>
-  <block id="9bd777b8df02f89f109bd507aebe44cd" category="summary">設定新的需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。</block>
-  <block id="963ebd9778f5487b1a26decf3928acd7" category="doc">建立新的NFS功能</block>
   <block id="45b68e6b7d95b623f79bcb6bb2f31176" category="paragraph">您可以使用精靈來引導您完成建立SVM、設定DNS、建立資料LIF及啟用NFS的程序。</block>
-  <block id="8335f43bb715b8b81168959acc5ed2a6" category="list-text">在* Storage Virtual Machine（SVM）Setup（*儲存虛擬機器（SVM）設定*）視窗中、建立：</block>
   <block id="16d91ce3e54e199d42185d64282f16aa" category="list-text">選取* NFS*作為資料傳輸協定。</block>
-  <block id="6cf4a7024cd8da06dfb2de07d0ab1de3" category="paragraph">如果您打算在同一個上使用其他通訊協定、即使您不想立即設定、也應該選取這些通訊協定。</block>
   <block id="73d7dbe8dde20a9df035458e497ebc27" category="paragraph">您為根磁碟區選取的Aggregate不會決定資料磁碟區的位置。</block>
   <block id="17d37d4e5172456b53b44a4310af144b" category="image-alt">SVM設定</block>
   <block id="d28037416dced6462706c78db21b49f2" category="paragraph">已建立、但尚未設定傳輸協定。</block>
@@ -2076,7 +2067,6 @@
   <block id="a5575c94511939f9d8cf19ce5b41b7c2" category="list-text">對於顯示的所有其他傳輸協定組態頁面、請按一下「*跳過*」、然後稍後再設定傳輸協定。</block>
   <block id="caf9dbd96074307c13aa33081a8d3d21" category="list-text">按一下「*跳過*」、然後視需要稍後設定管理員。</block>
   <block id="ad2676b3a3f03b8fbe67f24aa2ca8cc8" category="list-text">請檢閱*摘要*頁面、記錄您稍後可能需要的任何資訊、然後按一下*確定*。</block>
-  <block id="e4fc8a8fc79c60838d6b6ee645b01c52" category="paragraph">在啟用NFS的情況下建立新的。</block>
   <block id="1b40e2854d3fc63497186601aa0aa079" category="summary">當您使用NFS將儲存設備提供給ESXi主機時、您可以在上使用配置磁碟區、然後從ESXi主機連線至NFS匯出。</block>
   <block id="b6339b8db51f3442d4512cbc00301455" category="doc">適用於ESXi工作流程的NFS用戶端組態</block>
   <block id="1db77ab5a30737c6da5b1003cdbc8173" category="image-alt">NFS用戶端組態搭配VAAI for ESX</block>
@@ -9252,4 +9242,11 @@
   <block id="9eb2f679e34f007fb487deb886aea701" category="list-text">從ONTAP 版本號《支援》9.10.1開始、您可以使用System Manager安裝NetApp授權檔案（NLF）、一次啟用多項授權功能。使用NetApp授權檔案可簡化授權安裝、因為您不再需要新增個別的功能授權金鑰。您可從NetApp支援網站下載NetApp授權檔案。</block>
   <block id="08cb1da33bf826c64dbcece5a06b7881" category="paragraph">如需詳細資訊、請參閱 <block ref="7a8e6f659072e8056021df642c019ac1" category="inline-link-macro-rx"></block></block>
   <block id="8aa8ad9857fa98f48cbbef9e553f013e" category="paragraph">如需管理授權的相關資訊、請參閱 <block ref="ce1ae1f692dcc386afa95c6f51ac8788" category="inline-link-macro-rx"></block></block>
+  <block id="d027bd811a2a1f3a54f02f5f6a138ec5" category="summary">若要新增NFS存取至現有SVM、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。</block>
+  <block id="42229a2e75e26c066264f05943b5cd4b" category="list-text">瀏覽至「*詳細資料*」窗格、您可在其中設定SVM的傳輸協定：</block>
+  <block id="6b772ada3bd4d8de498db46061f4af88" category="doc">確認已在現有SVM上啟用NFS</block>
+  <block id="b2c6f5e7b85eccc355666a7ce9b42837" category="summary">設定新的SVM需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。</block>
+  <block id="8a7baa903a5556eb48abcebc91df47d2" category="paragraph">如果您打算在同一個SVM上使用其他傳輸協定、即使您不想立即設定、也應該選取這些傳輸協定。</block>
+  <block id="2569b2d1e3dcd3875b983af8427bd364" category="paragraph">在啟用NFS的情況下建立新的SVM。</block>
+  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">所有ONTAP 產品文件</block>
 </blocks>

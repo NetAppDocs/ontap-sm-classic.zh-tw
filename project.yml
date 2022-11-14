@@ -7,7 +7,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   search: ontap
-  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr,fr-fr,de-de
 sidebar:
   entries:
   - title: System Manager經典文件
@@ -110,4 +110,4 @@ homepage:
 product-family:
   name: ONTAP
   repo: ontap-family
-  sidebar_label: All ONTAP product documentation
+  sidebar_label: 所有ONTAP 產品文件

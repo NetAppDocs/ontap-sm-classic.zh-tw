@@ -1,17 +1,17 @@
 ---
 permalink: nfs-config-esxi/task_creating_new_nfs_enabled_svm.html 
 sidebar: sidebar 
-keywords: set, up, creating, create, enable, enabling, nfs, esxi, create a new nfs-enabled 
-summary: 設定新的需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。 
+keywords: set, up, creating, create, enable, enabling, nfs, esxi, create a new nfs-enabled SVM 
+summary: 設定新的SVM需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。 
 ---
-= 建立新的NFS功能
+= 建立新的NFS型SVM
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-設定新的需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。
+設定新的SVM需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。
 
 .開始之前
 * 您的網路必須設定、而且相關的實體連接埠必須連線至網路。
@@ -29,7 +29,7 @@ summary: 設定新的需要建立新的NFS並啟用NFS。然後、您可以在ES
 .步驟
 . 瀏覽至* SVMS*視窗。
 . 按一下「 * 建立 * 」。
-. 在* Storage Virtual Machine（SVM）Setup（*儲存虛擬機器（SVM）設定*）視窗中、建立：
+. 在* Storage Virtual Machine（SVM）Setup（*儲存虛擬機器（SVM）設定*）視窗中、建立SVM：
 +
 .. 指定SVM的唯一名稱。
 +
@@ -37,7 +37,7 @@ summary: 設定新的需要建立新的NFS並啟用NFS。然後、您可以在ES
 
 .. 選取* NFS*作為資料傳輸協定。
 +
-如果您打算在同一個上使用其他通訊協定、即使您不想立即設定、也應該選取這些通訊協定。
+如果您打算在同一個SVM上使用其他傳輸協定、即使您不想立即設定、也應該選取這些傳輸協定。
 
 .. 保留預設語言設定、C。utf-8。
 +
@@ -98,4 +98,4 @@ NFS用戶端需要知道資料LIF的IP位址。
 
 
 
-在啟用NFS的情況下建立新的。
+在啟用NFS的情況下建立新的SVM。

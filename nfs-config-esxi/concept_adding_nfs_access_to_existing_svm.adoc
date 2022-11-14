@@ -1,17 +1,17 @@
 ---
 permalink: nfs-config-esxi/concept_adding_nfs_access_to_existing_svm.html 
 sidebar: sidebar 
-keywords: nfs, access, exist, create, data, logical, interface, lif, configure, esxi, host, verify, add, add nfs access to an existing 
-summary: 若要新增NFS存取至現有的、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。 
+keywords: nfs, access, exist, create, data, logical, interface, lif, configure, esxi, host, verify, add, add nfs access to an existing SVM 
+summary: 若要新增NFS存取至現有SVM、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。 
 ---
-= 新增NFS存取至現有的
+= 新增NFS存取至現有SVM
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要新增NFS存取至現有的、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。
+若要新增NFS存取至現有SVM、您必須先建立資料邏輯介面（LIF）。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證ESXi是否已啟用NFS。
 
 .開始之前
 * 您必須知道下列哪些網路元件將會使用：
@@ -28,9 +28,9 @@ summary: 若要新增NFS存取至現有的、您必須先建立資料邏輯介�
 
 
 .步驟
-. 瀏覽至* Details（詳細資料）*窗格、您可在其中設定的傳輸協定：
+. 瀏覽至「*詳細資料*」窗格、您可在其中設定SVM的傳輸協定：
 +
-.. 選取您要設定的。
+.. 選取您要設定的SVM。
 .. 在* Details（詳細資料）*窗格中、於*傳輸協定*旁按一下* NFS*。
 +
 image::../media/svm_add_protocol_nfs_nfs_esxi.gif[此影像由周邊文字說明。]
