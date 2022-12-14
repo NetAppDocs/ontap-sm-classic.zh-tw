@@ -13,6 +13,7 @@ summary: 儲存叢集上的LUN在Linux主機上顯示為SCSI裝置、這些裝�
 [role="lead"]
 儲存叢集上的LUN在Linux主機上顯示為SCSI裝置、這些裝置是DM-Multipath集合到新裝置的I/O路徑、稱為多重路徑裝置。主機不會自動探索您新增至系統的新SCSI裝置（LUN）。您必須手動重新掃描、才能發現它們。
 
+.開始之前
 您必須擁有一份「掃描」指令碼的複本、該指令碼位於Linux OS發行套件的「sg3_utils」套件中。
 
 .步驟

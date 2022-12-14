@@ -30,6 +30,7 @@ summary: 將CIFS/SMB和NFS存取新增至現有SVM、包括建立資料LIF、設
 
 
 
+.關於這項工作
 設定CIFS和NFS的順序會影響顯示的對話方塊。在此程序中、您必須先設定CIFS、然後設定NFS秒。
 
 .步驟

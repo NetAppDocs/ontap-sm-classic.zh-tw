@@ -58,6 +58,7 @@ summary: 您可以使用System Manager來建立、編輯及刪除效率原則。
 
 您可以使用System Managerto刪除不再需要的效率原則。
 
+.開始之前
 必須停用效率原則。
 
 .步驟

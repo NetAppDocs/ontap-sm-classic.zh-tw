@@ -17,8 +17,10 @@ summary: 您可以使用System Manager來檢視叢集中節點的詳細資料。
 
 您可以使用System Manager將「Compliance時鐘 時間」初始化為目前的叢集時間。您必須初始化「Compliance時鐘 時間」、才能建立SnapLock 資訊區。
 
+.開始之前
 必須安裝此功能的不必要授權。SnapLock
 
+.關於這項工作
 初始化完成後、您無法修改或停止執行時鐘時間。
 
 .步驟

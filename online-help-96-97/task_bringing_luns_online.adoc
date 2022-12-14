@@ -13,6 +13,7 @@ summary: 您可以使用System Manager中的LUN Management（LUN管理）索引�
 [role="lead"]
 您可以使用ONTAP 《經典版》（ONTAP 英文版）中的「* LUN管理*」索引標籤（英文版）、將選定的LUN上線、並提供給主機使用。
 
+.開始之前
 任何存取LUN的主機應用程式都必須靜止或同步。
 
 .步驟

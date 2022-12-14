@@ -13,6 +13,7 @@ summary: 如果您不想再使用原則、可以使用System Manager刪除保護
 [role="lead"]
 如果您不想再使用原則、可以使用System Manager刪除保護原則。
 
+.關於這項工作
 不會顯示叢集層級的鏡射原則或資料保險箱原則。
 
 .步驟

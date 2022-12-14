@@ -13,6 +13,7 @@ summary: 在啟動目的地Volume時、您可以設定必要的組態、例如NA
 [role="lead"]
 在啟動目的地Volume時、您可以設定必要的組態、例如NAS環境的LIF、CIFS共用和匯出原則、以及包含目的地Volume的SVM環境中SAN環境的LIF和啟動器群組、將資料存取中斷降至最低。
 
+.關於這項工作
 您必須在包含目的地Volume的SVM *目的地*叢集上執行此工作。
 
 

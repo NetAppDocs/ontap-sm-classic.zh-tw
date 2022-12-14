@@ -13,6 +13,7 @@ summary: 可自動執行與ESXi主機搭配使用儲存設備所需的許多組�
 [role="lead"]
 虛擬儲存主控台可自動化許多與ESXi主機搭配使用儲存設備所需的組態和資源配置工作。是vCenter Server的外掛程式。
 
+.開始之前
 您必須擁有vCenter Server上用於管理ESXi主機的管理員認證。
 
 .關於這項工作

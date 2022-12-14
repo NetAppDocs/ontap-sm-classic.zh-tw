@@ -13,6 +13,7 @@ summary: 將目的地Volume的資料重新同步至來源Volume之後、您必�
 [role="lead"]
 將目的地Volume的資料重新同步至來源Volume之後、您必須中斷SnapMirror關係來啟動來源Volume。接著您應該重新同步目的地Volume、以保護重新啟動的來源Volume。
 
+.關於這項工作
 中斷和反轉重新同步作業都是從*來源*叢集執行。
 
 下列影像顯示當您中斷SnapMirror關係時、來源和目的地磁碟區會讀取/寫入。反轉重新同步作業之後、資料會從作用中來源磁碟區複寫到唯讀目的地磁碟區。
@@ -60,4 +61,5 @@ image::../media/snapmirror_return_reverse_resync.gif[顯示「反轉重新同步
 
 
 
+.結果
 來源Volume具有讀取/寫入存取權、並受到目的地Volume的保護。

@@ -13,8 +13,10 @@ summary: 如果ESX主機中的FC主機匯流排介面卡未執行支援的驅動
 [role="lead"]
 如果ESX主機中的FC主機匯流排介面卡（HBA）未執行支援的驅動程式、韌體和BIOS版本、則必須更新這些介面卡。
 
+.開始之前
 您必須從識別出支援的驅動程式、韌體和BIOS版本、才能進行組態設定 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]。
 
+.關於這項工作
 HBA廠商提供驅動程式、韌體、BIOS及HBA公用程式。
 
 .步驟

@@ -13,8 +13,10 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）、根據儲存建議建立集合體、或根據需求手動建立集合體。您可以使用SnapLock System Manager建立Flash Pool Aggregate、支援FabricPool的Aggregate和FabricPool的Aggregate、為一或多個磁碟區提供儲存空間。
 
+.開始之前
 您必須有足夠的備用磁碟來建立Aggregate。
 
+.關於這項工作
 您無法使用System Manager執行下列動作：
 
 * 即使有足夠的不同大小的備用磁碟、也能組合不同大小的磁碟。
@@ -62,6 +64,7 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於VMware 9.7及更早版本）、手動建立僅由HDD或僅由SSD組成的集合體。
 
+.開始之前
 所有磁碟的大小必須相同。
 
 .關於這項工作
@@ -103,6 +106,7 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 . 按一下「 * 建立 * 」。
 
 
+.結果
 此Aggregate會以指定的組態建立、並新增至Aggregate視窗中的Aggregate清單。
 
 
@@ -172,6 +176,7 @@ summary: 您可以根據儲存建議建立集合體、也可以根據需求手�
 . 按一下「 * 建立 * 」。
 
 
+.結果
 Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中的集合體清單。
 
 
@@ -180,6 +185,7 @@ Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中
 
 您可以使用System Manager經典版（ONTAP 以更新版本供應）手SnapLock 動建立一套「不符合要求」的Aggregate或SnapLock 「不符合要求」的「企業」Aggregate。您可以在SnapLock 這些集合體上建立供應「一次寫入、多次讀取」（WORM）功能的功能。
 
+.開始之前
 必須已新增此功能的使用許可。SnapLock
 
 .關於這項工作
@@ -252,6 +258,7 @@ Flash Pool Aggregate是以指定的組態建立、並新增至Aggregate視窗中
 * 雲端層與Aggregate之間必須存在專屬的網路連線。
 
 
+.關於這項工作
 下列物件存放區可做為雲端階層使用：
 
 * StorageGRID

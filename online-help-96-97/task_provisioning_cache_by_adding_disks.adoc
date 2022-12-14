@@ -35,6 +35,7 @@ summary: 您可以使用System Manager將SSD新增為儲存資源池或專用SSD
 * Aggregate不得包含任何陣列LUN。
 
 
+.關於這項工作
 您必須瞭解Flash Pool Aggregate SSD層級大小與組態的平台專屬與工作負載專屬最佳實務做法。
 
 .步驟
@@ -84,6 +85,7 @@ summary: 您可以使用System Manager將SSD新增為儲存資源池或專用SSD
 . 在「*新增快取*」對話方塊中、按一下「*是*」。
 
 
+.結果
 快取磁碟會新增至選取的Aggregate。
 
 
@@ -126,6 +128,7 @@ summary: 您可以使用System Manager將SSD新增為儲存資源池或專用SSD
 . 在「*新增快取*」對話方塊中、按一下「*是*」。
 
 
+.結果
 快取磁碟會新增至所選的Flash Pool Aggregate。
 
 *相關資訊*

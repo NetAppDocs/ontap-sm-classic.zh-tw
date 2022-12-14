@@ -13,8 +13,10 @@ summary: 使用含有更新版本的《經典》介面、您可以選擇一個Vo
 [role="lead"]
 使用包含Estraps9.7或更早版本的ONTAP 《系統管理程式_classic_介面ONTAP 》、您可以選取Volume和目的地Aggregate、開始Volume Move作業、並選擇性地監控Volume Move工作、來移動Volume。使用 System Manager 時、磁碟區移動作業會自動完成。
 
+.開始之前
 在磁碟區移動作業之前和磁碟區移動作業之後、您應該已經檢閱來源Aggregate和目的地Aggregate上的可用空間。
 
+.關於這項工作
 僅在同一個叢集內支援Volume Move作業。此外、您應該注意、您要將磁碟區移至的集合體、以及您要從中移動磁碟區的集合體、必須位於相同的儲存虛擬機器（SVM）中。磁碟區移動不會中斷用戶端存取。
 
 .步驟
@@ -85,5 +87,5 @@ image::../media/vol_move_cutover.gif[此影像由周邊文字說明。]
 .. 按一下「*確定*」。
 
 
-. 重複 ,步驟4.。
+. 重複 <<step4-monitor,步驟4.>>。
 

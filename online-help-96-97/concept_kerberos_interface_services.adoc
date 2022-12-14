@@ -33,6 +33,7 @@ summary: 您可以使用System Manager來管理Kerberos介面服務。
 ====
 
 
+.關於這項工作
 如果您使用Microsoft Active Directory Kerberos、則網域中使用的任何SPN前15個字元必須是唯一的。Microsoft Active Directory最多可限制15個字元的SPN、而且不允許重複的SPN。
 
 .步驟

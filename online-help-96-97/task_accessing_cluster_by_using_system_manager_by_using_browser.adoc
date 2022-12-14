@@ -18,6 +18,7 @@ summary: 如果您偏好使用圖形介面、而非命令列介面（CLI）來�
 * 您必須在瀏覽器中啟用Cookie和網站資料。
 
 
+.關於這項工作
 您可以使用叢集管理LIF或節點管理LIF來存取ONTAP 《系統管理程式》。若要不中斷地存取ONTAP 《Suse System Manager》、您應該使用叢集管理LIF。
 
 .步驟

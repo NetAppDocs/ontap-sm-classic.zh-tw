@@ -13,4 +13,5 @@ summary: 將CIFS磁碟區新增至啟用CIFS的SVM、包括建立及設定磁碟
 [role="lead"]
 將CIFS磁碟區新增至啟用CIFS的SVM、包括建立及設定磁碟區、建立共用區及設定其權限、以及驗證從Windows管理主機存取的權限。然後您可以設定CIFS用戶端存取。
 
+.開始之前
 CIFS必須在SVM上完全設定。

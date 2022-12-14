@@ -25,6 +25,7 @@ summary: 您可以使用System Manager來檢視、管理或刪除叢集或節點
 * https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html["新增授權金鑰以啟用新功能"^]
 
 
+.開始之前
 您要刪除的軟體授權不得用於任何服務或功能。
 
 .步驟
@@ -55,6 +56,7 @@ summary: 您可以使用System Manager來檢視、管理或刪除叢集或節點
 . 選取確認核取方塊、然後按一下*刪除*。
 
 
+.結果
 軟體授權會從您的儲存系統中刪除。刪除的授權也會從「授權」視窗的授權清單中移除。
 
 

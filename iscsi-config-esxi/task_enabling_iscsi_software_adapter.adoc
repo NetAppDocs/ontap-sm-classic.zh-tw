@@ -13,6 +13,7 @@ summary: iSCSI軟體介面卡會在ESX主機上建立iSCSI連線。它內建於�
 [role="lead"]
 iSCSI軟體介面卡會在ESXi主機上建立iSCSI連線。它內建於作業系統中、但必須先啟用、才能使用。
 
+.開始之前
 您必須在工作站上安裝VMware vSphere Client、否則必須能夠存取vSphere Web Client。
 
 .步驟

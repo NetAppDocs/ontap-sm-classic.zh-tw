@@ -13,6 +13,7 @@ summary: Linux Unified Host Utilities軟體包含sanlun公用程式、這是一�
 [role="lead"]
 Linux Unified Host Utilities軟體包含「sanlun」公用程式、這是一種NetApp LUN報告工具、可用來顯示儲存叢集節點的相關資訊。您也必須在Linux主機上啟用正確的伺服器設定檔、以最佳化NetApp儲存效能。
 
+.開始之前
 您必須使用互通性對照表來識別您組態所支援的Linux Unified Host Utilities版本。您也必須擁有「調校」套件、這是Linux作業系統發行版本的一部分、其中包含「調校過的-adm'命令、可用來在主機上設定伺服器設定檔。
 
 .步驟

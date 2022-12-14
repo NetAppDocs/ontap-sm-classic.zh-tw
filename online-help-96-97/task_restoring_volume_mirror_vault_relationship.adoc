@@ -44,7 +44,7 @@ summary: 如果來源資料毀損且無法再使用、您可以使用System Mana
 來源Volume
  a| 
 .. 選擇*來源Volume *。
-.. ,前往步驟6。
+.. <<STEP_3D59B4A5225847F1B3EF9F3D38C78DFA,前往步驟6>>。
 
 
 

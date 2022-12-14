@@ -9249,4 +9249,9 @@
   <block id="8a7baa903a5556eb48abcebc91df47d2" category="paragraph">如果您打算在同一個SVM上使用其他傳輸協定、即使您不想立即設定、也應該選取這些傳輸協定。</block>
   <block id="2569b2d1e3dcd3875b983af8427bd364" category="paragraph">在啟用NFS的情況下建立新的SVM。</block>
   <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">所有ONTAP 產品文件</block>
+  <block id="fd69c5cf902969e6fb71d043085ddee6" category="paragraph-title">結果</block>
+  <block id="f6544266822afc00f9e28a38a852cab9" category="paragraph-title">CIFS傳輸協定追蹤的結果清單</block>
+  <block id="7d5ed3e12000d1e71004e9e21d57eae0" category="paragraph-title">NFS傳輸協定追蹤的結果清單</block>
+  <block id="48f1b7cd8c5e771ef4ce929e95a1d530" category="section-title">[叢集對等關係的先決條件]叢集對等關係的先決條件</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">相關資訊</block>
 </blocks>

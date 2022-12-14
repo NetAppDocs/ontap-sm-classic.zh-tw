@@ -74,6 +74,7 @@ summary: 您可以使用System Manager將陣列LUN指派給現有的Aggregate、
 
 您可以使用System Manager清除所有資料、並將零寫入陣列LUN、以格式化備用陣列LUN。這些陣列LUN隨後可用於新的集合體。
 
+.關於這項工作
 當您將備用陣列LUN歸零時、叢集中的所有備援磁碟（包括磁碟）都會歸零。您可以將特定節點或整個叢集的備用陣列LUN歸零。
 
 .步驟

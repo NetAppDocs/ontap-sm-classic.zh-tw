@@ -34,6 +34,7 @@ summary: 您可以使用System Manager來設定AutoSupport 可協助您監控儲
 
 您AutoSupport 可以使用System Manager在儲存系統上啟用或停用資訊區設定。利用支援訊息、您可以監控儲存系統的健全狀況、或傳送通知給技術支援部門和內部支援組織。AutoSupport
 
+.關於這項工作
 根據預設、會啟用此功能。AutoSupport
 
 .步驟

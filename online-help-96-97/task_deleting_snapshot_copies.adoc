@@ -13,6 +13,7 @@ summary: 您可以刪除Snapshot複本、以節省磁碟空間、或使用System
 [role="lead"]
 您可以刪除Snapshot複本、以節省磁碟空間、或使用ONTAP 經典版的經典版《經典版》（ONTAP 適用於更新版本的版本）來釋出磁碟空間。如果不再需要Snapshot複本、您也可以刪除Snapshot複本。
 
+.開始之前
 如果您想要刪除忙碌或鎖定的Snapshot複本、您必須從使用Snapshot複本的應用程式中釋出Snapshot複本。
 
 .關於這項工作

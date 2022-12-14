@@ -31,6 +31,7 @@ summary: 您可以使用System Manager來設定SNMP、以監控叢集中的SVM�
 
 您可以使用System Manager中的Edit SNMP Settings（編輯SNMP設定）對話方塊來更新儲存系統位置和聯絡人的相關資訊、以及指定系統的SNMP社群。
 
+.關於這項工作
 System Manager使用SNMP傳輸協定SNMP v1和SNMP v2c以及SNMP社群來探索儲存系統。
 
 .步驟
@@ -60,6 +61,7 @@ System Manager使用SNMP傳輸協定SNMP v1和SNMP v2c以及SNMP社群來探索�
 
 SNMP設陷可讓您監控儲存系統各元件的健全狀況和狀態。您可以使用System Manager中的Edit SNMP Settings（編輯SNMP設定）對話方塊、在儲存系統上啟用或停用SNMP設陷。
 
+.關於這項工作
 雖然SNMP預設為啟用、但SNMP設陷預設為停用。
 
 .步驟

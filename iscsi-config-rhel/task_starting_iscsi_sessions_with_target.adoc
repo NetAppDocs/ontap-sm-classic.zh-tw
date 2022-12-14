@@ -13,6 +13,7 @@ summary: Linux主機必須與儲存叢集中的每個節點（目標）建立iSC
 [role="lead"]
 Linux主機必須與儲存叢集中的每個節點（目標）建立iSCSI連線。您可以從主機建立工作階段。
 
+.關於這項工作
 在本功能中、iSCSI主機必須有通往叢集中每個節點的路徑。ONTAPDM-Multikpath會選取要使用的最佳路徑。如果路徑失敗、DM-Multikpath會選取替代路徑。
 
 .步驟

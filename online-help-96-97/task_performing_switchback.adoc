@@ -13,6 +13,7 @@ summary: 從System Manager 9.6開始、您可以執行切換作業、在MetroClu
 [role="lead"]
 從System Manager 9.6開始、您可以執行切換作業、在MetroCluster 系統成功完成切換作業後、恢復對原始站台（站台B）的控制權。
 
+.開始之前
 在執行切換回復作業之前、您必須先完成下列工作：
 
 * 您必須準備MetroCluster 好這些景點 xref:task_performing_negotiated_planned_switchover.adoc[執行議定（計畫性）切換] 或 xref:task_performing_unplanned_switchover.adoc[執行非計畫性切換]。
@@ -20,6 +21,7 @@ summary: 從System Manager 9.6開始、您可以執行切換作業、在MetroClu
 * 如果遠端站台的狀態顯示為「準備好進行切換」、則集合體仍會重新同步。您應該等到遠端站台的狀態顯示該站台已準備好進行切換。
 
 
+.關於這項工作
 如果切換作業成功、MetroCluster 就會顯示「還原切換和切換作業」視窗。此視窗會顯示這兩個站台的狀態、並提供訊息告訴您作業成功。
 
 .步驟

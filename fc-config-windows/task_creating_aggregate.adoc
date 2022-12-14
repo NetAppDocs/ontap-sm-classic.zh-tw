@@ -23,4 +23,5 @@ image::../media/aggregate_creation_fc_windows.gif[在System Manager中建立Aggr
 
 
 
+.結果
 此Aggregate會以指定的組態建立、並新增至Aggregate視窗中的Aggregate清單。

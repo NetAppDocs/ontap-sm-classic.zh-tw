@@ -13,6 +13,7 @@ summary: 從System Manager 9.6開始、您可以建立FlexCache 一個不只是�
 [role="lead"]
 從System Manager 9.6開始、您可以建立FlexCache 一個不只是一個的功能區。
 
+.關於這項工作
 您必須FlexCache 先取得「不含功能」授權、才能建立FlexCache 一個「不含功能」的Volume。
 
 .步驟

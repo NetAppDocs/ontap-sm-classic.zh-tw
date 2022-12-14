@@ -19,6 +19,7 @@ summary: 您可以使用System Manager新增、編輯及刪除LDAP用戶端組�
 
 若要使用LDAP服務、您可以使用System Manager在叢集層級或儲存虛擬機器（SVM）層級新增LDAP用戶端組態。您必須先設定LDAP用戶端、才能使用LDAP服務。
 
+.關於這項工作
 在SVM層級、您只能為選取的SVM新增LDAP用戶端。
 
 .步驟
@@ -44,6 +45,7 @@ summary: 您可以使用System Manager新增、編輯及刪除LDAP用戶端組�
 
 您可以使用System Manager刪除叢集層級或儲存虛擬機器（SVM）層級的LDAP用戶端組態。
 
+.關於這項工作
 在SVM層級、您只能刪除所選SVM的LDAP用戶端。
 
 .步驟
@@ -64,6 +66,7 @@ summary: 您可以使用System Manager新增、編輯及刪除LDAP用戶端組�
 
 您可以使用System Manager編輯叢集層級或儲存虛擬機器（SVM）層級的LDAP用戶端組態。
 
+.關於這項工作
 在SVM層級、您只能編輯所選SVM的LDAP用戶端。
 
 .步驟

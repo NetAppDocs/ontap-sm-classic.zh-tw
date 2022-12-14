@@ -136,4 +136,5 @@ DNS管理員需要知道CIFS伺服器名稱和資料LIF的IP位址。Windows用�
 
 
 
+.結果
 新的SVM是以CIFS伺服器建立、其中包含共享的新Volume。

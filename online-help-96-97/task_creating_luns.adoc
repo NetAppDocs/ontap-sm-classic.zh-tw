@@ -13,6 +13,7 @@ summary: 當有可用空間時、您可以使用System Manager為現有的Aggreg
 [role="lead"]
 當有可用空間時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來為現有的Aggregate、Volume或qtree建立LUN。您可以在現有磁碟區中建立LUN、或為FlexVol LUN建立新的功能區。您也可以啟用儲存服務品質（QoS）來管理工作負載效能。
 
+.關於這項工作
 如果您指定LUN ID、System Manager會先檢查LUN ID的有效性、然後再新增。如果您未指定LUN ID、ONTAP 則無法使用的功能會自動指派LUN ID。
 
 選取LUN多重傳輸協定類型時、您應該已考慮使用每種類型的準則。LUN多重傳輸協定類型（或作業系統類型）決定LUN上的資料配置、以及LUN的最小和最大大小。建立LUN之後、您就無法修改LUN主機作業系統類型。

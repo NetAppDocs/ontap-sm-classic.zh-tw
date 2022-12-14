@@ -13,6 +13,7 @@ summary: 您可以使用System Manager來保留磁碟區中Snapshot複本的空�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 可在更新版本中使用）來保留磁碟區中Snapshot複本的空間（以百分比表示）。藉由設定Snapshot複本保留、您可以為Snapshot複本配置足夠的磁碟空間、使其不會佔用作用中的檔案系統空間。
 
+.關於這項工作
 保留給Snapshot複本的預設空間為SAN和VMware磁碟區的5%。
 
 .步驟

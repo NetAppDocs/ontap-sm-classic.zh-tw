@@ -13,6 +13,7 @@ summary: 您可以使用System Manager來檢視FlexGroup 有關某個功能區�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 僅供參考）功能來檢視FlexGroup 有關本版的資訊。您可以檢視配置空間、保護狀態及FlexGroup VMware Volume效能的圖形化呈現。
 
+.關於這項工作
 您也可以根據FlexGroup 延遲、IOPS和處理量、檢視適用於此問題的Snapshot複本、FlexGroup 適用於此問題的資料保護關係、以及平均效能指標、讀取效能指標、FlexGroup 以及針對此問題寫入效能指標。
 
 .步驟

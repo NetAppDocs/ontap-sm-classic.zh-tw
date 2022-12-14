@@ -13,4 +13,5 @@ summary: 如果您想要更多關於管理ONTAP 功能的資訊、請參閱ONTAP
 [role="lead"]
 如果您想要更多關於管理ONTAP 功能的資訊、請參閱ONTAP 《關於功能性的知識庫：
 
+.相關資訊
 https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]

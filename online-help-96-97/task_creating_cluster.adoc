@@ -13,6 +13,7 @@ summary: 您可以使用ONTAP NetApp System Manager在資料中心建立及設�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）來建立及設定資料中心的叢集。
 
+.關於這項工作
 如果叢集支援ONTAP 更新版本的版本、您只能新增執行ONTAP 更新版本的儲存系統。
 
 .步驟

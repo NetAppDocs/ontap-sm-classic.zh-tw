@@ -65,6 +65,7 @@ summary: 您可以使用System Manager中的Junction Path（交會路徑）視�
 . 確認「* Junction Path*」視窗中的「*匯出原則*」欄顯示您套用至磁碟區的匯出原則。
 
 
+.結果
 預設匯出原則會取代為您選取的匯出原則。
 
 

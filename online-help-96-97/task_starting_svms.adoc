@@ -18,4 +18,5 @@ summary: 您可以使用System Manager啟動SVM、從儲存虛擬機器（SVM）
 . 選取您要啟動的SVM、然後按一下* Start*。
 
 
+.結果
 SVM開始為用戶端提供資料。

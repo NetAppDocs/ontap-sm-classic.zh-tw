@@ -13,8 +13,10 @@ summary: 您可以使用System Manager、從「Volumes（磁碟區）」視窗�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 僅適用於更新版本的版本）、從「Volumes」（Volume）視窗下方窗格的「Snapshot Copies」（Snapshot複本）標籤中、檢視所選Volume的所有已儲存Snapshot複本清單。您可以使用已儲存的Snapshot複本清單來重新命名、還原或刪除Snapshot複本。
 
+.開始之前
 Volume必須處於線上狀態。
 
+.關於這項工作
 您一次只能檢視一個Volume的Snapshot複本。
 
 .步驟

@@ -20,6 +20,7 @@ summary: 您可以使用System Manager來檢視FlexClone Volume及其父Volume�
 . 按一下*更多動作*>*完整複製*>*檢視階層*。
 
 
+.結果
 顯示至少有一個子FlexClone Volume的Volume。FlexClone磁碟區會顯示為其各自父磁碟區的子磁碟區。
 
 *相關資訊*

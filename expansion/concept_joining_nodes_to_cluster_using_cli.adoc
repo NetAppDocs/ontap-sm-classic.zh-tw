@@ -96,7 +96,7 @@ cluster1-2            true    true
 cluster1-3            true    true
 3 entries were displayed.
 ----
-. 重複步驟 ,#d3d82235AC7145EE8C9A9397270D0610 透過 ,#採取 步驟_F6678CB6B1A94A08F86F83BA8BA8E35 用於第二個新安裝的控制器模組。
+. 重複步驟 <<STEP_3D8223C5AC7145EE8C9A9397270D0610,#d3d82235AC7145EE8C9A9397270D0610>> 透過 <<STEP_F6678CB6B1A94AF08F86F83BA8BA8E35,#採取 步驟_F6678CB6B1A94A08F86F83BA8BA8E35>> 用於第二個新安裝的控制器模組。
 +
 叢集設定精靈在第二個節點上的差異如下：
 

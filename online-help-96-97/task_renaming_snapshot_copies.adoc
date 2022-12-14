@@ -13,6 +13,7 @@ summary: 您可以使用System Manager重新命名Snapshot複本、以協助組�
 [role="lead"]
 您可以使用ONTAP 經典版的《支援功能》（ONTAP 適用於支援功能更新版本）來重新命名Snapshot複本、以協助您組織及管理Snapshot複本。
 
+.關於這項工作
 您無法重新命名SnapLock 處於SnapVault 「不一致」關係的「不一致」（Snapshot）磁碟區複本（已提交至「WORM」狀態）。
 
 .步驟

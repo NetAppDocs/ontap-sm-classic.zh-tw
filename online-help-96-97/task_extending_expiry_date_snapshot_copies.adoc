@@ -13,8 +13,10 @@ summary: 您可以使用System Manager延長磁碟區中Snapshot複本的到期�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來延長Volume中Snapshot複本的到期日。
 
+.開始之前
 必須在您的系統上安裝此功能的認證。SnapLock
 
+.關於這項工作
 您只能將資料保護（DP）磁碟區中的Snapshot複本延長至到期日、SnapLock 此磁碟區是以供SnapVault 參考的目的。
 
 .步驟

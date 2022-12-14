@@ -31,6 +31,7 @@ image::../media/fabricpool_workflow.gif[流程FabricPool]
 * 如果使用SSL或TLS加密雲端層與叢集之間的通訊、則必須安裝必要的憑證。
 
 
+.關於這項工作
 下列物件存放區可做為雲端階層使用：
 
 * StorageGRID
@@ -86,6 +87,7 @@ image::../media/fabricpool_workflow.gif[流程FabricPool]
 
 您可以使用System Manager將All Flash Aggregate附加至雲端層。您可以將不常使用的資料儲存在雲端層。
 
+.開始之前
 您必須已將雲端層新增至叢集。
 
 .步驟
@@ -110,6 +112,7 @@ image::../media/fabricpool_workflow.gif[流程FabricPool]
 * 雲端層與Aggregate之間必須存在專屬的網路連線。
 
 
+.關於這項工作
 下列物件存放區可做為雲端階層使用：
 
 * StorageGRID
@@ -199,6 +202,7 @@ image::../media/fabricpool_workflow.gif[流程FabricPool]
 
 您可以使用System Manager刪除不再需要的雲端層。
 
+.開始之前
 您必須刪除與雲端層相關聯的啟用FabricPool的Aggregate。
 
 .步驟

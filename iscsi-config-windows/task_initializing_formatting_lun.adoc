@@ -13,8 +13,10 @@ summary: 當Windows主機首次存取新LUN時、它沒有分割區或檔案系�
 [role="lead"]
 當Windows主機首次存取新LUN時、它沒有分割區或檔案系統。您必須初始化LUN、並選擇性地使用檔案系統進行格式化。
 
+.開始之前
 Windows主機必須已探索到LUN。
 
+.關於這項工作
 LUN在Windows磁碟管理中顯示為磁碟。
 
 您可以使用GPT或MBR-分割表將磁碟初始化為基本磁碟。

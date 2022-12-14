@@ -13,10 +13,12 @@ summary: 資料存放區包含ESXi主機上的虛擬機器及其VMDK。ESXi主�
 [role="lead"]
 資料存放區包含ESXi主機上的虛擬機器及其VMDK。ESXi主機上的資料存放區會配置在儲存叢集上的磁碟區上。
 
+.開始之前
 VMware vSphere for（VSC）的虛擬儲存主控台必須安裝並註冊至管理ESXi主機的vCenter Server。
 
 VSC必須有足夠的叢集或認證、才能在指定的SVM上建立磁碟區。
 
+.關於這項工作
 VSC會自動執行資料存放區資源配置、包括在指定的SVM上建立磁碟區。
 
 .步驟

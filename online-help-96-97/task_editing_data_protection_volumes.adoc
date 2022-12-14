@@ -13,6 +13,7 @@ summary: 您可以使用System Manager修改資料保護（DP）磁碟區的磁�
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來修改資料保護（DP）Volume的Volume名稱。如果來源磁碟區未啟用儲存效率、您可能只想在目的地磁碟區上啟用儲存效率。
 
+.關於這項工作
 您無法修改鏡射DP Volume上的儲存效率。
 
 .步驟

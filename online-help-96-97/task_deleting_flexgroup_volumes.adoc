@@ -18,6 +18,7 @@ summary: 當不再需要使用此功能時、您可以使用System Manager來刪
 * 此功能必須離線。FlexGroup
 
 
+.關於這項工作
 System Manager不支援FlexGroup 組成層級的功能來管理功能。
 
 .步驟

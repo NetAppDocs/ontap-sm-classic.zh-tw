@@ -13,8 +13,10 @@ summary: 從System Manager 9.6開始、您可以編輯現有FlexGroup 的功能�
 [role="lead"]
 從System Manager 9.6開始、您可以編輯現有FlexGroup 的功能區。
 
+.開始之前
 此版本必須在線上。FlexGroup
 
+.關於這項工作
 下列情況下、可擴充各種資料量：FabricPool FlexGroup
 
 * 只有使用「資訊區」才能擴充一個「資訊區」FabricPool FlexGroup FabricPool 。

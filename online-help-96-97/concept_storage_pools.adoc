@@ -25,6 +25,7 @@ summary: 您可以使用System Manager建立儲存資源池、讓多個Flash Poo
 * 儲存資源池中的所有SSD都必須由同一個HA配對擁有。
 
 
+.關於這項工作
 當您使用SSD將磁碟新增至儲存資源池時、System Manager會強制執行SSD RAID群組的熱備援規則。例如、如果SSD RAID群組中有10個SSD、而節點層級的選項「RAID.min_puse_count」設定為「1」、則System Manager會將1個SSD保留為熱備援、並使用其他9個SSD進行SSD相關作業。
 
 使用System Manager建立儲存資源池時、您無法使用已分割的SSD。
@@ -42,6 +43,7 @@ summary: 您可以使用System Manager建立儲存資源池、讓多個Flash Poo
 
 您可以使用System Manager將SSD新增至現有的儲存資源池、並增加其快取大小。
 
+.開始之前
 HA配對的兩個節點都必須啟動並執行、才能透過儲存資源池來配置SSD和SSD備援磁碟機。
 
 .關於這項工作
@@ -68,6 +70,7 @@ HA配對的兩個節點都必須啟動並執行、才能透過儲存資源池來
 
 當儲存資源池的快取不是最佳狀態、或是任何Aggregate或Flash Pool Aggregate不再使用時、您可能會想要刪除儲存資源池。您可以使用System Manager中的刪除儲存池對話方塊來刪除儲存池。
 
+.開始之前
 任何Aggregate均不得使用儲存資源池。
 
 .步驟

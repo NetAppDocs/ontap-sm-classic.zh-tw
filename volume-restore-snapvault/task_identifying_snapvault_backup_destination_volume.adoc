@@ -13,6 +13,7 @@ summary: 當來源Volume中的資料毀損或遺失時、您必須識別SnapVaul
 [role="lead"]
 當來源Volume中的資料毀損或遺失時、您必須識別SnapVault 要從中還原資料的還原目標Volume。
 
+.關於這項工作
 您必須從*來源*叢集執行此工作。
 
 .步驟

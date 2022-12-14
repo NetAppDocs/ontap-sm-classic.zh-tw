@@ -37,8 +37,10 @@ summary: 您可以使用System Manager來建立及管理IPspaces。
 
 當您不再需要IPspace時、可以使用System Manager刪除IPspace。
 
+.開始之前
 您要刪除的IPspace不得與任何廣播網域、網路介面、對等關係或儲存虛擬機器（SVM）相關聯。
 
+.關於這項工作
 系統定義的「預設」IPspace和「叢集」IPspace無法刪除。
 
 .步驟

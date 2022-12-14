@@ -13,8 +13,10 @@ summary: 您可以將ONTAP 支援ONTAP 支援支援的「經典」介面搭配�
 [role="lead"]
 您可以搭配ONTAP 使用支援ONTAP 更新版本的Estring System Manager _classic_介面來新增traphost（SNMP管理程式）、以便在叢集中產生陷阱時接收SNMP通知（SNMP陷阱傳輸協定資料單元）。
 
+.開始之前
 如果您設定具有IPv6位址的SNMP traphosts、則必須在叢集上啟用IPv6。
 
+.關於這項工作
 SNMP和SNMP設陷預設為啟用。SNMP支援上的NetApp技術報告TR-4220包含SNMP設陷所支援的所有預設事件清單。
 
 http://www.netapp.com/us/media/tr-4220.pdf["NetApp技術報告4220：SNMP支援Data ONTAP 功能"^]
@@ -29,6 +31,6 @@ SNMP traphost的IP位址可以是IPV4或IPV6。
 +
 image::../media/snmp_add_traphost.gif[此影像顯示「編輯SNMP設定」對話方塊,Traphosts tab,in which the traphost status "enabled" is checked and the example traphost IP address "192.0.2.0" is entered.]
 
-. 若要新增其他traphost、請重複執行 ,步驟2 和 ,步驟3.。
+. 若要新增其他traphost、請重複執行 <<step2-verify-enable-traps,步驟2>> 和 <<step3-enter-traphost-ip,步驟3.>>。
 . 當您完成新增traphosts時、請按一下「*編輯SNMP設定*」對話方塊中的「*確定*」。
 

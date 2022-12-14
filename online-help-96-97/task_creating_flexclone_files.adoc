@@ -35,6 +35,7 @@ summary: 您可以使用System Manager建立FlexClone檔案、這是父檔案的
 . 按一下* Clone（複製）*。
 
 
+.結果
 FlexClone檔案是在父檔案所在的同一個磁碟區中建立。
 
 *相關資訊*

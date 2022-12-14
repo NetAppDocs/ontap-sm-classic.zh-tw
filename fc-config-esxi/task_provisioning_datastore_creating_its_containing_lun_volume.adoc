@@ -13,10 +13,12 @@ summary: 資料存放區包含ESXi主機上的虛擬機器及其VMDK。ESXi主�
 [role="lead"]
 資料存放區包含ESXi主機上的虛擬機器及其VMDK。ESXi主機上的資料存放區會配置在儲存叢集上的LUN上。
 
+.開始之前
 VMware vSphere的虛擬儲存主控台（VSC）必須安裝並註冊管理ESXi主機的vCenter Server。
 
 VSC必須具有足夠的叢集或儲存虛擬機器（SVM）認證、才能建立LUN和Volume。
 
+.關於這項工作
 VSC會自動執行資料存放區資源配置、包括在指定的SVM上建立LUN和Volume。
 
 .步驟

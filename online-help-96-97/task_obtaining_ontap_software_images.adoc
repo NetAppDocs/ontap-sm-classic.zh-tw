@@ -13,6 +13,7 @@ summary: 對於《支援網站：NetApp支援網站：NetApp支援網站：NetAp
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》功能來取得《經典ONTAP 版》的《鏡像》（ONTAP 適用於更新版本的版本）。對於《支援網站：NetApp支援網站：NetApp支援網站：NetApp支援網站：NetApp支援網站：ONTAP ONTAP若要從ONTAP 更新版本的版本升級、ONTAP 您必須將此版本的更新軟體映像複製到網路上的HTTP伺服器或FTP伺服器。
 
+.關於這項工作
 若要將叢集升級至ONTAP 目標版本的《不一致》、您需要存取軟體映像。NetApp支援網站上提供適用於您平台機型的軟體映像、韌體版本資訊及最新韌體。請注意下列重要資訊：
 
 * 軟體映像是特定於平台機型。

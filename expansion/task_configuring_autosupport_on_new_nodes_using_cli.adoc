@@ -13,8 +13,10 @@ summary: 將節點新增至叢集後、您必須在AutoSupport 節點上設定�
 [role="lead"]
 將節點新增至叢集後、您必須在AutoSupport 節點上設定功能不均。
 
+.開始之前
 必須在叢集的現有節點上設定。AutoSupport
 
+.關於這項工作
 您必須在兩個節點上執行此程序。
 
 .步驟

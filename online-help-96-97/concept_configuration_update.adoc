@@ -19,6 +19,7 @@ summary: 您可以使用System Manager來設定儲存虛擬機器（SVM）的管
 
 您可以使用System Manager快速設定astorage虛擬機器（SVM）的管理詳細資料。您可以選擇性地將SVM的管理委派給SVM系統管理員。
 
+.關於這項工作
 身為SVM管理員、您無法使用System Manager來管理委派的SVM。您只能使用命令列介面（CLI）來管理SVMsOnly。
 
 .步驟

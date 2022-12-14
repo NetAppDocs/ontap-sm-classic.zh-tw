@@ -47,8 +47,10 @@ summary: 您可以使用System Manager來管理子網路。
 
 當您不再需要子網路、而且想要重新分配指派給子網路的IP位址時、可以使用System Manager來刪除子網路。
 
+.開始之前
 您要刪除的子網路不得有任何使用子網路IP位址的生命期。
 
+.關於這項工作
 您無法使用System Manager刪除叢集IPspace中的子網路。您必須改用命令列介面（CLI）。
 
 .步驟

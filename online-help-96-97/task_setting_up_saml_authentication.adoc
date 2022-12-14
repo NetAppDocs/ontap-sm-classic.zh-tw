@@ -32,6 +32,7 @@ image::../media/mfa_workflow.gif[MFA工作流程]
 * 您必須擁有IDP的URI。
 
 
+.關於這項工作
 已通過System Manager驗證的IDP包括Shibboleth和Active Directory Federation Services。
 
 [NOTE]
@@ -73,6 +74,7 @@ image::../media/mfa_workflow.gif[MFA工作流程]
 
 如果您想停用系統管理員的遠端存取、或是編輯SAML組態、您可以停用安全聲明標記語言（SAML）驗證。
 
+.關於這項工作
 停用SAML驗證不會刪除SAML組態。
 
 .步驟

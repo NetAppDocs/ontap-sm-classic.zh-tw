@@ -13,6 +13,7 @@ summary: 您可以使用System Manager從儲存系統組態中刪除不再需要
 [role="lead"]
 您可以使用ONTAP 經典版的經典版（ONTAP 以VMware 9.7及更早版本提供）來刪除儲存系統組態中不再需要的儲存虛擬機器（SVM）。
 
+.開始之前
 您必須完成下列工作：
 
 . 已停用所有磁碟區的Snapshot複本、資料保護（DP）鏡像和負載共享（LS）鏡像
@@ -32,6 +33,7 @@ summary: 您可以使用System Manager從儲存系統組態中刪除不再需要
 . 已停止SVM
 
 
+.關於這項工作
 刪除SVM時、也會刪除下列與SVM相關的物件：
 
 * LIF容錯移轉群組和LIF路由群組

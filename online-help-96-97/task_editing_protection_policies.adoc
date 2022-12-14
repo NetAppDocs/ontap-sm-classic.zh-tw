@@ -13,6 +13,7 @@ summary: 您可以使用System Manager修改保護原則、並將原則套用至
 [role="lead"]
 您可以使用System Manager修改保護原則、並將原則套用至資料保護關係。
 
+.關於這項工作
 叢集層級不會顯示保護原則。
 
 .步驟

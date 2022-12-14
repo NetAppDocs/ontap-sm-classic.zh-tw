@@ -14,8 +14,10 @@ summary: 您可以使用System Manager來保護資料、並在單一集合體內
 [role="lead"]
 您可以使用ONTAP 經典版的《RealgSystem Manager》（ONTAP 適用於Realgregate 9.7及更早版本）來保護資料、並在單一集合體內即時鏡射資料、以提供更高的恢復能力。鏡射Aggregate可移除連線至磁碟和陣列LUN的單點故障。
 
+.開始之前
 其他集區中必須有足夠的可用磁碟來鏡射集合體。
 
+.關於這項工作
 當快取來源為儲存資源池時、您無法鏡射Flash Pool Aggregate。
 
 .步驟

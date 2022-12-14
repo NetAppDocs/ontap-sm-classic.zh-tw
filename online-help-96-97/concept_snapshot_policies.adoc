@@ -58,6 +58,7 @@ summary: 您可以使用System Manager在儲存系統中建立及管理Snapshot�
 
 您可以使用System Manager刪除Snapshot原則。如果您刪除一個或多個磁碟區正在使用的Snapshot原則、則不會再根據刪除的原則建立磁碟區或磁碟區的Snapshot複本。
 
+.開始之前
 您必須已將Snapshot原則與使用該原則的每個磁碟區分離。
 
 .步驟

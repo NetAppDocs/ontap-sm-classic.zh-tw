@@ -13,6 +13,7 @@ summary: 必要時、您可以使用System Manager來變更現有Aggregate的Agg
 [role="lead"]
 如ONTAP 有需要、您可以使用經典版的經典版《支援功能》ONTAP （適用於支援功能更新版本的版本）來變更現有Aggregate的集合體名稱、RAID類型及RAID群組大小。
 
+.開始之前
 若要將Aggregate的RAID類型從RAID4修改為RAID-DP、Aggregate必須包含足夠的相容備援磁碟、但熱備援磁碟除外。
 
 .關於這項工作

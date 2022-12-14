@@ -19,6 +19,7 @@ summary: 您可以使用System Manager編輯資料保險箱關係、方法是選
 
 您可以使用System Manager編輯資料保險箱關係、方法是選取叢集中的現有原則或排程、或建立新的原則或排程。不過、您無法編輯現有原則或排程的參數。
 
+.開始之前
 來源與目的地叢集必須處於健全的對等關係中。
 
 .步驟
@@ -109,6 +110,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 如果您在建立關聯時尚未初始化資料保險箱關係、則可以使用System Manager來初始化資料保險箱關係。資料的基礎傳輸是從來源FlexVol 的來源供應區開始、並移至目的地FlexVol 的供應區。
 
+.開始之前
 來源與目的地叢集必須處於健全的對等關係中。
 
 .步驟
@@ -117,6 +119,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 在*初始化*視窗中、按一下*初始化*。
 
 
+.結果
 建立Snapshot複本並傳輸至目的地。
 
 此Snapshot複本可作為後續遞增Snapshot複本的基礎。
@@ -192,6 +195,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 按一下「 * 建立 * 」。
 
 
+.結果
 如果您選擇建立目的地Volume、會以下列預設設定建立類型為_DP_的Volume：
 
 * 自動擴充已啟用。
@@ -208,6 +212,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 您可以使用System Manager手動啟動非排程的遞增更新。您可能需要手動更新、以避免因即將停電、排程維護或資料移轉而導致資料遺失。
 
+.開始之前
 必須初始化資料保險箱關係。
 
 .步驟
@@ -230,6 +235,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 
 您可以使用System Manager結束來源與目的地Volume之間的資料保存關係、然後從來源釋出Snapshot複本。
 
+.關於這項工作
 釋出關係會永久移除來源磁碟區上資料保存關係所使用的基礎Snapshot複本。若要重新建立資料保險箱關係、您必須使用命令列介面（CLI）從來源磁碟區執行重新同步作業。
 
 .步驟
@@ -256,6 +262,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 在*恢復*視窗中、按一下*恢復*。
 
 
+.結果
 恢復正常資料傳輸。如果關係有排程的傳輸、則會從下一個排程開始傳輸。
 
 
@@ -270,6 +277,7 @@ xref:reference_protection_window.adoc[保護所需時間]
 . 在*靜止*視窗中、按一下*靜止*。
 
 
+.結果
 如果沒有正在進行的傳輸、傳輸狀態會顯示為「靜止」。如果傳輸進行中、傳輸不會受到影響、傳輸狀態會顯示為靜止、直到傳輸完成為止。
 
 *相關資訊*

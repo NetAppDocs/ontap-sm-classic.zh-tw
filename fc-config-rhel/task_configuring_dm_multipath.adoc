@@ -13,6 +13,7 @@ summary: DM-Multipath可管理Linux主機與儲存叢集之間的多個路徑。
 [role="lead"]
 DM-Multipath可管理Linux主機與儲存叢集之間的多個路徑。在LUN上設定DM-Multikpath（在Linux主機上顯示為SCSI裝置）、可讓Linux主機在路徑或元件故障時、存取儲存叢集上的LUN。
 
+.開始之前
 您必須從互通性對照表工具中找出所需的DM-Multikpath版本。
 
 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]

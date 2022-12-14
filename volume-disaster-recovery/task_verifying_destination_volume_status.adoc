@@ -13,6 +13,7 @@ summary: 中斷SnapMirror關係之後、您必須確認目的地Volume具有讀�
 [role="lead"]
 中斷SnapMirror關係之後、您必須確認目的地Volume具有讀寫存取權、而且目的地Volume設定符合來源Volume的設定。
 
+.關於這項工作
 您必須從*目的地*叢集執行此工作。
 
 .步驟

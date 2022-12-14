@@ -13,6 +13,7 @@ summary: 您可以使用System Manager中的LUN Management（LUN管理）索引�
 [role="lead"]
 您可以使用ONTAP 經典版《經典版》（ONTAP 更新版本）中的「* LUN管理*」索引標籤、將選定的LUN離線、並使其無法存取區塊傳輸協定。
 
+.開始之前
 任何存取LUN的主機應用程式都必須靜止或同步。
 
 .步驟

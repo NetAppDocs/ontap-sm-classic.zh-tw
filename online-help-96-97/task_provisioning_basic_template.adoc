@@ -13,6 +13,7 @@ summary: 您可以使用System Manager快速配置SAP HANA的基本範本。
 [role="lead"]
 您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於更新版本的版本）來快速配置SAP HANA的基本範本。
 
+.關於這項工作
 身為叢集管理員、您可以設定基本範本來配置應用程式。此範例說明如何設定* SAP HANA Server*。
 
 .步驟
@@ -31,6 +32,7 @@ summary: 您可以使用System Manager快速配置SAP HANA的基本範本。
 . 按一下*資源配置儲存設備*
 
 
+.結果
 SAP HANA伺服器應用程式已配置完成。
 
 *相關資訊*

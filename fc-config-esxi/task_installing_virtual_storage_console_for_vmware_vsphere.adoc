@@ -13,6 +13,7 @@ summary: 適用於VMware vSphere的虛擬儲存主控台可自動執行許多必
 [role="lead"]
 適用於VMware vSphere的虛擬儲存主控台可自動執行許多必要的組態和資源配置工作、以便將NetApp FC儲存設備與ESXi主機搭配使用。虛擬儲存主控台是vCenter Server的外掛程式。
 
+.開始之前
 您必須擁有vCenter Server上用於管理ESXi主機的管理員認證。
 
 .關於這項工作

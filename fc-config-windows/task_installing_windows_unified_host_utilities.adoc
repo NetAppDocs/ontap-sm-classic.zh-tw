@@ -13,6 +13,7 @@ summary: Windows Unified Host Utilities包含一個安裝程式、可設定所�
 [role="lead"]
 Windows Unified Host Utilities包含一個安裝程式、可設定所需的Windows登錄和HBA參數、讓Windows主機正確處理適用於NetApp ONTAP ®及E系列平台的儲存系統行為。
 
+.開始之前
 您必須完成下列工作：
 
 * 請查看互通性對照表中支援的組態
@@ -30,6 +31,7 @@ https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
 
 
 
+.關於這項工作
 您必須指定在安裝Windows Unified Host Utilities軟體套件時、是否要納入多重路徑支援。如果從Windows主機或虛擬機器到儲存系統有多個路徑、請選擇MPIO。如果您使用單一路徑來通往儲存系統、請選擇「不」MPIO。
 
 [NOTE]

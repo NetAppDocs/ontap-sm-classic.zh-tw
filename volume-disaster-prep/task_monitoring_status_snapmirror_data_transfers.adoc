@@ -13,6 +13,7 @@ summary: 您應該定期監控SnapMirror關係的狀態、以確保SnapMirror資
 [role="lead"]
 您應該定期監控SnapMirror關係的狀態、以確保SnapMirror資料傳輸依照指定的排程進行。
 
+.關於這項工作
 您必須從*目的地*叢集執行此工作。
 
 .步驟

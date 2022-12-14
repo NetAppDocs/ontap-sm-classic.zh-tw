@@ -28,6 +28,7 @@ summary: 您可以使用System Manager來建立及管理Kerberos領域服務。
 
 
 
+.關於這項工作
 建立Kerberos領域時、您必須在「建立Kerberos領域」精靈中設定下列屬性：
 
 * Kerberos領域
@@ -56,6 +57,7 @@ summary: 您可以使用System Manager來建立及管理Kerberos領域服務。
 
 您可以使用System Manager在儲存虛擬機器（SVM）層級編輯Kerberos領域組態。
 
+.關於這項工作
 您可以使用Kerberos領域編輯精靈來修改下列屬性：
 
 * Kdc IP位址和連接埠號碼

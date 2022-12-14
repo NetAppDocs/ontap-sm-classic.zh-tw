@@ -18,6 +18,7 @@ summary: 您可以在需要現有FlexVol 的流通量可寫入的時間點複本
 * 您要複製的磁碟區必須在線上、而且必須是非根磁碟區。
 
 
+.關於這項工作
 用於建立SnapMirror目的地FlexClone磁碟區的基礎Snapshot複本會標示為「使用中」、無法刪除。如果FlexClone磁碟區是從Snapshot複本建立而非最新的Snapshot複本、且該Snapshot複本不再存在於來源磁碟區、則對目的地磁碟區的所有SnapMirror更新都會失敗。
 
 .步驟

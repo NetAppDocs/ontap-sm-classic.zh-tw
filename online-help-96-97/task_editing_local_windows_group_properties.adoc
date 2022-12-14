@@ -19,6 +19,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 
 您可以使用System Manager新增及移除本機使用者、Active Directory使用者或Active Directory群組、以管理本機群組成員資格。您可以修改指派給群組的權限及群組說明、以便輕鬆識別群組。
 
+.關於這項工作
 在新增成員至本機Windows群組或從本機Windows群組移除成員時、請務必謹記下列事項：
 
 * 您無法將使用者新增至或移除特殊_Everyon__群組中的使用者。
@@ -45,6 +46,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下 * 編輯 * 。
 
 
+.結果
 本機Windows群組設定會被修改、變更會顯示在*群組*索引標籤中。
 
 
@@ -53,6 +55,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 
 您可以使用System Manager建立本機Windows群組、以便透過SMB連線來授權存取儲存虛擬機器（SVM）中所含的資料。您也可以指派權限、以定義群組成員在執行管理活動時擁有的使用者權限或功能。
 
+.開始之前
 必須為SVM設定CIFS伺服器。
 
 .關於這項工作
@@ -111,6 +114,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下「 * 建立 * 」。
 
 
+.結果
 本機Windows群組隨即建立、並列在「群組」視窗中。
 
 
@@ -124,6 +128,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 * 使用者必須存在、才能將使用者新增至群組。
 
 
+.關於這項工作
 將成員新增至本機Windows群組時、必須謹記下列事項：
 
 * 您無法將使用者新增至特殊的_Everyon__群組。
@@ -148,6 +153,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下「*確定*」。
 
 
+.結果
 您新增的使用者會列在*群組*索引標籤的使用者資料表中。
 
 
@@ -177,6 +183,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 在*重新命名群組*視窗中、指定群組的新名稱。
 
 
+.結果
 本機群組名稱隨即變更、群組會在「群組」視窗中以新名稱列出。
 
 
@@ -203,6 +210,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下*刪除*。
 
 
+.結果
 本機群組會連同其成員資格記錄一起刪除。
 
 
@@ -215,6 +223,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 * 必須為SVM設定CIFS伺服器。
 
 
+.關於這項工作
 本機Windows使用者名稱必須符合下列需求：
 
 * 不得超過20個字元
@@ -255,6 +264,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下「 * 建立 * 」。
 
 
+.結果
 本機Windows使用者帳戶隨即建立、並指派成員資格給所選群組。使用者帳戶會列在*使用者*索引標籤中。
 
 
@@ -272,6 +282,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下*修改*。
 
 
+.結果
 本機Windows使用者帳戶的屬性會被修改、並顯示在「*使用者*」索引標籤中。
 
 
@@ -285,6 +296,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 * 使用者必須存在、才能將使用者新增至群組。
 
 
+.關於這項工作
 您無法將使用者新增至特殊的_Everyon__群組。
 
 .步驟
@@ -296,6 +308,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下「*確定*」。
 
 
+.結果
 使用者帳戶會指派成員資格給所有選取的群組、而且使用者具有與這些群組相關聯的權限。
 
 
@@ -326,6 +339,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 確認新名稱、然後按一下*重新命名*。
 
 
+.結果
 使用者名稱隨即變更、新名稱會列在「*使用者*」索引標籤中。
 
 
@@ -334,6 +348,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 
 您可以使用System Manager重設Windows本機使用者的密碼。例如、如果目前的密碼遭入侵或使用者忘記密碼、您可能會想要重設密碼。
 
+.關於這項工作
 您設定的密碼必須符合下列條件：
 
 * 長度必須至少六個字元
@@ -376,6 +391,7 @@ summary: 您可以使用System Manager新增及移除本機使用者、Active Di
 . 按一下*刪除*。
 
 
+.結果
 本機使用者帳戶與其群組成員資格項目一起刪除。
 
 

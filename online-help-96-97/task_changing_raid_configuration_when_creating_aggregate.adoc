@@ -13,6 +13,7 @@ summary: 建立Aggregate時、您可以使用System Manager修改Aggregate的RAI
 [role="lead"]
 建立Aggregate時、您可以使用ONTAP 經典版的《經典版》（ONTAP 適用於支援的版本號為9、7及更早版本）來修改Aggregate的RAID類型和RAID群組大小選項的預設值。
 
+.關於這項工作
 如果Aggregate磁碟的磁碟類型為SSA或mSATA、且磁碟大小等於或大於10 TB、RAID-TEC 則唯一可用的RAID類型為「
 
 .步驟
