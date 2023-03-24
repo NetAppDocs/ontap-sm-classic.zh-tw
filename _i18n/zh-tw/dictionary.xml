@@ -344,7 +344,6 @@
 <block ref="0da6a5a2ec0e0b0adc52f0c7d86b1f9c" category="inline-link-macro-rx"></block></block>
   <block id="1d38d81d646985ec3458b8d11103d5e2" category="summary">成功建立叢集對等關係之後、您就準備好保護資料的可用度了。</block>
   <block id="4bb047f8c530785002e490ef17fa725e" category="doc">何處可找到其他資訊</block>
-  <block id="16514528850809da669879bf9c0def51" category="paragraph">成功建立叢集對等關係之後、您就準備好保護資料的可用度了。您可以使用下列資訊來保護資料：</block>
   <block id="6d35c972dd945f381f93429f77bd5da1" category="inline-link-macro">Volume災難恢復準備</block>
   <block id="a97f5cda69815f1e77668550fdaeedca" category="list-text"><block ref="a97f5cda69815f1e77668550fdaeedca" category="inline-link-macro-rx"></block></block>
   <block id="3552a03559c9745468390e65ff5420dd" category="paragraph">說明如何快速設定及監控不同叢集中磁碟區之間的SnapMirror關係。</block>
@@ -9254,4 +9253,8 @@
   <block id="7d5ed3e12000d1e71004e9e21d57eae0" category="paragraph-title">NFS傳輸協定追蹤的結果清單</block>
   <block id="48f1b7cd8c5e771ef4ce929e95a1d530" category="section-title">[叢集對等關係的先決條件]叢集對等關係的先決條件</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">相關資訊</block>
+  <block id="0832a9959e45466f30fb7d8ac340284b" category="list-text">選取SVM、然後按一下*編輯*。</block>
+  <block id="34a08238e292163c8a9e2bbdbca31b46" category="paragraph">指定在背景中持續執行重複資料刪除。此原則適用於所有新建立的磁碟區、以及尚未手動設定為背景重複資料刪除的所有升級磁碟區。如果您將原則變更為「預設」或任何其他原則、「自動」原則就會停用。</block>
+  <block id="0edff1709e29131d53711deec4ab07ca" category="paragraph">如果磁碟區從非AFF系統移至AFF 某個支援系統、預設會在目的地節點上啟用「自動」原則。如果磁碟區從AFF 一個支援節點移至非AFF節點、則目的地節點上的「自動」原則預設會被「僅限內嵌」原則取代。</block>
+  <block id="52d62f4cf5db67fc9fd3bfd390035923" category="paragraph">您可以使用下列資訊來保護資料：</block>
 </blocks>
