@@ -9257,4 +9257,7 @@
   <block id="34a08238e292163c8a9e2bbdbca31b46" category="paragraph">指定在背景中持續執行重複資料刪除。此原則適用於所有新建立的磁碟區、以及尚未手動設定為背景重複資料刪除的所有升級磁碟區。如果您將原則變更為「預設」或任何其他原則、「自動」原則就會停用。</block>
   <block id="0edff1709e29131d53711deec4ab07ca" category="paragraph">如果磁碟區從非AFF系統移至AFF 某個支援系統、預設會在目的地節點上啟用「自動」原則。如果磁碟區從AFF 一個支援節點移至非AFF節點、則目的地節點上的「自動」原則預設會被「僅限內嵌」原則取代。</block>
   <block id="52d62f4cf5db67fc9fd3bfd390035923" category="paragraph">您可以使用下列資訊來保護資料：</block>
+  <block id="a8bab46b4ec9127ebe1ca2eb2c46a963" category="paragraph">如果您使用 _Classic_ System Manager UI 搭配 ONTAP 9.7 及更早版本、請完成此工作。如果您使用的是 ONTAP 9.7 以上版本的系統管理員 UI 、請參閱 <block ref="7a8e6f659072e8056021df642c019ac1" category="inline-link-macro-rx"></block>。</block>
+  <block id="793d21bf18b025e1a67b437de47189f5" category="inline-link-macro">管理授權總覽</block>
+  <block id="0f130bf77768be1af34e32b76ed78492" category="paragraph">如需管理授權的詳細資訊、請參閱 <block ref="40de9a66c3e4481acf1e199beb3ce8ce" category="inline-link-macro-rx"></block>。</block>
 </blocks>
