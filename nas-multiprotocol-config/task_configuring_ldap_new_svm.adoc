@@ -19,13 +19,13 @@ summary: 如果您希望儲存虛擬機器（SVM）從Active Directory型輕量�
 如果您使用其他類型的LDAP、則必須使用命令列介面（CLI）和其他文件來設定LDAP。
 
 +
-https://www.netapp.com/pdf.html?item=/media/10720-tr-4067.pdf["NetApp技術報告4067：NetApp ONTAP 的NFS功能"^]
+https://["NetApp技術報告4067：NetApp ONTAP 的NFS功能"^]
 
 +
-https://www.netapp.com/pdf.html?item=/media/19384-tr-4616.pdf["NetApp技術報告4616：ONTAP NFS Kerberos in Some with Microsoft Active Directory"^]
+https://["NetApp技術報告4616：ONTAP NFS Kerberos in Some with Microsoft Active Directory"^]
 
 +
-https://www.netapp.com/pdf.html?item=/media/19423-tr-4835.pdf["NetApp技術報告4835：如何在ONTAP 功能方面設定LDAP"^]
+https://["NetApp技術報告4835：如何在ONTAP 功能方面設定LDAP"^]
 
 * 您必須知道AD網域和伺服器、以及下列繫結資訊：驗證層級、「連結」使用者和密碼、基礎DN和LDAP連接埠。
 

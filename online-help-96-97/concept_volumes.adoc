@@ -22,6 +22,6 @@ summary: 您可以使用System Manager來建立、編輯及刪除磁碟區。
 ====
 *相關資訊*
 
-https://docs.netapp.com/us-en/ontap/concepts/index.html["概念ONTAP"^]
+https://["概念ONTAP"^]
 
-https://docs.netapp.com/us-en/ontap/volumes/index.html["邏輯儲存管理"^]
+https://["邏輯儲存管理"^]

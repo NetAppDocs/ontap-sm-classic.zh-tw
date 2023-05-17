@@ -42,4 +42,4 @@ SVM系統管理員可以監控工作、網路連線、網路介面及SVM健全�
 
 *相關資訊*
 
-https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]
+https://["供應說明文件中心 ONTAP"]

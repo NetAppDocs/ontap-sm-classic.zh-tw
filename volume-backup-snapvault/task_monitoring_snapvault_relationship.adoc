@@ -41,7 +41,7 @@ summary: 您應該定期監控SnapVault 彼此之間的關聯狀態、以確保�
 您應該疑難排解SnapVault 任何有關「不穩固」關係的問題。SnapMirror關係的疑難排解程序也適用於SnapVault 不必要的關係。
 
 +
-http://www.netapp.com/us/media/tr-4015.pdf["NetApp技術報告4015：SnapMirror組態與最佳實務ONTAP 做法、適用於NetApp 9.1、9.2"^]
+http://["NetApp技術報告4015：SnapMirror組態與最佳實務ONTAP 做法、適用於NetApp 9.1、9.2"^]
 
 +
 image::../media/monitor_sv.gif[監控服務]

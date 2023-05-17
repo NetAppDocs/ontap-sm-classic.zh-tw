@@ -18,7 +18,7 @@ summary: 在您擴充叢集之前、必須先執行Config Advisor 幾ONTAP 個�
 +
 ** 如果Config Advisor 您的筆記型電腦上沒有任何更新、請下載。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://["NetApp下載Config Advisor"]
 
 ** 如果您有Config Advisor 這個功能、請啟動它、按一下「*說明*>*檢查更新*」、然後視需要依照提示進行升級。
 +

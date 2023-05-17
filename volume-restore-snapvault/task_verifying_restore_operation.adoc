@@ -26,7 +26,7 @@ summary: 從SnapVault 還原目的地磁碟區執行還原作業之後、您必�
 您應該疑難排解SnapVault 任何有關「不穩固」關係的問題。SnapMirror關係的疑難排解程序也適用於SnapVault 不必要的關係。
 
 +
-http://www.netapp.com/us/media/tr-4015.pdf["NetApp技術報告4015：SnapMirror組態與最佳實務ONTAP 做法、適用於NetApp 9.1、9.2"^]
+http://["NetApp技術報告4015：SnapMirror組態與最佳實務ONTAP 做法、適用於NetApp 9.1、9.2"^]
 
 
 

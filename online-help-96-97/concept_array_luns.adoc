@@ -181,4 +181,4 @@ Array LUN清單下方的區域會顯示所選陣列LUN的詳細資訊。
 
 *相關資訊*
 
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html["介紹虛擬化安裝需求與參考資料FlexArray"]
+https://["介紹虛擬化安裝需求與參考資料FlexArray"]

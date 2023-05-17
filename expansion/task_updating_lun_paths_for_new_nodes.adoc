@@ -65,6 +65,6 @@ cluster1::> network interface create -vserver vs1 -lif lif5 -role data
 
 *相關資訊*
 
-https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN組態"^]
+https://["SAN組態"^]
 
-https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]
+https://["SAN管理"^]

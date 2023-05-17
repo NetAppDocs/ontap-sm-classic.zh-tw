@@ -27,15 +27,15 @@ summary: 成功建立叢集對等關係之後、您就準備好保護資料的�
 
 如需詳細資訊、請參閱：
 
-* https://docs.netapp.com/us-en/ontap/data-protection/index.html["資料保護"^]
+* https://["資料保護"^]
 +
 說明如何使用Snapshot複本和SnapMirror複寫到遠端系統、防止資料遺失
 
-* http://www.netapp.com/us/media/tr-4015.pdf["NetApp技術報告4015：SnapMirror組態與最佳實務ONTAP 做法、適用於NetApp 9.1、9.2"^]
+* http://["NetApp技術報告4015：SnapMirror組態與最佳實務ONTAP 做法、適用於NetApp 9.1、9.2"^]
 +
 說明設定複寫的相關資訊與最佳實務做法、包括叢集對等。
 
-* https://docs.netapp.com/us-en/ontap/concepts/index.html["概念ONTAP"^]
+* https://["概念ONTAP"^]
 +
 提供有關叢集對等的概念性資訊。
 

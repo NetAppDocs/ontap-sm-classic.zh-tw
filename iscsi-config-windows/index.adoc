@@ -27,9 +27,9 @@ summary: 使用ONTAP 經典的支援功能（ONTAP 例如：支援支援支援�
 * 您未設定iSCSI SAN開機。
 
 
-如需更多關於如何使用ONTAP 支援功能來設定特定主機的資訊、請參閱 https://docs.netapp.com/us-en/ontap-sanhost/index.html["SAN主機組態ONTAP"]。
+如需更多關於如何使用ONTAP 支援功能來設定特定主機的資訊、請參閱 https://["SAN主機組態ONTAP"]。
 
-如需SAN管理的其他詳細資料、請參閱 https://docs.netapp.com/us-en/ontap/san-admin/index.html["支援SAN管理的概述ONTAP"]
+如需SAN管理的其他詳細資料、請參閱 https://["支援SAN管理的概述ONTAP"]
 
 
 
@@ -41,8 +41,8 @@ summary: 使用ONTAP 經典的支援功能（ONTAP 例如：支援支援支援�
 | 若要完成此工作、請使用... | 請參閱... 
 
 
-| 重新設計的System Manager（9.7及更新版本隨附） | https://docs.netapp.com/us-en/ontap/task_san_provision_windows.html["為Windows伺服器配置SAN儲存設備"] 
+| 重新設計的System Manager（9.7及更新版本隨附） | https://["為Windows伺服器配置SAN儲存設備"] 
 
 
-| 指令行介面（CLI）ONTAP | https://docs.netapp.com/us-en/ontap/san-admin/lun-setup-workflow-concept.html["使用CLI進行LUN設定工作流程"] 
+| 指令行介面（CLI）ONTAP | https://["使用CLI進行LUN設定工作流程"] 
 |===

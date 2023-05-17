@@ -26,7 +26,7 @@ summary: 您可以新增HA配對、快速且不中斷營運地擴充現有的叢
 如果您要將節點新增至單節點叢集、則必須遵循不同的程序。
 
 +
-https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-controller-add/home.html["新增第二個控制器以建立HA配對"]
+https://["新增第二個控制器以建立HA配對"]
 
 ** 它不使用IPv6定址或儲存加密。
 ** 這不是MetroCluster 一個非結構的組態。
@@ -41,7 +41,7 @@ https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-controller-add/home.htm
 
 * 使用ONTAP System Manager完成不含更新版本的組態工作時、您想要使用適用於ONTAP 更新版本的_Classic _ System Manager UI、而非ONTAP 適用於更新版本的《不適用於ONTAP 更新版本的不適用系統管理程式UI》。
 +
-https://docs.netapp.com/us-en/ontap/["系統管理程式文件ONTAP"]
+https://["系統管理程式文件ONTAP"]
 
 * 您想要使用最佳實務做法、而非探索每個可用選項。
 * 您不想閱讀許多概念背景。

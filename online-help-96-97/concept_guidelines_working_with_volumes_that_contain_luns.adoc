@@ -48,4 +48,4 @@ Snapshot複本是許多選用功能的必備項目SyncMirror 、例如SnapMirror
 
 *相關資訊*
 
-https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]
+https://["供應說明文件中心 ONTAP"]

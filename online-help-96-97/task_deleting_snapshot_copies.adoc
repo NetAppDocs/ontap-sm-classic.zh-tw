@@ -47,4 +47,4 @@ Snapshot複本已鎖定、下次更新時必須使用。
 
 xref:reference_volumes_window.adoc[Volume視窗]
 
-https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]
+https://["供應說明文件中心 ONTAP"]

@@ -20,7 +20,7 @@ ESXi主機需要網路連接埠、才能將iSCSI連線至儲存叢集。
 
 此工作會列出設定ESXi主機的高層級步驟。如果您需要更詳細的指示、請參閱VMware出版品_VMware vSphere Storage_以瞭解您的ESXi版本。
 
-http://www.vmware.com["VMware"]
+http://["VMware"]
 
 .步驟
 . 登入vSphere Client、然後從詳細目錄窗格中選取ESXi主機。

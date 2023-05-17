@@ -72,4 +72,4 @@ summary: 在您使用ONTAP 含有ONTAP 更新版本的《經典》介面來設�
 預設的「叢集間」防火牆原則允許透過HTTPS傳輸協定和所有IP位址（0.00.0.0/0）進行存取。如有必要、您可以修改或取代原則。
 
 .相關資訊
-https://docs.netapp.com/us-en/ontap/data-protection/index.html["資料保護"]
+https://["資料保護"]

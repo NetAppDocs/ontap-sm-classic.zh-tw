@@ -29,8 +29,8 @@ HBA公用程式可讓您檢視每個FC連接埠的全球連接埠名稱（WWPN�
 
 *相關資訊*
 
-https://www.broadcom.com/support/download-search?tab=search["Broadcom（Emulex）支援文件與下載"]
+https://["Broadcom（Emulex）支援文件與下載"]
 
-https://www.broadcom.com/products/storage/fibre-channel-host-bus-adapters/emulex-hba-manager["Emulex HBA管理程式"]
+https://["Emulex HBA管理程式"]
 
-http://driverdownloads.qlogic.com/QLogicDriverDownloads_UI/OEM_Product_List.aspx?oemid=372["QLogic：NetApp下載"]
+http://["QLogic：NetApp下載"]

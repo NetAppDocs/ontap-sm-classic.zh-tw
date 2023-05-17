@@ -29,4 +29,4 @@ summary: 您可以使用System Manager來管理FC/FCoE和NVMe介面卡。
 
 xref:reference_network_window.adoc[網路視窗]
 
-https://docs.netapp.com/us-en/ontap/networking/index.html["網路管理"]
+https://["網路管理"]

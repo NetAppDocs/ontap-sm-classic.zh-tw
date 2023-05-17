@@ -152,4 +152,4 @@ SNMP視窗可讓您檢視系統目前的SNMP設定。您也可以變更系統的
 
 *相關資訊*
 
-https://docs.netapp.com/us-en/ontap/networking/index.html["網路管理"]
+https://["網路管理"]

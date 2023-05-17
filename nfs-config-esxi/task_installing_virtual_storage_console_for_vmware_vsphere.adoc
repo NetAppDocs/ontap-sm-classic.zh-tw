@@ -23,7 +23,7 @@ summary: 可自動執行與ESXi主機搭配使用儲存設備所需的許多組�
 .步驟
 . 下載您的組態所支援的版本、如互通性對照表工具所示。
 +
-https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]
+https://["NetApp支援"]
 
 . 部署虛擬應用裝置、並依照部署與設定指南_中的步驟進行設定。
 

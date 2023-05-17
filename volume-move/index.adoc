@@ -53,14 +53,14 @@ summary: 使用支援NetApp 9.7或更早版本的經典版支援功能、您可�
  a| 
 重新設計的System Manager（ONTAP 提供更新版本的更新版本）
  a| 
-https://docs.netapp.com/us-en/ontap/volumes/manage-volumes-task.html["管理磁碟區"^]
+https://["管理磁碟區"^]
 
 
 
  a| 
 這個指令行介面ONTAP
  a| 
-https://docs.netapp.com/us-en/ontap/volumes/index.html["邏輯儲存管理"^]
+https://["邏輯儲存管理"^]
 
 |===
 
@@ -71,10 +71,10 @@ https://docs.netapp.com/us-en/ontap/volumes/index.html["邏輯儲存管理"^]
 
 * 如果您想在不中斷營運的情況下就地升級控制器、可以考慮使用不需要移動實體資料的集合體重新配置（ARL）。
 +
-https://docs.netapp.com/us-en/ontap/high-availability/index.html["高可用度"^]
+https://["高可用度"^]
 
 * 如果您只想移動不含LUN內含磁碟區的LUN、可以使用LUN移動程序。
 +
-https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]
+https://["SAN管理"^]
 
 

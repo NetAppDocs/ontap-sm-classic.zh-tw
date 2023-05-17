@@ -37,4 +37,4 @@ LUN會對應到igroup中啟動器的子集、以限制從主機到LUN的路徑�
 
 *相關資訊*
 
-http://kb.vmware.com/kb/1003486["VMware知識庫文章1003486：使用ping命令測試網路連線能力"]
+http://["VMware知識庫文章1003486：使用ping命令測試網路連線能力"]

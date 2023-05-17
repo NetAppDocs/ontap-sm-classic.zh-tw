@@ -42,5 +42,5 @@ summary: 您可以在儲存虛擬機器上快速設定FC服務、配置LUN、並
 | 指令行介面（CLI）ONTAP | link:https://docs.netapp.com/us-en/ontap/san-admin/lun-setup-workflow-concept.html["使用CLI進行LUN設定工作流程"^] 
 |===
 .其他資源
-* https://docs.netapp.com/us-en/ontap-sanhost/index.html["NetApp文件：主機公用程式"^]
+* https://["NetApp文件：主機公用程式"^]
 

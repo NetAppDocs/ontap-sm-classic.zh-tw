@@ -22,11 +22,11 @@ summary: 在您擴充叢集之前、您必須確定下列事項：支援規劃�
 .. 確認新控制器的平台可以與叢集現有的控制器混合使用。
 .. 確認擴充叢集未超過平台的系統限制。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 .. 如果您的叢集已設定SAN、請確認擴充叢集未超過FC、FCoE和iSCSI的組態限制。
 +
-https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN組態"^]
+https://["SAN組態"^]
 
 
 
@@ -53,7 +53,7 @@ CIFS              license CIFS License          -
 .. 檢閱輸出以識別額外節點所需的節點鎖定授權（以「license（授權）」類型識別）。
 .. 確保附加節點隨附的授權與叢集現有的節點鎖定授權一致。
 +
-http://mysupport.netapp.com/licenses["NetApp軟體授權搜尋"^]
+http://["NetApp軟體授權搜尋"^]
 
 
 
@@ -62,14 +62,14 @@ http://mysupport.netapp.com/licenses["NetApp軟體授權搜尋"^]
 
 . 確認站台已準備好迎接所有新設備。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 +
 如果站台尚未就緒、您必須先準備好站台、然後再繼續擴充。
 
 . 驗證現有的交換器是否支援其他控制器。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 +
 如果叢集是無交換器的、或現有的交換器不支援其他節點、您必須取得叢集交換器、以便稍後在擴充程序中安裝。

@@ -22,4 +22,4 @@ summary: 裝載資料存放區可讓主機存取儲存設備。當資料存放�
 
 *相關資訊*
 
-https://docs.netapp.com/vapp-96/topic/com.netapp.doc.vsc-iag/home.html["適用於VMware vSphere Administration 9.6版的Virtual Storage Console、VASA Provider及Storage Replication Adapter"]
+https://["適用於VMware vSphere Administration 9.6版的Virtual Storage Console、VASA Provider及Storage Replication Adapter"]

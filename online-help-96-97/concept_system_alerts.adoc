@@ -214,4 +214,4 @@ CIFS不中斷營運（CIF-NDO）
 
 *相關資訊*
 
-https://docs.netapp.com/us-en/ontap/system-admin/index.html["系統管理"]
+https://["系統管理"]

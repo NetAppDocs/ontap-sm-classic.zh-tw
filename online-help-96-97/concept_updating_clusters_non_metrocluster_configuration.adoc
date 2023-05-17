@@ -17,4 +17,4 @@ image::../media/updating_cluster.gif[正在更新叢集]
 
 *相關資訊*
 
-https://docs.netapp.com/us-en/ontap/upgrade/task_upgrade_andu_sm.html["升級ONTAP"]
+https://["升級ONTAP"]

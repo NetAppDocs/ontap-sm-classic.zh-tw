@@ -18,11 +18,11 @@ Windows Unified Host Utilities包含一個安裝程式、可設定所需的Windo
 
 * 請查看互通性對照表中支援的組態
 +
-https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
+https://["NetApp 互通性對照表工具"]
 
 * 從互通性對照表中找出所有必要的Windows修補程式
 +
-https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
+https://["NetApp 互通性對照表工具"]
 
 * 新增FCP授權並啟動目標服務
 * 驗證纜線
@@ -46,7 +46,7 @@ MPIO選項不適用於Windows XP和Windows Vista系統；這些來賓作業系�
 .步驟
 . 從NetApp支援網站下載適當版本的Windows Unified Host Utilities。
 +
-https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]
+https://["NetApp支援"]
 
 . 執行執行檔、並依照畫面上的指示進行。
 . 出現提示時、重新啟動Windows主機。

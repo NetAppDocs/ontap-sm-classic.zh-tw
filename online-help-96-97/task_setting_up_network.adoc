@@ -131,11 +131,11 @@ IP位址會依序套用至叢集管理、節點管理和服務處理器管理網
 
 *相關資訊*
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Systems/FAS_Systems/What_is_a_Service_Processor_and_how_do_I_use_it%3F["什麼是服務處理器？我該如何使用？"]
+https://["什麼是服務處理器？我該如何使用？"]
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_configure_and_troubleshoot_NTP_on_clustered_Data_ONTAP_8.2_and_later_using_CLI["如何使用Data ONTAP CLI在叢集式的更新版本上設定及疑難排解NTP"]
+https://["如何使用Data ONTAP CLI在叢集式的更新版本上設定及疑難排解NTP"]
 
-https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]
+https://["供應說明文件中心 ONTAP"]
 
 xref:reference_network_window.adoc[網路視窗]
 

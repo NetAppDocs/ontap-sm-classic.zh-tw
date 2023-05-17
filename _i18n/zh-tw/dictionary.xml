@@ -1503,7 +1503,6 @@
   <block id="7953c54a0dd3839684f7d5dc78cc9caa" category="paragraph">使用ONTAP 經典的支援功能（ONTAP 例如：支援支援支援支援的更新版本）、您可以在儲存虛擬機器（SVM）上快速設定iSCSI服務、配置LUN、並在Red Hat Enterprise Linux伺服器上提供LUN。</block>
   <block id="f6b61538a8daed22de52194e5df3fc3d" category="list-text">您在執行受支援版本RHEL系列6.4或更新版本的Red Hat Enterprise Linux主機上使用iSCSI軟體啟動器。</block>
   <block id="4ccd1411513c65dcb6a679ea9915e95f" category="paragraph">如需SAN管理的其他詳細資料、請參閱<block ref="8499bea34abc994e4281bc61265ea2b9" category="inline-link-rx"></block></block>
-  <block id="2043d9c76a0ce0aead2a3d90c7edea3d" category="cell"><block ref="2043d9c76a0ce0aead2a3d90c7edea3d" category="inline-link-rx"></block></block>
   <block id="21da5bdcfd1b855ee9de397cb8a78a1d" category="cell"><block ref="21da5bdcfd1b855ee9de397cb8a78a1d" category="inline-link-rx"></block></block>
   <block id="eeaa381e0c1c22208e5b53b5f89170e3" category="paragraph">如果有任何測試失敗、請確認iSCSI服務正在執行、然後重新檢查DM-Multipath組態和通往多重路徑裝置的iSCSI路徑。</block>
   <block id="b9d5eb0ccc401c9f51d655b67ec79aca" category="image-alt">設定Linux的iSCSI傳輸協定</block>
@@ -9260,4 +9259,5 @@
   <block id="a8bab46b4ec9127ebe1ca2eb2c46a963" category="paragraph">如果您使用 _Classic_ System Manager UI 搭配 ONTAP 9.7 及更早版本、請完成此工作。如果您使用的是 ONTAP 9.7 以上版本的系統管理員 UI 、請參閱 <block ref="7a8e6f659072e8056021df642c019ac1" category="inline-link-macro-rx"></block>。</block>
   <block id="793d21bf18b025e1a67b437de47189f5" category="inline-link-macro">管理授權總覽</block>
   <block id="0f130bf77768be1af34e32b76ed78492" category="paragraph">如需管理授權的詳細資訊、請參閱 <block ref="40de9a66c3e4481acf1e199beb3ce8ce" category="inline-link-macro-rx"></block>。</block>
+  <block id="604cb5a84c00d7e349ae07b5f7fe770d" category="cell"><block ref="604cb5a84c00d7e349ae07b5f7fe770d" category="inline-link-rx"></block></block>
 </blocks>
