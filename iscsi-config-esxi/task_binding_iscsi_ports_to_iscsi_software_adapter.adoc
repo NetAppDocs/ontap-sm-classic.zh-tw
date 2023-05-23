@@ -23,7 +23,7 @@ summary: 您為iSCSI建立的連接埠必須與iSCSI軟體介面卡相關聯、�
 
 如需詳細指示、請參閱VMware vSphere Storage_以瞭解VMware的ESXi 5版本。
 
-http://["VMware"]
+http://www.vmware.com["VMware"]
 
 .步驟
 . 使用vSphere Client中iSCSI軟體介面卡*介面卡詳細資料*對話方塊的*網路連接埠繫結*索引標籤、將第一個iSCSI連接埠繫結至iSCSI軟體介面卡。

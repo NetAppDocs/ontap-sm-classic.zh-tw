@@ -285,4 +285,4 @@ xref:task_provisioning_storage_by_creating_flash_pool_aggregate_manually.adoc[�
 
 xref:task_provisioning_cache_by_adding_disks.adoc[新增SSD來配置快取]
 
-https://["磁碟與Aggregate管理"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["磁碟與Aggregate管理"]

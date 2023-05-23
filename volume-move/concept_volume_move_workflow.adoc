@@ -30,13 +30,13 @@ image::../media/volume_move_workflow.jpg[Volume Move工作流程]
  a| 
 重新設計的System Manager（ONTAP 提供更新版本的更新版本）
  a| 
-https://["管理磁碟區"^]
+https://docs.netapp.com/us-en/ontap/volumes/manage-volumes-task.html["管理磁碟區"^]
 
 
 
  a| 
 這個指令行介面ONTAP
  a| 
-https://["邏輯儲存管理"^]
+https://docs.netapp.com/us-en/ontap/volumes/index.html["邏輯儲存管理"^]
 
 |===

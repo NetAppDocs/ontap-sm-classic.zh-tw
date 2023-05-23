@@ -16,7 +16,7 @@ summary: 如果Windows主機中的FC主機匯流排介面卡（HBA）未執行�
 .開始之前
 您必須已從互通性對照表工具中找出您組態所支援的驅動程式、韌體和BIOS版本。
 
-https://["NetApp 互通性對照表工具"]
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
 
 .關於這項工作
 HBA廠商提供驅動程式、韌體、BIOS及HBA公用程式。

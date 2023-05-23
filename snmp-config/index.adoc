@@ -40,13 +40,13 @@ summary: 使用ONTAP 含有ONTAP 更新版本的《經典》介面、您可以�
  a| 
 重新設計的System Manager（ONTAP 提供更新版本的更新版本）
  a| 
-https://["管理叢集上的SNMP（僅限叢集管理員）>概述"^]
+https://docs.netapp.com/us-en/ontap/networking/manage_snmp_on_the_cluster_@cluster_administrators_only@_overview.html["管理叢集上的SNMP（僅限叢集管理員）>概述"^]
 
 
 
  a| 
 指令行介面（CLI）ONTAP
  a| 
-https://["管理SNMP的命令"^]
+https://docs.netapp.com/us-en/ontap/networking/commands_for_managing_snmp.html["管理SNMP的命令"^]
 
 |===

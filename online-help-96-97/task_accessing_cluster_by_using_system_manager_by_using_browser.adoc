@@ -45,4 +45,4 @@ summary: 如果您偏好使用圖形介面、而非命令列介面（CLI）來�
 
 *相關資訊*
 
-https://["供應說明文件中心 ONTAP"]
+https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]

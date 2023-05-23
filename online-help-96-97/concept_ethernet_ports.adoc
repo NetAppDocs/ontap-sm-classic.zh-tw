@@ -124,8 +124,8 @@ summary: 您可以使用System Manager來建立及管理乙太網路連接埠。
 
 *相關資訊*
 
-https://["網路管理"]
+https://docs.netapp.com/us-en/ontap/networking/index.html["網路管理"]
 
-https://["概念ONTAP"]
+https://docs.netapp.com/us-en/ontap/concepts/index.html["概念ONTAP"]
 
 xref:reference_network_window.adoc[網路視窗]

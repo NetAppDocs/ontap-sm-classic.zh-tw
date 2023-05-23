@@ -57,4 +57,4 @@ summary: 您可以在SAN主機的儲存虛擬機器（SVM）上設定FC傳輸協
 
 *相關資訊*
 
-https://["供應說明文件中心 ONTAP"]
+https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]

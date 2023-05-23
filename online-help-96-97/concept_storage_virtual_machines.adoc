@@ -15,6 +15,6 @@ summary: 您可以使用System Manager來管理叢集中的SVM。
 
 *相關資訊*
 
-https://["SAN管理"^]
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]
 
-https://["概念ONTAP"^]
+https://docs.netapp.com/us-en/ontap/concepts/index.html["概念ONTAP"^]

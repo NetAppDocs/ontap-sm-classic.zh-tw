@@ -15,4 +15,4 @@ summary: 您可以使用System Manager建立Aggregate、以支援使用者的不
 
 *相關資訊*
 
-https://["磁碟與Aggregate管理"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["磁碟與Aggregate管理"]

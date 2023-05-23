@@ -345,4 +345,4 @@ System Manager包含多項功能、可協助您建立、編輯或刪除配額。
 
 *相關資訊*
 
-https://["邏輯儲存管理"^]
+https://docs.netapp.com/us-en/ontap/volumes/index.html["邏輯儲存管理"^]

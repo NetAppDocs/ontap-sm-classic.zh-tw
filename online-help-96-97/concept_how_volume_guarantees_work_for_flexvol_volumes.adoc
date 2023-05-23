@@ -40,4 +40,4 @@ Volume保證類型可以是「Volume」（Volume）（預設類型）或「NONE�
 
 *相關資訊*
 
-http://["NetApp技術報告3865：NetApp精簡配置部署與實作Data ONTAP 功能VMware 8.1（7-Mode）"^]
+http://www.netapp.com/us/media/tr-3965.pdf["NetApp技術報告3865：NetApp精簡配置部署與實作Data ONTAP 功能VMware 8.1（7-Mode）"^]

@@ -133,6 +133,6 @@ summary: 您可以使用System Manager將SSD新增為儲存資源池或專用SSD
 
 *相關資訊*
 
-http://["NetApp技術報告4070：Flash Pool設計與實作"^]
+http://www.netapp.com/us/media/tr-4070.pdf["NetApp技術報告4070：Flash Pool設計與實作"^]
 
 xref:concept_how_storage_pool_works.adoc[儲存資源池的運作方式]

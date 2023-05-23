@@ -192,4 +192,4 @@ iSCSI別名是1到128個可列印字元的字串。iSCSI別名不得包含空格
 
 *相關資訊*
 
-https://["SAN管理"^]
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]

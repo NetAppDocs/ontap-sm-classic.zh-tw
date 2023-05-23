@@ -53,4 +53,4 @@ image::../media/lun_creation_thin_provisioned_linux_iscsi_rhel.gif[圖例顯示�
 
 *相關資訊*
 
-https://["系統管理"]
+https://docs.netapp.com/us-en/ontap/system-admin/index.html["系統管理"]

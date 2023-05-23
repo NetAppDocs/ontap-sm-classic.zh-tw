@@ -19,13 +19,13 @@ Linux Unified Host Utilities軟體包含「sanlun」公用程式、這是一種N
 .步驟
 . 從NetApp支援網站下載支援的Linux Unified Host Utilities版本。
 +
-http://["NetApp下載：軟體"]
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp下載：軟體"]
 
 . 依照安裝文件中的指示安裝Linux Unified Host Utilities軟體。
 . 如果未安裝「t優 化」套件、請輸入下列命令：「yum install t未經 調整」
 . 對於實體主機、請確定您已設定「企業級儲存設備」設定檔：「調整過的-adm profile企業級儲存設備」
 . 對於虛擬主機、請確定您已設定「虛擬客體」設定檔：「協調的-adm設定檔虛擬客體」
 +
-https://["安裝Linux Unified Host Utilities 7.1"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["安裝Linux Unified Host Utilities 7.1"]
 
 

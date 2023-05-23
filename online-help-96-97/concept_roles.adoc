@@ -96,4 +96,4 @@ summary: 您可以使用System Manager建立存取控制的使用者角色。
 
 *相關資訊*
 
-https://["系統管理員驗證與RBAC"^]
+https://docs.netapp.com/us-en/ontap/authentication/index.html["系統管理員驗證與RBAC"^]

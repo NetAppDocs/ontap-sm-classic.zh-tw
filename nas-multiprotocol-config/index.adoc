@@ -26,8 +26,8 @@ summary: 您可以在新的或現有的儲存虛擬機器（SVM）上、快速�
 
 如果您想要瞭解ONTAP 有關支援各種功能的資訊、請參閱下列文件：
 
-* https://["NFS管理"^]
-* https://["中小企業管理"^]
+* https://docs.netapp.com/us-en/ontap/nfs-admin/index.html["NFS管理"^]
+* https://docs.netapp.com/us-en/ontap/smb-admin/index.html["中小企業管理"^]
 
 
 

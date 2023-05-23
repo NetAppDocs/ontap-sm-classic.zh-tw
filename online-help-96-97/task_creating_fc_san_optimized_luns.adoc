@@ -17,7 +17,7 @@ summary: 您可以在AFF 初始設定叢集時、使用System Manager在一個�
 * 您必須確定僅建立一個名稱為AFF_SAN_Default_SVM的儲存虛擬機器（SVM）、且此SVM不包含任何LUN。
 * 您必須已確認硬體設定已成功完成。
 +
-https://["供應說明文件中心 ONTAP"]
+https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]
 
 
 
@@ -98,4 +98,4 @@ SQL
 
 *相關資訊*
 
-https://["供應說明文件中心 ONTAP"]
+https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]

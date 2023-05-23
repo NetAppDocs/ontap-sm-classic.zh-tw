@@ -45,4 +45,4 @@ xref:task_setting_time_zone_for_cluster.adoc[設定叢集的時區]
 
 xref:task_setting_up_network_when_ip_address_range_is_disabled.adoc[停用IP位址範圍時設定網路]
 
-https://["系統管理"]
+https://docs.netapp.com/us-en/ontap/system-admin/index.html["系統管理"]

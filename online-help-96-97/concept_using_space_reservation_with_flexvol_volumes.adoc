@@ -21,6 +21,6 @@ Aggregate可為多個儲存虛擬機器（SVM）所包含的磁碟區提供儲�
 
 *相關資訊*
 
-http://["NetApp技術報告3563：NetApp精簡配置以隨需分配來提高儲存使用率"^]
+http://www.netapp.com/us/media/tr-3563.pdf["NetApp技術報告3563：NetApp精簡配置以隨需分配來提高儲存使用率"^]
 
-http://["NetApp技術報告3483：NetApp SAN或IP SAN企業環境中的精簡配置"^]
+http://www.netapp.com/us/media/tr-3483.pdf["NetApp技術報告3483：NetApp SAN或IP SAN企業環境中的精簡配置"^]

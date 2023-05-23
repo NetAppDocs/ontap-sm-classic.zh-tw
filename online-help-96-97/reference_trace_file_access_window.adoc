@@ -108,6 +108,6 @@ summary: 從System Manager 9.6開始、您可以使用「追蹤檔案存取」�
 
 *相關資訊*
 
-https://["SMB/CIFS管理"]
+https://docs.netapp.com/us-en/ontap/smb-admin/index.html["SMB/CIFS管理"]
 
 xref:../nas-multiprotocol-config/index.html[SMB/CIFS與NFS多重傳輸協定組態]

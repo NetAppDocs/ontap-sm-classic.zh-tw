@@ -225,10 +225,10 @@ qtree清單會顯示qtree所在的磁碟區和qtree名稱。
 
 *相關資訊*
 
-https://["概念ONTAP"^]
+https://docs.netapp.com/us-en/ontap/concepts/index.html["概念ONTAP"^]
 
-https://["邏輯儲存管理"^]
+https://docs.netapp.com/us-en/ontap/volumes/index.html["邏輯儲存管理"^]
 
-https://["NFS管理"^]
+https://docs.netapp.com/us-en/ontap/nfs-admin/index.html["NFS管理"^]
 
-https://["SMB/CIFS管理"^]
+https://docs.netapp.com/us-en/ontap/smb-admin/index.html["SMB/CIFS管理"^]

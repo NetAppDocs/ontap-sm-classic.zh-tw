@@ -16,7 +16,7 @@ summary: 若要驗證使用支援FabricPool的Aggregate、以用作物件存放�
 .步驟
 . 請遵循StorageGRID 《支持資料》系統文件、StorageGRID 使用Grid Management介面複製《支持資料》系統的CA認證。
 +
-https://["《英文版》11.3《系統管理員指南》StorageGRID"]
+https://docs.netapp.com/sgws-113/topic/com.netapp.doc.sg-admin/home.html["《英文版》11.3《系統管理員指南》StorageGRID"]
 
 +
 在將StorageGRID 功能區新增為雲端層時、如果未安裝CA憑證、則會顯示訊息。

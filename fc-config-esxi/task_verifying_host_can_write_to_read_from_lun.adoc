@@ -39,4 +39,4 @@ summary: 在使用LUN之前、您應該先確認主機可以將資料寫入LUN�
 
 *相關資訊*
 
-https://["供應能力組態ONTAP"]
+https://docs.netapp.com/us-en/ontap/high-availability/index.html["供應能力組態ONTAP"]

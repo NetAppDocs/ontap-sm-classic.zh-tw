@@ -93,4 +93,4 @@ FC服務可讓您管理FC目標介面卡、以便與LUN搭配使用。您可以�
 
 xref:task_configuring_fc_fcoe_protocol_on_svms.adoc[在SVM上設定FC傳輸協定和FCoE傳輸協定]
 
-https://["SAN管理"^]
+https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]

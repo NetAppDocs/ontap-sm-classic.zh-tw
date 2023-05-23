@@ -15,4 +15,4 @@ summary: 您可以使用System Manager來建立及管理Windows群組和使用�
 
 *相關資訊*
 
-https://["SMB/CIFS管理"]
+https://docs.netapp.com/us-en/ontap/smb-admin/index.html["SMB/CIFS管理"]

@@ -46,4 +46,4 @@ summary: 在啟動目的地Volume時、您可以設定必要的組態、例如NA
 
 *相關資訊*
 
-https://["供應說明文件中心 ONTAP"]
+https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"]

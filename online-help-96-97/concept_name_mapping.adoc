@@ -129,4 +129,4 @@ summary: 您可以使用System Manager來指定名稱對應項目、以對應不
 
 *相關資訊*
 
-https://["SMB/CIFS管理"]
+https://docs.netapp.com/us-en/ontap/smb-admin/index.html["SMB/CIFS管理"]

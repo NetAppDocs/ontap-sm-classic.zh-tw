@@ -43,4 +43,4 @@ summary: 您可以在System Manager中使用預先定義的應用程式範本、
 
 *相關資訊*
 
-https://["概念ONTAP"]
+https://docs.netapp.com/us-en/ontap/concepts/index.html["概念ONTAP"]

@@ -22,7 +22,7 @@ summary: 您可以使用System Manager來檢視、管理或刪除叢集或節點
 如需使用ONTAP 更新版本的資訊、請參閱下列資訊：
 
 * link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["管理授權總覽（僅限叢集管理員）"^]
-* https://["新增授權金鑰以啟用新功能"^]
+* https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html["新增授權金鑰以啟用新功能"^]
 
 
 .開始之前
@@ -263,6 +263,6 @@ System Manager不會監控評估授權、也不會在評估授權即將到期時
 
 *相關資訊*
 
-https://["系統管理"]
+https://docs.netapp.com/us-en/ontap/system-admin/index.html["系統管理"]
 
 xref:task_creating_cluster.adoc[建立叢集]

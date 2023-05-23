@@ -37,6 +37,6 @@ System Manager會分析叢集中可用的備用磁碟、並根據最佳實務做
 
 *相關資訊*
 
-https://["磁碟與Aggregate管理"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["磁碟與Aggregate管理"]
 
 xref:task_zeroing_disks.adoc[將備用磁碟歸零]

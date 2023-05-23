@@ -103,4 +103,4 @@ summary: 您可以使用System Manager中提供的範本檔案建立叢集、設
 
 *相關資訊*
 
-https://["System Manager叢集引導式設定範本"]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/System_Manager_Cluster_Guided_Setup_Templates["System Manager叢集引導式設定範本"]

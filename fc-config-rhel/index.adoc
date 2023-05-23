@@ -28,9 +28,9 @@ NOTE: 乙太網路光纖通道（FCoE）不在本程序的涵蓋範圍之內。
 
 如果這些假設不符合您的情況、您應該看到下列資源：
 
-* https://["SAN管理"^]
-* https://["SAN組態"^]
-* https://["安裝Linux Unified Host Utilities 7.1"^]
+* https://docs.netapp.com/us-en/ontap/san-admin/index.html["SAN管理"^]
+* https://docs.netapp.com/us-en/ontap/san-config/index.html["SAN組態"^]
+* https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html["安裝Linux Unified Host Utilities 7.1"^]
 
 
 

@@ -72,4 +72,4 @@ NIS視窗可讓您檢視儲存系統的目前NIS設定。
 
 *相關資訊*
 
-https://["NFS組態"^]
+https://docs.netapp.com/us-en/ontap/nfs-config/index.html["NFS組態"^]

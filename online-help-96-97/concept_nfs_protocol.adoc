@@ -70,4 +70,4 @@ summary: 您可以使用System Manager驗證NFS用戶端、以存取SVM上的資
 
 *相關資訊*
 
-https://["NFS管理"^]
+https://docs.netapp.com/us-en/ontap/nfs-admin/index.html["NFS管理"^]

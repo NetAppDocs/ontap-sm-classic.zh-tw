@@ -165,4 +165,4 @@ link:https://www.netapp.com/pdf.html?item=/media/19384-tr-4616.pdf["NetApp技術
 
 link:https://www.netapp.com/pdf.html?item=/media/19423-tr-4835.pdf["NetApp技術報告4835：如何在ONTAP 功能方面設定LDAP"^]
 
-https://["NFS管理"^]
+https://docs.netapp.com/us-en/ontap/nfs-admin/index.html["NFS管理"^]

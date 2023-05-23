@@ -16,7 +16,7 @@ summary: 若要可靠地運作、您必須確認整個組態是否受到支援�
 .步驟
 . 請前往確認您擁有下列元件的支援組合：
 +
-https://["NetApp 互通性對照表工具"]
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]
 
 +
 ** 軟件ONTAP
