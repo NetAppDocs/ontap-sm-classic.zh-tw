@@ -68,7 +68,7 @@ SNMPv2-MIB::sysServices.0 = INTEGER: 72
 [listing]
 ----
 C:\Windows\System32>snmpwalk -v 3 -a MD5 -l authnopriv -u snmpv3
-       -a password123 10.11.12.123 system
+       -A password123 10.11.12.123 system
 
 SNMPv3-MIB::sysDescr.0 = STRING: NetApp Release 8.3.0
        Cluster-Mode: Tue Apr 22 16:24:48 EDT 2014
