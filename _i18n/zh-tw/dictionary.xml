@@ -935,7 +935,6 @@
   <block id="b1d6c3bc5dbf7b37cbdbe937bcacaae1" category="list-text">選擇*鏡射*作為關係類型。</block>
   <block id="db9f6468d4481688fa9033abc1963271" category="list-text">選取目的地叢集、目的地SVM、以及目的地Volume名稱的尾碼。</block>
   <block id="00eb0c752078cdbcec9dd22b17ea3c76" category="paragraph">目的地SVM下方只會列出已執行的SVM和允許的SVM。</block>
-  <block id="1ec1faf69d8ee6e200c521f39fba978d" category="list-text">按一下 <block ref="a1671da25382ecdf2e7c60b53cc3fc3d" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="b690261847676d1036c0d37c3ab9e7cd" category="list-text">在「*進階選項*」對話方塊中、確認「鏡像AllSnapshots」已設定為保護原則。</block>
   <block id="cc4e6ab08b9e6aa23e33393c70c86c2c" category="paragraph">「DPDefault」和「鏡像Latest」是SnapMirror關係的其他預設保護原則。</block>
   <block id="63aac8665b835b82daf050f515b927ed" category="list-text">選取保護排程。</block>
@@ -943,12 +942,10 @@
   <block id="0eaad8f614e7a32adf496fe716320ed4" category="list-text">確認已選取* Yes*來初始化SnapVault 「不實」關係。</block>
   <block id="0531876d83d0e6dd65845a4e72053423" category="paragraph">所有的資料保護關係預設都會初始化。初始化SnapMirror關係可確保目的地磁碟區具有基礎、可開始保護來源磁碟區。</block>
   <block id="38326335c467e4d64391788cf6a6f1c1" category="list-text">按一下「*套用*」以儲存變更。</block>
-  <block id="b0d23a57325c3084c24baecf58667326" category="image-alt">SnapMirror進階選項93</block>
   <block id="acb8bdf1358d7537887f6dc69f5224e6" category="list-text">按一下「*儲存*」建立SnapMirror關係。</block>
   <block id="ec658862dd1e10953fce5b7f177f02f1" category="list-text">驗證SnapMirror關係的關係狀態是否處於「napMirroring」狀態。</block>
   <block id="376cacbb467173386e24f40a767d478b" category="list-text">瀏覽至* Volumes（磁碟區）*視窗、然後選取您為其建立SnapMirror關係的磁碟區。</block>
   <block id="e01451bc5d1145df607e72e46d03d5d2" category="list-text">按兩下磁碟區以檢視磁碟區詳細資料、然後按一下* protection *以檢視磁碟區的資料保護狀態。</block>
-  <block id="67dfc6258a4d7b0eef457b3eeb43e734" category="image-alt">SnapMirror 9 3.</block>
   <block id="028fafb74e3b83afc82a43a425f93cb9" category="paragraph">您必須記下來源磁碟區的設定、例如精簡配置、重複資料刪除、壓縮及自動擴充。當您中斷SnapMirror關係時、可以使用此資訊來驗證目的地Volume設定。</block>
   <block id="a3582dfb4b40e679a7470e807ce3c712" category="doc">建立SnapMirror關係ONTAP （不含版本號的9.2）</block>
   <block id="9e8230e3073ff01465cfbdedbd903658" category="list-text">您必須擁有目的地叢集的叢集管理員使用者名稱和密碼。</block>
@@ -971,20 +968,16 @@
   <block id="4197254eb42abadf4e07041f97c8369f" category="list-text">選擇*新Volume *選項。</block>
   <block id="bf3c24cccf670b34d6776b8942e7a929" category="list-text">使用預設磁碟區名稱或指定新的磁碟區名稱。</block>
   <block id="afe6c8ce0f37963464b2701045bf73a6" category="list-text">選取目的地Aggregate。</block>
-  <block id="25889688d2dab599f422759da9889d11" category="image-alt">目的地Volume設定</block>
   <block id="9f010bb70a3cf9f282ab15c52a375d90" category="list-text">在「*組態詳細資料*」區段中、選取「* MirrorAllSnapshot*」做為鏡射原則。</block>
   <block id="daf602eff6257ccc1585152cfa264dff" category="paragraph">「DPDefault」和「鏡射Latest」是SnapMirror關係的其他預設鏡射原則。</block>
   <block id="7a60aecb8c3538e9a671e6bb26a79282" category="list-text">從排程清單中選取保護排程。</block>
   <block id="962acae637b5a6d13230ba6c3c1db5e2" category="list-text">確保選中*初始化關係*複選框，然後單擊*創建*。</block>
   <block id="9006c9f92be4bea3381f69a4a4f9506b" category="paragraph">初始化SnapMirror關係可確保目的地磁碟區具有基礎、可開始保護來源磁碟區。</block>
-  <block id="3dd7b013b73a1c6f7e075f0af837ac53" category="image-alt">建立SnapMirror關係視窗</block>
   <block id="6b30a92bd990fd6bdf7ef4a3b009417a" category="paragraph">此關係是透過從來源磁碟區開始基準傳輸資料至目的地磁碟區來初始化。</block>
   <block id="71f4dfe0a538ccc961465fbef08d3f18" category="paragraph">初始化作業可能需要一些時間。「狀態」區段會顯示每個工作的狀態。</block>
-  <block id="ca5b32513c7bc82739ecbb42c0816f5a" category="image-alt">SnapMirror成功建立3個</block>
   <block id="1e09209118660dffb580a75afff21cd6" category="list-text">驗證SnapMirror關係的關係狀態：</block>
   <block id="72ec6eb58743e16b28503a78409f276c" category="list-text">從「* Volumes *（*磁碟區*）」清單中選取您建立SnapMirror關係的磁碟區、然後按一下「* Data Protection（*資料保護）」。</block>
   <block id="ed8df297d64d8ea7830711d96a0f8774" category="list-text">在「*資料保護*」標籤中、確認您所建立的SnapMirror關係已列出、而且關係狀態為「napMirrored」。</block>
-  <block id="5e8ac563a17019f0db410450d785301b" category="image-alt">SnapMirror建立4個驗證</block>
   <block id="bb3747ba6e89c7a4474a531c65febf7a" category="summary">設定SMB/CIFS需要選擇性地建立集合體、然後選擇專屬於您目標的工作流程、例如建立新的CIFS型SVM、設定對現有SVM的CIFS存取、或只是將CIFS Volume新增至已完全設定為CIFS存取的現有SVM。</block>
   <block id="3b517660309d36cbc61d62b69be8a491" category="doc">SMB/CIFS組態工作流程</block>
   <block id="ae17c06f1c944b3fd6242166dfcc0431" category="paragraph">設定SMB/CIFS需要選擇性地建立集合體、然後選擇專屬於您目標的工作流程、例如建立新的CIFS型SVM、設定對現有SVM的CIFS存取、或只是將CIFS Volume新增至已完全設定為可存取CIFS的現有SVM。</block>
@@ -3052,7 +3045,6 @@
   <block id="e9551f243e2860df3b1dfddc05a6cf7f" category="list-text">若要在MetroCluster 從遠端站台（站台B）檢視時顯示更新的站台A名稱、請在遠端站台（站台B）的CLI中執行下列命令：「叢集對等修改本機名稱」</block>
   <block id="d48c8b246d92a7c78407fc86df071671" category="summary">System Manager是一種圖形化管理介面、可讓您管理儲存系統和儲存物件（例如磁碟、磁碟區和集合體）、並從網頁瀏覽器執行與儲存系統相關的一般管理工作。身為叢集管理員、您可以使用System Manager來管理整個叢集及其資源。</block>
   <block id="3ce055103da31ce1df71764f20016d59" category="doc">使用OnCommand NetApp®System Manager進行叢集管理</block>
-  <block id="0c8ff84025de62a7a5aeea1fe6d60ebf" category="paragraph">System Manager不再以可執行檔的形式提供、現在ONTAP 已隨附於以Web服務形式提供的功能、預設為啟用、並可透過瀏覽器存取。</block>
   <block id="08528f0f39e6782683d545afe6b1f198" category="paragraph">System Manager的名稱已與先前版本不同。9.5版及更早版本的名稱OnCommand 為「S25系統管理程式」。9.6版及更新版本現在稱為ONTAP 「系統管理程式」。</block>
   <block id="9270ee495bc464b61000cccd332db6a6" category="paragraph">System Manager可讓您執行許多常見工作、例如：</block>
   <block id="160e6c815686e81a07d0da8d6912bd7d" category="list-text">建立叢集、設定網路、以及設定叢集的支援詳細資料。</block>
@@ -9260,4 +9252,13 @@
   <block id="793d21bf18b025e1a67b437de47189f5" category="inline-link-macro">管理授權總覽</block>
   <block id="0f130bf77768be1af34e32b76ed78492" category="paragraph">如需管理授權的詳細資訊、請參閱 <block ref="40de9a66c3e4481acf1e199beb3ce8ce" category="inline-link-macro-rx"></block>。</block>
   <block id="604cb5a84c00d7e349ae07b5f7fe770d" category="cell"><block ref="604cb5a84c00d7e349ae07b5f7fe770d" category="inline-link-rx"></block></block>
+  <block id="5c210c9c66a924b033442506eda7fd06" category="paragraph">System Manager 是以 HTML5 為基礎的圖形管理介面、可讓您從網頁瀏覽器管理儲存系統和儲存物件（例如磁碟、磁碟區和集合體）、並執行與儲存系統相關的一般管理工作。系統管理員隨附於 ONTAP 軟體即 Web 服務、預設為啟用、並可使用瀏覽器存取。身為叢集管理員、您可以使用System Manager來管理整個叢集及其資源。</block>
+  <block id="f45292349272c0e8d698e0559d3516b8" category="image-alt">目的地 Volume 設定</block>
+  <block id="66329551f2e91e48bc40cabcda0d761b" category="image-alt">Create SnapMirror Window （創建 SnapMirror 窗口）</block>
+  <block id="1338eec46c9b0932a879be3427d074eb" category="image-alt">成功建立 SnapMirror</block>
+  <block id="f7d9fc01c37002a8f4bfc1d0c51eebee" category="image-alt">確認已建立關係</block>
+  <block id="dd69bf72e13ac23bfd95e008374ecb5d" category="inline-image-macro">進階選項圖示</block>
+  <block id="ef801f1f815e00496ec892cdfa53d06d" category="list-text">按一下 <block ref="215361fd1fc3c1e3c1287fe809a1790a" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="52d4c2f2276b49422642781ce12ded0c" category="image-alt">進階選項視窗</block>
+  <block id="f730116d3cb429cf0e30f40c1db51df9" category="image-alt">SnapMirror 狀態螢幕擷取畫面</block>
 </blocks>

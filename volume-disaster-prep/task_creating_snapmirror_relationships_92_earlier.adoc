@@ -62,7 +62,7 @@ summary: 您必須在一個叢集上的來源磁碟區與連接叢集上的目�
 
 
 +
-image::../media/destination_volume_settings.gif[目的地Volume設定]
+image::../media/destination_volume_settings.gif[目的地 Volume 設定]
 
 . 在「*組態詳細資料*」區段中、選取「* MirrorAllSnapshot*」做為鏡射原則。
 +
@@ -74,7 +74,7 @@ image::../media/destination_volume_settings.gif[目的地Volume設定]
 初始化SnapMirror關係可確保目的地磁碟區具有基礎、可開始保護來源磁碟區。
 
 +
-image::../media/create_snapmirror_relationship_window.gif[建立SnapMirror關係視窗]
+image::../media/create_snapmirror_relationship_window.gif[Create SnapMirror Window （創建 SnapMirror 窗口）]
 
 +
 此關係是透過從來源磁碟區開始基準傳輸資料至目的地磁碟區來初始化。
@@ -83,14 +83,14 @@ image::../media/create_snapmirror_relationship_window.gif[建立SnapMirror關係
 初始化作業可能需要一些時間。「狀態」區段會顯示每個工作的狀態。
 
 +
-image::../media/snapmirror_create_3_successful.gif[SnapMirror成功建立3個]
+image::../media/snapmirror_create_3_successful.gif[成功建立 SnapMirror]
 
 . 驗證SnapMirror關係的關係狀態：
 +
 .. 從「* Volumes *（*磁碟區*）」清單中選取您建立SnapMirror關係的磁碟區、然後按一下「* Data Protection（*資料保護）」。
 .. 在「*資料保護*」標籤中、確認您所建立的SnapMirror關係已列出、而且關係狀態為「napMirrored」。
 +
-image::../media/snapmirror_create_4_verify.gif[SnapMirror建立4個驗證]
+image::../media/snapmirror_create_4_verify.gif[確認已建立關係]
 
 
 

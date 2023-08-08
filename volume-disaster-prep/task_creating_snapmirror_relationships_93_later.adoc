@@ -32,7 +32,7 @@ summary: 您必須在一個叢集上的來源磁碟區與連接叢集上的目�
 +
 目的地SVM下方只會列出已執行的SVM和允許的SVM。
 
-.. 按一下 image:../media/advanced_options_icon_disaster.gif[""]。
+.. 按一下 image:../media/advanced_options_icon_disaster.gif["進階選項圖示"]。
 .. 在「*進階選項*」對話方塊中、確認「鏡像AllSnapshots」已設定為保護原則。
 +
 「DPDefault」和「鏡像Latest」是SnapMirror關係的其他預設保護原則。
@@ -47,7 +47,7 @@ summary: 您必須在一個叢集上的來源磁碟區與連接叢集上的目�
 
 .. 按一下「*套用*」以儲存變更。
 +
-image::../media/snapmirror_advanced_options_93.gif[SnapMirror進階選項93]
+image::../media/snapmirror_advanced_options_93.gif[進階選項視窗]
 
 
 
@@ -59,7 +59,7 @@ image::../media/snapmirror_advanced_options_93.gif[SnapMirror進階選項93]
 
 
 +
-image::../media/snapmirror_9_3.gif[SnapMirror 9 3.]
+image::../media/snapmirror_9_3.gif[SnapMirror 狀態螢幕擷取畫面]
 
 
 
