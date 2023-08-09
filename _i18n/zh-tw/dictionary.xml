@@ -9261,4 +9261,11 @@
   <block id="ef801f1f815e00496ec892cdfa53d06d" category="list-text">按一下 <block ref="215361fd1fc3c1e3c1287fe809a1790a" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="52d4c2f2276b49422642781ce12ded0c" category="image-alt">進階選項視窗</block>
   <block id="f730116d3cb429cf0e30f40c1db51df9" category="image-alt">SnapMirror 狀態螢幕擷取畫面</block>
+  <block id="d63c6c907b6be23550cfce0da4390cb3" category="paragraph">在較新的 ONTAP 版本中、您可以使用 ONTAP CLI 移除磁碟擁有權、然後指派新的擁有者。</block>
+  <block id="957cff4fca2de8dbb48e7047316683bd" category="inline-link-macro">使用 ONTAP CLI （ ONTAP 9.3 及更新版本）移除磁碟擁有權</block>
+  <block id="d59b7620c62b33f8945f51dff30dd99a" category="list-text"><block ref="d59b7620c62b33f8945f51dff30dd99a" category="inline-link-macro-rx"></block></block>
+  <block id="98f458f06b8b356324651e5d6d23246b" category="inline-link-macro">使用 ONTAP CLI （ ONTAP 9.3 及更新版本）自動指派磁碟</block>
+  <block id="fdfcc2567d3a9cc9343a1e14e2a5778e" category="list-text"><block ref="fdfcc2567d3a9cc9343a1e14e2a5778e" category="inline-link-macro-rx"></block></block>
+  <block id="a3f857c78c1b112becd5a124491290c0" category="inline-link-macro">使用 ONTAP CLI （ ONTAP 9.3 及更新版本）手動指派磁碟</block>
+  <block id="8e0d62951eeeb6b52dfa9aabfdf5c35c" category="list-text"><block ref="8e0d62951eeeb6b52dfa9aabfdf5c35c" category="inline-link-macro-rx"></block></block>
 </blocks>

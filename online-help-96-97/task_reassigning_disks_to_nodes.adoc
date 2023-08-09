@@ -35,6 +35,11 @@ summary: 您可以使用System Manager將備用磁碟的擁有權從一個節點
 
 
 
+[NOTE]
+====
+在較新的 ONTAP 版本中、您可以使用 ONTAP CLI 移除磁碟擁有權、然後指派新的擁有者。
+
+====
 .步驟
 . 按一下「*儲存設備*>*集合體與磁碟*>*磁碟*」。
 . 在「*磁碟*」視窗中、選取「* Inventory *」索引標籤。
@@ -42,4 +47,10 @@ summary: 您可以使用System Manager將備用磁碟的擁有權從一個節點
 . 在*警告*對話方塊中、按一下*繼續*。
 . 在「*指派磁碟*」對話方塊中、選取您要重新指派磁碟的節點。
 . 按一下*指派*。
+
+
+.相關資訊
+* link:https://docs.netapp.com/us-en/ontap/disks-aggregates/remove-ownership-disk-task.html["使用 ONTAP CLI （ ONTAP 9.3 及更新版本）移除磁碟擁有權"]
+* link:https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html["使用 ONTAP CLI （ ONTAP 9.3 及更新版本）自動指派磁碟"]
+* link:https://docs.netapp.com/us-en/ontap/disks-aggregates/manual-assign-disks-ownership-manage-task.html["使用 ONTAP CLI （ ONTAP 9.3 及更新版本）手動指派磁碟"]
 
