@@ -3258,7 +3258,6 @@
   <block id="a1036b59d73505365ef378243a1e483a" category="list-text">必須設定您打算用於遠端驗證的IDP。</block>
   <block id="72577700d76e5482df206852d16b3918" category="paragraph">請參閱您已設定之IDP所提供的文件。</block>
   <block id="3a9e3f68d0c667f8a7b447e51b0c8cba" category="list-text">您必須擁有IDP的URI。</block>
-  <block id="de421c081fd7f349421dae3208f4659f" category="paragraph">已通過System Manager驗證的IDP包括Shibboleth和Active Directory Federation Services。</block>
   <block id="fa8cd930b8e2dc9dc9fd65817b5ce669" category="paragraph">啟用SAML驗證後、只有遠端使用者可以存取System Manager GUI。啟用SAML驗證後、本機使用者無法存取System Manager GUI。</block>
   <block id="384442b2283e770fe0861c6ff52fe9ca" category="list-text">按一下*組態*&gt;*叢集*&gt;*驗證*。</block>
   <block id="a7d79b434e817cf2263ffd64d11515ad" category="list-text">選取「*啟用SAML驗證*」核取方塊。</block>
@@ -9268,4 +9267,14 @@
   <block id="fdfcc2567d3a9cc9343a1e14e2a5778e" category="list-text"><block ref="fdfcc2567d3a9cc9343a1e14e2a5778e" category="inline-link-macro-rx"></block></block>
   <block id="a3f857c78c1b112becd5a124491290c0" category="inline-link-macro">使用 ONTAP CLI （ ONTAP 9.3 及更新版本）手動指派磁碟</block>
   <block id="8e0d62951eeeb6b52dfa9aabfdf5c35c" category="list-text"><block ref="8e0d62951eeeb6b52dfa9aabfdf5c35c" category="inline-link-macro-rx"></block></block>
+  <block id="d3804326967b3c4d0d1fe456e58f9e3c" category="paragraph">下列 IDP 已通過 System Manager 驗證：</block>
+  <block id="3a6d511a9d218e11dc64c9d43b7d1d73" category="list-text">Active Directory Federation Services</block>
+  <block id="76d715baa02451f676fce832bea3cab0" category="list-text">Cisco Duo （已通過下列 ONTAP 版本驗證：）</block>
+  <block id="99ee2d51ff9d719a2f4ed99cdd7e8201" category="list-text">9.7P21 及更新版本 9.7 版本</block>
+  <block id="7dec5294fcbec488e754eddbe6ba09b4" category="list-text">9.8P17 及更新版本 9.8 版本</block>
+  <block id="0802d2f599d23393bab9380c14849ce2" category="list-text">9.9.1P13 及更新版本 9.9 版本</block>
+  <block id="761c4970281fb273f713e924e77278ad" category="list-text">9.10.1 第 9 版及更新版本 9.10 版本</block>
+  <block id="f807dcc2ee9aff63931a364b0bfb045d" category="list-text">9.11.1P4 及更新版本 9.11 版本</block>
+  <block id="04faa4f6e99109900566d6589f5adfd3" category="list-text">9.12.1 及更新版本</block>
+  <block id="3679bf7b8140ea8f4291be1d7fc023bd" category="list-text">Shibboleth</block>
 </blocks>

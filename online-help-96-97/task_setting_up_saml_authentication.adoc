@@ -33,7 +33,21 @@ image::../media/mfa_workflow.gif[MFA工作流程]
 
 
 .關於這項工作
-已通過System Manager驗證的IDP包括Shibboleth和Active Directory Federation Services。
+下列 IDP 已通過 System Manager 驗證：
+
+* Active Directory Federation Services
+* Cisco Duo （已通過下列 ONTAP 版本驗證：）
++
+** 9.7P21 及更新版本 9.7 版本
+** 9.8P17 及更新版本 9.8 版本
+** 9.9.1P13 及更新版本 9.9 版本
+** 9.10.1 第 9 版及更新版本 9.10 版本
+** 9.11.1P4 及更新版本 9.11 版本
+** 9.12.1 及更新版本
+
+
+* Shibboleth
+
 
 [NOTE]
 ====
