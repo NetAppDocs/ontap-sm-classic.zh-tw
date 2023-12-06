@@ -4046,7 +4046,6 @@
   <block id="503e6a1d24532cf16b90068dcf9d0814" category="list-text">在「*重新調整FlexCache 大小」的「S還原Volume *」視窗中、指定FlexCache 您要調整其大小的「還原Volume」。</block>
   <block id="2c228870bc26117c2bcc38d47fed7cbb" category="paragraph">根據預設、現有的Aggregate可用來調整FlexCache 完這個問題。從System Manager 9.6開始、Volume允許的最大大小會顯示在「大小」欄位旁。</block>
   <block id="ee06c3a75d2f90d528d0bdad6ee8b794" category="inline-link-macro">指定FlexCache 適用於靜態Volume的進階選項</block>
-  <block id="bf1a8ac5c931866758030b4588ed85b1" category="paragraph">如果您想要FlexCache 新增資源來擴充此功能、請按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> （進階選項）。請參閱 <block ref="ff23e8b352173b9385a50749f03a49b1" category="inline-link-macro-rx"></block>。</block>
   <block id="689dc6ae2f8d54723af8baa6aff39f7d" category="list-text">按一下*「Save」（儲存）*以調整FlexCache 此等功能的大小。</block>
   <block id="baa9c79245f7884810c575121d7d6a37" category="section-title">儀表板視窗圖示</block>
   <block id="eb95543f6e7e801ae8e527cfe8873f85" category="paragraph">檢視儲存系統的儀表板時、可能會看到下列圖示：</block>
@@ -9277,4 +9276,5 @@
   <block id="f807dcc2ee9aff63931a364b0bfb045d" category="list-text">9.11.1P4 及更新版本 9.11 版本</block>
   <block id="04faa4f6e99109900566d6589f5adfd3" category="list-text">9.12.1 及更新版本</block>
   <block id="3679bf7b8140ea8f4291be1d7fc023bd" category="list-text">Shibboleth</block>
+  <block id="0141b877fcf49f33b47400dd7edb78c1" category="paragraph">如果您想要FlexCache 新增資源來擴充此功能、請按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> （進階選項）。請參閱 <block ref="4f3fc931d92f22f55a489e2373f71d6c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
