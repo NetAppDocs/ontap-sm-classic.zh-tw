@@ -33,7 +33,7 @@ entries:
     url: "/smb-config/task_verifying_smb_client_access.html"
   - title: 設定及驗證CIFS用戶端存取
     url: "/smb-config/task_configuring_verifying_client_access.html"
-- title: 將CIFS磁碟區與啟用CIFS的SVM進行廣告
+- title: 將CIFS磁碟區新增至啟用CIFS的SVM
   url: "/smb-config/concept_adding_protocol_volume_to_protocol_enabled_svm.html"
   entries:
   - title: 建立及設定磁碟區

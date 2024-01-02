@@ -1,5 +1,5 @@
 ---
-layout: astra 
+layout: landing-page 
 sidebar: sidebar 
 permalink: index.html 
 lead: The System Manager Classic interface is available in ONTAP 9.7 and earlier ONTAP 9 releases. Documentation is available on this site for configuration workflows using System Manager Classic, as well as System Manager Classic online help for ONTAP 9.6 and 9.7. 
