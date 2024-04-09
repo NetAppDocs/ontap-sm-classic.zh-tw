@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  search: ontap
+  search: ontap-sm-classic, ontap
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
@@ -45,68 +45,6 @@ sidebar:
     url: https://docs.netapp.com/us-en/ontap/
   - title: 法律聲明
     url: "/reference_legal_notices.html"
-homepage:
-  tiles:
-  - title: 開始使用
-    links:
-    - title: 瞭解System Manager Classic
-      url: "/online-help-96-97/index.html"
-    - title: 利用ONTAP System Manager新一代ONTAP 的功能來管理功能、以利更新版本的更新版本
-      url: https://docs.netapp.com/us-en/ontap/concept_administration_overview.html
-    - title: 使用CLI管理ONTAP 功能
-      url: https://docs.netapp.com/us-en/ontap/system-admin/index.html
-  - title: 配置NAS儲存設備
-    links:
-    - title: NFS組態
-      url: "/nfs-config/index.html"
-    - title: 使用VSC的ESXi NFS組態
-      url: "/nfs-config-esxi/index.html"
-    - title: SMB和NFS多傳輸協定組態
-      url: "/nas-multiprotocol-config/index.html"
-    - title: SMB組態
-      url: "/smb-config/index.html"
-  - title: 配置SAN儲存設備
-    links:
-    - title: 使用VSC的ESXi FC組態
-      url: "/fc-config-esxi/index.html"
-    - title: Red Hat Enterprise Linux的FC組態
-      url: "/fc-config-rhel/index.html"
-    - title: Windows的FC組態
-      url: "/fc-config-windows/index.html"
-    - title: 使用VSC的ESXi iSCSI組態
-      url: "/iscsi-config-esxi/index.html"
-    - title: 適用於Red Hat Enterprise Linux的iSCSI組態
-      url: "/iscsi-config-rhel/index.html"
-    - title: 適用於Windows的iSCSI組態
-      url: "/iscsi-config-windows/index.html"
-  - title: 資料保護與災難恢復
-    links:
-    - title: 叢集與SVM對等組態
-      url: "/peering/index.html"
-    - title: Volume災難恢復
-      url: "/volume-disaster-recovery/index.html"
-    - title: Volume災難恢復準備
-      url: "/volume-disaster-prep/index.html"
-    - title: Volume備份SnapVault 功能
-      url: "/volume-backup-snapvault/index.html"
-    - title: Volume還原管理功能SnapVault
-      url: "/volume-restore-snapvault/index.html"
-  - title: 叢集管理
-    links:
-    - title: 叢集擴充組態
-      url: "/expansion/index.html"
-    - title: Volume Move管理
-      url: "/volume-move/index.html"
-    - title: SNMP組態
-      url: "/snmp-config/index.html"
-    - title: 使用System Manger 9.6和9.7進行叢集管理
-      url: "/online-help-96-97/index.html"
-  - title: 更多資源
-    links:
-    - title: 部分9文件ONTAP
-      url: https://docs.netapp.com/us-en/ontap/
-    - title: 自動化及REST API文件
-      url: https://docs.netapp.com/us-en/ontap-automation/index.html
 product-family:
   name: ONTAP
   repo: ontap-family

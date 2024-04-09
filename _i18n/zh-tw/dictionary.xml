@@ -8781,7 +8781,6 @@
   <block id="17e1c570ca599dbf87546393bebca4a8" category="sidebar">設定及驗證NFS用戶端存取（將NFS磁碟區新增至啟用NFS的SVM）</block>
   <block id="7764db582957448eb25528aee4db56b7" category="sidebar">使用VSC的ESXi FC組態</block>
   <block id="1cea5f7ff46fdcaad82b7016abae2ceb" category="sidebar">SMB/CIFS組態</block>
-  <block id="8cadc76a323c196244af8dd4c3ad5543" category="sidebar">將CIFS磁碟區與啟用CIFS的SVM進行廣告</block>
   <block id="28ed8622e2b3c95e29e6f443b5b6cd84" category="sidebar">初始化及格式化LUN</block>
   <block id="dcac34ac3a0167254a9c5e757dd7143a" category="sidebar">適用於Windows的iSCSI組態</block>
   <block id="0fe674cba26a6125717793de11bb3096" category="sidebar">叢集擴充管理</block>
@@ -9236,7 +9235,6 @@
   <block id="b2c6f5e7b85eccc355666a7ce9b42837" category="summary">設定新的SVM需要建立新的NFS並啟用NFS。然後、您可以在ESXi主機上設定NFS存取、並使用虛擬儲存主控台驗證是否已啟用ESXi的NFS。</block>
   <block id="8a7baa903a5556eb48abcebc91df47d2" category="paragraph">如果您打算在同一個SVM上使用其他傳輸協定、即使您不想立即設定、也應該選取這些傳輸協定。</block>
   <block id="2569b2d1e3dcd3875b983af8427bd364" category="paragraph">在啟用NFS的情況下建立新的SVM。</block>
-  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">所有ONTAP 產品文件</block>
   <block id="fd69c5cf902969e6fb71d043085ddee6" category="paragraph-title">結果</block>
   <block id="f6544266822afc00f9e28a38a852cab9" category="paragraph-title">CIFS傳輸協定追蹤的結果清單</block>
   <block id="7d5ed3e12000d1e71004e9e21d57eae0" category="paragraph-title">NFS傳輸協定追蹤的結果清單</block>
@@ -9277,4 +9275,5 @@
   <block id="04faa4f6e99109900566d6589f5adfd3" category="list-text">9.12.1 及更新版本</block>
   <block id="3679bf7b8140ea8f4291be1d7fc023bd" category="list-text">Shibboleth</block>
   <block id="0141b877fcf49f33b47400dd7edb78c1" category="paragraph">如果您想要FlexCache 新增資源來擴充此功能、請按一下 <block ref="03cbf9b997ad0db8d0ffb988950200e2" category="inline-image-macro-rx" type="image"></block> （進階選項）。請參閱 <block ref="4f3fc931d92f22f55a489e2373f71d6c" category="inline-link-macro-rx"></block>。</block>
+  <block id="5069c081842d21ed175ea7a6154fbacb" category="sidebar">ONTAP 9.7 和更早版本的 ONTAP 9 中提供了 System Manager Classic 介面。本網站提供使用 System Manager Classic 的組態工作流程文件、以及 ONTAP 9.6 和 9.7 的 System Manager Classic 線上說明文件。</block>
 </blocks>
